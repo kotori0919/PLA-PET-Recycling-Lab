@@ -14,7 +14,7 @@
     {
       "left": "TemperatureProbeRetainerT1",
       "right": "ExtruderFrontSlidingGuide",
-      "gap_mm": 2.9999999999998863,
+      "gap_mm": 2.999999999999943,
       "minimum_mm": 3.0
     }
   ],
@@ -77,7 +77,7 @@
     {
       "left": "Spool",
       "right": "PPR-C09_SpoolAdapterRear",
-      "volume_mm3": 24324.593838793407,
+      "volume_mm3": 24324.593838793422,
       "left_class": "purchased_reference_envelope",
       "right_class": "manufactured_or_stock",
       "reference_overlap_only": true,
@@ -99,7 +99,7 @@
     {
       "left": "SpoolCore",
       "right": "PPR-C09_SpoolAdapterFront",
-      "volume_mm3": 13349.347784928046,
+      "volume_mm3": 13349.34778492805,
       "left_class": "purchased_reference_lod",
       "right_class": "manufactured_or_stock",
       "reference_overlap_only": true,
@@ -110,7 +110,7 @@
     {
       "left": "SpoolCore",
       "right": "PPR-C09_SpoolAdapterRear",
-      "volume_mm3": 13349.346643322286,
+      "volume_mm3": 13349.34664332229,
       "left_class": "purchased_reference_lod",
       "right_class": "manufactured_or_stock",
       "reference_overlap_only": true,
@@ -199,7 +199,7 @@
   "source_sha256": {
     "cad/freecad/compact/check_shaft_section_v08.py": "888d22e20fb0e2fa9e571020ecfaa0d15df32b9809cfe2097e88e5daafc44e15",
     "cad/freecad/compact/dancer_revision.py": "59a9557b583174128d85e5bc9e5f34fc9dc0372fc84254ed9d198db1e130bfed",
-    "cad/freecad/compact/export_validation_geometry_v08.py": "9f669fda6759eb69f59dfde5101013cea9611a6b6308939bbd8e0332ad8b6fbf",
+    "cad/freecad/compact/export_validation_geometry_v08.py": "3e36986cd3a170c17b19f32bdfa76fb42079dd98e21d4e6265d88b614eb30975",
     "cad/freecad/compact/generate.py": "71900f37e772c62bbed71e6d9d6dc05630fe2ff2c73ff1dc18b781d51aea51bc",
     "cad/freecad/compact/generate_fusion_validation.py": "20bf9de8d69498c7771651e1c8d78dd1c30f5ec972e2342c328c035b40f16d4e",
     "cad/freecad/compact/geometry.py": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7",
@@ -207,8 +207,9 @@
     "cad/freecad/compact/process_v0621.py": "3c69c8f14e9cdbb185da58acd63eab1412552d640cf6a6059cac309ed2ef6ccf",
     "cad/freecad/compact/shaft_retention.py": "09089f8bdfe484fe8ed2d9f584f46b5e27af156dad865579b39e4eb77f2f56a3",
     "cad/freecad/compact/traverse_revision.py": "bdf47c625c378184001ca3061ade07ecb8b3e957f0914da0d1d717b4e5271650",
-    "cad/freecad/drive_v08/assembly.py": "5d80060fc98896f5b42f10d7095f59f7fd4828538e6b4c9e172a210640dc946e",
+    "cad/freecad/drive_v08/assembly.py": "a7e8f7e3c3bdf3154e405957afbf8d877b9208efbf1c0efcf39ef821d4522038",
     "cad/freecad/drive_v08/cache_source.py": "df713a8725b195cf48258e1c8fec24f80d0645041113f65fec30b0d50328789c",
+    "cad/freecad/drive_v08/compact_layout.py": "9965c1d26c8134232a06a83cdbddab9fa3bb77f0ee47ff6fd3aee6930c636c9e",
     "cad/freecad/drive_v08/detail.py": "fb8d42ccd8dfc6ba7c4c8782e789718e6a3caade6b30d8b9c550755e1ea2783a",
     "cad/freecad/drive_v08/frame_revision.py": "59d7381e26eab435831d8d08d2d0f1a7c0c159337ed46e46e72d1fe068cb0fe9",
     "cad/freecad/drive_v08/generate.py": "aa15e6ca82ae9f2120a701994531f4c669531827bf48d475a1eb3ee72c787559",
