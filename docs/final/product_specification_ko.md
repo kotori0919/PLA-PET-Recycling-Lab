@@ -4,7 +4,7 @@
 
 | 항목 | 현재 기준 | 근거 / 판정 범위 |
 |---|---|---|
-| 최종 GGM 통합 외형 | 470 x 729 x 930 mm | `exports/final/drive_ggm_v08/manifest.json`; STEP 재수입 기준 |
+| 최종 GGM 통합 외형 | 470 x 700 x 930 mm | `exports/final/drive_ggm_v08/manifest.json`; STEP 재수입 기준 |
 | 기본 프레임 평면 | 470 x 700 mm | `physical_gate_contract.json` P2; 전체 장착품 외형과 구분 |
 | hard 외형 제한 | 500 x 750 x 1000 mm | 통합 모델은 이 범위 안 |
 | 선호 외형 목표 | 480 x 720 x 950 mm | GGM 통합 Y는 9 mm 초과. 목표 달성으로 표시하지 않음 |

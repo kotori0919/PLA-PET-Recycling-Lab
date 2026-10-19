@@ -656,23 +656,23 @@
   "source_sha256": {
     "release/build_frame_release.py": "5184ee27bba506da5f43aa01bdc5eb5b8baab8db06983f629ec0b6f57182b499",
     "cad/parameters/ggm_frame_revision.json": "d51cbb6ee6c6075ef67f42c0d388e39c8e79f91777f7c987c726e909246ca0a5",
-    "analysis/frame_v08/results/geometry.json": "11b47224f4611d80cdb651997e23ab1ed1d08a1b95dcb1c32d9660dbb09ccd06",
-    "analysis/frame_v08/results/beam_comparison.json": "21b8675c884636847666d099b1a37d3620aff83c74fe49787c0102a56be03131",
-    "exports/final/drive_ggm_v08/manifest.json": "b17bf6a9faa5ce499f4624adc186d4b5257d1ceda27ec8733b8238d7e6c0ef85",
-    "exports/final/drive_ggm_v08/GGM-FULL-ASM.FCStd": "c2d327ec887f0b291d730bc15f8ffb2b26cedeb6941b1cb3b6c995681db6bc06",
-    "exports/final/drive_ggm_v08/GGM-FULL-ASM.step": "46d48c67e5ed50681384d57520ea16bab0875c8100cfe65c257e99bdb0d06a90"
+    "analysis/frame_v08/results/geometry.json": "ea9caefe2a3aad8eb9486a9c9e2f551f7dad64cb40c39b7837cf32019ba9aa0d",
+    "analysis/frame_v08/results/beam_comparison.json": "9112ce47abcb7829684c88fef7e9a901ff41e137c39e3630c9f5b5b895f6c5ee",
+    "exports/final/drive_ggm_v08/manifest.json": "7c4a31ad0889ba8132a76c75d7846fc4eace527d7c52c2880e46c0b4b2e3a4bd",
+    "exports/final/drive_ggm_v08/GGM-FULL-ASM.FCStd": "4fccef63dd36686b1cbbb1119ee3be8635b3653231eeaf8fd8bd83ef839ef91f",
+    "exports/final/drive_ggm_v08/GGM-FULL-ASM.step": "818d5e87740333dec2d33415c66a53929a6eb23b2c4a458201536a89f32b0d66"
   },
   "output_sha256": {
     "exports/fabrication/frame_cut_list.csv": "c1c1c2ac5372c2e059fb70991abbed6c07fc7c615a8dddcd96f73c2f21abece8",
     "exports/final/frame_v08/frame_members.csv": "c1c1c2ac5372c2e059fb70991abbed6c07fc7c615a8dddcd96f73c2f21abece8",
     "exports/final/frame_v08/FR-TIE-01.svg": "443d86bd11d754b2bebeddc180f85d926e0867fc4cafe4563536b95ca26d6f7d",
-    "exports/final/frame_v08/FR-TIE-01.step": "710076834e7b1ae686613197abeaabded533bfb950200cb3031cfe34f57ea4df",
+    "exports/final/frame_v08/FR-TIE-01.step": "1210a9200ca276f69b4212464049493a3d79e3f937596513da151e26df66552b",
     "exports/final/frame_v08/FRAME_CUT_AND_TIE_KO.pdf": "e466f2239af32b1f30f5d2eeaa4b29ccfe7fec10fb93f6bf05a720894ed2c069",
     "exports/final/frame_v08/FRAME_CUT_AND_TIE_KO.typ": "d92ed504687abd574f86481139c92948527cbc3178a4ea36d0ae0597ba05401c",
-    "exports/final/frame_v08/FR-TIE-01.dxf": "7cdce1ed98e3927b12ff35fdc5ad4d5379d5dbfbf9d1dc43ac4ea26e1c81d6b3",
+    "exports/final/frame_v08/FR-TIE-01.dxf": "e5c045a2ef63f22d8c4d64f2de0883b28bd4034a2879dba86ffca51b564bddec",
     "exports/final/frame_v08/frame_connections.csv": "25ba7d2806d6a98e7f059dcc2606f82c0321dcbfac401895fcbded48159b8966",
     "exports/final/frame_v08/README.md": "15549ab973582d1c139a7c0a252b3664d8f55d8d7ead72a2f6b1efe23124149b",
-    "exports/final/frame_v08/FR-TIE-01.FCStd": "3058e660ea1764673a600782f6b24ae180036cddcba3bdfed4b804770f1c0344"
+    "exports/final/frame_v08/FR-TIE-01.FCStd": "2d20d83e3fd70c2eadbb9e7df2d20c3992a9e6b9ad69164e6ba9e771e53588bb"
   },
   "physical_validation_state": "NOT_RUN",
   "cut_authorization": false,

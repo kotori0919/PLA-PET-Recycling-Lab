@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "revision": "final-design-fabrication-closure-v0.8",
+  "state": "CANONICAL_COMPACT_LAYOUT",
+  "purpose": "single-frame bench PLA/PET recycler; same MVP and final machine",
+  "envelope_mm": [
+    470.0,
+    700.0,
+    930.0
+  ],
+  "upper_translation_mm": [
+    -18.0,
+    29.0,
+    0.0
+  ],
+  "collector_translation_mm": [
+    0.0,
+    29.0,
+    0.0
+  ],
+  "fixed_support_objects": [
+    "MidRail500",
+    "GGM_ShredRail"
+  ],
+  "fixed_support_prefixes": [
+    "GGM_SH_Spacer_"
+  ],
+  "shelf_object": "GGM_SH_Base",
+  "front_process_groups": [
+    "shredder",
+    "input"
+  ],
+  "no_added_profiles": true,
+  "no_added_actuators": true,
+  "no_heater_or_psu_upsizing": true,
+  "physical_validation_state": "NOT_RUN",
+  "fabrication_authorized": false,
+  "energization_authorized": false,
+  "lid_service_axis": [
+    0.0,
+    -1.0,
+    0.0
+  ],
+  "lid_service_travel_mm": 214.0,
+  "hopper_mouth_radius_mm": 98.0
+}

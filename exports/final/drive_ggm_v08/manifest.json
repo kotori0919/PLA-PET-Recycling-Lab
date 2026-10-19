@@ -350,9 +350,20 @@
       }
     },
     "lid_opening_covered": true,
-    "lid_service_direction": "NEGATIVE_X",
+    "lid_service_axis": [
+      0.0,
+      -1.0,
+      0.0
+    ],
     "lid_service_travel_mm": 214.0,
-    "lid_service_left_extent_mm": -191.0,
+    "lid_service_endpoint_bbox_mm": [
+      5.0,
+      108.0,
+      900.0,
+      209.0,
+      312.0,
+      908.0
+    ],
     "physical_validation_state": "NOT_RUN",
     "fabrication_authorized": false,
     "scope": "Nominal solids and service space. Dancer sampled; not a continuous angular proof.",
@@ -367,39 +378,39 @@
   "exports": [
     {
       "file": "GGM-FULL-ASM.step",
-      "sha256": "46d48c67e5ed50681384d57520ea16bab0875c8100cfe65c257e99bdb0d06a90",
+      "sha256": "818d5e87740333dec2d33415c66a53929a6eb23b2c4a458201536a89f32b0d66",
       "fcstd": "GGM-FULL-ASM.FCStd",
-      "fcstd_sha256": "c2d327ec887f0b291d730bc15f8ffb2b26cedeb6941b1cb3b6c995681db6bc06",
+      "fcstd_sha256": "4fccef63dd36686b1cbbb1119ee3be8635b3653231eeaf8fd8bd83ef839ef91f",
       "solids": 276,
-      "volume_mm3": 21600359.87820948,
+      "volume_mm3": 21600359.87559301,
       "bbox_mm": [
         470.0,
-        729.0,
+        700.0,
         930.0
       ],
       "status": "REIMPORT_PASS"
     },
     {
       "file": "GGM-DRIVE-ASM.step",
-      "sha256": "ccfc5cb301bab0c4d02fcc210f73b4e24d85141e232e57f7b6304e64c5c49a3d",
+      "sha256": "58dc044faa27809fb93e1845d757105e70af1aac14ef8a4745b126657818c786",
       "fcstd": "GGM-DRIVE-ASM.FCStd",
-      "fcstd_sha256": "2dfa8cb3b50b27124b317b1e7668209f116d1557c32c5d30ac7736d21e98435d",
+      "fcstd_sha256": "c9c51249df3e45c6991840b2204a347e8dd481b301f4edd3710ac470482cb8c4",
       "solids": 61,
-      "volume_mm3": 5463562.682265392,
+      "volume_mm3": 5463562.684798282,
       "bbox_mm": [
         430.0,
-        715.0,
+        686.0,
         618.0
       ],
       "status": "REIMPORT_PASS"
     },
     {
       "file": "GGM_SH_Base.step",
-      "sha256": "f856fdcf5eeb642042e0a51bb986f3fee5ce4963f0a2ca04a1e38cbbcc96b803",
+      "sha256": "35601bd928c34294d67c51836934c595575ba573c2ebd3dbc8c25fb8aff9b5bb",
       "fcstd": "GGM_SH_Base.FCStd",
-      "fcstd_sha256": "91b0e2a31363a4528e80e793297fd775c942ad7edff7da7a2404437c493c6d5a",
+      "fcstd_sha256": "09a1e36de9f13235767fb1b5f1009f5e5785b2b89ba1e85e697d901183fc301a",
       "solids": 1,
-      "volume_mm3": 355338.7142774312,
+      "volume_mm3": 355338.71427743125,
       "bbox_mm": [
         235.0,
         253.0,
@@ -411,7 +422,7 @@
       "file": "GGM_SH_Spacer_90_100.step",
       "sha256": "7a2b8793d98790af6f5ea1bff28ef0d6dee3a06ba13f754d8c83544856631152",
       "fcstd": "GGM_SH_Spacer_90_100.FCStd",
-      "fcstd_sha256": "cef9c9b6fd71b11764387548514097b1a53566e0c63c81d646e56dbee0d35224",
+      "fcstd_sha256": "40cf97f61e8d3999cf5785ea46b3c33aa339694110574bbe6cf2298005cf37af",
       "solids": 1,
       "volume_mm3": 788.8539153163972,
       "bbox_mm": [
@@ -425,7 +436,7 @@
       "file": "GGM_SH_Spacer_90_280.step",
       "sha256": "fb1c4f0503202185f42e6de1f9893b44896de5571d24f1ee7a8878b4b1e33fb3",
       "fcstd": "GGM_SH_Spacer_90_280.FCStd",
-      "fcstd_sha256": "01343f29d9eaf60a5523961b350125caa2c73104b77f3b777c0ec7fce4a88ac2",
+      "fcstd_sha256": "bd55ecfc5aa05e97b9d19adcd8376ca31a6ba07fee5cc55f3a016c02b532fcba",
       "solids": 1,
       "volume_mm3": 788.8539153163973,
       "bbox_mm": [
@@ -439,7 +450,7 @@
       "file": "GGM_SH_Spacer_220_100.step",
       "sha256": "c343f7425234509883feb8f6fcaece0bf94b0ef898fcc68b103a34ffe99bd6b2",
       "fcstd": "GGM_SH_Spacer_220_100.FCStd",
-      "fcstd_sha256": "38a244948dcf173159f2707c10a93abce8590a1d822314eceb78a66fc32a1ebf",
+      "fcstd_sha256": "d3b071db0981308dcd1822a44e95833dcfbb6dad833a4e660650033aea24263d",
       "solids": 1,
       "volume_mm3": 788.853915316396,
       "bbox_mm": [
@@ -453,7 +464,7 @@
       "file": "GGM_SH_Spacer_220_280.step",
       "sha256": "bac85c32a7079d3a70c64404098a76653522b1d2ea8c1e835e31307fc7e4d9b2",
       "fcstd": "GGM_SH_Spacer_220_280.FCStd",
-      "fcstd_sha256": "a2609e529f57a42eea6b37dd4b7e29430266767805829c2c92ef4efc6c23ddc8",
+      "fcstd_sha256": "c3e62c8fc5ea3aaacdeead1c173c78359d8a7492c3eb5f598329600bc39075df",
       "solids": 1,
       "volume_mm3": 788.8539153163962,
       "bbox_mm": [
@@ -465,9 +476,9 @@
     },
     {
       "file": "GGM_SH_Mount.step",
-      "sha256": "a5c88e1e1597271cdd9f4fb83a8413b3f567dd61f7bb415ffb7ab95a552e5f47",
+      "sha256": "b7f94da5456405049651decc8518d7a2365df1f31985c7e03aa0482c414fb49e",
       "fcstd": "GGM_SH_Mount.FCStd",
-      "fcstd_sha256": "cf4e774e4b0f2b279ee4fc462e03729d51883e0290391db4507568fb04e52a8b",
+      "fcstd_sha256": "3ebe1cbcaa0b2304e59f07338f24a1c449deabf9de1d9e0df4222e85b02f87c2",
       "solids": 1,
       "volume_mm3": 152523.30340043065,
       "bbox_mm": [
@@ -479,9 +490,9 @@
     },
     {
       "file": "GGM_SH_BearingPlate273.step",
-      "sha256": "53d5b221a49faa2697dfc0c34b41d85396d7b6d01b574c814293cdc053f85a38",
+      "sha256": "3f66a42f5793c1c255b79212372f7d914b0bb017ac7a8d81fc53de54aed34592",
       "fcstd": "GGM_SH_BearingPlate273.FCStd",
-      "fcstd_sha256": "0d8f33bd97f36085b21259a4249319e04b493781ba308ef2702d8729c2f03956",
+      "fcstd_sha256": "ac941c3c0ee4adf339e5d6f1e268a84d70bd77357e783f8238db37afc58a1f4f",
       "solids": 1,
       "volume_mm3": 120395.75477492921,
       "bbox_mm": [
@@ -493,11 +504,11 @@
     },
     {
       "file": "GGM_SH_BearingPlate303.step",
-      "sha256": "454c329080197105ce92d54bb3f72e60cb3efe0385afad86f6fd055a133744f9",
+      "sha256": "cacc095e21b125fdfc8e4400919f0d218be14b226ca54eeea5f3f8fd67b06877",
       "fcstd": "GGM_SH_BearingPlate303.FCStd",
-      "fcstd_sha256": "06101600e1334b40d83632d5500c9eeda3e66282ee887764a7b3e6e311103eb1",
+      "fcstd_sha256": "2cda2255c0b4f01d51aaf861999d551834e1441afa21bed3182cdd28051590ee",
       "solids": 1,
-      "volume_mm3": 120493.9295453539,
+      "volume_mm3": 120493.92954535388,
       "bbox_mm": [
         216.0,
         10.0,
@@ -507,9 +518,9 @@
     },
     {
       "file": "GGM_SH_Jackshaft.step",
-      "sha256": "3511cd957f04f9c1fa49ab17d5c3acff207a294ccf3c83ef2e570b9e290aee67",
+      "sha256": "98aebcd8166c6b5a1ce9bdc2690a68fbd3c887752114c4ac00bd2e23302d848a",
       "fcstd": "GGM_SH_Jackshaft.FCStd",
-      "fcstd_sha256": "7394393e1eaeb75a731d5d2b12b3d1192063834b2517557c88b7e425e7eba2b8",
+      "fcstd_sha256": "12a5c067ff9333295d6354a9efc833fcaf6fa3ae0f183296c1e2fd1bd8f9e16a",
       "solids": 1,
       "volume_mm3": 8439.678681707019,
       "bbox_mm": [
@@ -521,11 +532,11 @@
     },
     {
       "file": "GGM_SH_FuseInput.step",
-      "sha256": "a1aeb785df40cc9253814b573ec45d3c0aa1b110977a7cb9e42a81df2f9c917b",
+      "sha256": "e511003b081d5252310885dbc0a44b2b0828324d97e067737fbd0dfcd7cc2102",
       "fcstd": "GGM_SH_FuseInput.FCStd",
-      "fcstd_sha256": "70b2b05f904e309417a06cda0f65a5c6805fe5fe417d5df85b7f7c58ff6ab8b0",
+      "fcstd_sha256": "421f2270b8051443eac94cd6c50dcd5e2b2c9d30ceac0e5ee3dfbebd66e2b7bd",
       "solids": 1,
-      "volume_mm3": 17687.893553676688,
+      "volume_mm3": 17687.89355367674,
       "bbox_mm": [
         46.0,
         30.0,
@@ -535,25 +546,25 @@
     },
     {
       "file": "GGM_SH_FuseOutput.step",
-      "sha256": "456f1463a5b3d09359d0014ea7c735f4928f7f17da9834e2157e1a36f0f7d83e",
+      "sha256": "b7a7f0a4231875d66051f8868d037e434b58ef133f13d089be89ae548c6f22aa",
       "fcstd": "GGM_SH_FuseOutput.FCStd",
-      "fcstd_sha256": "11811c8947191da5679823bed2388061a363339b8b49c6f9fdb72e284fbf1a94",
+      "fcstd_sha256": "ad01d41d9e333cf09e797943aba38c7470bab5cb703aea410cafca83ec05f9b4",
       "solids": 1,
-      "volume_mm3": 16104.92165128469,
+      "volume_mm3": 16104.921651284612,
       "bbox_mm": [
         46.0,
-        26.0,
+        25.99999999999997,
         46.0
       ],
       "status": "REIMPORT_PASS"
     },
     {
       "file": "GGM_SH_FusePinBlank.step",
-      "sha256": "e8a5a73988d641e5cf41cc0ff9e0fbe7806ba0aa7d551562ff0c609a5a882d62",
+      "sha256": "6060bbc3674f1543733ac5d6b4a89397b82ddcff9db785da75bd207df6f064bf",
       "fcstd": "GGM_SH_FusePinBlank.FCStd",
-      "fcstd_sha256": "c55758f33d163df7b0253920e46c63cafb9b35a7dc496475510e60063196db04",
+      "fcstd_sha256": "fff9bb763a094d3ed9c6eecb6c85da908db82957f69e71fb46f82684dd74caf2",
       "solids": 1,
-      "volume_mm3": 93.38198616850944,
+      "volume_mm3": 93.38198616850977,
       "bbox_mm": [
         4.0,
         12.700000000000017,
@@ -565,7 +576,7 @@
       "file": "GGM_EX_FuseInput.step",
       "sha256": "8bf33722a09c65d2bebf11261814fb759e2a368723961e1157143849ea4c6ca5",
       "fcstd": "GGM_EX_FuseInput.FCStd",
-      "fcstd_sha256": "4c43b97e03d054314940b1abfe4e07879ff9c72c267581a2315eb51fae71faae",
+      "fcstd_sha256": "ad90cca09af6c895fc3441c501111c43e0eff79b1ed8c5adebb7440671817f0c",
       "solids": 1,
       "volume_mm3": 17687.893553677248,
       "bbox_mm": [
@@ -579,7 +590,7 @@
       "file": "GGM_EX_FuseOutput.step",
       "sha256": "de552b06ecb15c9ed502fc67a44ffebdcb0691f971bc963e9e52d279b59b1df1",
       "fcstd": "GGM_EX_FuseOutput.FCStd",
-      "fcstd_sha256": "0197cc96ba224157405d531b5a3f478729892b36308bfdf96fc446aa5c206bb7",
+      "fcstd_sha256": "0045702080a7e33542c5958a9b9ecc2cedf8aa89b5b0ac357ca487d99fb82588",
       "solids": 1,
       "volume_mm3": 16104.921651285134,
       "bbox_mm": [
@@ -593,7 +604,7 @@
       "file": "GGM_EX_FusePinBlank.step",
       "sha256": "255b8ad4b79ec58effdcdf32dc824387b66d47841ac28aa5ebea31d9e2aeb5ee",
       "fcstd": "GGM_EX_FusePinBlank.FCStd",
-      "fcstd_sha256": "afe6b808b625035041ce8435f33a3fc9d72772d206e40d757885d365dd8223b2",
+      "fcstd_sha256": "57e8e525cdc4232e0a9881709d8e2840075e85e64b07b6cea1ad67bb2905a0d2",
       "solids": 1,
       "volume_mm3": 93.3819861685287,
       "bbox_mm": [
@@ -607,7 +618,7 @@
       "file": "GGM_EX_Mount.step",
       "sha256": "2ded78bc7c08ef29e3fb87176ed8877a98e1d6ec75d3ca67ff95e7687205e14a",
       "fcstd": "GGM_EX_Mount.FCStd",
-      "fcstd_sha256": "998c8ebdedb003f9a92c9d25ea41d7cb6d03a4380dc015cdad834d5ea5b490d9",
+      "fcstd_sha256": "a02d62216bb6c8659dbc172065d7e27f47bdf59118a4031904e965ba09fb27c4",
       "solids": 1,
       "volume_mm3": 93297.92386711737,
       "bbox_mm": [
@@ -619,11 +630,11 @@
     },
     {
       "file": "GGM_SH_BearingCap271.step",
-      "sha256": "b9eb8deecc88791256f70fa908eecfd0caa59cd52f5e3009325d3f3b5c7eaa26",
+      "sha256": "48194dab87ab8f219c30dc4910db9dab1c99fd12e2a8ce555a387c0199ed7b21",
       "fcstd": "GGM_SH_BearingCap271.FCStd",
-      "fcstd_sha256": "59c4adee9e7ff132af5fa2ed16c8f32536b87f646df2e02d22fe9f60d0a45267",
+      "fcstd_sha256": "6b5655ff0158371bb6431975bde07283ada52772b55313352f32b803ae58b5e4",
       "solids": 1,
-      "volume_mm3": 2108.197166117963,
+      "volume_mm3": 2108.1971661179623,
       "bbox_mm": [
         46.0,
         2.0,
@@ -633,11 +644,11 @@
     },
     {
       "file": "GGM_SH_BearingCap283.step",
-      "sha256": "2b6b2ddb2e5dae9fd166f8250d56effcb618f71490af7c0f180be14451bc8e9a",
+      "sha256": "ff2cdbb66155de853ea8389ce9b6359bca16da27c136b38c929f1cdea14b762f",
       "fcstd": "GGM_SH_BearingCap283.FCStd",
-      "fcstd_sha256": "baef898518bd6619a3fe41b108b04750dac0327c2e2b2e62c4b39d00999da65b",
+      "fcstd_sha256": "6d489b976a61f176df9ea7108452e8104de24382c7cd6e9c7809fc1f4295727e",
       "solids": 1,
-      "volume_mm3": 2108.197166117963,
+      "volume_mm3": 2108.1971661179623,
       "bbox_mm": [
         46.0,
         2.0,
@@ -647,11 +658,11 @@
     },
     {
       "file": "GGM_SH_BearingCap301.step",
-      "sha256": "c1380b50077ad4c9fa6b53f21a2f0e6d4c9fd9e723d47ce8b8473d59d464d76e",
+      "sha256": "d611af094709dc742d6d92ac7b5ce3d5e900d5cdf072319eaf03af1c0880b718",
       "fcstd": "GGM_SH_BearingCap301.FCStd",
-      "fcstd_sha256": "00f1cd466ef849bbef1cb44a5bad963d57b0ecc3023611bfad60bf51e0422f48",
+      "fcstd_sha256": "7e9a4d16df0efa6ff5f0e35d2c6f56c60c4998c26e02502c3aa48ddf4ef1708f",
       "solids": 1,
-      "volume_mm3": 2108.197166117963,
+      "volume_mm3": 2108.1971661179623,
       "bbox_mm": [
         46.0,
         2.0,
@@ -661,11 +672,11 @@
     },
     {
       "file": "GGM_SH_BearingCap313.step",
-      "sha256": "0f2d8b0f750964edd8194f90d201c2238a63d36ec2cf654c2bda7ef9d24f7a30",
+      "sha256": "70d9202373bdea27d469d9e1c7cdb5c4547d2d9770bd48887cc8f73b5f9fde13",
       "fcstd": "GGM_SH_BearingCap313.FCStd",
-      "fcstd_sha256": "0cdc3d5d84cf81e093044cfc886d523159f1c77d794c42c3770148b872b6123f",
+      "fcstd_sha256": "842b8a2a64886498dceff704ab56144086ba0cb713f653903618104d598d810e",
       "solids": 1,
-      "volume_mm3": 2108.197166117963,
+      "volume_mm3": 2108.1971661179623,
       "bbox_mm": [
         46.0,
         2.0,
@@ -675,9 +686,9 @@
     },
     {
       "file": "GGM_SH_MotorKey.step",
-      "sha256": "18f2b1e5caf8899d1bedd5d802362b783da73b17e1e63674271005eddc65a719",
+      "sha256": "d3b21d4ec23861c7bfc364cebf5776ca837090717affe3b56d32de75f30aee3b",
       "fcstd": "GGM_SH_MotorKey.FCStd",
-      "fcstd_sha256": "03ee5bb2c6543cb314af5322c69ae0388ff1b9d652d1f5eac42cf028b6d32e52",
+      "fcstd_sha256": "f3c820f064693b62b2c5cf41b0c2fba29656261c130bdac7590ba80ccb5e903b",
       "solids": 1,
       "volume_mm3": 400.0,
       "bbox_mm": [
@@ -689,23 +700,23 @@
     },
     {
       "file": "GGM_SH_JackInputKey.step",
-      "sha256": "2377030cf16a604350c24a2065a05e9ef4e852ab0ab9504abd047cb1c174f1a3",
+      "sha256": "ffdfbb6a089d4cdc5c43bec5115fa0a82c84527d75bc981ac81eb631a79b447e",
       "fcstd": "GGM_SH_JackInputKey.FCStd",
-      "fcstd_sha256": "4ab09054fbd12dfa9d7f258cb74c03f70ac6cae97b5af7655163c9b479623146",
+      "fcstd_sha256": "b007cd432edbdb545a5185659c8f883e2cb7f21ced52a1e39db8a59cd5774960",
       "solids": 1,
-      "volume_mm3": 351.99999999999994,
+      "volume_mm3": 351.99999999999955,
       "bbox_mm": [
         4.0,
-        22.0,
+        21.99999999999997,
         4.0
       ],
       "status": "REIMPORT_PASS"
     },
     {
       "file": "GGM_SH_JackSprocketKey.step",
-      "sha256": "fd9af7f4ddf1228c667f3206ab53e34803fc997e7c5e4d4d5f1a1525e96389f4",
+      "sha256": "8bb8213ad2d551cb5ff2159ef201481fd064958c9ec1b0ed19117256f0445bec",
       "fcstd": "GGM_SH_JackSprocketKey.FCStd",
-      "fcstd_sha256": "238e91ed9c34bfbadfb3010ca1ae338a40ac2ad1019362cc1286d115583f318a",
+      "fcstd_sha256": "d842eba459f8208fe31a18e954a68bd9699c4709c0bd7b919d94aee008962ef0",
       "solids": 1,
       "volume_mm3": 240.0,
       "bbox_mm": [
@@ -745,9 +756,9 @@
     },
     {
       "file": "GGM_SH_CutterKey.step",
-      "sha256": "9f595f3e30e8df9a283b13389f63d95f8f44f841cead7d29a220e88f80e6a1f2",
+      "sha256": "4998520f628d36fd8dcac65dac48f80da2d0ea3895a3a79a8b6ae4c8710f56b7",
       "fcstd": "GGM_SH_CutterKey.FCStd",
-      "fcstd_sha256": "1c335d4f129325e0847c05839f85037ad8b0f145a88b5734902e7ee7a69be0b5",
+      "fcstd_sha256": "d5aa2b4be6dc7b753fa1446d6ad65e518de5ea077a1fbb5f59272a95b91c8417",
       "solids": 1,
       "volume_mm3": 719.9999999999629,
       "bbox_mm": [
@@ -759,13 +770,13 @@
     },
     {
       "file": "GGM_SH_CouplingGuard.step",
-      "sha256": "30659433f7586a0cd83316f7c0b12ee2452c4d5d3ea9093bd818f7464ff196b9",
+      "sha256": "11b00a5693207fee9569b7ea9e56c2e0f45216d88c40cbd3e9bba82331a7d5b7",
       "fcstd": "GGM_SH_CouplingGuard.FCStd",
-      "fcstd_sha256": "1d9640a00d5331bdc8f70d1ba6ecdf1796c47b7ba464e4ee833efbed97bf6680",
+      "fcstd_sha256": "1b3179ee83685a8457b79972ab76830b71d20d90b5ff45a44d3801bd0725a7fc",
       "solids": 2,
-      "volume_mm3": 22771.189259458253,
+      "volume_mm3": 22771.18925945818,
       "bbox_mm": [
-        75.99342076785665,
+        75.99342076785365,
         57.0,
         76.0
       ],
@@ -775,7 +786,7 @@
       "file": "GGM_EX_CouplingGuard.step",
       "sha256": "6bedbf170debd1125df3265bfc5f80b8ea5441e32798ad8e9e0d73a3c2f29508",
       "fcstd": "GGM_EX_CouplingGuard.FCStd",
-      "fcstd_sha256": "da41a95aca5bebab2d1afa9fea96b7b1c522e9954a907968f93e3332518ba5b4",
+      "fcstd_sha256": "4cf9b87527132e5d642c62635dd236a7b660b7475a33190341f3d3bc924e23b3",
       "solids": 2,
       "volume_mm3": 13833.691127874714,
       "bbox_mm": [
@@ -787,11 +798,11 @@
     },
     {
       "file": "GGM_ChainGuard.step",
-      "sha256": "73fe1ef1dfc8ef7403db61169916499977f915039cfe591f175bcdfa21fb7eab",
+      "sha256": "587e295ca64cd7eabde68529bcb93755364d330ae6f7e41a01c9f61c3f06959c",
       "fcstd": "GGM_ChainGuard.FCStd",
-      "fcstd_sha256": "c2077b7103c6993c5e84b7a820356c25787d27de5c0a169644938436dea60dc2",
+      "fcstd_sha256": "3b5e919adc506395fe0b0dfc8c953a3cf2be1faea216a0cd01526ee995669589",
       "solids": 1,
-      "volume_mm3": 39401.40582045682,
+      "volume_mm3": 39401.40582045679,
       "bbox_mm": [
         118.0,
         33.0,
@@ -801,23 +812,23 @@
     },
     {
       "file": "GGM_JackInnerSpacer_front.step",
-      "sha256": "b5049427361af6077a2500ed2768a34a67f562524dbf22cc238eb967baf08e5e",
+      "sha256": "082d927579f43c26d6a3c6dbde65a2f61cc1f350ce8663fc6d57981e598166ce",
       "fcstd": "GGM_JackInnerSpacer_front.FCStd",
-      "fcstd_sha256": "453d1339edd13e3e3e4675501b57cfbdea22d97d761629d852816a3c9f322ab1",
+      "fcstd_sha256": "14d61e587cb3e31f38a6ac774e2af4682217f705647f4c6e1a893055e7425b7a",
       "solids": 1,
-      "volume_mm3": 291.17380270899037,
+      "volume_mm3": 291.17380270899355,
       "bbox_mm": [
         17.0,
-        2.5999999999999943,
+        2.6000000000000227,
         17.0
       ],
       "status": "REIMPORT_PASS"
     },
     {
       "file": "GGM_JackInnerSpacer_pinionfront.step",
-      "sha256": "5b36dbd2a6acd35431c63957c8c72586e43cf6e60d390d3649447946b19c3e9e",
+      "sha256": "3f07cd9116e3bf5ffe751717dbc9d760f65b485e7a96036a1bccea63057aa372",
       "fcstd": "GGM_JackInnerSpacer_pinionfront.FCStd",
-      "fcstd_sha256": "296fecba5e5073a9c74e483d12ca75f8e8984d7073722974119ba3ffb6f5264b",
+      "fcstd_sha256": "66943f9ea7066b00ab7bf7cc86cea1b3aa7aaef73ed07a623059f1933209c4bd",
       "solids": 1,
       "volume_mm3": 223.97984823768536,
       "bbox_mm": [
@@ -829,9 +840,9 @@
     },
     {
       "file": "GGM_JackInnerSpacer_pinionrear.step",
-      "sha256": "c6d1485edcd96d31847a516b0441700a1b9b8682740336e8fda5f1ea821428bb",
+      "sha256": "0522edf131d79315651dc6b8f9ae8cfe54babdad7dc997ac37045b0458986f15",
       "fcstd": "GGM_JackInnerSpacer_pinionrear.FCStd",
-      "fcstd_sha256": "21277306f7d9e2991a62e76fb90a944be3336e023fd833f25e37d6e47a50561a",
+      "fcstd_sha256": "27e25d791f6118e51ae2b8da22005a6c6309488da023d8fe176437f5dc886afa",
       "solids": 1,
       "volume_mm3": 335.9697723565282,
       "bbox_mm": [
@@ -843,9 +854,9 @@
     },
     {
       "file": "GGM_JackInnerSpacer_rear.step",
-      "sha256": "74b6774cfe0980a4b75bf8415d7d0b50b308206ea25845446eefb8c468168aea",
+      "sha256": "b61f3f4dff09aaf47156a6e87408156b29e2366922ac1c13756302438bcbc26d",
       "fcstd": "GGM_JackInnerSpacer_rear.FCStd",
-      "fcstd_sha256": "b020a74859d059f727a01fb7ec953fa946da7daf2b95f9db0586f635adc45ce2",
+      "fcstd_sha256": "2d3cd21141bc97bd4b5b42aa810400fb6370a13f42fe26f267559c0c3a9458d6",
       "solids": 1,
       "volume_mm3": 111.98992411884268,
       "bbox_mm": [
@@ -859,7 +870,7 @@
       "file": "GGM_EX_RadialHolder.step",
       "sha256": "86efbf0823de7a9eabe787f0f99bb9e901ff6f608d17f9e79ef3a12d5d150a25",
       "fcstd": "GGM_EX_RadialHolder.FCStd",
-      "fcstd_sha256": "101b588b27399f9188578d204bf0da45c0b4f54a3bdbf9afa2a8bcaa394e71cf",
+      "fcstd_sha256": "6b61bd04a3d43974d3a55e98716c47247c36efc890b9d0eb76cfc22641b939b6",
       "solids": 1,
       "volume_mm3": 14248.08881071282,
       "bbox_mm": [
@@ -873,7 +884,7 @@
       "file": "GGM_EX_RadialCap.step",
       "sha256": "556f885ece86c816e1b2570c26ee93da4fabf7d7a3ab1084579a9aae0ae0eaeb",
       "fcstd": "GGM_EX_RadialCap.FCStd",
-      "fcstd_sha256": "d7bf43d3cc629efca33b9f9ce20ad774bd2a365f915c1afe6e6fd7d6f1b73fdd",
+      "fcstd_sha256": "e0e8214f9e5b30ae7dfbabd55596dba98491107b8b72127300ea242e54af4c3c",
       "solids": 1,
       "volume_mm3": 2108.1971661179678,
       "bbox_mm": [
@@ -885,9 +896,9 @@
     },
     {
       "file": "GGM_SH_Angle83.step",
-      "sha256": "c89199362a4ed3f852cb9fcca8ca92c47d54ac660f6b0e10cd125f56b59f5ade",
+      "sha256": "2dcb6ca9979c9568a17e90fecad83f0d06ffbbb8d93ff1746a7419e841ab000a",
       "fcstd": "GGM_SH_Angle83.FCStd",
-      "fcstd_sha256": "a64cfc0beaed8d38f18009a1ef063791c6a6caf3d14b671a4509f60e2d832706",
+      "fcstd_sha256": "7b7af0d9805ac346b878a6d0a13a95d760daed633c1d0537f78465057453ba27",
       "solids": 1,
       "volume_mm3": 17952.0,
       "bbox_mm": [
@@ -899,9 +910,9 @@
     },
     {
       "file": "GGM_SH_Angle201.step",
-      "sha256": "4c66a72b3d409ba7fda00a3d6fa6ff48be36298620de02c5fa878d3a4d52ba02",
+      "sha256": "877c16a8e73a7967cf9db06841c2ba7ceaaed3b4560d0898565dd3e2d2b51bd5",
       "fcstd": "GGM_SH_Angle201.FCStd",
-      "fcstd_sha256": "2a503396bd1ca21ffb61ea1615ae9956d1cbd4e537e1de7b4466abae04dbb179",
+      "fcstd_sha256": "a311dac0ebf5142f4aef0ef693a51faaf3181eca53f4cd8aa1235f7252cbcd6e",
       "solids": 1,
       "volume_mm3": 17952.0,
       "bbox_mm": [
@@ -915,7 +926,7 @@
       "file": "Screw-GGM.step",
       "sha256": "20bfcff86318c178bfb6766af845f7e222a27145a14d053319dbc976509812f9",
       "fcstd": "Screw-GGM.FCStd",
-      "fcstd_sha256": "1442201291dc8fa7c1a26c9c8655992ace9533f3f623ae03b9408d94713f06d3",
+      "fcstd_sha256": "ddea7a04a5d46fb2fe531c8025bf6cb286e0320b15f5901f3e5eb001c6a28df9",
       "solids": 1,
       "volume_mm3": 41631.46997027086,
       "bbox_mm": [
@@ -929,7 +940,7 @@
       "file": "ThrustPlate-GGM.step",
       "sha256": "7ae327c07cc00a53c1d5895b5d66978446e95d397c82a872e637819e86545dd5",
       "fcstd": "ThrustPlate-GGM.FCStd",
-      "fcstd_sha256": "6ce1d2702b9673a913e71c1a21f688ccdf2c72dc7b66a9c15a1cc8e8b2ad5f54",
+      "fcstd_sha256": "840c416f2436c4f807af16f6cfbbcb49852903a221e921a6e1d499cbad93467b",
       "solids": 1,
       "volume_mm3": 111190.80505329925,
       "bbox_mm": [
@@ -942,6 +953,7 @@
   ],
   "source_sha256": {
     "cad/freecad/drive_v08/cache_source.py": "df713a8725b195cf48258e1c8fec24f80d0645041113f65fec30b0d50328789c",
+    "cad/freecad/drive_v08/compact_layout.py": "9965c1d26c8134232a06a83cdbddab9fa3bb77f0ee47ff6fd3aee6930c636c9e",
     "cad/freecad/drive_v08/render_geometry.py": "ae8ee1e93f8d80bbe65c9b9dc0c3b2c3818eb3f65bad0326709ae34e06cce481",
     "cad/freecad/drive_v08/layout.py": "12d854fcceba995a03effd2cfd2600c02be96e16f62770e7a90990849418e056",
     "cad/freecad/drive_v08/probe.py": "e1079763fa31e040e92afea02e8fdd94be55e080df190ab0870ec428e4b57819",
@@ -950,12 +962,12 @@
     "cad/freecad/drive_v08/run_generate.py": "42fc38e87ba7619d679ff557f36a6f96cfd7e5ee72b635a4c9b39b283094920c",
     "cad/freecad/drive_v08/guard_details.py": "875ea078ba7aa196491a0c3bd5e79da98216275a3e28164424d67ffa03ed297b",
     "cad/freecad/drive_v08/frame_revision.py": "59d7381e26eab435831d8d08d2d0f1a7c0c159337ed46e46e72d1fe068cb0fe9",
-    "cad/freecad/drive_v08/assembly.py": "5d80060fc98896f5b42f10d7095f59f7fd4828538e6b4c9e172a210640dc946e",
+    "cad/freecad/drive_v08/assembly.py": "a7e8f7e3c3bdf3154e405957afbf8d877b9208efbf1c0efcf39ef821d4522038",
     "cad/freecad/drive_v08/generate.py": "aa15e6ca82ae9f2120a701994531f4c669531827bf48d475a1eb3ee72c787559",
     "control/ggm_drive_contract.json": "0c847fea963b5a08c86273f80542706d26c784ad6d0201307e500879662fd210",
     "cad/parameters/ggm_frame_revision.json": "d51cbb6ee6c6075ef67f42c0d388e39c8e79f91777f7c987c726e909246ca0a5",
     "validation/integrated_assembly_clearance.py": "91d53b7919647131f709c4c8a0cbbc1ee96358c6b7fd6c43ca14debaf34feb93",
-    "validation/integrated_motion_clearance.py": "85e364181408a03ce538d0a4f3217d343c237fff2916722b7c3b0e3c8d17ab38",
+    "validation/integrated_motion_clearance.py": "357c34da63f1bb5f3f13972ac7c9ececeed2e4921285db6ddf430aefde00efe3",
     "validation/shaft_retention_clearance.py": "264546484876b001d13a68be0ba0bbe803c3b19dce81c3fffacc1ebe784029ca",
     "cad/freecad/compact/check_shaft_section_v08.py": "888d22e20fb0e2fa9e571020ecfaa0d15df32b9809cfe2097e88e5daafc44e15",
     "cad/freecad/compact/dancer_revision.py": "59a9557b583174128d85e5bc9e5f34fc9dc0372fc84254ed9d198db1e130bfed",

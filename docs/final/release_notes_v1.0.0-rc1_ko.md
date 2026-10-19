@@ -19,7 +19,7 @@
 
 COMPLETE ZIP을 풀고 `python3 verify_package.py .`를 먼저 실행한 뒤 `START_HERE.html`을 연다. `repository/`는 배포 commit의 원래 파일 경로를 보존한다. `packages/`에는 FABRICATION 및 PHYSICAL-VALIDATION-LAUNCH ZIP이 포함되고 `verification/`에 같은 commit의 실제 CI 결과와 해시 검증 근거가 있다.
 
-최신 전체 CAD는 `GGM-FULL-ASM.step` 및 FCStd다. 외형은 470 x 729 x 930 mm로 hard envelope 안이지만 Y720 mm 선호 목표보다 9 mm 크다. 기본 프레임 470 x 700 mm 및 통합 전 `PPR-FULL-ASM` 참조를 최신 전체 배치와 혼동하지 않는다. 구동계는 GGM R2 제작 도면이 우선하며 EX-SCR-01/EX-THR-01 구동단 변경은 추가 수량이 아니다. 부품별 치수·공차·재료·공정·검사 요구사항을 해당 STEP/DXF와 함께 사용한다.
+최신 전체 CAD는 `GGM-FULL-ASM.step` 및 FCStd다. 외형은 470 x 700 x 930 mm로 hard envelope과 Y720 mm 선호 목표 안이다(nominal CAD, 실측 NOT_RUN). 통합 전 `PPR-FULL-ASM` 참조를 최신 전체 배치와 혼동하지 않는다. 구동계는 GGM R2 제작 도면이 우선하며 EX-SCR-01/EX-THR-01 구동단 변경은 추가 수량이 아니다. 부품별 치수·공차·재료·공정·검사 요구사항을 해당 STEP/DXF와 함께 사용한다.
 
 ## 검증 범위
 

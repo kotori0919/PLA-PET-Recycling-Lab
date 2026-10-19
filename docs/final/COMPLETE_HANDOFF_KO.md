@@ -10,7 +10,7 @@
 
 ## 2. 설계·문서의 우선순위
 
-**전체 기계 배치는 `exports/final/drive_ggm_v08/GGM-FULL-ASM.step` 및 같은 이름의 FCStd를 사용한다.** 이 모델의 외형은 470 x 729 x 930 mm다. 470 x 700 mm는 기본 프레임 치수다. `exports/final/step/assembly/PPR-FULL-ASM.step`은 GGM 통합 전 기본 형상의 소스·검증 기준으로 남겨둔 모델이며 최신 전체 배치가 아니다.
+**전체 기계 배치는 `exports/final/drive_ggm_v08/GGM-FULL-ASM.step` 및 같은 이름의 FCStd를 사용한다.** 이 모델의 외형은 470 x 700 x 930 mm(nominal CAD)다. `exports/final/step/assembly/PPR-FULL-ASM.step`은 GGM 통합 전 기본 형상의 소스·검증 기준으로 남겨둔 모델이며 최신 전체 배치가 아니다.
 
 구동계 제작은 `exports/final/manufacturing/drive_ggm/`의 R2 도면과 manifest를 우선한다. EX-SCR-01/EX-THR-01의 GGM 도면은 별도 수량이 아니라 해당 부품의 구동단·지지부 변경이다. DRV-01/02/A60/F01 계열과 과거 GMP60 배치를 다시 채택하지 않는다. 분쇄기 12T/30T sprocket은 구매 기준 형상이지 치형 가공용 원본이 아니다.
 

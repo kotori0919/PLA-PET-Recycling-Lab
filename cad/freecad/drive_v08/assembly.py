@@ -10,7 +10,7 @@ def box(x,y,z,dx,dy,dz): return Part.makeBox(dx,dy,dz,App.Vector(x,y,z))
 def ring(r,ri,h,point,direction):
     return Part.makeCylinder(r,h,App.Vector(*point),App.Vector(*direction)).cut(Part.makeCylinder(ri,h,App.Vector(*point),App.Vector(*direction)))
 
-def integrated_objects(base_items=None, *, frame_revision=True):
+def integrated_objects(base_items=None, *, frame_revision=True, compact_layout=True):
     items,changed=layout(base_items); removed={'ExtruderDrive','CutterSprocket30T'}
     items=[r for r in items if r['name'] not in removed]
     def add(n,s,material='S275 steel',kind='manufactured_or_stock',group='drive'):
@@ -116,4 +116,8 @@ def integrated_objects(base_items=None, *, frame_revision=True):
         from cad.freecad.drive_v08.frame_revision import apply_revision
         items, frame_changes = apply_revision(items)
         changed.extend(frame_changes)
+    if compact_layout:
+        from cad.freecad.drive_v08.compact_layout import apply_compact_layout
+        items, compact_changes = apply_compact_layout(items)
+        changed.extend(compact_changes)
     return items,changed

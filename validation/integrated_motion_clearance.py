@@ -58,12 +58,24 @@ def audit(items):
             check_clear(shape,by,dancer,'dancer '+str(angle))
 
     lid = by['PPR-C01_SlidingLid']; b=lid.BoundBox
-    mouth = Part.makeCylinder(98,1,App.Vector(125,395,900))
+    compact_path = ROOT/'cad/parameters/compact_layout_v08.json'
+    compact = json.loads(compact_path.read_text()) if compact_path.is_file() else {}
+    canonical = compact.get('state') == 'CANONICAL_COMPACT_LAYOUT'
+    lid_axis = compact.get('lid_service_axis', config['input_lid']['service_axis']) if canonical else config['input_lid']['service_axis']
+    lid_travel = float(compact.get('lid_service_travel_mm', config['input_lid']['service_travel_mm'])) if canonical else float(config['input_lid']['service_travel_mm'])
+    mouth_radius = float(compact.get('hopper_mouth_radius_mm', 98.0)) if canonical else 98.0
+    hopper_box = by['MetalHopper'].BoundBox
+    mouth = Part.makeCylinder(mouth_radius,1,App.Vector(hopper_box.Center.x,hopper_box.Center.y,b.ZMin))
     if mouth.cut(lid).Volume > 0.01:
         raise ValueError('closed lid does not cover the hopper opening')
-    lid_travel=config['input_lid']['service_travel_mm']
-    sweep=Part.makeBox(b.XLength+lid_travel,b.YLength,b.ZLength,App.Vector(b.XMin-lid_travel,b.YMin,b.ZMin))
-    check_clear(sweep,by,{'PPR-C01_SlidingLid'},'left lid service envelope')
+    if len(lid_axis) != 3 or sum(v*v for v in lid_axis) < 0.999999:
+        raise ValueError('invalid lid service axis')
+    moved = lid.copy(); moved.translate(App.Vector(*(float(v)*lid_travel for v in lid_axis)))
+    mb = moved.BoundBox
+    x0,y0,z0 = min(b.XMin,mb.XMin),min(b.YMin,mb.YMin),min(b.ZMin,mb.ZMin)
+    x1,y1,z1 = max(b.XMax,mb.XMax),max(b.YMax,mb.YMax),max(b.ZMax,mb.ZMax)
+    sweep=Part.makeBox(x1-x0,y1-y0,z1-z0,App.Vector(x0,y0,z0))
+    check_clear(sweep,by,{'PPR-C01_SlidingLid'},'lid service envelope')
     from validation.shaft_retention_clearance import audit_traverse_retention
     retention = audit_traverse_retention(items, config['spooler']['traverse_layout'])
     from validation.shaft_retention_clearance import audit_dancer_retention
@@ -74,8 +86,8 @@ def audit(items):
         'traverse_axis':'Y_PARALLEL_TO_SPOOL', 'traverse_stroke_mm':travel,
         'continuous_traverse_bounding_envelope_clear':True,'traverse_sample_count':int(travel)+1,
         'dancer_sample_count':51,'support_contacts':contacts,
-        'lid_opening_covered':True,'lid_service_direction':'NEGATIVE_X',
-        'lid_service_travel_mm':lid_travel,'lid_service_left_extent_mm':b.XMin-lid_travel,
+        'lid_opening_covered':True,'lid_service_axis':lid_axis,
+        'lid_service_travel_mm':lid_travel,'lid_service_endpoint_bbox_mm':[mb.XMin,mb.YMin,mb.ZMin,mb.XMax,mb.YMax,mb.ZMax],
         'physical_validation_state':'NOT_RUN','fabrication_authorized':False,
         'scope':'Nominal solids and service space. Dancer sampled; not a continuous angular proof.',
         'not_qualified':['received collar tightening torque and axial-slip proof','limit actuation and stopping distance','bracket/joint capacity and carriage wear','filament routing, belt drive and winding','lid rails, interlock and tool access']}

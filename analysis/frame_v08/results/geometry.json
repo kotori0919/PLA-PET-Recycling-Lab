@@ -3,9 +3,10 @@
   "source_sha256": {
     "analysis/frame_v08/audit_geometry.py": "ff491315e02508d194ff3f45873f0db505065240b12ca1cf6356656c4be45a65",
     "cad/parameters/ggm_frame_revision.json": "d51cbb6ee6c6075ef67f42c0d388e39c8e79f91777f7c987c726e909246ca0a5",
-    "cad/freecad/drive_v08/assembly.py": "5d80060fc98896f5b42f10d7095f59f7fd4828538e6b4c9e172a210640dc946e",
+    "cad/freecad/drive_v08/assembly.py": "a7e8f7e3c3bdf3154e405957afbf8d877b9208efbf1c0efcf39ef821d4522038",
     "cad/freecad/drive_v08/frame_revision.py": "59d7381e26eab435831d8d08d2d0f1a7c0c159337ed46e46e72d1fe068cb0fe9",
     "cad/freecad/drive_v08/cache_source.py": "df713a8725b195cf48258e1c8fec24f80d0645041113f65fec30b0d50328789c",
+    "cad/freecad/drive_v08/compact_layout.py": "9965c1d26c8134232a06a83cdbddab9fa3bb77f0ee47ff6fd3aee6930c636c9e",
     "cad/freecad/drive_v08/detail.py": "fb8d42ccd8dfc6ba7c4c8782e789718e6a3caade6b30d8b9c550755e1ea2783a",
     "cad/freecad/drive_v08/generate.py": "aa15e6ca82ae9f2120a701994531f4c669531827bf48d475a1eb3ee72c787559",
     "cad/freecad/drive_v08/guard_details.py": "875ea078ba7aa196491a0c3bd5e79da98216275a3e28164424d67ffa03ed297b",
@@ -1290,11 +1291,11 @@
       ],
       "length_mm": 180.0,
       "box": [
-        238.0,
-        223.0,
+        220.0,
+        252.0,
         536.0,
-        258.0,
-        243.0,
+        240.0,
+        272.0,
         716.0
       ],
       "contacts": [
@@ -1320,11 +1321,11 @@
       ],
       "length_mm": 180.0,
       "box": [
-        238.0,
-        283.0,
+        220.0,
+        312.0,
         536.0,
-        258.0,
-        303.0,
+        240.0,
+        332.0,
         716.0
       ],
       "contacts": [
@@ -1350,11 +1351,11 @@
       ],
       "length_mm": 180.0,
       "box": [
-        45.0,
-        223.0,
+        27.0,
+        252.0,
         536.0,
-        65.0,
-        243.0,
+        47.0,
+        272.0,
         716.0
       ],
       "contacts": [
@@ -1380,11 +1381,11 @@
       ],
       "length_mm": 180.0,
       "box": [
-        45.0,
-        283.0,
+        27.0,
+        312.0,
         536.0,
-        65.0,
-        303.0,
+        47.0,
+        332.0,
         716.0
       ],
       "contacts": [
@@ -2987,11 +2988,11 @@
       ],
       "length_mm": 180.0,
       "box": [
-        238.0,
-        223.0,
+        220.0,
+        252.0,
         536.0,
-        258.0,
-        243.0,
+        240.0,
+        272.0,
         716.0
       ],
       "contacts": [
@@ -3017,11 +3018,11 @@
       ],
       "length_mm": 180.0,
       "box": [
-        238.0,
-        283.0,
+        220.0,
+        312.0,
         536.0,
-        258.0,
-        303.0,
+        240.0,
+        332.0,
         716.0
       ],
       "contacts": [
@@ -3047,11 +3048,11 @@
       ],
       "length_mm": 180.0,
       "box": [
-        45.0,
-        223.0,
+        27.0,
+        252.0,
         536.0,
-        65.0,
-        243.0,
+        47.0,
+        272.0,
         716.0
       ],
       "contacts": [
@@ -3077,11 +3078,11 @@
       ],
       "length_mm": 180.0,
       "box": [
-        45.0,
-        283.0,
+        27.0,
+        312.0,
         536.0,
-        65.0,
-        303.0,
+        47.0,
+        332.0,
         716.0
       ],
       "contacts": [
