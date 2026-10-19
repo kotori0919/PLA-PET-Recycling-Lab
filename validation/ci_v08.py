@@ -24,6 +24,7 @@ CAD_TESTS = {
     "test_radial_capture_geometry.py", "test_radial_support_candidate.py",
     "test_compact_layout_review.py", "test_compact_support_datum.py",
     "test_compact_fixed_foot.py", "test_canonical_compact_layout.py",
+    "test_fixed_foot_compact_layout.py",
 }
 HISTORICAL_TESTS = {
     "test_release.py": "v0.6.1 release-state snapshot; superseded by v0.8 technical gates",

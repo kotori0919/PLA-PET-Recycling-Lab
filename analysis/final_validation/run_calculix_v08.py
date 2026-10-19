@@ -20,7 +20,8 @@ HERE = Path(__file__).resolve().parent
 INPUT = HERE / "input"
 RAW = HERE / "results" / "v0.8" / "raw"
 SUMMARY = HERE / "results" / "v0.8" / "summary.json"
-from beam_torque_recovery import add_measured_root_torque
+sys.path.insert(0, str(HERE))
+from beam_torque_recovery import add_measured_root_torque  # noqa: E402
 
 ENVELOPE = ROOT / "analysis/load_cases/openmodelica_dynamic_envelope.json"
 LOAD = float(json.loads(ENVELOPE.read_text(encoding="utf-8"))["loads"]["peak_bearing_load_n"])
