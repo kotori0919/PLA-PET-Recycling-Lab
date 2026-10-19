@@ -5,7 +5,7 @@ import unittest
 from pathlib import Path
 import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT))
+sys.path[:0] = [str(ROOT), str(ROOT / 'analysis/final_validation')]
 from analysis.compact_layout_v08.quadratic_mesh import exterior_faces
 from analysis.compact_layout_v08.shelf_fea import deck
 
