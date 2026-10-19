@@ -263,7 +263,7 @@
       "acceptance": [
         "start screw around 8-10 rpm and increase only from measured torque/diameter behavior",
         "no leak, uncontrolled pressure symptom, guard contact, or repeated torque trip",
-        "20 consecutive stable diameter samples: mean error <=0.05 mm, ovality <=0.05 mm, U95 <=0.03 mm target",
+        "20 consecutive stable diameter samples: window mean error <=0.05 mm, every sample within 1.75 +/-0.05 mm, sample ovality <=0.05 mm, sample standard deviation <=0.015 mm, reference-gauge U95 <=0.01 mm (proposed consistency limits derived from the 0.03 mm U95 budget)",
         "actual mass/time, temperature, screw RPM, current/torque, puller RPM recorded"
       ],
       "unlocks": [
@@ -284,7 +284,7 @@
         "start screw around 8-10 rpm; higher speed is approached only from measured torque/current/diameter behavior",
         "all stable samples keep gearbox torque + U95 < 8.0 N.m and GGM motor current + U95 <=6.0 A",
         "no leakage, uncontrolled pressure symptom, guard contact, repeated torque-trip control, or hot-zone binding",
-        "20 consecutive stable diameter samples: mean error <=0.05 mm, ovality <=0.05 mm, U95 <=0.03 mm target",
+        "20 consecutive stable diameter samples: window mean error <=0.05 mm, every sample within 1.75 +/-0.05 mm, sample ovality <=0.05 mm, sample standard deviation <=0.015 mm, reference-gauge U95 <=0.01 mm (proposed consistency limits derived from the 0.03 mm U95 budget)",
         "actual maximum stable throughput is reported instead of forcing 200 g/h"
       ],
       "unlocks": [
@@ -306,7 +306,7 @@
         "traverse usable width - U95 >=68 mm and no end collision or jam",
         "dancer controlled-stop angle + U95 <0.36 rad and peak + U95 <0.4363 rad hard stop",
         "1 kg nominal winding path completes without spill, guard contact, leak or pressure symptom",
-        "diameter mean error/ovality remain <=0.05 mm with diameter U95 <=0.03 mm",
+        "diameter mean error/ovality remain <=0.05 mm; diameter sample standard deviation <=0.015 mm; reference-gauge U95 <=0.01 mm",
         "gearbox torque + U95 <8.0 N.m and GGM motor current + U95 <=6.0 A"
       ],
       "unlocks": [

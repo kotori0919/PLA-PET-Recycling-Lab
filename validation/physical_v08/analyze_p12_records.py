@@ -119,7 +119,8 @@ def design_limits() -> dict[str, tuple[str, float, str]]:
         "spool_test_load_mass": ("min", 1.0, "kg"),
         "diameter_mean_error": ("max", 0.05, "mm"),
         "diameter_max_ovality": ("max", 0.05, "mm"),
-        "diameter_max_u95": ("max", 0.03, "mm"),
+        "diameter_max_u95": ("max", 0.01, "mm"),
+        "diameter_sigma": ("max", 0.015, "mm"),
         "gearbox_torque_peak": ("strict_max", 8.0, "N.m"),
         "motor_current_peak": ("max", 6.0, "A"),
     }

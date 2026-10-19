@@ -138,6 +138,46 @@ class MaterialRunTest(unittest.TestCase):
             self.assertEqual(result["status"], "NOT_RUN_OR_REJECTED")
             self.assertIn("P9 stage release", result["reason"])
 
+    def _mutate(self, edit):
+        with tempfile.TemporaryDirectory(dir=HERE) as td:
+            record, releases = make_p10(Path(td))
+            with record.open(encoding="utf-8") as handle:
+                rows = list(csv.DictReader(handle)); fields = list(rows[0])
+            edit(rows); write_csv(record, fields, rows)
+            return RUN.evaluate(record, "P10", releases, checkers=p10_stubs())
+
+    def test_p10_rejects_diameter_spread_with_acceptable_mean(self):
+        # Alternating 1.72/1.78 keeps the window mean at 1.75 and every sample inside 1.75 +/- 0.05,
+        # but sigma (~0.031 mm) exceeds the 0.015 mm consistency limit.
+        def edit(rows):
+            for i, row in enumerate(rows):
+                row["diameter_x_mm"] = row["diameter_y_mm"] = "1.72" if i % 2 else "1.78"
+        result = self._mutate(edit)
+        self.assertEqual(result["status"], "NOT_RUN_OR_REJECTED")
+        self.assertIn("diameter consistency", result["reason"])
+
+    def test_p10_rejects_individual_outlier_with_acceptable_mean(self):
+        def edit(rows):
+            rows[3]["diameter_x_mm"] = rows[3]["diameter_y_mm"] = "1.81"
+            rows[4]["diameter_x_mm"] = rows[4]["diameter_y_mm"] = "1.69"
+        result = self._mutate(edit)
+        self.assertEqual(result["status"], "NOT_RUN_OR_REJECTED")
+
+    def test_p10_rejects_coarse_reference_gauge_uncertainty(self):
+        def edit(rows):
+            for row in rows: row["diameter_u95_mm"] = "0.02"
+        result = self._mutate(edit)
+        self.assertEqual(result["status"], "NOT_RUN_OR_REJECTED")
+        self.assertIn("diameter consistency", result["reason"])
+
+    def test_p10_reports_spread_metrics_on_pass(self):
+        with tempfile.TemporaryDirectory(dir=HERE) as td:
+            record, releases = make_p10(Path(td))
+            result = RUN.evaluate(record, "P10", releases, checkers=p10_stubs())
+            self.assertEqual(result["status"], "MATERIAL_RUN_RECORD_CHECK_PASS")
+            self.assertLessEqual(result["diameter_sigma_mm"], 0.015)
+            self.assertLessEqual(result["max_individual_error_mm"], 0.05)
+
 
 if __name__ == "__main__":
     unittest.main()

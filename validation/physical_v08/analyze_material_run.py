@@ -245,11 +245,11 @@ def evaluate(record: Path, stage: str, releases: dict[str, Path | None], checker
             if not all(sample["stable"] for sample in window):
                 continue
             mean_diameter = sum(sample["mean_diameter_mm"] for sample in window) / 20.0
-            if abs(mean_diameter - 1.75) <= 0.05:
+            if abs(mean_diameter - 1.75) <= 0.05 and consistency_ok(window, mean_diameter):
                 found = (start, window, mean_diameter)
                 break
         if found is None:
-            raise ValueError("no 20-consecutive-sample stable window")
+            raise ValueError("no 20-consecutive-sample stable window meeting diameter consistency")
 
         start, window, mean_diameter = found
         delta_t = window[-1]["elapsed_s"] - window[0]["elapsed_s"]
@@ -270,6 +270,8 @@ def evaluate(record: Path, stage: str, releases: dict[str, Path | None], checker
             "mean_error_mm": abs(mean_diameter - 1.75),
             "max_ovality_mm": max(sample["ovality_mm"] for sample in window),
             "max_diameter_u95_mm": max(sample["diameter_u95_mm"] for sample in window),
+            "diameter_sigma_mm": (sum((s["mean_diameter_mm"] - mean_diameter) ** 2 for s in window) / 19.0) ** 0.5,
+            "max_individual_error_mm": max(abs(s["mean_diameter_mm"] - DIAMETER_NOMINAL_MM) for s in window),
             "max_torque_plus_u95_nm": max(sample["torque_plus_u95_nm"] for sample in window),
             "max_current_plus_u95_a": max(sample["current_plus_u95_a"] for sample in window),
             "stable_throughput_g_h": throughput,
@@ -283,6 +285,23 @@ def evaluate(record: Path, stage: str, releases: dict[str, Path | None], checker
     except (ValueError, KeyError, TypeError, FileNotFoundError, json.JSONDecodeError) as exc:
         out["reason"] = str(exc)
     return out
+
+
+# Diameter consistency (PROPOSED limits, derived from the existing 0.03 mm U95 budget):
+# U95 ~ 2 sigma, so process sigma <= 0.015 mm; reference-gauge U95 <= 0.01 mm keeps the
+# measurement standard uncertainty at or below 1/3 of that sigma budget.
+DIAMETER_NOMINAL_MM = 1.75
+INDIVIDUAL_ERROR_MM = 0.05
+SPREAD_SIGMA_MM = 0.015
+REFERENCE_U95_MM = 0.01
+
+
+def consistency_ok(window, mean_diameter):
+    values = [sample["mean_diameter_mm"] for sample in window]
+    sigma = (sum((v - mean_diameter) ** 2 for v in values) / (len(values) - 1)) ** 0.5
+    return (all(abs(v - DIAMETER_NOMINAL_MM) <= INDIVIDUAL_ERROR_MM for v in values)
+            and sigma <= SPREAD_SIGMA_MM
+            and all(sample["diameter_u95_mm"] <= REFERENCE_U95_MM for sample in window))
 
 
 def main() -> None:

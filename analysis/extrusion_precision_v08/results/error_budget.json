@@ -1,0 +1,92 @@
+{
+  "status": "ERROR_BUDGET_SCREEN_NOT_A_PROCESS_VALIDATION",
+  "basis": "mass conservation; first-order; densities INFERRED; no die-swell or rheology model",
+  "diameter_mm": 1.75,
+  "relative_diameter_individual_band": 0.028571428571428574,
+  "relative_diameter_sigma_limit": 0.008571428571428572,
+  "allowed_combined_flow_speed_variation_individual": 0.05714285714285715,
+  "allowed_combined_flow_speed_variation_sigma": 0.017142857142857144,
+  "per_unit_diameter_sensitivity_mm_per_percent": 0.00875,
+  "materials": {
+    "PLA": {
+      "throughput_g_h": 99.4,
+      "volume_flow_mm3_s": 22.26702508960574,
+      "filament_speed_mm_s": 9.257553269451774,
+      "puller_roller_rpm": 4.4201560913093605,
+      "transport_delay_to_gauge_s": 26.788935778350254,
+      "transport_delay_to_puller_s": 34.890428453254565
+    },
+    "PET": {
+      "throughput_g_h": 97.5,
+      "volume_flow_mm3_s": 20.36340852130326,
+      "filament_speed_mm_s": 8.466121467729076,
+      "puller_roller_rpm": 4.042275241216484,
+      "transport_delay_to_gauge_s": 29.29322487815931,
+      "transport_delay_to_puller_s": 38.152063046957494
+    }
+  },
+  "puller_slip_limit_diameter_effect_mm": 0.00875,
+  "puller_slip_limit_share_of_individual_band": 0.17500000000000002,
+  "roller_runout": {
+    "speed_ripple_allocation": 0.005,
+    "max_eccentricity_mm": 0.1,
+    "max_tir_mm": 0.2,
+    "diameter_effect_mm": 0.004375
+  },
+  "feeder_flow_halfband_relative": 0.027651545889799553,
+  "feeder_flow_halfband_diameter_mm_if_uncorrected": 0.024195102653574607,
+  "feeder_share_of_individual_band_if_uncorrected": 0.48390205307149214,
+  "melt_path_lag_attenuation_by_period_s": {
+    "tau_s": 122.15,
+    "gain": {
+      "5": 0.006514595406953925,
+      "10": 0.013028361455727498,
+      "30": 0.03905857443480245,
+      "120": 0.15447680388271848,
+      "600": 0.6158974480002014
+    },
+    "note": "tau taken as mean residence; INFERRED, not a measured transfer function"
+  },
+  "clearance_effect": {
+    "throughput_change_per_0p01_mm_radial": 0.0146,
+    "diameter_change_mm_per_0p01_mm_radial": 0.012775,
+    "note": "static offset; corrected by the puller setpoint, matters as slow wear drift"
+  },
+  "feedback_limit": {
+    "gauge_delay_s_PLA": 26.788935778350254,
+    "disturbance_period_unrejectable_below_s": 107.15574311340102,
+    "note": "rule of thumb for a pure-delay loop; disturbances shorter than this must be limited at the source"
+  },
+  "requirements_derived": [
+    {
+      "id": "XP-01",
+      "text": "Reference diameter instrument independent of the machine gauge, resolution <=0.001 mm, MSA %GRR <=10 % of the 0.10 mm individual band (<=0.01 mm) before P10",
+      "basis": "REFERENCE_U95 0.01 mm"
+    },
+    {
+      "id": "XP-02",
+      "text": "Puller roller radial runout TIR <= 0.20 mm measured by dial indicator before P12",
+      "basis": "0.5 % speed ripple allocation"
+    },
+    {
+      "id": "XP-03",
+      "text": "Puller slip variation over the stable window <=0.5 % (half of the 1 % maximum)",
+      "basis": "slip share of band"
+    },
+    {
+      "id": "XP-04",
+      "text": "Record feeder, screw current and puller speed at >=1 Hz during P10-P12 to separate disturbance periods shorter and longer than 107 s",
+      "basis": "feedback limit"
+    },
+    {
+      "id": "XP-06",
+      "text": "Puller speed estimate must resolve 0.25 % at 4.0-4.4 rpm; tach pulses per revolution is a calibration value today (OPEN): confirm the achieved resolution on the real tach, otherwise add a roller encoder or period-timer capture",
+      "basis": "low roller speed"
+    },
+    {
+      "id": "XP-05",
+      "text": "Screw flight OD and barrel ID measured before P6; track radial clearance each cleaning cycle",
+      "basis": "clearance drift"
+    }
+  ]
+}

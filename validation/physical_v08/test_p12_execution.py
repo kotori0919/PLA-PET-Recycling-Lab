@@ -49,7 +49,7 @@ def make_p12(run: Path):
         "puller_slip": (0.5, 0.1), "traverse_usable_width": (68.5, 0.1),
         "dancer_control_stop_angle": (0.34, 0.005), "dancer_peak_angle": (0.40, 0.005),
         "spool_test_load_mass": (1.10, 0.02), "diameter_mean_error": (0.02, 0.005),
-        "diameter_max_ovality": (0.02, 0.005), "diameter_max_u95": (0.02, 0.0),
+        "diameter_max_ovality": (0.02, 0.005), "diameter_max_u95": (0.008, 0.0), "diameter_sigma": (0.010, 0.002),
         "gearbox_torque_peak": (5.0, 0.2), "motor_current_peak": (4.0, 0.1),
     }
     true_metrics = P12.BOOL_TRUE
@@ -108,6 +108,19 @@ class P12ExecutionTest(unittest.TestCase):
             result = P12.evaluate(record, p11, p11_checker=p11_stub)
             self.assertEqual(result["status"], "NOT_RUN_OR_REJECTED")
             self.assertIn("dancer_control_stop_angle", result["reason"])
+
+    def test_p12_rejects_diameter_spread_and_coarse_gauge(self):
+        for metric, value in (("diameter_sigma", "0.020"), ("diameter_max_u95", "0.02")):
+            with tempfile.TemporaryDirectory(dir=HERE) as td:
+                record, p11 = make_p12(Path(td))
+                with record.open(encoding="utf-8") as handle:
+                    rows = list(csv.DictReader(handle)); fields = list(rows[0])
+                by = {row["metric"]: row for row in rows}
+                by[metric]["value"] = value; by[metric]["u95"] = "0.0"
+                write_csv(record, fields, rows)
+                result = P12.evaluate(record, p11, p11_checker=p11_stub)
+                self.assertEqual(result["status"], "NOT_RUN_OR_REJECTED")
+                self.assertIn(metric, result["reason"])
 
     def test_p12_rejects_evidence_hash_drift(self):
         with tempfile.TemporaryDirectory(dir=HERE) as td:
