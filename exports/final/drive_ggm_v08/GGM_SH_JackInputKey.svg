@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600"><rect width="800" height="600" fill="white"/><g font-family="sans-serif" fill="#172533"><text x="25" y="35" font-size="21">GGM_SH_JackInputKey</text><text x="25" y="62" font-size="12">4x4 steel key</text><polyline points="449.00,514.00 449.00,514.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="449.00,514.00 449.00,106.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="449.00,106.00 449.00,106.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="449.00,514.00 449.00,106.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="41.00,514.00 41.00,514.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="41.00,514.00 41.00,106.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="41.00,106.00 41.00,106.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="41.00,514.00 41.00,106.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="449.00,514.00 41.00,514.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="449.00,514.00 41.00,514.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="449.00,106.00 41.00,106.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="449.00,106.00 41.00,106.00" fill="none" stroke="#263238" stroke-width="0.8"/><text x="25" y="552" font-size="14">Envelope 4.000 x 22.000 x 4.000 mm</text><text x="25" y="580" font-size="12">STEP and DRIVE_DRAWING_SCHEDULE.csv control. Physical commissioning not performed.</text></g></svg>

@@ -1,0 +1,11 @@
+item,supplier_value_or_yes_no,evidence_or_file,exact_sku_or_option,lead_time,price,review_status
+Exact orderable SKU/option,,,,,,HOLD
+Type K ungrounded junction isolated from sheath,,,,,,HOLD
+Sheath material and minimum/maximum OD,,,,,,HOLD
+Total sheath length tip geometry and junction location,,,,,,HOLD
+Permitted insertion and response/error at approximately 5.2 mm,,,,,,HOLD
+Separate continuous ratings for sheath/transition/cable/connector,,,,,,HOLD
+Sheath-to-junction insulation resistance and test voltage,,,,,,HOLD
+Metallic retention method and pull/vibration limit,,,,,,HOLD
+Accuracy standard/calibration/polarity/MOQ,,,,,,HOLD
+

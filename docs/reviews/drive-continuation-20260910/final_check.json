@@ -1,0 +1,36 @@
+{
+  "observed_utc": "2026-09-09T15:11:24Z",
+  "base_head": "643d362c053eadbb1068ef912ad88cbfbe3b6dc2",
+  "head": "7f9a7a8930b687093ee9a1caa2364bceb6763c2c",
+  "branch": "final-design-fabrication-closure-v0.8",
+  "commits": [
+    "615d978818501d153114e6a83e08be4b02ea6792",
+    "7f9a7a8930b687093ee9a1caa2364bceb6763c2c"
+  ],
+  "scope_clean": true,
+  "staged_empty": true,
+  "package": {
+    "status": "PACKAGE_SNAPSHOT_VERIFIED",
+    "zip_path": "dist/PPR-GGM-DRIVE-REVIEW-20260909-r1.zip",
+    "sha256": "345c90a47c41fb989b2d2920964f00942e4651fda509c69d07811654ce23a32c",
+    "bytes": 5906115,
+    "payload_files": 250,
+    "same_snapshot_double_zip_match": true,
+    "extraction_hashes_match": true,
+    "physical_validation": "NOT_RUN",
+    "machine_release": "HOLD",
+    "source_sha256": {
+      "analysis/drive_acceptance_v08/package_review.py": "62a9f11ce20ceb9445b1ee376793a2cadba50ad54aec328e8736c23b58fe13d0",
+      "analysis/drive_acceptance_v08/acceptance.json": "4091bc515bf00a4f3427981225f8258b351aa443209a32fcdd6ce99dd01e9c58",
+      "analysis/drive_acceptance_v08/firmware_review.json": "9c6bf00688f88dfb1d3fa70dea8a650ad8cebc0ee32649ceefcb689ba2c5f576"
+    }
+  },
+  "all_package_files_match_current_sources": true,
+  "physical_validation": "NOT_RUN",
+  "machine_release": "HOLD",
+  "own_solver_jobs_running": [],
+  "push": false,
+  "purchase": false,
+  "merge": false,
+  "pdf_created": false
+}

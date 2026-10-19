@@ -1,0 +1,116 @@
+{
+  "status": "HOLD",
+  "physical_validation_state": "NOT_RUN",
+  "nominal_mm": {
+    "pilot_od": 19,
+    "pilot_length": 0.9,
+    "die_recess_od": 19.05,
+    "die_recess_depth": 0.9,
+    "gasket_id": 19.2,
+    "gasket_thickness": 0.5,
+    "radial_play": 0.025,
+    "axial_bottom_gap": 0.4999999999999999,
+    "pilot_to_breaker_gap": 0.6
+  },
+  "overlap_mm3": {
+    "barrel/die": 0.0,
+    "barrel/gasket": 0.0,
+    "barrel/breaker": 0.0,
+    "die/gasket": 0.0,
+    "die/breaker": 0.0,
+    "gasket/breaker": 0.0
+  },
+  "offset_0_1_mm_pilot_overlap_mm3": 0.4860603181363885,
+  "gasket_compression_sensitivity": [
+    {
+      "compressed_gasket_thickness_mm": 0.53,
+      "nominal_pilot_bottom_gap_mm": 0.5300000000000001,
+      "nominal_engagement_mm": 0.37,
+      "barrel_die_overlap_mm3": 0.0
+    },
+    {
+      "compressed_gasket_thickness_mm": 0.5,
+      "nominal_pilot_bottom_gap_mm": 0.4999999999999999,
+      "nominal_engagement_mm": 0.4,
+      "barrel_die_overlap_mm3": 0.0
+    },
+    {
+      "compressed_gasket_thickness_mm": 0.4,
+      "nominal_pilot_bottom_gap_mm": 0.4,
+      "nominal_engagement_mm": 0.5,
+      "barrel_die_overlap_mm3": 0.0
+    },
+    {
+      "compressed_gasket_thickness_mm": 0.3,
+      "nominal_pilot_bottom_gap_mm": 0.29999999999999993,
+      "nominal_engagement_mm": 0.6000000000000001,
+      "barrel_die_overlap_mm3": 0.0
+    },
+    {
+      "compressed_gasket_thickness_mm": 0.25,
+      "nominal_pilot_bottom_gap_mm": 0.2499999999999999,
+      "nominal_engagement_mm": 0.65,
+      "barrel_die_overlap_mm3": 0.0
+    }
+  ],
+  "thermal_fit_sensitivity": {
+    "assumed_alpha_per_k": 1.2e-05,
+    "reference_c": 20,
+    "cases": [
+      {
+        "barrel_c": 20,
+        "die_c": 20,
+        "radial_gap_mm": 0.025000000000000355
+      },
+      {
+        "barrel_c": 270,
+        "die_c": 270,
+        "radial_gap_mm": 0.025074999999999292
+      },
+      {
+        "barrel_c": 270,
+        "die_c": 245,
+        "radial_gap_mm": 0.0222175
+      },
+      {
+        "barrel_c": 245,
+        "die_c": 270,
+        "radial_gap_mm": 0.027924999999999756
+      },
+      {
+        "barrel_c": 270,
+        "die_c": 20,
+        "radial_gap_mm": -0.0034999999999989484
+      },
+      {
+        "barrel_c": 20,
+        "die_c": 270,
+        "radial_gap_mm": 0.053574999999998596
+      }
+    ],
+    "scope": "Nominal free expansion, no tolerances/constraints. Temperature pairs are diagnostic boundaries, not measured or simulated machine histories."
+  },
+  "die_joint_pressure_screen": {
+    "assumed_pressure_mpa": 6.0,
+    "original_gasket_net_face_area_mm2": 638.1831316502305,
+    "candidate_gasket_net_face_area_mm2": 554.7738466974217,
+    "original_separation_force_n": 1236.719364012158,
+    "candidate_separation_force_n": 1737.175073729012,
+    "force_ratio": 1.4046639231824416,
+    "minimum_total_retained_clamp_n_for_pressure_sf_2": 3474.350147458024,
+    "minimum_per_bolt_retained_clamp_n_for_four_equal_bolts": 868.587536864506,
+    "scope": "Conservative pressure penetration to gasket ID; net face area excludes bolt holes. Not gasket seating stress or bolt preload qualification. Do not scale rear mount load without a complete free-body model."
+  },
+  "step_sha256": {
+    "analysis/final_validation/results/v0.8/die_pilot_L0p9_candidate_barrel.step": "96a92ae3190b6e5837ed672a7fcabc05f3babff11c4676bc5d64589b62867cc5",
+    "analysis/final_validation/results/v0.8/die_pilot_L0p9_candidate_die.step": "0fdaafb8426c4b432cec5773c7644e52772173c80c2eac0efbe5df65f024f742",
+    "analysis/final_validation/results/v0.8/die_pilot_L0p9_candidate_gasket.step": "1959e8802a2e6b47f82b89f1e4e69d629fd4acb81da53638106ffd1054598ea4",
+    "analysis/final_validation/results/v0.8/die_pilot_L0p9_candidate_breaker.step": "d1b93b70053d954a489c2079e87d5104759202b291636ad219ec1eb293900f9f"
+  },
+  "limitations": "Unadopted nominal geometry. Machining fit/runout, compressed gasket thickness, thermal differential, sealing land and pressure stress unqualified. No full-assembly or physical approval.",
+  "source_sha256": {
+    "cad/freecad/final_v08/check_die_pilot_candidate.py": "164515e39ead2812400617e86b718a95c87b76164c25f02625e6eb45f651876c",
+    "cad/freecad/compact/geometry.py": "9b2211e2f0a3ec1c1e5841110f13dc46af500357c7045ff8bea33a51be3f29bd",
+    "cad/freecad/compact/manufacturing.py": "d71e2bab98dcecca43f9ebf4ec452b98248cae32cad73b79dac78bf8134a8152"
+  }
+}

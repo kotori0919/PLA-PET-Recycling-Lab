@@ -138,7 +138,7 @@ def main():
     paths=geometry_source_paths()+[Path(__file__).resolve(),CONTRACT,
         ROOT/'validation/integrated_assembly_clearance.py',ROOT/'validation/integrated_motion_clearance.py']
     hashes={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
-    spec=json.loads(CONTRACT.read_text()); base,_=integrated_objects(final_objects())
+    spec=json.loads(CONTRACT.read_text()); base,_=integrated_objects(final_objects(), compact_layout=False)
     candidate, transforms=placement(base,tuple(spec['upper_translation_mm']),tuple(spec['support_and_collection_translation_mm']))
     before,after=dimensions(base),dimensions(candidate)
     if any(abs(a-b)>1e-5 for a,b in zip(before,spec['reference_envelope_mm'])):

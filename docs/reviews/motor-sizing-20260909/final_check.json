@@ -1,0 +1,31 @@
+{
+  "observed_utc": "2026-09-09T11:38:47.795494+00:00",
+  "base_head": "2341117aa5c22b491829388da59b039610329c7c",
+  "final_head": "643d362c053eadbb1068ef912ad88cbfbe3b6dc2",
+  "commits": [
+    "a52ed383690232dcfd11ca64e7c9dbe25f1b49de",
+    "643d362c053eadbb1068ef912ad88cbfbe3b6dc2"
+  ],
+  "branch": "final-design-fabrication-closure-v0.8",
+  "scope_clean": true,
+  "staged_empty": true,
+  "protected_cad_firmware_parameters_unchanged": true,
+  "final_demand_scenarios": 20,
+  "step_refinement_runs": 2,
+  "new_regression_tests": 30,
+  "existing_regression_tests": 47,
+  "schema_mutations": 3,
+  "physical_tests": 0,
+  "machine_release": "HOLD",
+  "push": false,
+  "purchase": false,
+  "merge": false,
+  "selected_models": [
+    "GGM K9DG60N2 + K9G75C",
+    "GGM K9DG60N2 + K9G150C"
+  ],
+  "pair_price_krw": 202500,
+  "selected_reference_sha256": "11697828ace4b2527fca2a321d24db504b833897b90f490b779243825776e405",
+  "raw_evidence_files_hashed": 47,
+  "limits": "Conditional demand model; no full mechanical adapter or protection setting integration"
+}

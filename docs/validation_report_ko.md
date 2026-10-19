@@ -1,5 +1,7 @@
 # 자동검증 보고 — technical-blocker-closure-v0.6.2.1
 
+> v0.6.2.1 및 이전 revision의 역사적 검증 기록이다. 현재 상태와 승인 경계는 `final/release_notes_v1.0.0-rc1_ko.md`를 따른다. 아래 과거 PASS·Fusion 제한은 현재 revision의 완료 또는 차단 판정이 아니다.
+
 - release: `TECHNICAL_CLOSURE_BASELINE`
 - implementation: `IMPLEMENTATION_BASELINE`
 - hardware adapter: `HARDWARE_ADAPTER_VALIDATED`
@@ -24,7 +26,7 @@ stage로 이관했다. package integrity는 계속 필수이며 실제 결과 �
 - main merge: `BLOCKED_PENDING_FUSION`
 - physical validation: `NOT_RUN`
 
-|v0.6.2 Gate|현재 디지털 결과|근거|
+|v0.6.2 Gate|당시 디지털 결과|근거|
 |---|---|---|
 |Frozen Fusion input|v0.6.1 frozen path diff 0, `FUSION_INPUT_DELTA=NONE`|`validation/results/fusion_delta_classification.json`|
 |Firmware actuation|puller/screw/fan/spooler/traverse 실제 feedback path, inner-loop 유효/비포화 조건부 지름 PI 적분과 히터 applied-duty anti-windup host test PASS|`firmware/arduino_mega/tests`, `validation/results/v062_actuation_contract.json`|
@@ -56,7 +58,7 @@ stage로 이관했다. package integrity는 계속 필수이며 실제 결과 �
 - cross solver: `CROSS_SOLVER_VALIDATION_PENDING`
 - geometry: v0.6 SHA `60ccd92fe9a7df35b550a2a57649b1263da09d10`에서 변경 없음
 
-|Gate|현재 디지털 결과|근거|
+|Gate|당시 디지털 결과|근거|
 |---|---|---|
 |Envelope|470 × 700 × 930 mm|`cad/generation/assembly_metadata.json`|
 |Geometry/print|closed B-Rep, unexpected collision 0, 12 print family, planning mass 1,012.70 g|`validation/results/*`, `exports/print/print_manifest.csv`|

@@ -8,7 +8,7 @@
   "production_sources": {
     "firmware/arduino_mega/src/process_state.cpp": "1fcb998bf1c7d0b31851bfde072d21ba7e15f112231923a0e289e89b3f5abfca",
     "firmware/arduino_mega/src/shredder_control.cpp": "3c26c699691902ce3e6ef9665ada620d8149c4aea919a727ab3eeedf7d25388a",
-    "firmware/arduino_mega/src/heater_control.cpp": "522560d5be4ac4545fc419aeee3c968c7606ad2bc44c378d246d390eee9c6c74",
+    "firmware/arduino_mega/src/heater_control.cpp": "92c8b20af74fb12eb6e9825de593b4d5551c2c63310ebd2d2fcaf68f08b88bed",
     "firmware/arduino_mega/src/gauge_control.cpp": "1031ca9b2c00d3c250a6dce4e31c9f1b3aa105c25474c9fb460595e66ce8b7e5",
     "firmware/arduino_mega/src/heater_power_allocator.cpp": "6dcfbc8e8387f8d10f5b716f5c2ead472e1cb693dc14bb577d91ba0241395df0",
     "firmware/arduino_mega/src/puller_speed_control.cpp": "ef883fce1f1c266bba1419225a73aacfab303ea215bd8f8dbfeb7ad6b21cff73",
@@ -22,7 +22,7 @@
   "production_headers": {
     "firmware/arduino_mega/src/process_state.h": "96392f98609829dae22cdf86c8d729730a844f85a97a17cae84947bea797e227",
     "firmware/arduino_mega/src/shredder_control.h": "bfd7eb81f2a793c2b34c3e4cde5f2b05a46f1d85d7d688440a31deef9c3d2dba",
-    "firmware/arduino_mega/src/heater_control.h": "187438c9d306d26731852cd4dbb523748765b1e90b1d5e60e1452075a8631c4f",
+    "firmware/arduino_mega/src/heater_control.h": "8bd5204447641dafa2469a718ca7ce46bb8f07e8a401c1d3b2a8ffc4dc41fbef",
     "firmware/arduino_mega/src/gauge_control.h": "739ad4353c5237bdcc27d303447ad8b13480a93f058084a57bb35e35cea0f89b",
     "firmware/arduino_mega/src/heater_power_allocator.h": "2a9c62fd47567ebe731850fe792103399b45fb8d9a21453534481d8bb96b3c7b",
     "firmware/arduino_mega/src/puller_speed_control.h": "be1d8b45035fa3b41089aefafdf6ae9bf20270066387184caeb93605868f5eac",
@@ -271,7 +271,7 @@
       "status": "PASS",
       "trace_file": "validation/results/runtime_traces/puller_tach_startup_grace_and_loss.csv",
       "event_count": 4,
-      "sha256": "33337c98c98eb84f20cdea4ccf01f08231a7ec55d28b2b9968b9cabd14ea0304"
+      "sha256": "67355b84efb21565c3f8d21040dc49726aa2cd216122761d71d65f7874d85689"
     },
     {
       "name": "purge_completion_fresh_fault_preflight",

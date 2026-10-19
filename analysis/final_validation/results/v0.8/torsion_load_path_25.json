@@ -1,0 +1,148 @@
+{
+  "status": "HOLD",
+  "physical_validation_state": "NOT_RUN",
+  "meshes": [
+    {
+      "mesh_mm": 3.0,
+      "tip_rotation_deg": 0.10242432273444747,
+      "loaded_area_mm2": 466.52731882429595,
+      "peak_coordinate_mm": [
+        -0.15247388676197,
+        232.5,
+        9.0
+      ],
+      "result": {
+        "max_displacement_mm": 0.023620946248292193,
+        "max_von_mises_mpa": 17.929596126150347,
+        "max_von_mises_node_id": 3608,
+        "status": "PASS",
+        "omp_num_threads": 1,
+        "negative_jacobian": false,
+        "reaction": {
+          "node_count": 98,
+          "force_n": [
+            -3.899999999490422e-05,
+            -7.000000002727047e-06,
+            -0.0003576399999888902
+          ],
+          "moment_about_origin_nm": [
+            1.0378051176762604e-07,
+            -22.00000030364434,
+            -5.481020787624982e-09
+          ]
+        }
+      },
+      "deck_sha256": "f1fcd3a8df1895c55d155c505b2d8315d19cc61e229ca51cb27c17bdb3c81402"
+    },
+    {
+      "mesh_mm": 2.0,
+      "tip_rotation_deg": 0.10689576445511104,
+      "loaded_area_mm2": 468.72530009261953,
+      "peak_coordinate_mm": [
+        1.3456972581976,
+        233.15217391304,
+        9.0
+      ],
+      "result": {
+        "max_displacement_mm": 0.024831633052836134,
+        "max_von_mises_mpa": 19.924226523306746,
+        "max_von_mises_node_id": 6814,
+        "status": "PASS",
+        "omp_num_threads": 1,
+        "negative_jacobian": false,
+        "reaction": {
+          "node_count": 176,
+          "force_n": [
+            -0.0003331000000008147,
+            -5.439999999874018e-05,
+            0.00016800000000612159
+          ],
+          "moment_about_origin_nm": [
+            5.226811536141775e-07,
+            -21.99999874196859,
+            -3.015793351070911e-07
+          ]
+        }
+      },
+      "deck_sha256": "d32c890549ee1e75d5ba32d45a433677125e4557fd9d8391bec726a24203b728"
+    },
+    {
+      "mesh_mm": 1.5,
+      "tip_rotation_deg": 0.10916821279625,
+      "loaded_area_mm2": 469.5205124475729,
+      "peak_coordinate_mm": [
+        1.9956857679989999,
+        236.24702187991,
+        9.0
+      ],
+      "result": {
+        "max_displacement_mm": 0.025496272410556412,
+        "max_von_mises_mpa": 21.576966299009094,
+        "max_von_mises_node_id": 12729,
+        "status": "PASS",
+        "omp_num_threads": 1,
+        "negative_jacobian": false,
+        "reaction": {
+          "node_count": 297,
+          "force_n": [
+            -0.00014039999999845842,
+            -3.913999999981179e-05,
+            -8.399999994719923e-06
+          ],
+          "moment_about_origin_nm": [
+            8.589659928823212e-07,
+            -21.99999892847032,
+            4.4417106274605156e-07
+          ]
+        }
+      },
+      "deck_sha256": "954bd99d6c3f44e6794c38f239866c6c703c53911f075e8c408504767ff7bf4c"
+    },
+    {
+      "mesh_mm": 1.0,
+      "tip_rotation_deg": 0.11084423380244768,
+      "loaded_area_mm2": 470.10064682024114,
+      "peak_coordinate_mm": [
+        -2.0418711136531,
+        229.56353673489,
+        9.0
+      ],
+      "result": {
+        "max_displacement_mm": 0.025990361641872954,
+        "max_von_mises_mpa": 22.67995091061742,
+        "max_von_mises_node_id": 27217,
+        "status": "PASS",
+        "omp_num_threads": 1,
+        "negative_jacobian": false,
+        "reaction": {
+          "node_count": 620,
+          "force_n": [
+            3.4400000001742065e-05,
+            5.3409999998125894e-05,
+            -4.2240000001337935e-05
+          ],
+          "moment_about_origin_nm": [
+            -6.695977790996746e-07,
+            -22.00000026257648,
+            1.841198593761917e-08
+          ]
+        }
+      },
+      "deck_sha256": "2525134e159950621db19bfd0cef39bbedb62d31c456da85467c19117efdd2cb"
+    }
+  ],
+  "rotation_relative_mesh_change": 0.015120506937553218,
+  "rotation_within_5_percent": true,
+  "peak_stress_relative_mesh_change": 0.048632583728035104,
+  "stress_qualification": "NOT_QUALIFIED",
+  "length_mm": 240,
+  "scope": "25 mm full candidate shaft; 240 mm end-to-end22 Nm; triangle-area-lumped pure couple and area-weighted rotation, fixed cutter-side end warping. Not actual cutter/gear contact traction. Sharp bottom corners, mesh stress and material/contact qualification unresolved.",
+  "raw_directory": "analysis/final_validation/results/v0.8/keyed-torsion-1auvmv8u",
+  "source_sha256": {
+    "analysis/final_validation/run_keyed_shaft_torsion_candidate.py": "ab7cdbe6db7f5fcb7c536b9c321c3bec4ff4579e1909ca2fa67884ece9eff31a",
+    "analysis/final_validation/results/v0.8/phase_path_25_candidate.json": "36458b2bef76b1b1e8f38f76334b4bd2bfca26251ffa995b4c00dcdcc15d6b35",
+    "analysis/final_validation/results/v0.8/phase_path_25_shaft.step": "78ff460c87b1a4baccecc99887df3f2d2524cbcbdaaffdb18f9712f9f2be985a",
+    "analysis/final_validation/run_calculix_v08.py": "eaef0af9921a2951f39250b984adce15c7e9d838eb7e7ede29a073b3f37f7e07",
+    "analysis/final_validation/run_qualification_v08.py": "dfb687686a99df8db69311b37d06b1dcfe3bfe4a99352a85a65a1887560e3a1f"
+  }
+}

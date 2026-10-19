@@ -11,7 +11,7 @@
 - infill: 40%
 - support: yes under axle bore
 - support-contact region: Ø5.2 axle-bore lower semicircle
-- support removal: ream Ø5.2 after support removal
+- support removal: ream both bores to Ø5.20–5.40 after support removal
 - brim: 5 mm
 - designed minimum wall: 2.0 mm
 - estimated mass: 40.5 g/ea, 81.0 g total
@@ -20,8 +20,8 @@
 - insert or captured nut: none
 - tightening torque: 2.0 N.m
 - fastener edge distance: 15 mm hole centre
-- physical interfaces: 2x Ø5.5 base holes; Ø5.2 fixed-axle bore
-- tolerance: Ø5.2 +0.20/0 printed/reamed axle clearance
+- physical interfaces: 2x Ø5.5 base holes; Ø5.20–5.40 fixed-axle bore; complete-pair hand-pass alignment
+- tolerance: finished bore Ø5.20–5.40; align both loose T-slot brackets on the same axle before 2.0 N.m torque; axle shall pass by hand without visible bending
 - mating part: FM-GA-01 fixed Ø5 axle and profile; 625 bearings are seated in FM-GR-01
 - assembly order: 16
 - bounding box: 60.0 x 45.0 x 70.0 mm

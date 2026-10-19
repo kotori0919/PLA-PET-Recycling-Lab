@@ -1,0 +1,101 @@
+{
+  "status": "HOLD",
+  "physical_validation_state": "NOT_RUN",
+  "spacer_candidate_mm": {
+    "od": 7.5,
+    "id": 4.3,
+    "thickness": 2.5,
+    "quantity": 4
+  },
+  "assumed_bolt_envelope_mm": {
+    "shank_diameter": 4,
+    "length": 45,
+    "head_diameter": 7,
+    "head_height": 4
+  },
+  "penetration_range_mm": [
+    6.969999999999999,
+    7.25
+  ],
+  "head_front_projection_mm": 1.5,
+  "unverified_neck_fillet_sensitivity": [
+    {
+      "assumed_radius_mm": 0.1,
+      "spacer_interference_mm3": 0.0,
+      "chamfered_spacer_interference_mm3": 0.0
+    },
+    {
+      "assumed_radius_mm": 0.15,
+      "spacer_interference_mm3": 0.0,
+      "chamfered_spacer_interference_mm3": 0.0
+    },
+    {
+      "assumed_radius_mm": 0.2,
+      "spacer_interference_mm3": 0.0014289009348253945,
+      "chamfered_spacer_interference_mm3": 0.0
+    },
+    {
+      "assumed_radius_mm": 0.3,
+      "spacer_interference_mm3": 0.026829456385259243,
+      "chamfered_spacer_interference_mm3": 0.0
+    }
+  ],
+  "chamfer_candidate": {
+    "entrance_chamfer_mm": 0.2,
+    "angle_deg": 45,
+    "entrance_diameter_mm": 4.7,
+    "bearing_annulus_assuming_dw_6p53_mm2": 16.140639116164618,
+    "same_force_pressure_ratio_vs_unchamfered": 1.175174809862342,
+    "step_sha256": "f59a2c100efc4331e169b2f7217ecba3ca9013b86eec1a9b48b061390dff1a78"
+  },
+  "assembly_access": [
+    {
+      "angle_deg": 45,
+      "overlaps": {
+        "head": [],
+        "driver_shaft": [],
+        "driver_handle": []
+      }
+    },
+    {
+      "angle_deg": 135,
+      "overlaps": {
+        "head": [],
+        "driver_shaft": [],
+        "driver_handle": []
+      }
+    },
+    {
+      "angle_deg": 225,
+      "overlaps": {
+        "head": [],
+        "driver_shaft": [],
+        "driver_handle": []
+      }
+    },
+    {
+      "angle_deg": 315,
+      "overlaps": {
+        "head": [],
+        "driver_shaft": [],
+        "driver_handle": []
+      }
+    }
+  ],
+  "tool_envelope_mm": {
+    "shaft_diameter": 4,
+    "shaft_length": 50,
+    "handle_diameter": 30,
+    "handle_length": 80,
+    "minimum_global_x": -77.0
+  },
+  "scope": "Nominal die-only clearance; ideal bolt envelope not verified purchase. Spacer material/hardness/parallelism, bolt/head/chamfer tolerances, thread runout and tip, hot preload and full assembly/tool access unqualified.",
+  "step_sha256": "c608e4be9b70b2ee223d15efb107abc01a3bea8d75600b4ea596a8841b7c1e07",
+  "source_sha256": {
+    "cad/freecad/final_v08/check_die_bolt_spacer_candidate.py": "5042f8a4db450b331fec637cb7fac7e59bb6022595f1362f4e8d49e7d61171c8",
+    "cad/freecad/compact/geometry.py": "ce8ca7c3b70dc422d442149a92580e328b1ac62286629d4f2ff75d209ddd0028",
+    "cad/freecad/final_v08/generate.py": "dccc72127bfe6bbdf1cb394020210a19129fa0e9ea0df2e3ff6a0d884161902d",
+    "cad/freecad/final_v08/check_retainer_tool_access.py": "6eb116d25a1ae5d3f308d61aa86670344443324c60546e529c0017e53ac03f24",
+    "cad/parameters/final_v08.json": "340c3e6eb0ebc19118e9c77072c4e82719eaaf4d3850c98fe508398e7ab09baa"
+  }
+}

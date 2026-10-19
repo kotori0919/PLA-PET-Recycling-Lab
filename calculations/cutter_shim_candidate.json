@@ -1,0 +1,44 @@
+{
+  "status": "HOLD",
+  "physical_validation_state": "NOT_RUN",
+  "candidate": "Spacer6.60\u00b10.02; measured sequential0.01-mm metal shim selection; first opposite-shaft datum set to actual first-disc thickness+0.375.",
+  "nominal_spacer_with_shim_mm": 6.75,
+  "nominal_pitch_mm": 12.75,
+  "nominal_stagger_mm": 6.375,
+  "proposed_shim_stock_mm": [
+    0.05,
+    0.25
+  ],
+  "analytic_required_shim_range_mm": [
+    0.08999999999999986,
+    0.20999999999999996
+  ],
+  "tested_cases": 1004,
+  "gaps_per_case": 11,
+  "minimum_gap_mm": 0.37499999999996536,
+  "maximum_gap_mm": 0.3750000000000293,
+  "measurement_shim_error_candidate": {
+    "maximum_net_face_measurement_error_mm": 0.01,
+    "maximum_total_selected_shim_error_mm": 0.005,
+    "selection_increment_mm": 0.01,
+    "analytic_gap_bound_mm": [
+      0.355,
+      0.395
+    ],
+    "tested_cases": 1004,
+    "commanded_shim_bound_mm": [
+      0.0649999999999995,
+      0.23500000000000032
+    ],
+    "tested_min_gap_mm": 0.354999999999996,
+    "tested_max_gap_mm": 0.39500000000000757,
+    "remaining_margin_to_0p25_0p50_mm": 0.105,
+    "scope": "Proposed error budgets, not demonstrated instrument/shim capabilities. Net measurement error includes both measured faces; shim error is total pack error, not per leaf."
+  },
+  "limitations": [
+    "Face parallelism, rotation runout and collar seating remain excluded; proposed measurement/shim budgets require qualification.",
+    "Current7.00-mm spacers cannot be corrected by adding positive shims to this6.75-mm target.",
+    "Requires changed CAD pitch/stagger/spacers, assembly drawing and all11 actual gap checks; not adopted."
+  ],
+  "source_sha256": "38f387eb33e851ce86c2af27167e4965eddef0afe6e5e120213ee8f3b7e76bc2"
+}

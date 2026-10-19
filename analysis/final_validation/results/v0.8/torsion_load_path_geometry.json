@@ -1,0 +1,44 @@
+{
+  "status": "HOLD",
+  "physical_validation_state": "NOT_RUN",
+  "spans": [
+    {
+      "shaft": "153",
+      "global_cut_y_mm": 348.5,
+      "global_gear_y_mm": 480.0,
+      "local_original_start_mm": 90.5,
+      "length_mm": 131.5,
+      "step": "analysis/final_validation/results/v0.8/torsion_load_path_153.step",
+      "step_sha256": "9ca9581d05494a493d33968356b072eaf1f9ac8a507d291b6f885e3bc22db89d",
+      "relative_volume_error": 1.2798296550437868e-16
+    },
+    {
+      "shaft": "105",
+      "global_cut_y_mm": 342.0,
+      "global_gear_y_mm": 480.0,
+      "local_original_start_mm": 64.0,
+      "length_mm": 138.0,
+      "step": "analysis/final_validation/results/v0.8/torsion_load_path_105.step",
+      "step_sha256": "584445580eae3cbe1d25b238d140fa933619d69182119b590fffc395c21c5380",
+      "relative_volume_error": 3.6494730796996343e-16
+    }
+  ],
+  "load_case": {
+    "jammed_slave_cutter_y_mm": 342.0,
+    "adjacent_driven_cutter_y_mm": 348.5,
+    "torque_nm_along_each_series_segment": 22.0,
+    "series_lengths_mm": [
+      131.5,
+      138.0
+    ],
+    "unkeyed_round_shaft_relative_twist_deg": 0.1114833469461904
+  },
+  "scope": "Current baseline keyways, not extended slave candidate. Maximum ideal-round adjacent-pair span only; not proof of worst keyed compliance. Input through driven rear gear to one jammed slave cutter, driven cutting resistance zero. Cut-face loading/constraint still to solve; hub/key/gear contact excluded.",
+  "source_sha256": {
+    "cad/freecad/final_v08/export_torsion_load_path.py": "442cf3bf7235e9df6c08060792e2ffef171fbb5c2c4ef017079427a9ac6a4883",
+    "cad/freecad/compact/geometry.py": "8354458dd23bf9c315c137f9ccddfa80650ce996e38fe2dc6e464d682dfa7425",
+    "analysis/final_validation/input/geometry_manifest.json": "3e6c7cba81418de5eab12abd10ea49d35dee2c411d128ebb2ed580e3d4a398c3",
+    "cad/parameters/baseline.json": "e6739d76691737c8526d8f2bde5b5c457dcad23a959ec86bc5d5c54fb9f93082",
+    "analysis/final_validation/run_phase_section_sensitivity_v08.py": "3bd62f1a0d84a0081b4e7b63d1283961ede8a0edddc8b10a8bcb1eca2e88541d"
+  }
+}

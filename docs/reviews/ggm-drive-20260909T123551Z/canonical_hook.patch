@@ -1,0 +1,14 @@
+--- a/cad/freecad/final_v08/generate.py
++++ b/cad/freecad/final_v08/generate.py
+@@ -226,6 +226,11 @@
+     assembly.mkdir(parents=True, exist_ok=True)
+     parts.mkdir(parents=True, exist_ok=True)
+     objects = final_objects()
++    # Selected GGM drive supersedes the historical tiny donor envelopes.
++    if (ROOT / "control/ggm_drive_contract.json").is_file():
++        sys.path.insert(0, str(ROOT / "cad/freecad/drive_v08"))
++        from cad.freecad.drive_v08.assembly import integrated_objects
++        objects, _ = integrated_objects(objects)
+     export_assembly_metadata(objects)
+     groups = {
+         "PPR-FULL-ASM.step": objects,

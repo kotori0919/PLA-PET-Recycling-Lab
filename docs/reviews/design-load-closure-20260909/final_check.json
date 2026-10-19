@@ -1,0 +1,21 @@
+{
+  "status": "REVIEW_PACKAGE_INTEGRITY_PASS",
+  "machine_release_state": "HOLD",
+  "zip": "dist/PPR-v08-engineering-review-20260909.zip",
+  "zip_sha256": "e3adb0c9c0c58d644dd43e30d3b3dcf405ec6c44757a90a73588131a4f116253",
+  "zip_bytes": 10544834,
+  "payload_files": 68,
+  "source_files": 41,
+  "solid_solver_jobs": 18,
+  "raw_files_hashed": 198,
+  "thermal_pair_checks": 48,
+  "thermal_interference_states": 0,
+  "same_snapshot_two_zip_builds_identical": true,
+  "full_pipeline_twice_regenerated": false,
+  "clean_extraction_verified": true,
+  "source_freshness": [
+    "CURRENT",
+    "CURRENT",
+    "CURRENT"
+  ]
+}

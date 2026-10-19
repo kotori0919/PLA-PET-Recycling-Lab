@@ -1,0 +1,17 @@
+* Auto-generated testbench for voltage divider: R29/R37
+* Expected Vout = 3.3 * 0.997877 = 3.2930 V
+* Model: ideal passives (exact, unloaded)
+
+VIN BUF_DRYER_PLA 0 DC 3.3
+R29 BUF_DRYER_PLA OUT_DRYER_PLA 100
+R37 OUT_DRYER_PLA 0 47k
+
+.control
+op 
+let vout_sim = v(OUT_DRYER_PLA)
+let error_pct = abs(vout_sim - 3.2929941) / 3.2929941 * 100
+echo "vout_sim=$&vout_sim error_pct=$&error_pct expected=3.2929941" > electronics/pcb/interface_board/analysis/spice_work/voltage-divider_R29_R37.out
+quit
+.endc
+
+.end

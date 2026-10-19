@@ -1,0 +1,95 @@
+{
+  "status": "HOLD",
+  "extraction_checks": "PASS",
+  "negative_controls_rejected": 4,
+  "physical_validation_state": "NOT_RUN",
+  "checks": [
+    {
+      "case": "LC02",
+      "shaft": "105",
+      "mesh": "coarse",
+      "measured_torque_nm": -22.00001792,
+      "applied_torque_nm": 22.0,
+      "residual_nm": -1.7920000001225844e-05,
+      "frd_sha256": "fe77f46688563529e44a2700972c2ccd095106d22285b46a65d105684749055c"
+    },
+    {
+      "case": "LC02",
+      "shaft": "105",
+      "mesh": "medium",
+      "measured_torque_nm": -22.00001792,
+      "applied_torque_nm": 22.0,
+      "residual_nm": -1.7920000001225844e-05,
+      "frd_sha256": "d4ea87450c4a32f6fc53d02173de346a8d754349798563c2050a2cb5a6f9ef5d"
+    },
+    {
+      "case": "LC02",
+      "shaft": "105",
+      "mesh": "fine",
+      "measured_torque_nm": -22.00001792,
+      "applied_torque_nm": 22.0,
+      "residual_nm": -1.7920000001225844e-05,
+      "frd_sha256": "01983eb193a793acf32a4e23975504abbb70019363d839628c6ba6a4271922ad"
+    },
+    {
+      "case": "LC02",
+      "shaft": "153",
+      "mesh": "coarse",
+      "measured_torque_nm": -22.00001792,
+      "applied_torque_nm": 22.0,
+      "residual_nm": -1.7920000001225844e-05,
+      "frd_sha256": "45de7f95a423e7408800e36939481f161e20510a5f239243f59b64961b87b201"
+    },
+    {
+      "case": "LC02",
+      "shaft": "153",
+      "mesh": "medium",
+      "measured_torque_nm": -22.00001792,
+      "applied_torque_nm": 22.0,
+      "residual_nm": -1.7920000001225844e-05,
+      "frd_sha256": "303355fb77bf9c9372139462da8107894676976d6524b7f12a1f89a4c9b6252c"
+    },
+    {
+      "case": "LC02",
+      "shaft": "153",
+      "mesh": "fine",
+      "measured_torque_nm": -22.00001792,
+      "applied_torque_nm": 22.0,
+      "residual_nm": -1.7920000001225844e-05,
+      "frd_sha256": "124a976d5409dd3bcbac5da56c666b5b815c0113ae824e40ff0fe044eb0cfa7a"
+    },
+    {
+      "case": "LC05",
+      "shaft": "153",
+      "mesh": "coarse",
+      "measured_torque_nm": -2.9895827179599997e-12,
+      "applied_torque_nm": 0.0,
+      "residual_nm": -2.9895827179599997e-12,
+      "frd_sha256": "e5e531b69c78e7f4d8723f1d0b5374a5d22aeeddc58ff204777998c85e29588e"
+    },
+    {
+      "case": "LC05",
+      "shaft": "153",
+      "mesh": "medium",
+      "measured_torque_nm": 4.256189836e-12,
+      "applied_torque_nm": 0.0,
+      "residual_nm": 4.256189836e-12,
+      "frd_sha256": "92a8006e695671cf09e3f3a471692d348af8391fe99f6b1e2bfb229ac7bc5c8c"
+    },
+    {
+      "case": "LC05",
+      "shaft": "153",
+      "mesh": "fine",
+      "measured_torque_nm": -5.6097373520000004e-11,
+      "applied_torque_nm": 0.0,
+      "residual_nm": -5.6097373520000004e-11,
+      "frd_sha256": "5d6b2425574d9cdb4691bfd96c39b906f2113e2589c6ec1e5181f2dd26d5e79d"
+    }
+  ],
+  "scope": "B31 expanded x=0 section only; equivalent square beam and end torsion datum assumptions remain",
+  "source_sha256": {
+    "validation/check_expanded_beam_torque.py": "e1337df8b2e5782d19db026ac6162582e853328a3e7d5da5d2949358b68888a8",
+    "analysis/final_validation/results/v0.8/summary.json": "d1231efc26d9d5d9a68a88c7ca32a1f0fd7b4dc0265411b19ee1904370da815b",
+    "analysis/final_validation/run_calculix_v08.py": "eaef0af9921a2951f39250b984adce15c7e9d838eb7e7ede29a073b3f37f7e07"
+  }
+}

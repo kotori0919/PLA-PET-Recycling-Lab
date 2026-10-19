@@ -15,7 +15,7 @@
     "guide_travel_upper_other_face_mm": 0.5236,
     "reason": "Axial contact face/endplay must be resolved by final assembly; no hidden datum assumption"
   },
-  "existing_declared_axial_travel_mm": 1.3,
+  "existing_declared_axial_travel_mm": 1.5,
   "cases": [
     {
       "alpha_per_k": 1.23e-05,
@@ -23,8 +23,8 @@
       "guide_max_travel_mm": 0.31365,
       "barrel_front_travel_mm": 0.8364,
       "guide_clearance_nominal_mm": 0.4954500000000053,
-      "rear_bore_clearance_nominal_mm": -0.004549999999994725,
-      "shoulder_pocket_clearance_nominal_mm": -0.03529999999999944
+      "rear_bore_clearance_nominal_mm": 0.14545000000000385,
+      "shoulder_pocket_clearance_nominal_mm": 0.11469999999999914
     },
     {
       "alpha_per_k": 1.23e-05,
@@ -32,8 +32,8 @@
       "guide_max_travel_mm": 0.351288,
       "barrel_front_travel_mm": 0.936768,
       "guide_clearance_nominal_mm": 0.4829039999999978,
-      "rear_bore_clearance_nominal_mm": -0.01709600000000222,
-      "shoulder_pocket_clearance_nominal_mm": -0.051535999999998694
+      "rear_bore_clearance_nominal_mm": 0.13290399999999636,
+      "shoulder_pocket_clearance_nominal_mm": 0.09846399999999988
     },
     {
       "alpha_per_k": 1.7e-05,
@@ -41,8 +41,8 @@
       "guide_max_travel_mm": 0.4335,
       "barrel_front_travel_mm": 1.156,
       "guide_clearance_nominal_mm": 0.4555000000000007,
-      "rear_bore_clearance_nominal_mm": -0.04449999999999932,
-      "shoulder_pocket_clearance_nominal_mm": -0.0870000000000033
+      "rear_bore_clearance_nominal_mm": 0.10549999999999926,
+      "shoulder_pocket_clearance_nominal_mm": 0.06299999999999528
     },
     {
       "alpha_per_k": 1.7e-05,
@@ -50,8 +50,8 @@
       "guide_max_travel_mm": 0.48552,
       "barrel_front_travel_mm": 1.2947199999999999,
       "guide_clearance_nominal_mm": 0.43815999999999633,
-      "rear_bore_clearance_nominal_mm": -0.06184000000000367,
-      "shoulder_pocket_clearance_nominal_mm": -0.10943999999999932
+      "rear_bore_clearance_nominal_mm": 0.08815999999999491,
+      "shoulder_pocket_clearance_nominal_mm": 0.04055999999999926
     }
   ],
   "pressures": [
@@ -81,8 +81,8 @@
   ],
   "source_sha256": {
     "analysis/practical_mount_v08/calculate.py": "6a34164f04c5c105b538bae5681c2056b56a7dbb4afb592c17f193a4b9badd5e",
-    "analysis/practical_mount_v08/geometry.json": "156d8020cbde969791288065ed78d1837401fb7425d93866fce89d41638cdcbb",
-    "cad/parameters/final_v08.json": "b793e1cf1123c82aab037b592b4256efb8374bd79ad0e1bb22c658aa66c78e81",
+    "analysis/practical_mount_v08/geometry.json": "06934d130c9656eec21242fc2b2ca42a291b7b7b2809594b76a96e2ee6202b04",
+    "cad/parameters/final_v08.json": "c14f7e3a26bb6a37a59106ff0e43fe8b9ec1ccee4a3728c9c3db43eab2b93517",
     "cad/parameters/baseline.json": "eecde1249c65d84c499f7ab949a05ebbcb7fbd8dfa49d762d15d1eba24db304a"
   }
 }

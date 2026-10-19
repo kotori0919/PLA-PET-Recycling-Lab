@@ -1,0 +1,69 @@
+{
+  "time_utc": "2026-09-09T00:53:05.456766+00:00",
+  "base_head": "e03e843fe3f8ce98edf7dcd26292200c3547a9d8",
+  "source_changes": [
+    {
+      "path": "cad/freecad/compact/geometry.py",
+      "before_sha256": "c239db4b36deefe1db10c3f4c50a52a44db863446b4417c73b4b674b33029854",
+      "after_sha256": "70ffde0909648ee73a4d61944e0d2d90def8fa6d2c5c2d90aa0f7b98194e7c57"
+    },
+    {
+      "path": "cad/freecad/compact/manufacturing.py",
+      "before_sha256": "c97c790f325830276b832e83b2478fcfe22d35276a017414df05d5c25281bb4a",
+      "after_sha256": "436f7d63f997fb06442353065320c89726385ab1057540fadaae092057128ceb"
+    },
+    {
+      "path": "cad/freecad/final_v08/generate.py",
+      "before_sha256": "f4526647b3721beed52eb282a56a6f2139304fa161bd639b6703d165cd3bcd01",
+      "after_sha256": "ac680b87e7af834b2c5ce7b92708511d79a9adadf144a3c016ecd1356557da0e"
+    },
+    {
+      "path": "validation/check_phase_clocking_release.py",
+      "before_sha256": "32bccce3c588dab1ad3b3c37e48e65054cf84b7af1216afb0a629dee4ebf17a3",
+      "after_sha256": "eaf774b5466e64892bdb3de09e38557c24e5e801dafb98e32de801fa77546aa5"
+    },
+    {
+      "path": "analysis/final_validation/load_path_contract_v08.py",
+      "before_sha256": null,
+      "after_sha256": "45d484688f68104a94484edf217322daaa0b74654b819a27a84f0ed23b97e043"
+    },
+    {
+      "path": "analysis/final_validation/distributing_patch_v08.py",
+      "before_sha256": null,
+      "after_sha256": "6ca866d725e431860731005382b2c3034e0886a0de14f9c0e63898e33aace6c0"
+    },
+    {
+      "path": "analysis/final_validation/run_solid_load_path_closure.py",
+      "before_sha256": null,
+      "after_sha256": "93f48b2bfe7ed6463facffba1323188251dbff883c6db71842047b13be6574c4"
+    },
+    {
+      "path": "analysis/final_validation/contracts/thermomechanical_closure_v08.json",
+      "before_sha256": null,
+      "after_sha256": "8e5f17a957f9e40f49f3021d7a994302a52165fc1eb99dd38cfe69548d4c04a6"
+    },
+    {
+      "path": "analysis/final_validation/run_thermal_fit_closure.py",
+      "before_sha256": null,
+      "after_sha256": "f7cf8dc7419ed34f7eb29fbb3b70c44f736a253a43d8640e1887f36f0e5fd0c0"
+    },
+    {
+      "path": "cad/freecad/final_v08/audit_thermal_mating_closure.py",
+      "before_sha256": null,
+      "after_sha256": "22cfa0c819b618501a65aed252bd711f6ef3b8cb285a491faa134a98864ad14c"
+    },
+    {
+      "path": "validation/check_shaft_journal_keyseat_closure.py",
+      "before_sha256": null,
+      "after_sha256": "162ec3224e6541c0c898d992e07efe19020d90ad4dd25d06e2d51cdd2d0c9e6d"
+    },
+    {
+      "path": "validation/test_load_path_closure.py",
+      "before_sha256": null,
+      "after_sha256": "e56117617051e1b70bc37d90e1f85f61d18f509d150a76ad3950df3579f64d4d"
+    }
+  ],
+  "physical_operation": false,
+  "gate_relaxation": false,
+  "scope": "Driven-shaft journal/keyseat correction; parameter-connected collar geometry; load-resultant and thermal mating validation; original revision remains on HOLD."
+}

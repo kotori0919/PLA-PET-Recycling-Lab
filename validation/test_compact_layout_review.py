@@ -16,7 +16,7 @@ class CompactLayoutTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.spec=json.loads(r.CONTRACT.read_text())
-        cls.base,_=integrated_objects(final_objects())
+        cls.base,_=integrated_objects(final_objects(), compact_layout=False)
         cls.proposed,cls.transforms=r.placement(cls.base)
 
     def copy(self):

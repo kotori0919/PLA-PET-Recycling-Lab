@@ -1,0 +1,17 @@
+* Auto-generated testbench for voltage divider: R32/R40
+* Expected Vout = 3.3 * 0.997877 = 3.2930 V
+* Model: ideal passives (exact, unloaded)
+
+VIN BUF_SHREDDER_ENABLE 0 DC 3.3
+R32 BUF_SHREDDER_ENABLE OUT_SHREDDER_ENABLE 100
+R40 OUT_SHREDDER_ENABLE 0 47k
+
+.control
+op 
+let vout_sim = v(OUT_SHREDDER_ENABLE)
+let error_pct = abs(vout_sim - 3.2929941) / 3.2929941 * 100
+echo "vout_sim=$&vout_sim error_pct=$&error_pct expected=3.2929941" > electronics/pcb/interface_board/analysis/spice_work/voltage-divider_R32_R40.out
+quit
+.endc
+
+.end

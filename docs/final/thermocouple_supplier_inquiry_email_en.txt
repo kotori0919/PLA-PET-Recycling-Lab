@@ -1,0 +1,36 @@
+Subject: RFQ and approval drawing — custom Tempco MTA1 Type-K Ø3 mm probes
+
+To: sales@tempco.com
+
+Hello,
+
+I am requesting a quotation and approval drawing for five custom MTA1 mineral-insulated thermocouple assemblies for a laboratory polymer-processing machine. This inquiry does not authorize an order.
+
+Required configuration:
+
+- MTA1 options: Type K, single element, 96% MgO, Alloy 600, Q sheath Ø3.00 ±0.03 mm, ungrounded junction.
+- Sheath length 25.40 ±0.25 mm; flat closed tip; junction within 1.0 mm of the tip.
+- 12 inch fiberglass lead with stainless over braid, split leads, strain relief, no compression fitting, high-temperature ceramic potting.
+- Supplier-welded 304 stainless stop collar: Ø6.00 ±0.05 x 0.80 ±0.05 mm.
+- Three probes: tip-to-collar 5.20 ±0.05 mm. One probe: 10.00 ±0.05 mm. One hopper probe: collar location to be confirmed separately.
+- Intended for insertion into a blind Ø3.20 +0.05/0 mm bore and retention by an external two-screw bridge over the stop collar; no set screw may bear on the MI sheath.
+- Compatible with a MAX6675-class receiver using a common electronics reference; the sheath must not be used as the thermocouple electrical return.
+
+Please provide:
+
+1. Assigned orderable MPN for each collar-location variant and quotation for 3 + 1 + 1 pieces.
+2. Sheath material and minimum/maximum outside diameter, including tolerance.
+3. Approval drawing confirming all sheath, collar, transition, tip, junction and lead dimensions.
+4. Whether 5.20 mm partial insertion into steel at 245–270 °C is supported. Please state any required contact compound, minimum insertion, expected response and installation error.
+5. Transition-body dimensions and continuous temperature rating of the sheath, transition, cable insulation, and connector separately.
+6. Evidence that the junction is ungrounded, including sheath-to-junction insulation resistance and test voltage.
+7. Confirmation that the welded collar and external bridge do not damage the MI sheath; allowable axial pull/vibration load.
+8. Accuracy class/standard, calibration documentation, lead-wire polarity/color standard, price, minimum order quantity, and lead time.
+
+Receipt acceptance will include ≥100 MΩ sheath-to-junction insulation at 100 VDC, dimensional inspection, a 20 N axial pull test after a 270 °C thermal cycle, and a coupon comparison requiring ≤2 °C steady-state installation bias and ≤30 s to 90% response. Please identify any conflict with your recommended test method.
+
+Regards,
+[Name]
+[Company / project, if applicable]
+[Country]
+[Email]

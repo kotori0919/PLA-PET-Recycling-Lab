@@ -1,6 +1,6 @@
 {
   "revision": "final-design-fabrication-closure-v0.8",
-  "pair_count": 15931,
+  "pair_count": 18145,
   "tolerance_mm3": 0.05,
   "overlaps": [
     {
@@ -20,6 +20,105 @@
       "right_class": "purchased_reference_lod",
       "allowed": true,
       "reason": "보수적 chain LOD와 sprocket 맞물림 체적"
+    },
+    {
+      "left": "FeederAgitatorDriveShaft",
+      "right": "FeederAugerSpringPin",
+      "overlap_mm3": 55.536,
+      "left_class": "manufactured_or_stock",
+      "right_class": "manufactured_or_stock",
+      "allowed": true,
+      "reason": "SYS-15 lower spring-pin 체결부"
+    },
+    {
+      "left": "Barrel",
+      "right": "TemperatureProbeRetainerT1",
+      "overlap_mm3": 86.053,
+      "left_class": "manufactured_or_stock",
+      "right_class": "manufactured_or_stock",
+      "allowed": true,
+      "reason": "barrel tangent-contact stop-collar bridge"
+    },
+    {
+      "left": "Barrel",
+      "right": "TemperatureProbeRetainerT2",
+      "overlap_mm3": 86.053,
+      "left_class": "manufactured_or_stock",
+      "right_class": "manufactured_or_stock",
+      "allowed": true,
+      "reason": "barrel tangent-contact stop-collar bridge"
+    },
+    {
+      "left": "Barrel",
+      "right": "TemperatureProbeRetainerT3",
+      "overlap_mm3": 86.053,
+      "left_class": "manufactured_or_stock",
+      "right_class": "manufactured_or_stock",
+      "allowed": true,
+      "reason": "barrel tangent-contact stop-collar bridge"
+    },
+    {
+      "left": "BarrelBandHeaterZ1",
+      "right": "TemperatureProbeRetainerT1",
+      "overlap_mm3": 3.003,
+      "left_class": "purchased_reference_envelope",
+      "right_class": "manufactured_or_stock",
+      "allowed": true,
+      "reason": "보수적 heater/retainer 접촉 LOD; 실물 간극 검사 대상"
+    },
+    {
+      "left": "TemperatureProbeT1",
+      "right": "TemperatureProbeRetainerT1",
+      "overlap_mm3": 22.195,
+      "left_class": "manufactured_or_stock",
+      "right_class": "manufactured_or_stock",
+      "allowed": true,
+      "reason": "stop collar captured by bridge"
+    },
+    {
+      "left": "TemperatureProbeT2",
+      "right": "TemperatureProbeRetainerT2",
+      "overlap_mm3": 22.195,
+      "left_class": "manufactured_or_stock",
+      "right_class": "manufactured_or_stock",
+      "allowed": true,
+      "reason": "stop collar captured by bridge"
+    },
+    {
+      "left": "TemperatureProbeT3",
+      "right": "TemperatureProbeRetainerT3",
+      "overlap_mm3": 22.195,
+      "left_class": "manufactured_or_stock",
+      "right_class": "manufactured_or_stock",
+      "allowed": true,
+      "reason": "stop collar captured by bridge"
+    },
+    {
+      "left": "DownDieBody",
+      "right": "TemperatureProbeT4",
+      "overlap_mm3": 16.185,
+      "left_class": "manufactured_or_stock",
+      "right_class": "manufactured_or_stock",
+      "allowed": true,
+      "reason": "T4 sheath inserted into die blind bore"
+    },
+    {
+      "left": "DownDieBody",
+      "right": "TemperatureProbeRetainerT4",
+      "overlap_mm3": 112.065,
+      "left_class": "manufactured_or_stock",
+      "right_class": "manufactured_or_stock",
+      "allowed": true,
+      "reason": "die tangent-contact stop-collar bridge"
+    },
+    {
+      "left": "TemperatureProbeT4",
+      "right": "TemperatureProbeRetainerT4",
+      "overlap_mm3": 27.446,
+      "left_class": "manufactured_or_stock",
+      "right_class": "manufactured_or_stock",
+      "allowed": true,
+      "reason": "stop collar captured by bridge"
     },
     {
       "left": "HeaterCableDuctBridgeX",
@@ -94,40 +193,13 @@
       "reason": "실측 전 generic core solid LOD에 표시한 cone 접촉/삽입부"
     },
     {
-      "left": "PPR-C11_ControlBezel",
-      "right": "ControlBezelM3Fastener1",
-      "overlap_mm3": 21.206,
+      "left": "SpoolBearingPlateFront",
+      "right": "SpoolerTachSensorEnvelope",
+      "overlap_mm3": 642.725,
       "left_class": "manufactured_or_stock",
-      "right_class": "manufactured_or_stock",
+      "right_class": "unverified_donor_envelope",
       "allowed": true,
-      "reason": "PPR-C11 blind insert의 의도된 M3 나사산 체결부"
-    },
-    {
-      "left": "PPR-C11_ControlBezel",
-      "right": "ControlBezelM3Fastener2",
-      "overlap_mm3": 21.206,
-      "left_class": "manufactured_or_stock",
-      "right_class": "manufactured_or_stock",
-      "allowed": true,
-      "reason": "PPR-C11 blind insert의 의도된 M3 나사산 체결부"
-    },
-    {
-      "left": "PPR-C11_ControlBezel",
-      "right": "ControlBezelM3Fastener3",
-      "overlap_mm3": 21.206,
-      "left_class": "manufactured_or_stock",
-      "right_class": "manufactured_or_stock",
-      "allowed": true,
-      "reason": "PPR-C11 blind insert의 의도된 M3 나사산 체결부"
-    },
-    {
-      "left": "PPR-C11_ControlBezel",
-      "right": "ControlBezelM3Fastener4",
-      "overlap_mm3": 21.206,
-      "left_class": "manufactured_or_stock",
-      "right_class": "manufactured_or_stock",
-      "allowed": true,
-      "reason": "PPR-C11 blind insert의 의도된 M3 나사산 체결부"
+      "reason": "tach sensor mounting envelope on metal plate"
     }
   ],
   "unexpected_count": 0,

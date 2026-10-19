@@ -1,0 +1,117 @@
+{
+  "status": "HOLD",
+  "physical_validation_state": "NOT_RUN",
+  "cases": [
+    {
+      "case": "PilotPET",
+      "radial_gap_mm": [
+        0.02387923339177256,
+        0.025010808324324785
+      ],
+      "T3_minus_Tdie_k": [
+        -0.051424888116720524,
+        10.42671917698371
+      ],
+      "injected_power_check": "NOT_APPLICABLE",
+      "peak_zone_temperature_c": 266.297501726428,
+      "fuse_ever_blown": false
+    },
+    {
+      "case": "PilotPETDieOpen",
+      "radial_gap_mm": [
+        0.01849584277240801,
+        0.02500150000000012
+      ],
+      "T3_minus_Tdie_k": [
+        0.0,
+        57.45209985895082
+      ],
+      "injected_power_check": "PASS",
+      "peak_zone_temperature_c": 258.0359916024544,
+      "fuse_ever_blown": false
+    },
+    {
+      "case": "PilotPETBarrelOpen",
+      "radial_gap_mm": [
+        0.02500150000000012,
+        0.027938676674502005
+      ],
+      "T3_minus_Tdie_k": [
+        -25.6164451661174,
+        0.0
+      ],
+      "injected_power_check": "PASS",
+      "peak_zone_temperature_c": 251.7614229105809,
+      "fuse_ever_blown": false
+    },
+    {
+      "case": "PilotPETBarrelStuck",
+      "radial_gap_mm": [
+        0.023047033759930002,
+        0.025010808324324785
+      ],
+      "T3_minus_Tdie_k": [
+        -0.051424888116720524,
+        17.767710184695716
+      ],
+      "injected_power_check": "PASS",
+      "peak_zone_temperature_c": 279.6101134701095,
+      "fuse_ever_blown": false
+    },
+    {
+      "case": "PilotPETDieStuck",
+      "radial_gap_mm": [
+        0.02387923339177256,
+        0.0258376429573417
+      ],
+      "T3_minus_Tdie_k": [
+        -6.680815246662178,
+        10.42671917698371
+      ],
+      "injected_power_check": "PASS",
+      "peak_zone_temperature_c": 273.4333974020416,
+      "fuse_ever_blown": false
+    },
+    {
+      "case": "PilotPETWeakJoint",
+      "radial_gap_mm": [
+        0.0026497874837527746,
+        0.02500150000000012
+      ],
+      "T3_minus_Tdie_k": [
+        0.0,
+        196.18362960357388
+      ],
+      "injected_power_check": "PASS",
+      "peak_zone_temperature_c": 265.8342229798627,
+      "fuse_ever_blown": false
+    },
+    {
+      "case": "PilotPETVeryWeakJoint",
+      "radial_gap_mm": [
+        -0.001971155446215178,
+        0.02500150000000012
+      ],
+      "T3_minus_Tdie_k": [
+        0.0,
+        236.61468045411883
+      ],
+      "injected_power_check": "PASS",
+      "peak_zone_temperature_c": 266.4127022122732,
+      "fuse_ever_blown": false
+    }
+  ],
+  "scope": "Nominal19/19.05 mm fit; assumed alpha12e-6/K. Lumped T3/Tdie; coupling0.8 default, weak0.08 and very weak0.008 W/K diagnostic assumptions, no local joint/contact qualification.",
+  "source_sha256": {
+    "analysis/final_validation/results/v0.8/PilotPET_res.csv": "8774f13dad917f47313e275e270ec340295c682388f57b21767a00714dd61f2d",
+    "analysis/final_validation/results/v0.8/PilotPETDieOpen_res.csv": "b1cf1cb3bc3b0f7f528740cc5d9c61e1ef5665192f9c456218a0d49085f83fc8",
+    "analysis/final_validation/results/v0.8/PilotPETBarrelOpen_res.csv": "dd6c8103638cf3263c99af5411f7ba1127fb94a278d22256d4df01e91228f7ec",
+    "analysis/final_validation/results/v0.8/PilotPETBarrelStuck_res.csv": "346c32aa7c93d06fd600b003ccb4e08db79a8662e7a32bfad4b80d6d940987a9",
+    "analysis/final_validation/results/v0.8/PilotPETDieStuck_res.csv": "83f0a5c2ed4fc00028cf82ab118422dc7536a255bba4494945de194c1b130cc1",
+    "analysis/final_validation/results/v0.8/PilotPETWeakJoint_res.csv": "933df5902259399e2beb7070d539cb2280d8bc22ad353181d143135cac98bb21",
+    "analysis/final_validation/results/v0.8/PilotPETVeryWeakJoint_res.csv": "03c88dc4c596d2400f40099a5647338dcc0fac8cb04119e4119eb4cf07039237",
+    "analysis/final_validation/summarize_die_pilot_thermal.py": "efeee86c4dfde0268ccd27d03ccc9f3e2f526cb10632f3c39360cca62b8dfc53",
+    "simulation/openmodelica/scripts/run_die_pilot_screen.mos": "411c02b842beff2cab2b89203acf225a7732a40eacc943dc23fdc74df8df5cd7",
+    "simulation/openmodelica/PLA_PET_Recycler/Systems/ThermalExtruderSystem.mo": "39fe3c0e074d48a2995cd4a84aab74a3371e0b38d761dfec83c97ada8f00338a"
+  }
+}

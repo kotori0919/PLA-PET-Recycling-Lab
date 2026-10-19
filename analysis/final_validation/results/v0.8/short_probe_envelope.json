@@ -1,0 +1,33 @@
+{
+  "status": "HOLD",
+  "physical_validation_state": "NOT_RUN",
+  "rows": [
+    {
+      "channel": "TemperatureProbeT1",
+      "nominal_external_length_mm": 9.8,
+      "collisions": [],
+      "external_envelope_check": "PASS"
+    },
+    {
+      "channel": "TemperatureProbeT2",
+      "nominal_external_length_mm": 9.8,
+      "collisions": [],
+      "external_envelope_check": "PASS"
+    },
+    {
+      "channel": "TemperatureProbeT3",
+      "nominal_external_length_mm": 9.8,
+      "collisions": [],
+      "external_envelope_check": "PASS"
+    }
+  ],
+  "scope": "Nominal OD3 length15 cartridge, assumed insertion5.2; only exposed9.8 checked. Existing probe object including its lead excluded for each replacement. No diameter tolerance, insertion geometry, tip/junction, connector, lead, retention or temperature accuracy qualification.",
+  "source_sha256": {
+    "cad/freecad/final_v08/check_short_probe_envelope.py": "1979f8da7afded81ddc3b389ed3938d7fa82aee7bd77055c77bc8fba8acb0736",
+    "cad/freecad/final_v08/generate.py": "dccc72127bfe6bbdf1cb394020210a19129fa0e9ea0df2e3ff6a0d884161902d",
+    "cad/freecad/final_v08/check_retainer_tool_access.py": "6eb116d25a1ae5d3f308d61aa86670344443324c60546e529c0017e53ac03f24",
+    "cad/freecad/compact/geometry.py": "ce8ca7c3b70dc422d442149a92580e328b1ac62286629d4f2ff75d209ddd0028",
+    "cad/parameters/final_v08.json": "340c3e6eb0ebc19118e9c77072c4e82719eaaf4d3850c98fe508398e7ab09baa",
+    "docs/final/probe_sourcing_ko.md": "eeb709b5b81420ef609dd1db6c60e71c9e93834c5832253953ecf603417702f8"
+  }
+}

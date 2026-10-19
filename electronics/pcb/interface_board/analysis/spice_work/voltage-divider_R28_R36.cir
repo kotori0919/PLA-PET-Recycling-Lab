@@ -1,0 +1,17 @@
+* Auto-generated testbench for voltage divider: R28/R36
+* Expected Vout = 3.3 * 0.997877 = 3.2930 V
+* Model: ideal passives (exact, unloaded)
+
+VIN BUF_HEATER_EXT_DIE 0 DC 3.3
+R28 BUF_HEATER_EXT_DIE OUT_HEATER_EXT_DIE 100
+R36 OUT_HEATER_EXT_DIE 0 47k
+
+.control
+op 
+let vout_sim = v(OUT_HEATER_EXT_DIE)
+let error_pct = abs(vout_sim - 3.2929941) / 3.2929941 * 100
+echo "vout_sim=$&vout_sim error_pct=$&error_pct expected=3.2929941" > electronics/pcb/interface_board/analysis/spice_work/voltage-divider_R28_R36.out
+quit
+.endc
+
+.end

@@ -1,5 +1,7 @@
 # 연구 설계 동결 인덱스
 
+> 이 인덱스의 revision·예산·상태는 각 기록 작성 당시 기준이다. 현재 정책은 `final/release_notes_v1.0.0-rc1_ko.md`를 따른다. Archive branch/tag 불변 규칙은 유지한다.
+
 - archive commit SHA: `5d83e165466c6a8a1f4c159d198baaa1c2768e59`
 - annotated tag: `research-v0.2-two-tower`
 - archive branch: `archive/research-v0.2-two-tower`
@@ -16,7 +18,7 @@ archive의 문서, CAD, PDF와 artifact는 역사적 연구 기록이며 active 
 - archive branch: `archive/compact-v0.3-surface-proof`
 - 동결일: 2026-08-29
 
-이 snapshot은 v0.4에서 closed-solid/manifold CAD, actual slicing, CAD-to-Modelica mass/inertia bridge와 digital mechanics를 추가하기 전 compact architecture를 그대로 보존한다. Current source는 `solid-manifold-openmodelica-v0.4`이며 archive branch/tag를 수정하지 않는다.
+이 snapshot은 v0.4에서 closed-solid/manifold CAD, actual slicing, CAD-to-Modelica mass/inertia bridge와 digital mechanics를 추가하기 전 compact architecture를 그대로 보존한다. 이 기록 작성 당시 source는 `solid-manifold-openmodelica-v0.4`이며 archive branch/tag를 수정하지 않는다.
 
 ## Solid-manifold OpenModelica v0.4 동결
 
@@ -51,4 +53,4 @@ archive의 문서, CAD, PDF와 artifact는 역사적 연구 기록이며 active 
 - archive branch: `archive/implementation-crosssolver-v0.6-final`
 - 동결일: 2026-08-30
 
-이 snapshot은 `MachineSupervisor`, atomic fault clear, transactional start, 실제 maintenance purge, common forming-chain rundown, cooling feedback와 spool requalification을 추가하기 전 최종 v0.6 구현·교차 solver 기준선이다. Active revision은 `safety-orchestration-closure-v0.6.1`이며 archive branch와 tag는 수정하지 않는다.
+이 snapshot은 `MachineSupervisor`, atomic fault clear, transactional start, 실제 maintenance purge, common forming-chain rundown, cooling feedback와 spool requalification을 추가하기 전 최종 v0.6 구현·교차 solver 기준선이다. 이 기록 작성 당시 active revision은 `safety-orchestration-closure-v0.6.1`이며 archive branch와 tag는 수정하지 않는다.

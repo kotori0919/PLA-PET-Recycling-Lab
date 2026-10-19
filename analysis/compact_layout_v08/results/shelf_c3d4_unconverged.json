@@ -1,0 +1,747 @@
+{
+  "status": "FAIL",
+  "checks": {
+    "twelve_cases": true,
+    "all_equilibrium": true,
+    "all_solver_pass": true,
+    "displacement_convergence": false,
+    "sources_unchanged": true
+  },
+  "cases": [
+    {
+      "variant": "before",
+      "mesh_mm": 6.0,
+      "direction": -1,
+      "nodes": 12138,
+      "elements": 40335,
+      "applied": {
+        "force_n": [
+          0.0,
+          0.0,
+          -400.0
+        ],
+        "moment_nm": [
+          -105.20523702846816,
+          60.599771801485716,
+          0.0
+        ],
+        "post_patch_areas_mm2": [
+          392.48630569372057,
+          377.12834167228914,
+          388.18417381971733,
+          380.422330971321
+        ],
+        "load_basis": "100 N per post, four posts; numerical unit-load comparison, not an established machine load"
+      },
+      "result": {
+        "max_displacement_mm": 0.010629459387461715,
+        "max_von_mises_mpa": 17.325455172950004,
+        "max_von_mises_node_id": 424,
+        "status": "PASS",
+        "omp_num_threads": 1,
+        "negative_jacobian": false
+      },
+      "equilibrium": {
+        "force_residual_n": [
+          0.00010050000000721981,
+          -2.9400000008755756e-05,
+          -4.799999999249849e-06
+        ],
+        "moment_residual_nm": [
+          1.620533191726281e-05,
+          5.393324919822362e-05,
+          -3.1205312897242266e-05
+        ],
+        "passed": true
+      },
+      "raw_dir": ".build/compact-purpose-continue-20260915/shelf-raw/run-khd4pz40/before-6/load--1",
+      "raw_sha256": {
+        "model.inp": "db91a61c3b21406db9e3abad9be91ba7e11f03e24c1c975102b1bc4ca57b1ecc",
+        "model.dat": "1d72cea6b1bae202e7b44951ac3203d1333a524edc8517090cd8166ea42e115f",
+        "model.frd": "975fb8790bd93bfbfbd2121ac71dfe51afb1ec5fa3a9c0ede281660da8064c75",
+        "ccx.log": "540aee521fe3a8ca70f82b7cf4593aaa1e522190e964a7687c76419e09ab6721"
+      }
+    },
+    {
+      "variant": "before",
+      "mesh_mm": 6.0,
+      "direction": 1,
+      "nodes": 12138,
+      "elements": 40335,
+      "applied": {
+        "force_n": [
+          0.0,
+          0.0,
+          400.0
+        ],
+        "moment_nm": [
+          105.20523702846816,
+          -60.599771801485716,
+          0.0
+        ],
+        "post_patch_areas_mm2": [
+          392.48630569372057,
+          377.12834167228914,
+          388.18417381971733,
+          380.422330971321
+        ],
+        "load_basis": "100 N per post, four posts; numerical unit-load comparison, not an established machine load"
+      },
+      "result": {
+        "max_displacement_mm": 0.010629459387461715,
+        "max_von_mises_mpa": 17.325455172950004,
+        "max_von_mises_node_id": 424,
+        "status": "PASS",
+        "omp_num_threads": 1,
+        "negative_jacobian": false
+      },
+      "equilibrium": {
+        "force_residual_n": [
+          -0.00010050000000721981,
+          2.9400000008755756e-05,
+          4.799999999249849e-06
+        ],
+        "moment_residual_nm": [
+          -1.620533191726281e-05,
+          -5.393324919822362e-05,
+          3.1205312897242266e-05
+        ],
+        "passed": true
+      },
+      "raw_dir": ".build/compact-purpose-continue-20260915/shelf-raw/run-khd4pz40/before-6/load-1",
+      "raw_sha256": {
+        "model.inp": "c430eee9acd371779aba19933a8630f05b57f15267550d4ede13415b2940d0bf",
+        "model.dat": "61001b599eb24bb4c32af7866eb859dec86c3ba196311422d50dd12414dd7372",
+        "model.frd": "e36b361cf86f54b438a34eb389de111f3f8c0ba111b8d26f40858609e39eb7ba",
+        "ccx.log": "70486acc2a5b22354f3905b6f9171fde5a1cac6540154cf7e0052b03e0c931d7"
+      }
+    },
+    {
+      "variant": "before",
+      "mesh_mm": 4.0,
+      "direction": -1,
+      "nodes": 17457,
+      "elements": 60419,
+      "applied": {
+        "force_n": [
+          0.0,
+          0.0,
+          -400.0
+        ],
+        "moment_nm": [
+          -105.21089300859431,
+          60.58561906379762,
+          0.0
+        ],
+        "post_patch_areas_mm2": [
+          384.68747199282075,
+          382.3819610504356,
+          390.27020013271385,
+          367.82954381036177
+        ],
+        "load_basis": "100 N per post, four posts; numerical unit-load comparison, not an established machine load"
+      },
+      "result": {
+        "max_displacement_mm": 0.012457750820552881,
+        "max_von_mises_mpa": 19.208363526971787,
+        "max_von_mises_node_id": 418,
+        "status": "PASS",
+        "omp_num_threads": 1,
+        "negative_jacobian": false
+      },
+      "equilibrium": {
+        "force_residual_n": [
+          0.00010390000000820576,
+          1.5799999998455938e-05,
+          -1.3000000080864993e-06
+        ],
+        "moment_residual_nm": [
+          -1.1032251663323223e-05,
+          5.654691791789901e-05,
+          -2.6171309897904393e-05
+        ],
+        "passed": true
+      },
+      "raw_dir": ".build/compact-purpose-continue-20260915/shelf-raw/run-khd4pz40/before-4/load--1",
+      "raw_sha256": {
+        "model.inp": "5f0393cd89f6697cbf9695c59aea8f2966a85be44476a2778df98a2aa080e14d",
+        "model.dat": "ecce7a9d489f3148f58ba745f0b18bf8a7e2b1a2f198f5bd510f8c47ddae8c79",
+        "model.frd": "ef92c9aacd14209c8fd83ab2e55a076c8e7f71a63e2a18e3aff9298a9f4ebc0f",
+        "ccx.log": "068bf5d8eef1b4f8fb5bad35ac3fb8054c9cbe34e9d669cf14cbc9ba6376afb7"
+      }
+    },
+    {
+      "variant": "before",
+      "mesh_mm": 4.0,
+      "direction": 1,
+      "nodes": 17457,
+      "elements": 60419,
+      "applied": {
+        "force_n": [
+          0.0,
+          0.0,
+          400.0
+        ],
+        "moment_nm": [
+          105.21089300859431,
+          -60.58561906379762,
+          0.0
+        ],
+        "post_patch_areas_mm2": [
+          384.68747199282075,
+          382.3819610504356,
+          390.27020013271385,
+          367.82954381036177
+        ],
+        "load_basis": "100 N per post, four posts; numerical unit-load comparison, not an established machine load"
+      },
+      "result": {
+        "max_displacement_mm": 0.012457750820552881,
+        "max_von_mises_mpa": 19.208363526971787,
+        "max_von_mises_node_id": 418,
+        "status": "PASS",
+        "omp_num_threads": 1,
+        "negative_jacobian": false
+      },
+      "equilibrium": {
+        "force_residual_n": [
+          -0.00010390000000820576,
+          -1.5799999998455938e-05,
+          1.3000000080864993e-06
+        ],
+        "moment_residual_nm": [
+          1.1032251663323223e-05,
+          -5.654691791789901e-05,
+          2.6171309897904393e-05
+        ],
+        "passed": true
+      },
+      "raw_dir": ".build/compact-purpose-continue-20260915/shelf-raw/run-khd4pz40/before-4/load-1",
+      "raw_sha256": {
+        "model.inp": "c4e78275f4ff1b83b984c667e8e1244275b7e02c142062b4d9c962de27baacd2",
+        "model.dat": "04e588f2a6bcd7386a2648af2579c705c94d00f3cc114aced7361d835b860154",
+        "model.frd": "da565a8953fa0dd096b38fed20a5e55a593c00fff31a908bb1e42b29a3833f28",
+        "ccx.log": "3c174ae0723f262a58dc4036c6b8d270b6cd01ddd9b97e14423c210210e58885"
+      }
+    },
+    {
+      "variant": "before",
+      "mesh_mm": 2.0,
+      "direction": -1,
+      "nodes": 63005,
+      "elements": 265724,
+      "applied": {
+        "force_n": [
+          0.0,
+          0.0,
+          -400.0
+        ],
+        "moment_nm": [
+          -105.21005361604135,
+          60.61360269249085,
+          0.0
+        ],
+        "post_patch_areas_mm2": [
+          367.2353374931035,
+          383.2579182622219,
+          379.2266445428331,
+          375.5632365001738
+        ],
+        "load_basis": "100 N per post, four posts; numerical unit-load comparison, not an established machine load"
+      },
+      "result": {
+        "max_displacement_mm": 0.01680822834258974,
+        "max_von_mises_mpa": 28.518464797681517,
+        "max_von_mises_node_id": 1118,
+        "status": "PASS",
+        "omp_num_threads": 1,
+        "negative_jacobian": false
+      },
+      "equilibrium": {
+        "force_residual_n": [
+          4.906999999598066e-05,
+          3.23900000080337e-05,
+          -7.0149999942259456e-06
+        ],
+        "moment_residual_nm": [
+          -1.8749748349478068e-05,
+          2.7280241269522776e-05,
+          -7.583326047111427e-06
+        ],
+        "passed": true
+      },
+      "raw_dir": ".build/compact-purpose-continue-20260915/shelf-raw/run-khd4pz40/before-2/load--1",
+      "raw_sha256": {
+        "model.inp": "800fe80df491a37044ab70a852553fe52578039498026bc530a246ee13e808a1",
+        "model.dat": "0ef580228ee41450f75e0c5ca28de266177b179bb94a6673ba25c1e73a00764b",
+        "model.frd": "e29c240cdc51d909419d100443c462ab84c90919b8dbbb5ef107e72ac55b1f48",
+        "ccx.log": "fa4636ae9f53600c3bf9c969b4f798602596a3c96cfa74cda478b96176f4fef8"
+      }
+    },
+    {
+      "variant": "before",
+      "mesh_mm": 2.0,
+      "direction": 1,
+      "nodes": 63005,
+      "elements": 265724,
+      "applied": {
+        "force_n": [
+          0.0,
+          0.0,
+          400.0
+        ],
+        "moment_nm": [
+          105.21005361604135,
+          -60.61360269249085,
+          0.0
+        ],
+        "post_patch_areas_mm2": [
+          367.2353374931035,
+          383.2579182622219,
+          379.2266445428331,
+          375.5632365001738
+        ],
+        "load_basis": "100 N per post, four posts; numerical unit-load comparison, not an established machine load"
+      },
+      "result": {
+        "max_displacement_mm": 0.01680822834258974,
+        "max_von_mises_mpa": 28.518464797681517,
+        "max_von_mises_node_id": 1118,
+        "status": "PASS",
+        "omp_num_threads": 1,
+        "negative_jacobian": false
+      },
+      "equilibrium": {
+        "force_residual_n": [
+          -4.906999999598066e-05,
+          -3.23900000080337e-05,
+          7.0149999942259456e-06
+        ],
+        "moment_residual_nm": [
+          1.8749748349478068e-05,
+          -2.7280241269522776e-05,
+          7.583326047111427e-06
+        ],
+        "passed": true
+      },
+      "raw_dir": ".build/compact-purpose-continue-20260915/shelf-raw/run-khd4pz40/before-2/load-1",
+      "raw_sha256": {
+        "model.inp": "61ccc266bfd0c65ea0abb9a408187f4601028f1b9d6ab896614e34fcf1a63223",
+        "model.dat": "99cbc7b53abeafc405d0d5e5195b1ff27207d212d79659ea46db0e4e571e8a98",
+        "model.frd": "deb30bf8e6a0680ca906b2f4decaada0eb00c3890aec6e08b05b501a4c0a2a3f",
+        "ccx.log": "759f8ec191ebaa7b3c8174cb350b143cbbdcd1720714b35633f7680184a61989"
+      }
+    },
+    {
+      "variant": "after",
+      "mesh_mm": 6.0,
+      "direction": -1,
+      "nodes": 9063,
+      "elements": 28199,
+      "applied": {
+        "force_n": [
+          0.0,
+          0.0,
+          -400.0
+        ],
+        "moment_nm": [
+          -116.82811579089838,
+          53.4236922686934,
+          0.0
+        ],
+        "post_patch_areas_mm2": [
+          359.3871912694418,
+          386.37606935832076,
+          370.79525567663404,
+          386.04418870892033
+        ],
+        "load_basis": "100 N per post, four posts; numerical unit-load comparison, not an established machine load"
+      },
+      "result": {
+        "max_displacement_mm": 0.026205921887056064,
+        "max_von_mises_mpa": 21.517987860648123,
+        "max_von_mises_node_id": 294,
+        "status": "PASS",
+        "omp_num_threads": 1,
+        "negative_jacobian": false
+      },
+      "equilibrium": {
+        "force_residual_n": [
+          -3.790000001777094e-05,
+          -3.1966999992625623e-05,
+          6.383999999570733e-05
+        ],
+        "moment_residual_nm": [
+          3.4649412526732704e-05,
+          -2.6720223829101997e-05,
+          6.970467901545874e-06
+        ],
+        "passed": true
+      },
+      "raw_dir": ".build/compact-purpose-continue-20260915/shelf-raw/run-khd4pz40/after-6/load--1",
+      "raw_sha256": {
+        "model.inp": "7cb3c2979d3316f7c8d1091da6174fe651e494e2efd4ef41b308841eb0b9979f",
+        "model.dat": "b3dd0de696cc382cf339e5598dfb739a253883fad087d36372d9a6363d80f76e",
+        "model.frd": "70f8c9317aecb4bb100a1eb710c398748ddd94f5d7e4b4fca2616c9ba1b2431a",
+        "ccx.log": "4589b9dd432f7ec6e480a5695fbca963ab8603f7c55e6495f79860283821734b"
+      }
+    },
+    {
+      "variant": "after",
+      "mesh_mm": 6.0,
+      "direction": 1,
+      "nodes": 9063,
+      "elements": 28199,
+      "applied": {
+        "force_n": [
+          0.0,
+          0.0,
+          400.0
+        ],
+        "moment_nm": [
+          116.82811579089838,
+          -53.4236922686934,
+          0.0
+        ],
+        "post_patch_areas_mm2": [
+          359.3871912694418,
+          386.37606935832076,
+          370.79525567663404,
+          386.04418870892033
+        ],
+        "load_basis": "100 N per post, four posts; numerical unit-load comparison, not an established machine load"
+      },
+      "result": {
+        "max_displacement_mm": 0.026205921887056064,
+        "max_von_mises_mpa": 21.517987860648123,
+        "max_von_mises_node_id": 294,
+        "status": "PASS",
+        "omp_num_threads": 1,
+        "negative_jacobian": false
+      },
+      "equilibrium": {
+        "force_residual_n": [
+          3.790000001777094e-05,
+          3.1966999992625623e-05,
+          -6.383999999570733e-05
+        ],
+        "moment_residual_nm": [
+          -3.4649412526732704e-05,
+          2.6720223829101997e-05,
+          -6.970467901545874e-06
+        ],
+        "passed": true
+      },
+      "raw_dir": ".build/compact-purpose-continue-20260915/shelf-raw/run-khd4pz40/after-6/load-1",
+      "raw_sha256": {
+        "model.inp": "3aaf311ab0826ff0f997ca0b0f77b44f224996b322ec2e5368b9f891c24cd167",
+        "model.dat": "3eda3a95b4e483bc49530e3d58656d8913701f3646c1a0153cd79c53c658bff3",
+        "model.frd": "1cff79caf8b1a445266f36d9ff4f5b93e8ad3b2cb4a47d6d307f785c682f5982",
+        "ccx.log": "5ed1e899e6c26fe816ca3c14930eda4c175d3edf20ffb31066cd203bb2bf8d00"
+      }
+    },
+    {
+      "variant": "after",
+      "mesh_mm": 4.0,
+      "direction": -1,
+      "nodes": 15993,
+      "elements": 54643,
+      "applied": {
+        "force_n": [
+          0.0,
+          0.0,
+          -400.0
+        ],
+        "moment_nm": [
+          -116.86061803507678,
+          53.48030447213757,
+          0.0
+        ],
+        "post_patch_areas_mm2": [
+          391.55480146388203,
+          362.85915947881523,
+          382.88757219927936,
+          376.458096729878
+        ],
+        "load_basis": "100 N per post, four posts; numerical unit-load comparison, not an established machine load"
+      },
+      "result": {
+        "max_displacement_mm": 0.03455116152283725,
+        "max_von_mises_mpa": 26.006721360592532,
+        "max_von_mises_node_id": 587,
+        "status": "PASS",
+        "omp_num_threads": 1,
+        "negative_jacobian": false
+      },
+      "equilibrium": {
+        "force_residual_n": [
+          8.190000002186726e-05,
+          1.4399999987743661e-05,
+          9.47400000086418e-05
+        ],
+        "moment_residual_nm": [
+          1.9343282986028498e-05,
+          3.420324407699127e-05,
+          -2.560742661472659e-05
+        ],
+        "passed": true
+      },
+      "raw_dir": ".build/compact-purpose-continue-20260915/shelf-raw/run-khd4pz40/after-4/load--1",
+      "raw_sha256": {
+        "model.inp": "11e6c205119ae194840ac795df441e64f73d9c7029da97f4ef3bcbdcf2d4ec8b",
+        "model.dat": "a65247d997af0ed4d8f1c3c6834bc48b92012c6894d6ae4d848682765ab45fcb",
+        "model.frd": "d25098e9202175d3510a0f48e1fb90dce5cc62533a940fee0cb9ecdce4f1fca6",
+        "ccx.log": "4fb5c62ebdd65a7aba0b3f1a195bf0ed18ccada941b15ca26e926749c723a77d"
+      }
+    },
+    {
+      "variant": "after",
+      "mesh_mm": 4.0,
+      "direction": 1,
+      "nodes": 15993,
+      "elements": 54643,
+      "applied": {
+        "force_n": [
+          0.0,
+          0.0,
+          400.0
+        ],
+        "moment_nm": [
+          116.86061803507678,
+          -53.48030447213757,
+          0.0
+        ],
+        "post_patch_areas_mm2": [
+          391.55480146388203,
+          362.85915947881523,
+          382.88757219927936,
+          376.458096729878
+        ],
+        "load_basis": "100 N per post, four posts; numerical unit-load comparison, not an established machine load"
+      },
+      "result": {
+        "max_displacement_mm": 0.03455116152283725,
+        "max_von_mises_mpa": 26.006721360592532,
+        "max_von_mises_node_id": 587,
+        "status": "PASS",
+        "omp_num_threads": 1,
+        "negative_jacobian": false
+      },
+      "equilibrium": {
+        "force_residual_n": [
+          -8.190000002186726e-05,
+          -1.4399999987743661e-05,
+          -9.47400000086418e-05
+        ],
+        "moment_residual_nm": [
+          -1.9343282986028498e-05,
+          -3.420324407699127e-05,
+          2.560742661472659e-05
+        ],
+        "passed": true
+      },
+      "raw_dir": ".build/compact-purpose-continue-20260915/shelf-raw/run-khd4pz40/after-4/load-1",
+      "raw_sha256": {
+        "model.inp": "e94b64d55238bb47f668e660db8b57d67ec86418ee59d6761400fa68ee9ea968",
+        "model.dat": "bc9dfeda6912554f3ce01b092f77a6f4d2f9e974d2cd221da5df8e8975711cf1",
+        "model.frd": "d01b26e354890c2fa4d7803b6d5c47127d1a1f2c47f8cde50a919b7c392be70c",
+        "ccx.log": "48c29b3be35d08b3780b44d63a29f79e8da17dd4bd5a73e09f82064dcd9e5e24"
+      }
+    },
+    {
+      "variant": "after",
+      "mesh_mm": 2.0,
+      "direction": -1,
+      "nodes": 62276,
+      "elements": 262690,
+      "applied": {
+        "force_n": [
+          0.0,
+          0.0,
+          -400.0
+        ],
+        "moment_nm": [
+          -116.80551182590146,
+          53.41128494886121,
+          0.0
+        ],
+        "post_patch_areas_mm2": [
+          375.66386387701897,
+          375.3282525782285,
+          378.92344604692437,
+          376.6095947087861
+        ],
+        "load_basis": "100 N per post, four posts; numerical unit-load comparison, not an established machine load"
+      },
+      "result": {
+        "max_displacement_mm": 0.048919619393904726,
+        "max_von_mises_mpa": 37.51851263044685,
+        "max_von_mises_node_id": 799,
+        "status": "PASS",
+        "omp_num_threads": 1,
+        "negative_jacobian": false
+      },
+      "equilibrium": {
+        "force_residual_n": [
+          -7.056999998911358e-05,
+          1.2799999991382205e-05,
+          -1.557000001639608e-05
+        ],
+        "moment_residual_nm": [
+          -1.2002681557987671e-05,
+          -3.408665849491399e-05,
+          2.122749371036292e-05
+        ],
+        "passed": true
+      },
+      "raw_dir": ".build/compact-purpose-continue-20260915/shelf-raw/run-khd4pz40/after-2/load--1",
+      "raw_sha256": {
+        "model.inp": "3f3de05679e2c0c37e1e29a3cd04300d673610f539ff30a492bdc25739e3e0cc",
+        "model.dat": "d306fa4eb0b619da41d1ff7456825164465e567479da6d69632bf19699b81137",
+        "model.frd": "cd4e9f086320f7b7f3be41a8424af3c542094bf09e10f25d35fcd4b76a3e5ca3",
+        "ccx.log": "13c7fec7abb5da1d5f70d1f52c9c64df1b1a848e27cfc5fab95a7d319af80aa5"
+      }
+    },
+    {
+      "variant": "after",
+      "mesh_mm": 2.0,
+      "direction": 1,
+      "nodes": 62276,
+      "elements": 262690,
+      "applied": {
+        "force_n": [
+          0.0,
+          0.0,
+          400.0
+        ],
+        "moment_nm": [
+          116.80551182590146,
+          -53.41128494886121,
+          0.0
+        ],
+        "post_patch_areas_mm2": [
+          375.66386387701897,
+          375.3282525782285,
+          378.92344604692437,
+          376.6095947087861
+        ],
+        "load_basis": "100 N per post, four posts; numerical unit-load comparison, not an established machine load"
+      },
+      "result": {
+        "max_displacement_mm": 0.048919619393904726,
+        "max_von_mises_mpa": 37.51851263044685,
+        "max_von_mises_node_id": 799,
+        "status": "PASS",
+        "omp_num_threads": 1,
+        "negative_jacobian": false
+      },
+      "equilibrium": {
+        "force_residual_n": [
+          7.056999998911358e-05,
+          -1.2799999991382205e-05,
+          1.557000001639608e-05
+        ],
+        "moment_residual_nm": [
+          1.2002681557987671e-05,
+          3.408665849491399e-05,
+          -2.122749371036292e-05
+        ],
+        "passed": true
+      },
+      "raw_dir": ".build/compact-purpose-continue-20260915/shelf-raw/run-khd4pz40/after-2/load-1",
+      "raw_sha256": {
+        "model.inp": "531bc8aef3302c6613ac67b1fff5b15f28bd32205dd041f82a38bf6d65655ae5",
+        "model.dat": "dde9de357dc49d6ca20d38512b90ec24b7ad7ac530b6bf6ab728b040cb06d2fa",
+        "model.frd": "18b8a39996724fcae97b5d5ae6358224aa0d76e1731ab1fccf465b0d5ca5d121",
+        "ccx.log": "b242b9630ea4636e419c168a50da7f57e26d88c98518d92ac0c7677caf724fbc"
+      }
+    }
+  ],
+  "refinement": [
+    {
+      "variant": "before",
+      "direction": -1,
+      "displacement_relative_change": 0.25883022489725144,
+      "converged": false
+    },
+    {
+      "variant": "before",
+      "direction": 1,
+      "displacement_relative_change": 0.25883022489725144,
+      "converged": false
+    },
+    {
+      "variant": "after",
+      "direction": -1,
+      "displacement_relative_change": 0.29371565128852484,
+      "converged": false
+    },
+    {
+      "variant": "after",
+      "direction": 1,
+      "displacement_relative_change": 0.29371565128852484,
+      "converged": false
+    }
+  ],
+  "source_sha256": {
+    "cad/freecad/compact/check_shaft_section_v08.py": "888d22e20fb0e2fa9e571020ecfaa0d15df32b9809cfe2097e88e5daafc44e15",
+    "cad/freecad/compact/dancer_revision.py": "59a9557b583174128d85e5bc9e5f34fc9dc0372fc84254ed9d198db1e130bfed",
+    "cad/freecad/compact/export_validation_geometry_v08.py": "3e36986cd3a170c17b19f32bdfa76fb42079dd98e21d4e6265d88b614eb30975",
+    "cad/freecad/compact/generate.py": "71900f37e772c62bbed71e6d9d6dc05630fe2ff2c73ff1dc18b781d51aea51bc",
+    "cad/freecad/compact/generate_fusion_validation.py": "20bf9de8d69498c7771651e1c8d78dd1c30f5ec972e2342c328c035b40f16d4e",
+    "cad/freecad/compact/geometry.py": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7",
+    "cad/freecad/compact/manufacturing.py": "436f7d63f997fb06442353065320c89726385ab1057540fadaae092057128ceb",
+    "cad/freecad/compact/process_v0621.py": "3c69c8f14e9cdbb185da58acd63eab1412552d640cf6a6059cac309ed2ef6ccf",
+    "cad/freecad/compact/shaft_retention.py": "09089f8bdfe484fe8ed2d9f584f46b5e27af156dad865579b39e4eb77f2f56a3",
+    "cad/freecad/compact/traverse_revision.py": "bdf47c625c378184001ca3061ade07ecb8b3e957f0914da0d1d717b4e5271650",
+    "cad/freecad/drive_v08/assembly.py": "5d80060fc98896f5b42f10d7095f59f7fd4828538e6b4c9e172a210640dc946e",
+    "cad/freecad/drive_v08/cache_source.py": "df713a8725b195cf48258e1c8fec24f80d0645041113f65fec30b0d50328789c",
+    "cad/freecad/drive_v08/detail.py": "fb8d42ccd8dfc6ba7c4c8782e789718e6a3caade6b30d8b9c550755e1ea2783a",
+    "cad/freecad/drive_v08/frame_revision.py": "59d7381e26eab435831d8d08d2d0f1a7c0c159337ed46e46e72d1fe068cb0fe9",
+    "cad/freecad/drive_v08/generate.py": "aa15e6ca82ae9f2120a701994531f4c669531827bf48d475a1eb3ee72c787559",
+    "cad/freecad/drive_v08/guard_details.py": "875ea078ba7aa196491a0c3bd5e79da98216275a3e28164424d67ffa03ed297b",
+    "cad/freecad/drive_v08/layout.py": "12d854fcceba995a03effd2cfd2600c02be96e16f62770e7a90990849418e056",
+    "cad/freecad/drive_v08/parts.py": "0d9aa8336bcb873810ed70e5a94ede103300b446b73812c1d6957eb08b49baf6",
+    "cad/freecad/drive_v08/probe.py": "e1079763fa31e040e92afea02e8fdd94be55e080df190ab0870ec428e4b57819",
+    "cad/freecad/drive_v08/render_geometry.py": "ae8ee1e93f8d80bbe65c9b9dc0c3b2c3818eb3f65bad0326709ae34e06cce481",
+    "cad/freecad/drive_v08/run_generate.py": "42fc38e87ba7619d679ff557f36a6f96cfd7e5ee72b635a4c9b39b283094920c",
+    "cad/freecad/final_v08/audit_thermal_mating_closure.py": "22cfa0c819b618501a65aed252bd711f6ef3b8cb285a491faa134a98864ad14c",
+    "cad/freecad/final_v08/check_axial_shoulder_candidate.py": "7071e224e06937efb48c040ba9332f3246acb5e109aecbdab1b0e8e34ae07a51",
+    "cad/freecad/final_v08/check_cutter_shim_candidate.py": "f0314650ea3398af44ca3ac59f0820f4806084214b120eb4511b02e4a52f6366",
+    "cad/freecad/final_v08/check_die_bolt_spacer_candidate.py": "5042f8a4db450b331fec637cb7fac7e59bb6022595f1362f4e8d49e7d61171c8",
+    "cad/freecad/final_v08/check_die_pilot_candidate.py": "164515e39ead2812400617e86b718a95c87b76164c25f02625e6eb45f651876c",
+    "cad/freecad/final_v08/check_phase_pair_backlash_candidate.py": "2be07a7291166ebe235fb96e0fb6ef28a4cfd824d4c4e3aedf1a10536f6b9480",
+    "cad/freecad/final_v08/check_phase_path_25_candidate.py": "46df68eb60cbc6091511643e856f2f32afc82b942267bedefa5a7f7ae978c76b",
+    "cad/freecad/final_v08/check_retainer_tool_access.py": "88c0831f1ba7b435ba798c5354f6f7785bfc021a7b3c42ea0f1fc2b74e9ffb59",
+    "cad/freecad/final_v08/check_sensor_ligament_candidate.py": "8de6fd315b9f1b34f6857945f08e8842feb92d8a96e2f90087c2372ae196a8f6",
+    "cad/freecad/final_v08/check_short_probe_envelope.py": "1979f8da7afded81ddc3b389ed3938d7fa82aee7bd77055c77bc8fba8acb0736",
+    "cad/freecad/final_v08/check_slave_keyseat_candidate.py": "f8d48ffcecae9d026abd606a6b9133e14f9dc869f1ece9475ac5aa5a0d9ddaaa",
+    "cad/freecad/final_v08/export_torsion_load_path.py": "442cf3bf7235e9df6c08060792e2ffef171fbb5c2c4ef017079427a9ac6a4883",
+    "cad/freecad/final_v08/generate.py": "5e3788761eac33931118c9406edaff4041b8c740a7df364f44c0f8be7737335f",
+    "cad/parameters/baseline.json": "f71d689a445a7a292d371e214a76347e57fea98e4f787262883caea8663e1fc4",
+    "cad/parameters/final_v08.json": "7e3cbd02c2210634e8bd3ee7c62924d528865fba6bee8f1cc8aeca7bfeb85a3b",
+    "cad/parameters/ggm_frame_revision.json": "d51cbb6ee6c6075ef67f42c0d388e39c8e79f91777f7c987c726e909246ca0a5",
+    "analysis/compact_layout_v08/run_fixed_foot.py": "a67a4af0b63073208b6d56c2b0ed675d15ea33de272ed47a07dbf1587895aa1b",
+    "analysis/compact_layout_v08/fixed_foot_layout.py": "ea7a39af7efa3eb5ab18ae522b19df0748e44d3616eb839f389d64ffa41574dd",
+    "analysis/compact_layout_v08/frame_geometry.py": "dbb93e9a3e79a74fd8d2a8b227e122543fcd74e2ff8b510ec91c2ad4bf551417",
+    "analysis/compact_layout_v08/review.py": "ecb8544d4a455bbd75c043d57f8ec678cac2ba818de3002761324f0dad371d27",
+    "analysis/compact_layout_v08/contract.json": "6a67fa6c19e99f4787ed11a8a08625a8330d922d789b963bb2973998709b2761",
+    "analysis/compact_layout_v08/shelf_fea.py": "5056873284b35a172892a8d80ad39b2b477301dcc468c86384dbb1372d727fc1",
+    "analysis/compact_layout_v08/results/fixed_foot_geometry.json": "3532b24737de73c81cadcdcdb31ba01d9e6581f279f2b9eb271e5ae9ea81c0ae",
+    "analysis/final_validation/run_calculix_v08.py": "e3e21cd1f82dbc8737657ef82fd0378c5439afd8372196b3a21ad27e15df8e8c",
+    "analysis/structural/run_load_checks.py": "5fd498c9a55ab327f410d95eabf44244cb9c0b44611e8693051d79b34e7f39ba",
+    "analysis/radial_support_v08/plate_fea.py": "33e32087d20c7dc21cf8a8af8d56514f97c2fd8c690dcee2a39c752a8fe94e7f",
+    "exports/review/compact_layout_v08/fixed_foot/SHELF-before.step": "f41ac7bbd183da6aab237d0d01835cabd8945399e2b6576815f492a9ca942f80",
+    "exports/review/compact_layout_v08/fixed_foot/SHELF-after.step": "b5e146c530340506ae66acd6dc2a0e56caa284e0ab4b6ee172230a8275434555"
+  },
+  "physical_validation_state": "NOT_RUN",
+  "fabrication_authorized": false,
+  "canonical_geometry_promoted": false,
+  "strength_qualified": false,
+  "limitations": [
+    "C3D4 linear elastic, ideal fixed bolt bores; no bolt preload, slip or spacer contact.",
+    "Four 100 N post loads are comparison excitations, not measured working loads or a qualified proof load.",
+    "Sharp-hole and fixed-boundary peak stresses are reported, not used as an accepted strength value.",
+    "Shelf, posts, joints, and frame are not solved as one nonlinear assembly."
+  ]
+}

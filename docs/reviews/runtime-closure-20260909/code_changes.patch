@@ -1,0 +1,659 @@
+--- a/validation/evidence_freshness.py
++++ b/validation/evidence_freshness.py
+@@ -0,0 +1,170 @@
++"""Read-only transitive SHA-256 audit. Freshness is not engineering acceptance."""
++from __future__ import annotations
++import hashlib
++import json
++import re
++from pathlib import Path, PurePosixPath
++
++HASH = re.compile(r"[0-9a-f]{64}")
++MAP_KEYS = {"source_sha256", "dependencies_sha256", "artifacts_sha256"}
++SCALAR_BINDINGS = {
++    "analysis/final_validation/results/v0.8/summary.json": {
++        "/pipeline_source_sha256": "analysis/final_validation/run_calculix_v08.py",
++        "/geometry/geometry_source_sha256": "cad/freecad/compact/geometry.py",
++    },
++    "analysis/final_validation/results/v0.8/loaded_phase.json": {
++        "/source_sha256": "analysis/final_validation/run_phase_load_v08.py",
++        "/geometry_source_sha256": "cad/freecad/compact/geometry.py",
++    },
++    "analysis/final_validation/input/geometry_manifest.json": {
++        "/geometry_source_sha256": "cad/freecad/compact/geometry.py",
++    },
++}
++
++def _pointer(data, pointer):
++    for key in pointer.lstrip("/").split("/"):
++        data = data[key.replace("~1", "/").replace("~0", "~")]
++    return data
++
++def audit_evidence(root: Path, report: str, required_sources=(), scalar_bindings=None):
++    """Follow declared source JSON edges; check raw artifacts without interpreting them.
++
++    Includes a second read to detect writes during inspection. Only declared edges
++    are covered: callers must maintain required-source contracts for import gaps.
++    Does not accept an empty root manifest, a path escape, cycles, or invalid JSON.
++    Never rewrites an expected hash and never promotes a stored status to PASS.
++    """
++    root = Path(root).resolve()
++    registry = dict(SCALAR_BINDINGS)
++    if scalar_bindings:
++        registry.update(scalar_bindings)
++    snapshots, reports, active, edges, issues = {}, set(), set(), [], []
++    def issue(kind, source, target="", **detail):
++        issues.append({"kind": kind, "report": source, "target": target, **detail})
++    def path_for(rel):
++        if not isinstance(rel, str) or not rel or "\\" in rel:
++            raise ValueError("invalid relative path")
++        posix = PurePosixPath(rel)
++        if posix.is_absolute() or ".." in posix.parts or str(posix) != rel:
++            raise ValueError("non-canonical relative path")
++        path = (root / rel).resolve()
++        if not path.is_relative_to(root):
++            raise ValueError("path escapes root")
++        return path
++    def read(rel, source):
++        try:
++            path = path_for(rel)
++            content = path.read_bytes()
++        except (OSError, ValueError) as exc:
++            issue("UNREADABLE_OR_UNSAFE_PATH", source, str(rel), detail=str(exc))
++            return None
++        digest = hashlib.sha256(content).hexdigest()
++        if rel in snapshots and snapshots[rel] != digest:
++            issue("CHANGED_DURING_AUDIT", source, rel)
++        snapshots[rel] = digest
++        return content
++    def check_edge(source, target, expected, recurse):
++        if not isinstance(expected, str) or not HASH.fullmatch(expected):
++            issue("INVALID_DIGEST", source, str(target))
++            return
++        content = read(target, source)
++        if content is None:
++            return
++        actual = hashlib.sha256(content).hexdigest()
++        edges.append({"report": source, "target": target, "expected": expected, "actual": actual})
++        if expected != actual:
++            issue("HASH_MISMATCH", source, target, expected=expected, actual=actual)
++        if recurse and Path(target).suffix.lower() == ".json":
++            visit(target)
++    def scan(data, source, found, pointer=""):
++        if isinstance(data, dict):
++            for key, value in data.items():
++                where = pointer + "/" + key
++                if key in MAP_KEYS and isinstance(value, dict):
++                    for target, digest in value.items():
++                        found.add(target)
++                        check_edge(source, target, digest, key != "artifacts_sha256")
++                elif key in MAP_KEYS and isinstance(value, str):
++                    if where not in registry.get(source, {}):
++                        issue("UNBOUND_SCALAR_DIGEST", source, where)
++                elif key in MAP_KEYS:
++                    issue("INVALID_MANIFEST_MAP", source, where)
++                else:
++                    scan(value, source, found, where)
++        elif isinstance(data, list):
++            for i, value in enumerate(data):
++                scan(value, source, found, pointer + "/" + str(i))
++    def visit(rel):
++        if rel in active:
++            issue("DEPENDENCY_CYCLE", rel, rel)
++            return
++        if rel in reports:
++            return
++        content = read(rel, rel)
++        if content is None:
++            return
++        try:
++            data = json.loads(content)
++            if not isinstance(data, dict):
++                raise ValueError("report must be an object")
++        except (ValueError, UnicodeDecodeError) as exc:
++            issue("INVALID_REPORT_JSON", rel, detail=str(exc))
++            return
++        active.add(rel)
++        found = set()
++        scan(data, rel, found)
++        for pointer, target in registry.get(rel, {}).items():
++            found.add(target)
++            try:
++                digest = _pointer(data, pointer)
++            except (KeyError, TypeError, IndexError):
++                issue("MISSING_REQUIRED_BINDING", rel, pointer)
++            else:
++                check_edge(rel, target, digest, True)
++        geometry = None
++        if rel == "analysis/final_validation/input/geometry_manifest.json":
++            geometry = data
++        elif rel == "analysis/final_validation/results/v0.8/summary.json":
++            geometry = data.get("geometry", {})
++        if geometry is not None and not isinstance(geometry, dict):
++            issue("INVALID_GEOMETRY_ARTIFACT", rel)
++            geometry = {}
++        if geometry is not None:
++            parts = geometry.get("parts", [])
++            if not isinstance(parts, list) or not parts:
++                issue("MISSING_GEOMETRY_ARTIFACTS", rel)
++                parts = []
++            names = set()
++            for part in parts:
++                if not isinstance(part, dict) or not isinstance(part.get("file"), str):
++                    issue("INVALID_GEOMETRY_ARTIFACT", rel)
++                    continue
++                name = part["file"]
++                if PurePosixPath(name).name != name:
++                    issue("INVALID_GEOMETRY_ARTIFACT", rel, name)
++                    continue
++                names.add(name)
++                target = "analysis/final_validation/input/" + name
++                found.add(target)
++                check_edge(rel, target, part.get("sha256"), False)
++            if not {"bearing_plate.step", "extruder_barrel.step"} <= names:
++                issue("MISSING_GEOMETRY_ARTIFACTS", rel)
++        if rel == report:
++            if not found:
++                issue("EMPTY_ROOT_MANIFEST", rel)
++            for missing in sorted(set(required_sources) - found):
++                issue("MISSING_REQUIRED_SOURCE", rel, missing)
++        active.remove(rel)
++        reports.add(rel)
++    visit(report)
++    for rel, expected in tuple(snapshots.items()):
++        content = read(rel, report)
++        if content is not None and hashlib.sha256(content).hexdigest() != expected:
++            issue("CHANGED_DURING_AUDIT", report, rel)
++    return {"status": "CURRENT" if not issues else "STALE_OR_INVALID",
++            "report": report, "checked_reports": len(reports),
++            "checked_files": len(snapshots), "edges": edges, "issues": issues,
++            "scope": "declared transitive dependency integrity, not physical validity"}
++
++def evidence_current(root: Path, report: str, required_sources=()) -> bool:
++    return audit_evidence(root, report, required_sources)["status"] == "CURRENT"
+--- a/validation/test_evidence_freshness.py
++++ b/validation/test_evidence_freshness.py
+@@ -0,0 +1,97 @@
++"""Integrity regression tests; never execute a solver or mutate project evidence."""
++import hashlib
++import json
++import tempfile
++import unittest
++from pathlib import Path
++from evidence_freshness import audit_evidence
++
++class EvidenceTests(unittest.TestCase):
++    def setUp(self):
++        self.tmp = tempfile.TemporaryDirectory()
++        self.addCleanup(self.tmp.cleanup)
++        self.root = Path(self.tmp.name)
++        (self.root / "geometry.py").write_text("version_one")
++        self.write("child.json", {"source_sha256": {"geometry.py": self.sha("geometry.py")}})
++        self.write("root.json", {"source_sha256": {"child.json": self.sha("child.json")}})
++    def sha(self, rel):
++        return hashlib.sha256((self.root / rel).read_bytes()).hexdigest()
++    def write(self, rel, obj):
++        (self.root / rel).write_text(json.dumps(obj))
++    def audit(self, **kwargs):
++        return audit_evidence(self.root, "root.json", **kwargs)
++    def kinds(self, **kwargs):
++        return {i["kind"] for i in self.audit(**kwargs)["issues"]}
++    def test_valid_chain(self):
++        self.assertEqual(self.audit()["status"], "CURRENT")
++    def test_transitive_same_size_change(self):
++        (self.root / "geometry.py").write_text("version_two")
++        self.assertIn("HASH_MISMATCH", self.kinds())
++    def test_missing_leaf(self):
++        (self.root / "geometry.py").unlink()
++        self.assertIn("UNREADABLE_OR_UNSAFE_PATH", self.kinds())
++    def test_empty_manifest(self):
++        self.write("root.json", {"source_sha256": {}})
++        self.assertIn("EMPTY_ROOT_MANIFEST", self.kinds())
++    def test_wrong_hash_type(self):
++        self.write("root.json", {"source_sha256": {"geometry.py": True}})
++        self.assertIn("INVALID_DIGEST", self.kinds())
++    def test_missing_required_source(self):
++        self.assertIn("MISSING_REQUIRED_SOURCE", self.kinds(required_sources=("new_import.py",)))
++    def test_parent_escape(self):
++        self.write("root.json", {"source_sha256": {"../outside.py": "0"*64}})
++        self.assertIn("UNREADABLE_OR_UNSAFE_PATH", self.kinds())
++    def test_absolute_path(self):
++        self.write("root.json", {"source_sha256": {str(self.root/"geometry.py"): "0"*64}})
++        self.assertIn("UNREADABLE_OR_UNSAFE_PATH", self.kinds())
++    def test_bad_json(self):
++        (self.root/"child.json").write_text("{")
++        self.write("root.json", {"source_sha256": {"child.json": self.sha("child.json")}})
++        self.assertIn("INVALID_REPORT_JSON", self.kinds())
++    def test_cycle(self):
++        self.write("child.json", {"source_sha256": {"root.json": "0"*64}})
++        self.write("root.json", {"source_sha256": {"child.json": self.sha("child.json")}})
++        self.assertIn("DEPENDENCY_CYCLE", self.kinds())
++    def test_unbound_scalar(self):
++        self.write("root.json", {"source_sha256": self.sha("geometry.py")})
++        self.assertIn("UNBOUND_SCALAR_DIGEST", self.kinds())
++    def test_registered_scalar(self):
++        self.write("root.json", {"source_sha256": self.sha("geometry.py")})
++        result=self.audit(scalar_bindings={"root.json":{"/source_sha256":"geometry.py"}})
++        self.assertEqual(result["status"], "CURRENT")
++    def test_raw_artifacts_checked(self):
++        self.write("root.json", {"artifacts_sha256": {"geometry.py":"0"*64}})
++        self.assertIn("HASH_MISMATCH", self.kinds())
++    def test_freshness_does_not_promote_hold(self):
++        self.write("root.json", {"status":"HOLD", "source_sha256":{"geometry.py":self.sha("geometry.py")}})
++        self.assertEqual(self.audit()["status"], "CURRENT")
++        self.assertEqual(json.loads((self.root/"root.json").read_text())["status"], "HOLD")
++    def test_missing_scalar_binding(self):
++        result=self.audit(scalar_bindings={"root.json":{"/geometry/hash":"geometry.py"}})
++        self.assertIn("MISSING_REQUIRED_BINDING", {i["kind"] for i in result["issues"]})
++    def test_symlink_escape(self):
++        with tempfile.TemporaryDirectory() as outside:
++            leaf=Path(outside)/"foreign"; leaf.write_text("abc")
++            (self.root/"escape").symlink_to(leaf)
++            self.write("root.json", {"source_sha256":{"escape":hashlib.sha256(b"abc").hexdigest()}})
++            self.assertIn("UNREADABLE_OR_UNSAFE_PATH", self.kinds())
++
++    def geometry_audit(self, corrupt=False, missing=False):
++        rel="analysis/final_validation/input/geometry_manifest.json"
++        folder=self.root/"analysis/final_validation/input";folder.mkdir(parents=True)
++        parts=[]
++        for name in ("bearing_plate.step","extruder_barrel.step"):
++            target=folder/name;target.write_text(name)
++            parts.append({"file":name,"sha256":self.sha(str(target.relative_to(self.root)))})
++        self.write(rel,{"geometry_source_sha256":self.sha("geometry.py"),"parts":[] if missing else parts})
++        if corrupt: (folder/"bearing_plate.step").write_text("changed artifact")
++        return audit_evidence(self.root,rel,scalar_bindings={rel:{"/geometry_source_sha256":"geometry.py"}})
++    def test_geometry_artifacts_match(self):
++        self.assertEqual(self.geometry_audit()["status"],"CURRENT")
++    def test_geometry_artifact_mismatch(self):
++        self.assertIn("HASH_MISMATCH",{i["kind"] for i in self.geometry_audit(corrupt=True)["issues"]})
++    def test_geometry_artifact_missing(self):
++        self.assertIn("MISSING_GEOMETRY_ARTIFACTS",{i["kind"] for i in self.geometry_audit(missing=True)["issues"]})
++
++if __name__ == "__main__":
++    unittest.main(verbosity=2)
+--- a/validation/test_beam_torque_recovery.py
++++ b/validation/test_beam_torque_recovery.py
+@@ -0,0 +1,46 @@
++"""Negative tests for measured B31 root torque recovery."""
++import math
++import sys
++import tempfile
++import unittest
++from pathlib import Path
++sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'analysis/final_validation'))
++from beam_torque_recovery import expanded_root_torque, add_measured_root_torque
++
++class TorqueTests(unittest.TestCase):
++    def setUp(self):
++        self.tmp=tempfile.TemporaryDirectory();self.addCleanup(self.tmp.cleanup)
++        self.path=Path(self.tmp.name)/'model.frd'
++        self.write()
++    def write(self, count=4, force=True, sign=1.):
++        yz=[(-.01,-.01),(-.01,.01),(.01,-.01),(.01,.01)]
++        lines=['    2C']
++        lines += [f' -1 {i} 0 {y} {z}' for i,(y,z) in enumerate(yz[:count],1)]
++        lines += [' -3',' -4 FORC']
++        if force:
++            lines += [f' -1 {i} 0 {275*sign*(1 if z>0 else -1)} {-275*sign*(1 if y>0 else -1)}' for i,(y,z) in enumerate(yz[:count],1)]
++        lines += [' -3'];self.path.write_text('\n'.join(lines))
++    def test_measured_torque(self):
++        self.assertAlmostEqual(expanded_root_torque(self.path,22.)['measured_torque_nm'],-22.)
++    def test_opposite_sign(self):
++        self.write(sign=-1.);self.assertAlmostEqual(expanded_root_torque(self.path,-22.)['measured_torque_nm'],22.)
++    def test_wrong_input_torque(self):
++        with self.assertRaises(ValueError): expanded_root_torque(self.path,21.)
++    def test_missing_root_node(self):
++        self.write(count=3)
++        with self.assertRaises(ValueError): expanded_root_torque(self.path,22.)
++    def test_missing_forces(self):
++        self.write(force=False)
++        with self.assertRaises(ValueError): expanded_root_torque(self.path,22.)
++    def test_nan_input(self):
++        with self.assertRaises(ValueError): expanded_root_torque(self.path,float('nan'))
++    def test_preserve_non_torsional_moments(self):
++        original={'moment_about_origin_nm':[0.,-200.,3.]}
++        changed=add_measured_root_torque(original,self.path,22.)
++        self.assertEqual(original['moment_about_origin_nm'],[0.,-200.,3.])
++        self.assertEqual(changed['moment_about_origin_nm'],[-22.,-200.,3.])
++        self.assertFalse(changed['assembly_load_path_qualified'])
++    def test_no_double_count(self):
++        with self.assertRaises(ValueError):
++            add_measured_root_torque({'moment_about_origin_nm':[1.,0.,0.]},self.path,22.)
++if __name__=='__main__':unittest.main(verbosity=2)
+--- a/validation/v08_full_compliance.py
++++ b/validation/v08_full_compliance.py
+@@ -14,6 +14,8 @@
+ ROOT = Path(__file__).resolve().parents[1]
+ sys.path.insert(0, str(ROOT / "release"))
+ from firmware_evidence import firmware_evidence_current
++sys.path.insert(0, str(ROOT / "validation"))
++from evidence_freshness import audit_evidence
+ REV = "final-design-fabrication-closure-v0.8"
+ OUT = ROOT / "validation/results/v08_full_compliance.json"
+ REPORT = ROOT / "docs/final/v08_full_compliance_ko.md"
+@@ -108,6 +110,12 @@
+ 
+ def main() -> None:
+     checks: dict[str, dict[str, object]] = {}
++    freshness_audits = {}
++
++    def transitive_current(report: str, required=()) -> bool:
++        audit = audit_evidence(ROOT, report, required)
++        freshness_audits[report] = audit
++        return audit["status"] == "CURRENT"
+ 
+     def record(name: str, ok: bool, evidence: str) -> None:
+         checks[name] = {"status": "PASS" if ok else "FAIL", "evidence": evidence}
+@@ -125,6 +133,7 @@
+     solver_current = solver.get("pipeline_source_sha256") == sha(ROOT / "analysis/final_validation/run_calculix_v08.py")
+     solver_dependencies = solver.get("dependencies_sha256", {})
+     solver_current &= bool(solver_dependencies) and all(exists(p) and sha(ROOT/p) == digest for p,digest in solver_dependencies.items())
++    solver_current &= transitive_current("analysis/final_validation/results/v0.8/summary.json", ("analysis/final_validation/run_calculix_v08.py", "cad/freecad/compact/geometry.py"))
+     record("03_calculix_core", solver_current and solver.get("status") == "PASS" and all(solver.get(k, {}).get("status") == "PASS" for k in ("LC02", "LC04", "LC05", "hot_zone_mount")), f"LC02/04/05 + hot mount; source_current={solver_current}")
+     record("03_lc04_resolution", solver.get("LC04", {}).get("resolution") in {"OLD_RESULT_WRONG", "NEW_RESULT_WRONG", "DIFFERENT_METRIC_OR_MODEL"}, str(solver.get("LC04", {}).get("resolution")))
+     hot = solver.get("hot_zone_mount", {})
+@@ -136,12 +145,14 @@
+     sensor_local = json.loads(sensor_local_path.read_text()) if sensor_local_path.is_file() else {}
+     sensor_local_sources = sensor_local.get("source_sha256", {})
+     sensor_local_current = bool(sensor_local_sources) and all(exists(path) and sha(ROOT / path) == digest for path, digest in sensor_local_sources.items())
++    sensor_local_current &= transitive_current("analysis/final_validation/results/v0.8/sensor_bore_local_candidate.json")
+     required_hot_checks = {"scm440_temperature_dependent_material_qualified", "sensor_bore_local_stress_qualified", "die_joint_qualified", "local_temperature_gradient_qualified"}
+-    record("03_hot_zone_mount", solver_current and hot.get("status") == "PASS" and required_hot_checks <= set(hot_qualified) and all(hot_qualified[name] is True for name in required_hot_checks) and selected.get("safety_factor", 0) >= 2 and required_hot <= set(hot_studies) and all(hot_studies[name].get("status") == "PASS" for name in required_hot - {"A_FULLY_FIXED"}) and om.get("hot_zone", {}).get("travelMarginMm", -1) >= 0, f"A–G={len(hot_studies)} qualified={hot_qualified} selected_SF={selected.get('safety_factor')} sensor_local_current={sensor_local_current} sensor_thermal_pressure_screen={sensor_local.get('status')}/{sensor_local.get('medium_to_fine_regional_stress_change')}")
++    record("03_hot_zone_mount", solver_current and sensor_local_current and hot.get("status") == "PASS" and required_hot_checks <= set(hot_qualified) and all(hot_qualified[name] is True for name in required_hot_checks) and selected.get("safety_factor", 0) >= 2 and required_hot <= set(hot_studies) and all(hot_studies[name].get("status") == "PASS" for name in required_hot - {"A_FULLY_FIXED"}) and om.get("hot_zone", {}).get("travelMarginMm", -1) >= 0, f"A–G={len(hot_studies)} qualified={hot_qualified} selected_SF={selected.get('safety_factor')} sensor_local_current={sensor_local_current} sensor_thermal_pressure_screen={sensor_local.get('status')}/{sensor_local.get('medium_to_fine_regional_stress_change')}")
+     dynamics = om.get("spooler_traverse_dynamics", {})
+     required_dynamics = {"SpoolerTraverseEmptyToFull", "SpoolerPETOneKg", "SpoolerFullRadiusPLA", "SpoolerFullRadiusPET"}
+     om_hashes = om.get("source_sha256", {})
+     om_current = bool(om_hashes) and all(exists(p) and sha(ROOT/p) == digest for p,digest in om_hashes.items())
++    om_current &= transitive_current("simulation/openmodelica/results_v0.8/summary.json")
+     jam_checks = om.get("jam", {}).get("checks", {})
+     record("05_v08_motion_dynamics", om_current and om.get("status") == "PASS" and bool(jam_checks) and all(v is True for v in jam_checks.values()) and required_dynamics <= set(dynamics) and all(dynamics[name].get("status") == "PASS" and bool(dynamics[name].get("checks")) and all(v is True for v in dynamics[name]["checks"].values()) for name in required_dynamics), f"v0.8 parameter-bound mechanical/control surrogate; source_current={om_current}; not firmware/physical validation")
+     phase = json.loads((ROOT / "validation/results/cutter_phase_sweep.json").read_text())
+@@ -150,24 +161,28 @@
+     loaded_current = loaded.get("source_sha256") == sha(ROOT / "analysis/final_validation/run_phase_load_v08.py") and loaded.get("geometry_source_sha256") == sha(ROOT / "cad/freecad/compact/geometry.py")
+     loaded_dependencies = loaded.get("dependencies_sha256", {})
+     loaded_current &= bool(loaded_dependencies) and all(exists(p) and sha(ROOT/p) == digest for p,digest in loaded_dependencies.items())
++    loaded_current &= transitive_current("analysis/final_validation/results/v0.8/loaded_phase.json")
+     key_path = ROOT / "analysis/final_validation/results/v0.8/phase_clocking_release.json"
+     key_check = json.loads(key_path.read_text()) if key_path.is_file() else {}
+     key_sources = key_check.get("source_sha256", {})
+     key_current = bool(key_sources) and all(exists(path) and sha(ROOT / path) == digest for path, digest in key_sources.items())
++    key_current &= transitive_current("analysis/final_validation/results/v0.8/phase_clocking_release.json")
+     key_clocking_ok = key_current and key_check.get("status") == "PASS"
+     phase25_path = ROOT / "analysis/final_validation/results/v0.8/phase_path_25_qualification.json"
+     phase25 = json.loads(phase25_path.read_text()) if phase25_path.is_file() else {}
+     phase25_sources = phase25.get("source_sha256", {})
+     phase25_current = bool(phase25_sources) and all(exists(path) and sha(ROOT / path) == digest for path, digest in phase25_sources.items())
++    phase25_current &= transitive_current("analysis/final_validation/results/v0.8/phase_path_25_qualification.json")
+     required_phase_checks = {"mesh_convergence", "positive_loaded_backlash", "backlash_below_one_degree", "frame_and_bearing_compliance_qualified", "torsional_phase_compliance_qualified"}
+     phase_checks = loaded.get("checks", {})
+-    record("05_loaded_phase_centre", phase.get("revision") == REV and phase.get("status") == "PASS" and loaded_current and loaded.get("status") == "PASS" and key_clocking_ok and required_phase_checks <= set(phase_checks) and all(phase_checks[name] is True for name in required_phase_checks), f"source_current={loaded_current} loaded={loaded.get('status')} key_source_current={key_current} released_key_clocking={key_check.get('status')} candidate25_current={phase25_current} candidate25={phase25.get('status')}/{phase25.get('combined_worst_angle_deg')}deg checks={phase_checks}")
++    record("05_loaded_phase_centre", phase.get("revision") == REV and phase.get("status") == "PASS" and loaded_current and loaded.get("status") == "PASS" and key_clocking_ok and phase25_current and required_phase_checks <= set(phase_checks) and all(phase_checks[name] is True for name in required_phase_checks), f"source_current={loaded_current} loaded={loaded.get('status')} key_source_current={key_current} released_key_clocking={key_check.get('status')} candidate25_current={phase25_current} candidate25={phase25.get('status')}/{phase25.get('combined_worst_angle_deg')}deg checks={phase_checks}")
+     qualification = ROOT / "analysis/final_validation/results/v0.8/qualification_summary.json"
+     q = json.loads(qualification.read_text()) if qualification.is_file() else {}
+     required_q = {"torsion", "thermal", "modal", "cutter_root", "frame", "feeder", "spool"}
+     q_sources = q.get("source_sha256", {})
+     q_required_sources = {"analysis/final_validation/run_qualification_v08.py", "analysis/load_cases/openmodelica_dynamic_envelope.json"}
+     q_current = q_required_sources <= set(q_sources) and all(exists(p) and sha(ROOT/p) == digest for p,digest in q_sources.items())
++    q_current &= transitive_current("analysis/final_validation/results/v0.8/qualification_summary.json")
+     record("03_solver_qualification", q_current and q.get("status") == "PASS" and required_q <= set(q.get("checks", {})) and all(q["checks"][k]["status"] == "PASS" for k in required_q), f"torsion/thermal/modal + component screens; source_current={q_current}; not complete assembly qualification")
+ 
+     iface, iface_fields = csv_rows("exports/final/interface_catalog.csv")
+@@ -179,12 +194,14 @@
+     cad = json.loads((ROOT / "validation/results/final_v08_cad.json").read_text())
+     cad_sources = cad.get("source_sha256", {})
+     cad_current = bool(cad_sources) and all(exists(p) and sha(ROOT / p) == digest for p, digest in cad_sources.items())
++    cad_current &= transitive_current("validation/results/final_v08_cad.json")
+     contact = cad.get("rear_axial_load_path", {}).get("necessary_contact_check")
+     retainer_path = ROOT / "analysis/final_validation/results/v0.8/axial_retainer_qualification.json"
+     retainer = json.loads(retainer_path.read_text()) if retainer_path.is_file() else {}
+     retainer_sources = retainer.get("source_sha256", {})
+     retainer_current = bool(retainer_sources) and all(exists(path) and sha(ROOT / path) == digest for path, digest in retainer_sources.items())
+-    record("07_freecad_source", cad_current and contact == "PASS" and cad.get("status") == "PASS" and not cad.get("unexpected_collisions") and len(cad.get("new_objects", {})) == 7, f"FreeCAD mount solids/collision/contact gate; source_current={cad_current}; axial_contact={contact}; candidate_current={retainer_current} candidate={retainer.get('status')}/{retainer.get('numeric_screen')}")
++    retainer_current &= transitive_current("analysis/final_validation/results/v0.8/axial_retainer_qualification.json")
++    record("07_freecad_source", cad_current and retainer_current and contact == "PASS" and cad.get("status") == "PASS" and not cad.get("unexpected_collisions") and len(cad.get("new_objects", {})) == 7, f"FreeCAD mount solids/collision/contact gate; source_current={cad_current}; axial_contact={contact}; candidate_current={retainer_current} candidate={retainer.get('status')}/{retainer.get('numeric_screen')}")
+     step_rows, step_fields = csv_rows("exports/final/step/step_manifest.csv")
+     required_step = {"part_id", "revision", "source_object", "source_commit", "file", "format", "units", "body_count", "solid_count", "bbox_mm", "volume_mm3", "sha256", "status"}
+     step_dirs_ok = all((ROOT / "exports/final/step" / name).is_dir() and any((ROOT / "exports/final/step" / name).iterdir()) for name in STEP_DIRS)
+@@ -411,7 +428,7 @@
+     passed = sum(v["status"] == "PASS" for v in checks.values())
+     passed_sections = sum(v["status"] == "PASS" for v in sections.values())
+     complete = all_checks_ok and passed_sections == len(sections)
+-    result = {"revision": REV, "status": "PASS" if complete else "FAIL", "passed": passed, "total": len(checks), "checks": checks,
++    result = {"evidence_freshness": freshness_audits, "revision": REV, "status": "PASS" if complete else "FAIL", "passed": passed, "total": len(checks), "checks": checks,
+               "section_coverage": sections, "passed_sections": passed_sections, "total_sections": len(sections),
+               "technical_state": "DIGITAL_TECHNICAL_CLOSURE" if complete else "IN_PROGRESS",
+               "physical_validation_state": "NOT_RUN", "safety_certification": "NOT_CERTIFIED", "fabrication_release_approval": "USER_APPROVAL_REQUIRED"}
+--- a/analysis/final_validation/beam_torque_recovery.py
++++ b/analysis/final_validation/beam_torque_recovery.py
+@@ -0,0 +1,65 @@
++"""Measured root torque for the existing straight X-axis RECT B31 surrogate.
++
++The applied torque is used only as an equilibrium check, never as a result.
++This extractor does not qualify a real keyed shaft or a physical drive datum.
++"""
++from __future__ import annotations
++import math
++import re
++from pathlib import Path
++
++NUMBER = re.compile(r"[-+]?\d*\.?\d+(?:[EeDd][-+]?\d+)?")
++
++def expanded_root_torque(path: Path, applied_nm: float, root_x_m=0.0):
++    if not math.isfinite(applied_nm) or not math.isfinite(root_x_m):
++        raise ValueError("non-finite torque or datum")
++    coordinates, forces = {}, {}
++    coord_mode = force_mode = False
++    for line in Path(path).read_text(errors="strict").splitlines():
++        if line.startswith("    2C"):
++            coord_mode = True
++            continue
++        if line.startswith(" -4"):
++            force_mode = "FORC" in line
++            if force_mode:
++                forces = {}
++            continue
++        if line.startswith(" -3"):
++            coord_mode = force_mode = False
++            continue
++        if not line.startswith(" -1") or not (coord_mode or force_mode):
++            continue
++        fields = NUMBER.findall(line)
++        if len(fields) < 5:
++            raise ValueError("truncated FRD vector")
++        node = int(fields[1])
++        values = tuple(float(v.replace("D","E").replace("d","e")) for v in fields[2:5])
++        if not all(math.isfinite(v) for v in values):
++            raise ValueError("non-finite FRD vector")
++        (coordinates if coord_mode else forces)[node] = values
++    root = {n:xyz for n,xyz in coordinates.items() if abs(xyz[0]-root_x_m) <= 1e-10}
++    if len(root) != 4 or not set(root) <= set(forces):
++        raise ValueError("expected four measured RECT B31 root nodes")
++    torque = sum(y*forces[n][2]-z*forces[n][1] for n,(_,y,z) in root.items())
++    residual = torque + applied_nm
++    tolerance = max(1e-4, abs(applied_nm)*1e-5)
++    if not math.isfinite(torque) or abs(residual) > tolerance:
++        raise ValueError(f"root torque imbalance: {residual:.9g} N.m")
++    return {"measured_torque_nm": torque, "applied_torque_nm": applied_nm,
++            "residual_nm": residual, "tolerance_nm": tolerance,
++            "root_nodes": sorted(root), "status": "PASS",
++            "scope": "measured RF moment at expanded X-axis RECT B31 drive root"}
++
++def add_measured_root_torque(reaction: dict, frd: Path, applied_nm: float):
++    measured = expanded_root_torque(frd, applied_nm)
++    result = dict(reaction)
++    moment = list(reaction["moment_about_origin_nm"])
++    # The unexpanded nodes all lie on X, so their r x F has no X component.
++    if abs(moment[0]) > 1e-8:
++        raise ValueError("unexpected off-axis surrogate; do not double-count couples")
++    moment[0] += measured["measured_torque_nm"]
++    result.update(moment_about_origin_nm=moment, measured_root_torque=measured,
++                  torsional_reaction_qualified=True,
++                  reaction_couple_source="Measured expanded FRD root r-cross-RF; not copied input torque",
++                  assembly_load_path_qualified=False)
++    return result
+--- a/analysis/final_validation/run_runtime_mechanics_audit.py
++++ b/analysis/final_validation/run_runtime_mechanics_audit.py
+@@ -0,0 +1,130 @@
++"""Isolated real-CalculiX regression runs; does not promote release status."""
++from __future__ import annotations
++import argparse
++import copy
++import hashlib
++import itertools
++import json
++import math
++import os
++import re
++import shutil
++import sys
++import tempfile
++from pathlib import Path
++
++ROOT = Path(__file__).resolve().parents[2]
++sys.path.insert(0,str(Path(__file__).resolve().parent))
++import run_calculix_v08 as core
++from beam_torque_recovery import expanded_root_torque
++
++def sha(path):
++    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
++
++def front_u(path):
++    active = False
++    for line in Path(path).read_text().splitlines():
++        if 'displacements (vx,vy,vz) for set FRONT' in line:
++            active = True
++            continue
++        fields = line.split()
++        if active and len(fields)==4 and fields[0].isdigit():
++            value = float(fields[1]) * 1000
++            if not math.isfinite(value):
++                raise ValueError('non-finite front displacement')
++            return value
++    raise ValueError('FRONT axial U not found')
++
++def thermal_cases(output):
++    params = json.loads((ROOT/'cad/parameters/final_v08.json').read_text())
++    baseline = json.loads((ROOT/'cad/parameters/baseline.json').read_text())
++    travel = params['hot_zone_mount']['cold_axial_travel_mm']
++    normal = max(baseline['extruder']['pet_zone_c'])
++    design = baseline['extruder']['hot_path_design_c']
++    rows=[]
++    # Both alpha values are pre-existing UNQUALIFIED screening assumptions.
++    # This is a sensitivity study, not a new SCM440 material qualification.
++    for alpha,temp,pressure,spring in itertools.product((12e-6,17e-6),(normal,design),(0.,6.),(0.,1e6)):
++        case_id=f'a{alpha*1e6:.0f}_T{temp:g}_P{pressure:g}_K{spring:g}'
++        folder=output/case_id; folder.mkdir()
++        deck=core.hot_mount_deck('C_RADIAL_CONTROLLED_AXIAL_EXPANSION',temp,spring,pressure)
++        if deck.count('1.70E-5')!=1:
++            raise ValueError('base expansion card changed; review transformation')
++        deck=deck.replace('1.70E-5',f'{alpha:.12e}')
++        result=core.solve(folder,deck)
++        measured=front_u(folder/'model.dat')
++        length=0.280; area=0.0265**2; modulus=190e9
++        thrust=pressure*math.pi*16.22**2/4
++        analytic=(alpha*(temp-25)*length+thrust*length/(modulus*area))/(1+spring*length/(modulus*area))*1000
++        error=abs(measured-analytic)/max(abs(analytic),1e-12)
++        if error>0.03:
++            raise ValueError(f'{case_id}: analytic/solver delta {error}')
++        rows.append({'case_id':case_id,'alpha_per_k':alpha,'temperature_c':temp,
++                     'pressure_mpa':pressure,'spring_n_m':spring,
++                     'analytic_axial_growth_mm':analytic,'solver_front_axial_growth_mm':measured,
++                     'relative_error':error,'full_length_travel_arithmetic_mm':travel-measured,
++                     'numeric_regression':'PASS','physical_status':'NOT_RUN',
++                     'deck_sha256':sha(folder/'model.inp'),'frd_sha256':sha(folder/'model.frd'),
++                     'dat_sha256':sha(folder/'model.dat'),'log_sha256':sha(folder/'ccx.log')})
++    return {'status':'CONDITIONAL_SCREEN_ONLY','cases':rows,
++            'normal_temperature_c':normal,'design_temperature_c':design,
++            'cold_axial_travel_requirement_mm':travel,
++            'max_numeric_relative_error':max(r['relative_error'] for r in rows),
++            'minimum_full_length_travel_arithmetic_mm':min(r['full_length_travel_arithmetic_mm'] for r in rows),
++            'limitations':['12e-6/K and 17e-6/K are existing assumptions, not certified bounds.',
++                          'Uniform prescribed temperatures are not a solved heater/contact thermal field.',
++                          'Full barrel axial growth must not be confused with clearance at an arbitrary local guide.',
++                          'A negative arithmetic reserve requires geometric/temperature review, not an automatic global machine-failure claim.',
++                          'No physical operation and no material/fastener approval.']}
++
++def main():
++    parser=argparse.ArgumentParser();parser.add_argument('--output',required=True);args=parser.parse_args()
++    output=Path(args.output).resolve();output.mkdir(parents=True,exist_ok=False)
++    os.environ['OMP_NUM_THREADS']='1';os.environ.pop('KMP_DUPLICATE_LIB_OK',None)
++    core.RAW=output/'shaft';core.RAW.mkdir()
++    before=sha(ROOT/'analysis/final_validation/input/geometry_manifest.json')
++    shafts=core.run_shaft_cases()
++    if sha(ROOT/'analysis/final_validation/input/geometry_manifest.json')!=before:
++        raise ValueError('input changed while solving')
++    measured=[]
++    for case,summary in shafts.items():
++        for shaft,data in summary['per_shaft'].items():
++            for item in data['meshes']:
++                r=item['result'];measured.append({'case_id':case,'shaft':shaft,'mesh':item['mesh'],
++                    'torque':r['reaction']['measured_root_torque'],
++                    'equilibrium':r['equilibrium'],'displacement_mm':r['max_displacement_mm']})
++    stations=json.loads((ROOT/'analysis/final_validation/input/geometry_manifest.json').read_text())['shredder_stations']['153']
++    signed=[]
++    for value in (-22.,44.,0.):
++        deck,prov,_,coords=core.shaft_deck('LC02',24,stations)
++        old=f"{prov['load_application_node']},4,22"
++        if deck.count(old)!=1: raise ValueError('unexpected torque card')
++        deck=deck.replace(old,f"{prov['load_application_node']},4,{value:g}")
++        folder=output/f'torque_{value:g}';folder.mkdir()
++        core.solve(folder,deck)
++        signed.append(expanded_root_torque(folder/'model.frd',value))
++    rejected=0
++    sample=core.RAW/'LC02_153_fine/model.frd'
++    for wrong in (-22.,21.,float('nan')):
++        try: expanded_root_torque(sample,wrong)
++        except ValueError: rejected+=1
++        else: raise AssertionError('incorrect torque accepted')
++    thermal=thermal_cases(output)
++    result={'status':'SCOPED_NUMERIC_REGRESSIONS_PASS','release_state':'HOLD_UNCHANGED',
++            'solver_binary':shutil.which('ccx'),'solver_binary_sha256':sha(shutil.which('ccx')),
++            'source_sha256':{str(p.relative_to(ROOT)):sha(p) for p in [Path(__file__),
++                ROOT/'analysis/final_validation/beam_torque_recovery.py',
++                ROOT/'analysis/final_validation/run_calculix_v08.py',
++                ROOT/'analysis/structural/run_load_checks.py',
++                ROOT/'analysis/final_validation/input/geometry_manifest.json',
++                ROOT/'cad/parameters/baseline.json',ROOT/'cad/parameters/final_v08.json']},
++            'shaft_runs':measured,'torque_sign_and_scaling':signed,
++            'negative_controls_rejected':rejected,'thermal':thermal,
++            'physical_validation_state':'NOT_RUN'}
++    (output/'result.json').write_text(json.dumps(result,indent=2)+'\n')
++    print(json.dumps({'status':result['status'],'shaft_cases':len(measured),'torque_variants':len(signed),
++                      'rejected':rejected,'thermal_cases':len(thermal['cases']),
++                      'max_thermal_error':thermal['max_numeric_relative_error'],
++                      'min_arithmetic_travel_mm':thermal['minimum_full_length_travel_arithmetic_mm'],
++                      'result':str(output/'result.json')},indent=2))
++if __name__=='__main__': main()
+--- a/analysis/final_validation/run_calculix_v08.py
++++ b/analysis/final_validation/run_calculix_v08.py
+@@ -19,6 +19,8 @@
+ INPUT = HERE / "input"
+ RAW = HERE / "results" / "v0.8" / "raw"
+ SUMMARY = HERE / "results" / "v0.8" / "summary.json"
++from beam_torque_recovery import add_measured_root_torque
++
+ LOAD = 1856.544175556756
+ ALLOWABLE_MPA = 180.0
+ 
+@@ -350,6 +352,7 @@
+             deck, provenance, selected, coordinates = shaft_deck(case_id, count, stations)
+             result = solve(case_dir, deck)
+             result["reaction"] = printed_reactions(case_dir / "model.dat", coordinates)
++            result["reaction"] = add_measured_root_torque(result["reaction"], case_dir / "model.frd", provenance["applied_torque_nm"])
+             force_residual = [a+b for a, b in zip(provenance["net_force_n"], result["reaction"]["force_n"])]
+             moment_residual = [a+b for a, b in zip(provenance["net_moment_about_origin_nm"], result["reaction"]["moment_about_origin_nm"])]
+             result["equilibrium"] = {"force_residual_n": force_residual, "moment_residual_nm": moment_residual}
+@@ -457,7 +460,12 @@
+         "solver_versions": {"freecad": geometry["runtime_freecad_version"], "gmsh": gmsh_version, "calculix": ccx_version.group(1)},
+         "geometry": geometry, **shaft_cases, "LC04": lc04, "hot_zone_mount": hot_mount,
+         "raw_directory": str(RAW.relative_to(ROOT)),
+-        "dependencies_sha256": {"analysis/structural/run_load_checks.py": sha256(ROOT / "analysis/structural/run_load_checks.py"),
++        "dependencies_sha256": {"analysis/final_validation/beam_torque_recovery.py": sha256(HERE / "beam_torque_recovery.py"),
++                                "cad/freecad/compact/geometry.py": sha256(ROOT / "cad/freecad/compact/geometry.py"),
++                                "cad/parameters/baseline.json": sha256(ROOT / "cad/parameters/baseline.json"),
++                                "cad/parameters/final_v08.json": sha256(ROOT / "cad/parameters/final_v08.json"),
++                                "analysis/final_validation/input/geometry_manifest.json": sha256(INPUT / "geometry_manifest.json"),
++                                "analysis/structural/run_load_checks.py": sha256(ROOT / "analysis/structural/run_load_checks.py"),
+                                 "analysis/final_validation/results/v0.8/sensor_bore_local_candidate.json": sha256(ROOT / "analysis/final_validation/results/v0.8/sensor_bore_local_candidate.json")},
+         "cross_solver_state": "NOT_COMPLETED_BY_SCOPE_DECISION", "fusion_state": "STOPPED_NOT_USED_FOR_FINAL_RELEASE",
+         "inventor_state": "STOPPED_NOT_USED_FOR_FINAL_RELEASE", "physical_validation_state": "NOT_RUN",

@@ -35,6 +35,6 @@ reject(changed('TraverseRodA',lambda r:r['shape'].rotate(App.Vector(),App.Vector
 reject(changed('FrameTraversePostLeft',lambda r:r['shape'].translate(App.Vector(8,0,0))))
 reject(changed('PPR-C10_TraverseCarriage',lambda r:r.update(shape=Part.makeBox(55,90,24,App.Vector(397,476.5,362)))))
 reject(changed('PPR-C01_SlidingLid',lambda r:r.update(shape=Part.makeBox(195,195,2,App.Vector(30,290,900)))))
-reject(items+[{'name':'BlockedLidRemoval','shape':Part.makeBox(5,5,5,App.Vector(-30,340,903))}])
+reject(items+[{'name':'BlockedLidRemoval','shape':Part.makeBox(10,10,6,App.Vector(100,210,901))}])
 reject(items+[items[0]])
 print('GGM_MOTION_REGRESSION_PASS assembly_cases=7 contact_cases=3 physical=NOT_RUN')

@@ -1,5 +1,5 @@
 {
-  "revision": "safety-orchestration-closure-v0.6.1",
+  "revision": "final-design-fabrication-closure-v0.8",
   "dancer": {
     "range_deg": [
       -25,
@@ -25,6 +25,16 @@
     "CutterPlateFront",
     "Spool"
   ],
+  "hot_shield_to_abs_duct_clearance_mm": {
+    "PPR-C05_CoolingDuctLower": 112.0,
+    "PPR-C05_CoolingDuctUpper": 12.0
+  },
+  "guard_to_moving_clearance_mm": {
+    "DriveGuard/Shaft105": 3.5,
+    "DriveGuard/Shaft153": 3.5,
+    "PPR-C07_PullerGuard/PullerRoll53.6": 11.6,
+    "PPR-C07_PullerGuard/PullerRoll95.4": 12.6
+  },
   "status": "PASS",
   "scope": "nominal rigid CAD positions; donor cable flexibility and physical deflection remain EMPIRICAL_VALIDATION_OPTIONAL_NOT_RUN"
 }

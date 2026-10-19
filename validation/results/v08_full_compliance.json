@@ -1,0 +1,1858 @@
+{
+  "evidence_freshness": {
+    "analysis/final_validation/results/v0.8/solid_load_path_closure.json": {
+      "status": "CURRENT",
+      "report": "analysis/final_validation/results/v0.8/solid_load_path_closure.json",
+      "checked_reports": 4,
+      "checked_files": 15,
+      "edges": [
+        {
+          "report": "analysis/final_validation/results/v0.8/solid_load_path_closure.json",
+          "target": "analysis/final_validation/run_solid_load_path_closure.py",
+          "expected": "6fc1e84a8a385bd1af22e697181c254cd354222882d7c581c1a2ebfe28006134",
+          "actual": "6fc1e84a8a385bd1af22e697181c254cd354222882d7c581c1a2ebfe28006134"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/solid_load_path_closure.json",
+          "target": "analysis/final_validation/distributing_patch_v08.py",
+          "expected": "6ca866d725e431860731005382b2c3034e0886a0de14f9c0e63898e33aace6c0",
+          "actual": "6ca866d725e431860731005382b2c3034e0886a0de14f9c0e63898e33aace6c0"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/solid_load_path_closure.json",
+          "target": "analysis/final_validation/load_path_contract_v08.py",
+          "expected": "45d484688f68104a94484edf217322daaa0b74654b819a27a84f0ed23b97e043",
+          "actual": "45d484688f68104a94484edf217322daaa0b74654b819a27a84f0ed23b97e043"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/solid_load_path_closure.json",
+          "target": "analysis/final_validation/results/v0.8/journal_keyseat_closure/result.json",
+          "expected": "9a63a57447b8ea72339ab35c2382caa1bfce31929ccfec43786dba7e8e17b0dc",
+          "actual": "9a63a57447b8ea72339ab35c2382caa1bfce31929ccfec43786dba7e8e17b0dc"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/journal_keyseat_closure/result.json",
+          "target": "validation/check_shaft_journal_keyseat_closure.py",
+          "expected": "162ec3224e6541c0c898d992e07efe19020d90ad4dd25d06e2d51cdd2d0c9e6d",
+          "actual": "162ec3224e6541c0c898d992e07efe19020d90ad4dd25d06e2d51cdd2d0c9e6d"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/journal_keyseat_closure/result.json",
+          "target": "cad/freecad/compact/geometry.py",
+          "expected": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7",
+          "actual": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/journal_keyseat_closure/result.json",
+          "target": "cad/freecad/compact/manufacturing.py",
+          "expected": "436f7d63f997fb06442353065320c89726385ab1057540fadaae092057128ceb",
+          "actual": "436f7d63f997fb06442353065320c89726385ab1057540fadaae092057128ceb"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/journal_keyseat_closure/result.json",
+          "target": "analysis/final_validation/input/geometry_manifest.json",
+          "expected": "ac3ee95d0f5d1affb325901b4c6a440cb9f5894bb6f9f434e1c2b22e3ca14725",
+          "actual": "ac3ee95d0f5d1affb325901b4c6a440cb9f5894bb6f9f434e1c2b22e3ca14725"
+        },
+        {
+          "report": "analysis/final_validation/input/geometry_manifest.json",
+          "target": "cad/freecad/compact/geometry.py",
+          "expected": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7",
+          "actual": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7"
+        },
+        {
+          "report": "analysis/final_validation/input/geometry_manifest.json",
+          "target": "analysis/final_validation/input/bearing_plate.step",
+          "expected": "d625b0e138c28c11b19d31e9402fd3fd12af2871ea3f81fb4d4ea5981ce09af6",
+          "actual": "d625b0e138c28c11b19d31e9402fd3fd12af2871ea3f81fb4d4ea5981ce09af6"
+        },
+        {
+          "report": "analysis/final_validation/input/geometry_manifest.json",
+          "target": "analysis/final_validation/input/extruder_barrel.step",
+          "expected": "dc21e0c4f542c98bcceb3118b9215ada6cb07c14b0757ce0fc646db69fba7d26",
+          "actual": "dc21e0c4f542c98bcceb3118b9215ada6cb07c14b0757ce0fc646db69fba7d26"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/solid_load_path_closure.json",
+          "target": "analysis/load_cases/openmodelica_dynamic_envelope.json",
+          "expected": "22e1ec87e052ce5629c82e601c68d18e1c5474821f3859396fae4b924c213073",
+          "actual": "22e1ec87e052ce5629c82e601c68d18e1c5474821f3859396fae4b924c213073"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/solid_load_path_closure.json",
+          "target": "analysis/structural/run_load_checks.py",
+          "expected": "5fd498c9a55ab327f410d95eabf44244cb9c0b44611e8693051d79b34e7f39ba",
+          "actual": "5fd498c9a55ab327f410d95eabf44244cb9c0b44611e8693051d79b34e7f39ba"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/solid_load_path_closure.json",
+          "target": "analysis/final_validation/input/geometry_manifest.json",
+          "expected": "ac3ee95d0f5d1affb325901b4c6a440cb9f5894bb6f9f434e1c2b22e3ca14725",
+          "actual": "ac3ee95d0f5d1affb325901b4c6a440cb9f5894bb6f9f434e1c2b22e3ca14725"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/solid_load_path_closure.json",
+          "target": "analysis/final_validation/input/CUT-05.step",
+          "expected": "23c5eb730a36117cdf74685a3f7bd5f6240a91de4a4eaeb3624c391cd2c7a189",
+          "actual": "23c5eb730a36117cdf74685a3f7bd5f6240a91de4a4eaeb3624c391cd2c7a189"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/solid_load_path_closure.json",
+          "target": "analysis/final_validation/input/CUT-05R.step",
+          "expected": "5476789b8bc1fc5fc7c235feddc3b39428aa2b2909e01aa6636bc4f7d1a19303",
+          "actual": "5476789b8bc1fc5fc7c235feddc3b39428aa2b2909e01aa6636bc4f7d1a19303"
+        }
+      ],
+      "issues": [],
+      "scope": "declared transitive dependency integrity, not physical validity"
+    },
+    "analysis/final_validation/results/v0.8/hot_zone_digital_qualification.json": {
+      "status": "CURRENT",
+      "report": "analysis/final_validation/results/v0.8/hot_zone_digital_qualification.json",
+      "checked_reports": 11,
+      "checked_files": 30,
+      "edges": [
+        {
+          "report": "analysis/final_validation/results/v0.8/hot_zone_digital_qualification.json",
+          "target": "analysis/final_validation/qualify_hot_zone_digital_v08.py",
+          "expected": "5b3da16cef68452dcd19262184abf16d35c4315901775b8a9d9cc1e27e372810",
+          "actual": "5b3da16cef68452dcd19262184abf16d35c4315901775b8a9d9cc1e27e372810"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/hot_zone_digital_qualification.json",
+          "target": "analysis/final_validation/results/v0.8/thermal_fit_closure.json",
+          "expected": "4f80d6f07b81181bdc2e657eed737729c4921c8ec912eb3dd2d4d8a27533c8d6",
+          "actual": "4f80d6f07b81181bdc2e657eed737729c4921c8ec912eb3dd2d4d8a27533c8d6"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/thermal_fit_closure.json",
+          "target": "analysis/final_validation/run_thermal_fit_closure.py",
+          "expected": "f7cf8dc7419ed34f7eb29fbb3b70c44f736a253a43d8640e1887f36f0e5fd0c0",
+          "actual": "f7cf8dc7419ed34f7eb29fbb3b70c44f736a253a43d8640e1887f36f0e5fd0c0"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/thermal_fit_closure.json",
+          "target": "analysis/final_validation/contracts/thermomechanical_closure_v08.json",
+          "expected": "8e5f17a957f9e40f49f3021d7a994302a52165fc1eb99dd38cfe69548d4c04a6",
+          "actual": "8e5f17a957f9e40f49f3021d7a994302a52165fc1eb99dd38cfe69548d4c04a6"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/thermal_fit_closure.json",
+          "target": "cad/parameters/final_v08.json",
+          "expected": "7e3cbd02c2210634e8bd3ee7c62924d528865fba6bee8f1cc8aeca7bfeb85a3b",
+          "actual": "7e3cbd02c2210634e8bd3ee7c62924d528865fba6bee8f1cc8aeca7bfeb85a3b"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/thermal_fit_closure.json",
+          "target": "cad/parameters/baseline.json",
+          "expected": "f71d689a445a7a292d371e214a76347e57fea98e4f787262883caea8663e1fc4",
+          "actual": "f71d689a445a7a292d371e214a76347e57fea98e4f787262883caea8663e1fc4"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/hot_zone_digital_qualification.json",
+          "target": "analysis/final_validation/results/v0.8/sensor_bore_local_candidate.json",
+          "expected": "e48d53eaed0d6a3e6bb4a7a0e323cbabeaaada1262f8b60cfb5c4a59a9900ce2",
+          "actual": "e48d53eaed0d6a3e6bb4a7a0e323cbabeaaada1262f8b60cfb5c4a59a9900ce2"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/sensor_bore_local_candidate.json",
+          "target": "analysis/final_validation/run_sensor_bore_local_candidate.py",
+          "expected": "b6c87a925fb6ffadebed1887cd628117331ecd3d101978f665b856172e5b8e1a",
+          "actual": "b6c87a925fb6ffadebed1887cd628117331ecd3d101978f665b856172e5b8e1a"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/sensor_bore_local_candidate.json",
+          "target": "analysis/final_validation/input/sensor_bore_local_candidate.step",
+          "expected": "5363f74d9132ee768e9a8f680bb7c12167f8fd1833d50916d9a52b6383d974c6",
+          "actual": "5363f74d9132ee768e9a8f680bb7c12167f8fd1833d50916d9a52b6383d974c6"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/sensor_bore_local_candidate.json",
+          "target": "analysis/final_validation/run_calculix_v08.py",
+          "expected": "e3e21cd1f82dbc8737657ef82fd0378c5439afd8372196b3a21ad27e15df8e8c",
+          "actual": "e3e21cd1f82dbc8737657ef82fd0378c5439afd8372196b3a21ad27e15df8e8c"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/sensor_bore_local_candidate.json",
+          "target": "cad/freecad/final_v08/check_sensor_ligament_candidate.py",
+          "expected": "8de6fd315b9f1b34f6857945f08e8842feb92d8a96e2f90087c2372ae196a8f6",
+          "actual": "8de6fd315b9f1b34f6857945f08e8842feb92d8a96e2f90087c2372ae196a8f6"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/sensor_bore_local_candidate.json",
+          "target": "cad/freecad/compact/manufacturing.py",
+          "expected": "436f7d63f997fb06442353065320c89726385ab1057540fadaae092057128ceb",
+          "actual": "436f7d63f997fb06442353065320c89726385ab1057540fadaae092057128ceb"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/hot_zone_digital_qualification.json",
+          "target": "analysis/final_validation/results/v0.8/die_joint_qualification.json",
+          "expected": "c23af061ca511c073667d169f0217b33f728c1ee7de22aa3925dfa13484dee08",
+          "actual": "c23af061ca511c073667d169f0217b33f728c1ee7de22aa3925dfa13484dee08"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/die_joint_qualification.json",
+          "target": "analysis/final_validation/qualify_die_joint_v08.py",
+          "expected": "6e611e33d81c5386d8927e1e3b64c877ec47117226065467e8ef5a16f90ad8c1",
+          "actual": "6e611e33d81c5386d8927e1e3b64c877ec47117226065467e8ef5a16f90ad8c1"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/die_joint_qualification.json",
+          "target": "cad/freecad/compact/geometry.py",
+          "expected": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7",
+          "actual": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/die_joint_qualification.json",
+          "target": "cad/freecad/compact/manufacturing.py",
+          "expected": "436f7d63f997fb06442353065320c89726385ab1057540fadaae092057128ceb",
+          "actual": "436f7d63f997fb06442353065320c89726385ab1057540fadaae092057128ceb"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/die_joint_qualification.json",
+          "target": "cad/parameters/final_v08.json",
+          "expected": "7e3cbd02c2210634e8bd3ee7c62924d528865fba6bee8f1cc8aeca7bfeb85a3b",
+          "actual": "7e3cbd02c2210634e8bd3ee7c62924d528865fba6bee8f1cc8aeca7bfeb85a3b"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/hot_zone_digital_qualification.json",
+          "target": "simulation/openmodelica/results_v0.8/summary.json",
+          "expected": "1a68e9eeb8cbe858b3592e0c4539101898f86a36c3d7fdfc215b8398753f252e",
+          "actual": "1a68e9eeb8cbe858b3592e0c4539101898f86a36c3d7fdfc215b8398753f252e"
+        },
+        {
+          "report": "simulation/openmodelica/results_v0.8/summary.json",
+          "target": "simulation/openmodelica/v0.8/V08ReleaseScenarios.mo",
+          "expected": "ba0bf7192b23b4ee8095371525a0d641e307ea38e6e34fe122e39bfe6535c0cc",
+          "actual": "ba0bf7192b23b4ee8095371525a0d641e307ea38e6e34fe122e39bfe6535c0cc"
+        },
+        {
+          "report": "simulation/openmodelica/results_v0.8/summary.json",
+          "target": "simulation/openmodelica/PLA_PET_Recycler/Systems/DynamicSpoolSystem.mo",
+          "expected": "3839a9cbd676f00de8edd59f450c9bd26f9de078f007e918b6e16208c12758a4",
+          "actual": "3839a9cbd676f00de8edd59f450c9bd26f9de078f007e918b6e16208c12758a4"
+        },
+        {
+          "report": "simulation/openmodelica/results_v0.8/summary.json",
+          "target": "simulation/openmodelica/PLA_PET_Recycler/Generated.mo",
+          "expected": "c931b8b519c482f1c2e976ca8a358881586817d6cc3151df80c027d2e64dfe8a",
+          "actual": "c931b8b519c482f1c2e976ca8a358881586817d6cc3151df80c027d2e64dfe8a"
+        },
+        {
+          "report": "simulation/openmodelica/results_v0.8/summary.json",
+          "target": "simulation/openmodelica/PLA_PET_Recycler/GeneratedControl.mo",
+          "expected": "857a44081e16f90622412c85885f8cd4d12de6fa9ab4bb7165df48a9a6045a1d",
+          "actual": "857a44081e16f90622412c85885f8cd4d12de6fa9ab4bb7165df48a9a6045a1d"
+        },
+        {
+          "report": "simulation/openmodelica/results_v0.8/summary.json",
+          "target": "cad/parameters/baseline.json",
+          "expected": "f71d689a445a7a292d371e214a76347e57fea98e4f787262883caea8663e1fc4",
+          "actual": "f71d689a445a7a292d371e214a76347e57fea98e4f787262883caea8663e1fc4"
+        },
+        {
+          "report": "simulation/openmodelica/results_v0.8/summary.json",
+          "target": "control/drive_actuation_contract_v0.6.2.1.json",
+          "expected": "6a0f3ee3b668421900373561750264986c1e9583543932b4da0b359764887ec2",
+          "actual": "6a0f3ee3b668421900373561750264986c1e9583543932b4da0b359764887ec2"
+        },
+        {
+          "report": "simulation/openmodelica/results_v0.8/summary.json",
+          "target": "control/process_contract.json",
+          "expected": "b0cda8ee3ed63098fad9d447a24b084d4c6e4ccccdea165bab2ca4afc6e8126d",
+          "actual": "b0cda8ee3ed63098fad9d447a24b084d4c6e4ccccdea165bab2ca4afc6e8126d"
+        },
+        {
+          "report": "simulation/openmodelica/results_v0.8/summary.json",
+          "target": "control/fault_response_contract.json",
+          "expected": "5a2ca711f09d33c60d262b62ee86b243a16aa92fa92963e66b1b0b21f5d951f4",
+          "actual": "5a2ca711f09d33c60d262b62ee86b243a16aa92fa92963e66b1b0b21f5d951f4"
+        },
+        {
+          "report": "simulation/openmodelica/results_v0.8/summary.json",
+          "target": "firmware/arduino_mega/src/spooler_control.h",
+          "expected": "59ad7eaf0e88b25fd58ccbb28018596c6ea2943577909c6787ae26f224041f62",
+          "actual": "59ad7eaf0e88b25fd58ccbb28018596c6ea2943577909c6787ae26f224041f62"
+        },
+        {
+          "report": "simulation/openmodelica/results_v0.8/summary.json",
+          "target": "firmware/arduino_mega/src/machine_supervisor.cpp",
+          "expected": "de9073ea4fad90bfa18553d287abbaf3ae05b0403fb0d4e009ad8390f04240da",
+          "actual": "de9073ea4fad90bfa18553d287abbaf3ae05b0403fb0d4e009ad8390f04240da"
+        },
+        {
+          "report": "simulation/openmodelica/results_v0.8/summary.json",
+          "target": "calculations/run_engineering.py",
+          "expected": "9b011de99355acf3fab2c06fd390338eae7c84b4c6595183c7a2a019664c78b6",
+          "actual": "9b011de99355acf3fab2c06fd390338eae7c84b4c6595183c7a2a019664c78b6"
+        },
+        {
+          "report": "simulation/openmodelica/results_v0.8/summary.json",
+          "target": "cad/parameters/final_v08.json",
+          "expected": "7e3cbd02c2210634e8bd3ee7c62924d528865fba6bee8f1cc8aeca7bfeb85a3b",
+          "actual": "7e3cbd02c2210634e8bd3ee7c62924d528865fba6bee8f1cc8aeca7bfeb85a3b"
+        },
+        {
+          "report": "simulation/openmodelica/results_v0.8/summary.json",
+          "target": "cad/generation/export_modelica_properties.py",
+          "expected": "3e8707ffd505a1ab1ce86e490c5612a5ec1d6da17f53396c0aab1bd695195221",
+          "actual": "3e8707ffd505a1ab1ce86e490c5612a5ec1d6da17f53396c0aab1bd695195221"
+        },
+        {
+          "report": "simulation/openmodelica/results_v0.8/summary.json",
+          "target": "simulation/openmodelica/scripts/run_v08_release.mos",
+          "expected": "a14f24fa2246aa37107facd68de097cd3ab223d3a05234ba2e364b67fbc01d5c",
+          "actual": "a14f24fa2246aa37107facd68de097cd3ab223d3a05234ba2e364b67fbc01d5c"
+        },
+        {
+          "report": "simulation/openmodelica/results_v0.8/summary.json",
+          "target": "simulation/openmodelica/postprocess/validate_v08_release.py",
+          "expected": "f6e02f1c92fc63982ef7ecbc9b27953216e105d267d03de44496c92caf5b925f",
+          "actual": "f6e02f1c92fc63982ef7ecbc9b27953216e105d267d03de44496c92caf5b925f"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/hot_zone_digital_qualification.json",
+          "target": "cad/parameters/final_v08.json",
+          "expected": "7e3cbd02c2210634e8bd3ee7c62924d528865fba6bee8f1cc8aeca7bfeb85a3b",
+          "actual": "7e3cbd02c2210634e8bd3ee7c62924d528865fba6bee8f1cc8aeca7bfeb85a3b"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/hot_zone_digital_qualification.json",
+          "target": "analysis/final_validation/contracts/thermomechanical_closure_v08.json",
+          "expected": "8e5f17a957f9e40f49f3021d7a994302a52165fc1eb99dd38cfe69548d4c04a6",
+          "actual": "8e5f17a957f9e40f49f3021d7a994302a52165fc1eb99dd38cfe69548d4c04a6"
+        }
+      ],
+      "issues": [],
+      "scope": "declared transitive dependency integrity, not physical validity"
+    },
+    "analysis/final_validation/results/v0.8/summary.json": {
+      "status": "CURRENT",
+      "report": "analysis/final_validation/results/v0.8/summary.json",
+      "checked_reports": 6,
+      "checked_files": 16,
+      "edges": [
+        {
+          "report": "analysis/final_validation/results/v0.8/summary.json",
+          "target": "analysis/final_validation/beam_torque_recovery.py",
+          "expected": "c3034a20180367b0196360a40872f05ca458170a93691b6c9c13e591e9108838",
+          "actual": "c3034a20180367b0196360a40872f05ca458170a93691b6c9c13e591e9108838"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/summary.json",
+          "target": "cad/freecad/compact/geometry.py",
+          "expected": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7",
+          "actual": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/summary.json",
+          "target": "cad/parameters/baseline.json",
+          "expected": "f71d689a445a7a292d371e214a76347e57fea98e4f787262883caea8663e1fc4",
+          "actual": "f71d689a445a7a292d371e214a76347e57fea98e4f787262883caea8663e1fc4"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/summary.json",
+          "target": "cad/parameters/final_v08.json",
+          "expected": "7e3cbd02c2210634e8bd3ee7c62924d528865fba6bee8f1cc8aeca7bfeb85a3b",
+          "actual": "7e3cbd02c2210634e8bd3ee7c62924d528865fba6bee8f1cc8aeca7bfeb85a3b"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/summary.json",
+          "target": "analysis/load_cases/openmodelica_dynamic_envelope.json",
+          "expected": "22e1ec87e052ce5629c82e601c68d18e1c5474821f3859396fae4b924c213073",
+          "actual": "22e1ec87e052ce5629c82e601c68d18e1c5474821f3859396fae4b924c213073"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/summary.json",
+          "target": "analysis/final_validation/input/geometry_manifest.json",
+          "expected": "ac3ee95d0f5d1affb325901b4c6a440cb9f5894bb6f9f434e1c2b22e3ca14725",
+          "actual": "ac3ee95d0f5d1affb325901b4c6a440cb9f5894bb6f9f434e1c2b22e3ca14725"
+        },
+        {
+          "report": "analysis/final_validation/input/geometry_manifest.json",
+          "target": "cad/freecad/compact/geometry.py",
+          "expected": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7",
+          "actual": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7"
+        },
+        {
+          "report": "analysis/final_validation/input/geometry_manifest.json",
+          "target": "analysis/final_validation/input/bearing_plate.step",
+          "expected": "d625b0e138c28c11b19d31e9402fd3fd12af2871ea3f81fb4d4ea5981ce09af6",
+          "actual": "d625b0e138c28c11b19d31e9402fd3fd12af2871ea3f81fb4d4ea5981ce09af6"
+        },
+        {
+          "report": "analysis/final_validation/input/geometry_manifest.json",
+          "target": "analysis/final_validation/input/extruder_barrel.step",
+          "expected": "dc21e0c4f542c98bcceb3118b9215ada6cb07c14b0757ce0fc646db69fba7d26",
+          "actual": "dc21e0c4f542c98bcceb3118b9215ada6cb07c14b0757ce0fc646db69fba7d26"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/summary.json",
+          "target": "analysis/structural/run_load_checks.py",
+          "expected": "5fd498c9a55ab327f410d95eabf44244cb9c0b44611e8693051d79b34e7f39ba",
+          "actual": "5fd498c9a55ab327f410d95eabf44244cb9c0b44611e8693051d79b34e7f39ba"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/summary.json",
+          "target": "analysis/final_validation/results/v0.8/sensor_bore_local_candidate.json",
+          "expected": "e48d53eaed0d6a3e6bb4a7a0e323cbabeaaada1262f8b60cfb5c4a59a9900ce2",
+          "actual": "e48d53eaed0d6a3e6bb4a7a0e323cbabeaaada1262f8b60cfb5c4a59a9900ce2"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/sensor_bore_local_candidate.json",
+          "target": "analysis/final_validation/run_sensor_bore_local_candidate.py",
+          "expected": "b6c87a925fb6ffadebed1887cd628117331ecd3d101978f665b856172e5b8e1a",
+          "actual": "b6c87a925fb6ffadebed1887cd628117331ecd3d101978f665b856172e5b8e1a"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/sensor_bore_local_candidate.json",
+          "target": "analysis/final_validation/input/sensor_bore_local_candidate.step",
+          "expected": "5363f74d9132ee768e9a8f680bb7c12167f8fd1833d50916d9a52b6383d974c6",
+          "actual": "5363f74d9132ee768e9a8f680bb7c12167f8fd1833d50916d9a52b6383d974c6"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/sensor_bore_local_candidate.json",
+          "target": "analysis/final_validation/run_calculix_v08.py",
+          "expected": "e3e21cd1f82dbc8737657ef82fd0378c5439afd8372196b3a21ad27e15df8e8c",
+          "actual": "e3e21cd1f82dbc8737657ef82fd0378c5439afd8372196b3a21ad27e15df8e8c"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/sensor_bore_local_candidate.json",
+          "target": "cad/freecad/final_v08/check_sensor_ligament_candidate.py",
+          "expected": "8de6fd315b9f1b34f6857945f08e8842feb92d8a96e2f90087c2372ae196a8f6",
+          "actual": "8de6fd315b9f1b34f6857945f08e8842feb92d8a96e2f90087c2372ae196a8f6"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/sensor_bore_local_candidate.json",
+          "target": "cad/freecad/compact/manufacturing.py",
+          "expected": "436f7d63f997fb06442353065320c89726385ab1057540fadaae092057128ceb",
+          "actual": "436f7d63f997fb06442353065320c89726385ab1057540fadaae092057128ceb"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/summary.json",
+          "target": "analysis/final_validation/run_calculix_v08.py",
+          "expected": "e3e21cd1f82dbc8737657ef82fd0378c5439afd8372196b3a21ad27e15df8e8c",
+          "actual": "e3e21cd1f82dbc8737657ef82fd0378c5439afd8372196b3a21ad27e15df8e8c"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/summary.json",
+          "target": "cad/freecad/compact/geometry.py",
+          "expected": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7",
+          "actual": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/summary.json",
+          "target": "analysis/final_validation/input/bearing_plate.step",
+          "expected": "d625b0e138c28c11b19d31e9402fd3fd12af2871ea3f81fb4d4ea5981ce09af6",
+          "actual": "d625b0e138c28c11b19d31e9402fd3fd12af2871ea3f81fb4d4ea5981ce09af6"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/summary.json",
+          "target": "analysis/final_validation/input/extruder_barrel.step",
+          "expected": "dc21e0c4f542c98bcceb3118b9215ada6cb07c14b0757ce0fc646db69fba7d26",
+          "actual": "dc21e0c4f542c98bcceb3118b9215ada6cb07c14b0757ce0fc646db69fba7d26"
+        }
+      ],
+      "issues": [],
+      "scope": "declared transitive dependency integrity, not physical validity"
+    },
+    "analysis/final_validation/results/v0.8/sensor_bore_local_candidate.json": {
+      "status": "CURRENT",
+      "report": "analysis/final_validation/results/v0.8/sensor_bore_local_candidate.json",
+      "checked_reports": 1,
+      "checked_files": 6,
+      "edges": [
+        {
+          "report": "analysis/final_validation/results/v0.8/sensor_bore_local_candidate.json",
+          "target": "analysis/final_validation/run_sensor_bore_local_candidate.py",
+          "expected": "b6c87a925fb6ffadebed1887cd628117331ecd3d101978f665b856172e5b8e1a",
+          "actual": "b6c87a925fb6ffadebed1887cd628117331ecd3d101978f665b856172e5b8e1a"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/sensor_bore_local_candidate.json",
+          "target": "analysis/final_validation/input/sensor_bore_local_candidate.step",
+          "expected": "5363f74d9132ee768e9a8f680bb7c12167f8fd1833d50916d9a52b6383d974c6",
+          "actual": "5363f74d9132ee768e9a8f680bb7c12167f8fd1833d50916d9a52b6383d974c6"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/sensor_bore_local_candidate.json",
+          "target": "analysis/final_validation/run_calculix_v08.py",
+          "expected": "e3e21cd1f82dbc8737657ef82fd0378c5439afd8372196b3a21ad27e15df8e8c",
+          "actual": "e3e21cd1f82dbc8737657ef82fd0378c5439afd8372196b3a21ad27e15df8e8c"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/sensor_bore_local_candidate.json",
+          "target": "cad/freecad/final_v08/check_sensor_ligament_candidate.py",
+          "expected": "8de6fd315b9f1b34f6857945f08e8842feb92d8a96e2f90087c2372ae196a8f6",
+          "actual": "8de6fd315b9f1b34f6857945f08e8842feb92d8a96e2f90087c2372ae196a8f6"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/sensor_bore_local_candidate.json",
+          "target": "cad/freecad/compact/manufacturing.py",
+          "expected": "436f7d63f997fb06442353065320c89726385ab1057540fadaae092057128ceb",
+          "actual": "436f7d63f997fb06442353065320c89726385ab1057540fadaae092057128ceb"
+        }
+      ],
+      "issues": [],
+      "scope": "declared transitive dependency integrity, not physical validity"
+    },
+    "simulation/openmodelica/results_v0.8/summary.json": {
+      "status": "CURRENT",
+      "report": "simulation/openmodelica/results_v0.8/summary.json",
+      "checked_reports": 6,
+      "checked_files": 16,
+      "edges": [
+        {
+          "report": "simulation/openmodelica/results_v0.8/summary.json",
+          "target": "simulation/openmodelica/v0.8/V08ReleaseScenarios.mo",
+          "expected": "ba0bf7192b23b4ee8095371525a0d641e307ea38e6e34fe122e39bfe6535c0cc",
+          "actual": "ba0bf7192b23b4ee8095371525a0d641e307ea38e6e34fe122e39bfe6535c0cc"
+        },
+        {
+          "report": "simulation/openmodelica/results_v0.8/summary.json",
+          "target": "simulation/openmodelica/PLA_PET_Recycler/Systems/DynamicSpoolSystem.mo",
+          "expected": "3839a9cbd676f00de8edd59f450c9bd26f9de078f007e918b6e16208c12758a4",
+          "actual": "3839a9cbd676f00de8edd59f450c9bd26f9de078f007e918b6e16208c12758a4"
+        },
+        {
+          "report": "simulation/openmodelica/results_v0.8/summary.json",
+          "target": "simulation/openmodelica/PLA_PET_Recycler/Generated.mo",
+          "expected": "c931b8b519c482f1c2e976ca8a358881586817d6cc3151df80c027d2e64dfe8a",
+          "actual": "c931b8b519c482f1c2e976ca8a358881586817d6cc3151df80c027d2e64dfe8a"
+        },
+        {
+          "report": "simulation/openmodelica/results_v0.8/summary.json",
+          "target": "simulation/openmodelica/PLA_PET_Recycler/GeneratedControl.mo",
+          "expected": "857a44081e16f90622412c85885f8cd4d12de6fa9ab4bb7165df48a9a6045a1d",
+          "actual": "857a44081e16f90622412c85885f8cd4d12de6fa9ab4bb7165df48a9a6045a1d"
+        },
+        {
+          "report": "simulation/openmodelica/results_v0.8/summary.json",
+          "target": "cad/parameters/baseline.json",
+          "expected": "f71d689a445a7a292d371e214a76347e57fea98e4f787262883caea8663e1fc4",
+          "actual": "f71d689a445a7a292d371e214a76347e57fea98e4f787262883caea8663e1fc4"
+        },
+        {
+          "report": "simulation/openmodelica/results_v0.8/summary.json",
+          "target": "control/drive_actuation_contract_v0.6.2.1.json",
+          "expected": "6a0f3ee3b668421900373561750264986c1e9583543932b4da0b359764887ec2",
+          "actual": "6a0f3ee3b668421900373561750264986c1e9583543932b4da0b359764887ec2"
+        },
+        {
+          "report": "simulation/openmodelica/results_v0.8/summary.json",
+          "target": "control/process_contract.json",
+          "expected": "b0cda8ee3ed63098fad9d447a24b084d4c6e4ccccdea165bab2ca4afc6e8126d",
+          "actual": "b0cda8ee3ed63098fad9d447a24b084d4c6e4ccccdea165bab2ca4afc6e8126d"
+        },
+        {
+          "report": "simulation/openmodelica/results_v0.8/summary.json",
+          "target": "control/fault_response_contract.json",
+          "expected": "5a2ca711f09d33c60d262b62ee86b243a16aa92fa92963e66b1b0b21f5d951f4",
+          "actual": "5a2ca711f09d33c60d262b62ee86b243a16aa92fa92963e66b1b0b21f5d951f4"
+        },
+        {
+          "report": "simulation/openmodelica/results_v0.8/summary.json",
+          "target": "firmware/arduino_mega/src/spooler_control.h",
+          "expected": "59ad7eaf0e88b25fd58ccbb28018596c6ea2943577909c6787ae26f224041f62",
+          "actual": "59ad7eaf0e88b25fd58ccbb28018596c6ea2943577909c6787ae26f224041f62"
+        },
+        {
+          "report": "simulation/openmodelica/results_v0.8/summary.json",
+          "target": "firmware/arduino_mega/src/machine_supervisor.cpp",
+          "expected": "de9073ea4fad90bfa18553d287abbaf3ae05b0403fb0d4e009ad8390f04240da",
+          "actual": "de9073ea4fad90bfa18553d287abbaf3ae05b0403fb0d4e009ad8390f04240da"
+        },
+        {
+          "report": "simulation/openmodelica/results_v0.8/summary.json",
+          "target": "calculations/run_engineering.py",
+          "expected": "9b011de99355acf3fab2c06fd390338eae7c84b4c6595183c7a2a019664c78b6",
+          "actual": "9b011de99355acf3fab2c06fd390338eae7c84b4c6595183c7a2a019664c78b6"
+        },
+        {
+          "report": "simulation/openmodelica/results_v0.8/summary.json",
+          "target": "cad/parameters/final_v08.json",
+          "expected": "7e3cbd02c2210634e8bd3ee7c62924d528865fba6bee8f1cc8aeca7bfeb85a3b",
+          "actual": "7e3cbd02c2210634e8bd3ee7c62924d528865fba6bee8f1cc8aeca7bfeb85a3b"
+        },
+        {
+          "report": "simulation/openmodelica/results_v0.8/summary.json",
+          "target": "cad/generation/export_modelica_properties.py",
+          "expected": "3e8707ffd505a1ab1ce86e490c5612a5ec1d6da17f53396c0aab1bd695195221",
+          "actual": "3e8707ffd505a1ab1ce86e490c5612a5ec1d6da17f53396c0aab1bd695195221"
+        },
+        {
+          "report": "simulation/openmodelica/results_v0.8/summary.json",
+          "target": "simulation/openmodelica/scripts/run_v08_release.mos",
+          "expected": "a14f24fa2246aa37107facd68de097cd3ab223d3a05234ba2e364b67fbc01d5c",
+          "actual": "a14f24fa2246aa37107facd68de097cd3ab223d3a05234ba2e364b67fbc01d5c"
+        },
+        {
+          "report": "simulation/openmodelica/results_v0.8/summary.json",
+          "target": "simulation/openmodelica/postprocess/validate_v08_release.py",
+          "expected": "f6e02f1c92fc63982ef7ecbc9b27953216e105d267d03de44496c92caf5b925f",
+          "actual": "f6e02f1c92fc63982ef7ecbc9b27953216e105d267d03de44496c92caf5b925f"
+        }
+      ],
+      "issues": [],
+      "scope": "declared transitive dependency integrity, not physical validity"
+    },
+    "analysis/final_validation/results/v0.8/loaded_phase.json": {
+      "status": "CURRENT",
+      "report": "analysis/final_validation/results/v0.8/loaded_phase.json",
+      "checked_reports": 11,
+      "checked_files": 29,
+      "edges": [
+        {
+          "report": "analysis/final_validation/results/v0.8/loaded_phase.json",
+          "target": "analysis/final_validation/run_calculix_v08.py",
+          "expected": "e3e21cd1f82dbc8737657ef82fd0378c5439afd8372196b3a21ad27e15df8e8c",
+          "actual": "e3e21cd1f82dbc8737657ef82fd0378c5439afd8372196b3a21ad27e15df8e8c"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/loaded_phase.json",
+          "target": "analysis/final_validation/run_qualification_v08.py",
+          "expected": "dfb687686a99df8db69311b37d06b1dcfe3bfe4a99352a85a65a1887560e3a1f",
+          "actual": "dfb687686a99df8db69311b37d06b1dcfe3bfe4a99352a85a65a1887560e3a1f"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/loaded_phase.json",
+          "target": "analysis/structural/run_load_checks.py",
+          "expected": "5fd498c9a55ab327f410d95eabf44244cb9c0b44611e8693051d79b34e7f39ba",
+          "actual": "5fd498c9a55ab327f410d95eabf44244cb9c0b44611e8693051d79b34e7f39ba"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/loaded_phase.json",
+          "target": "analysis/final_validation/input/geometry_manifest.json",
+          "expected": "ac3ee95d0f5d1affb325901b4c6a440cb9f5894bb6f9f434e1c2b22e3ca14725",
+          "actual": "ac3ee95d0f5d1affb325901b4c6a440cb9f5894bb6f9f434e1c2b22e3ca14725"
+        },
+        {
+          "report": "analysis/final_validation/input/geometry_manifest.json",
+          "target": "cad/freecad/compact/geometry.py",
+          "expected": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7",
+          "actual": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7"
+        },
+        {
+          "report": "analysis/final_validation/input/geometry_manifest.json",
+          "target": "analysis/final_validation/input/bearing_plate.step",
+          "expected": "d625b0e138c28c11b19d31e9402fd3fd12af2871ea3f81fb4d4ea5981ce09af6",
+          "actual": "d625b0e138c28c11b19d31e9402fd3fd12af2871ea3f81fb4d4ea5981ce09af6"
+        },
+        {
+          "report": "analysis/final_validation/input/geometry_manifest.json",
+          "target": "analysis/final_validation/input/extruder_barrel.step",
+          "expected": "dc21e0c4f542c98bcceb3118b9215ada6cb07c14b0757ce0fc646db69fba7d26",
+          "actual": "dc21e0c4f542c98bcceb3118b9215ada6cb07c14b0757ce0fc646db69fba7d26"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/loaded_phase.json",
+          "target": "analysis/final_validation/results/v0.8/shaft_section.json",
+          "expected": "97a912535f6f3b45633dbfc713203c221e2137f1e957bfdcf7ef4242f620051d",
+          "actual": "97a912535f6f3b45633dbfc713203c221e2137f1e957bfdcf7ef4242f620051d"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/shaft_section.json",
+          "target": "cad/freecad/compact/check_shaft_section_v08.py",
+          "expected": "888d22e20fb0e2fa9e571020ecfaa0d15df32b9809cfe2097e88e5daafc44e15",
+          "actual": "888d22e20fb0e2fa9e571020ecfaa0d15df32b9809cfe2097e88e5daafc44e15"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/shaft_section.json",
+          "target": "cad/freecad/compact/geometry.py",
+          "expected": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7",
+          "actual": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/loaded_phase.json",
+          "target": "analysis/final_validation/results/v0.8/phase_pair_backlash_candidate.json",
+          "expected": "4e597d88f4b188e608a26c6591b5d8177e8f95af4973459baa3d67233931ce4f",
+          "actual": "4e597d88f4b188e608a26c6591b5d8177e8f95af4973459baa3d67233931ce4f"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_pair_backlash_candidate.json",
+          "target": "cad/freecad/final_v08/check_phase_pair_backlash_candidate.py",
+          "expected": "2be07a7291166ebe235fb96e0fb6ef28a4cfd824d4c4e3aedf1a10536f6b9480",
+          "actual": "2be07a7291166ebe235fb96e0fb6ef28a4cfd824d4c4e3aedf1a10536f6b9480"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_pair_backlash_candidate.json",
+          "target": "analysis/final_validation/results/v0.8/phase_path_25_solid_gear.step",
+          "expected": "d5fb4588276f44eaed9d589be8aaa4c0caa71ebbedf9091e76e6abcc8016262d",
+          "actual": "d5fb4588276f44eaed9d589be8aaa4c0caa71ebbedf9091e76e6abcc8016262d"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/loaded_phase.json",
+          "target": "analysis/final_validation/results/v0.8/phase_path_25_qualification.json",
+          "expected": "08ae5c53e5a32b596027fad3d3f80192a8d7d08b57ba66f3a7b0e889d1af3a94",
+          "actual": "08ae5c53e5a32b596027fad3d3f80192a8d7d08b57ba66f3a7b0e889d1af3a94"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_path_25_qualification.json",
+          "target": "validation/check_phase_path_25_evidence.py",
+          "expected": "8005b4f4bdfb265b442a61bd7aede955ae99acb63be54bebd7806ffbcc5b5e44",
+          "actual": "8005b4f4bdfb265b442a61bd7aede955ae99acb63be54bebd7806ffbcc5b5e44"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_path_25_qualification.json",
+          "target": "analysis/final_validation/results/v0.8/phase_path_25_candidate.json",
+          "expected": "4b234415e510b9cb7561d850748a4232ae40d7bff13a6168a78c78ba74a92f2d",
+          "actual": "4b234415e510b9cb7561d850748a4232ae40d7bff13a6168a78c78ba74a92f2d"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_path_25_candidate.json",
+          "target": "cad/freecad/final_v08/check_phase_path_25_candidate.py",
+          "expected": "46df68eb60cbc6091511643e856f2f32afc82b942267bedefa5a7f7ae978c76b",
+          "actual": "46df68eb60cbc6091511643e856f2f32afc82b942267bedefa5a7f7ae978c76b"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_path_25_candidate.json",
+          "target": "cad/freecad/compact/geometry.py",
+          "expected": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7",
+          "actual": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_path_25_candidate.json",
+          "target": "cad/freecad/compact/manufacturing.py",
+          "expected": "436f7d63f997fb06442353065320c89726385ab1057540fadaae092057128ceb",
+          "actual": "436f7d63f997fb06442353065320c89726385ab1057540fadaae092057128ceb"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_path_25_candidate.json",
+          "target": "analysis/final_validation/run_phase_section_sensitivity_v08.py",
+          "expected": "3bd62f1a0d84a0081b4e7b63d1283961ede8a0edddc8b10a8bcb1eca2e88541d",
+          "actual": "3bd62f1a0d84a0081b4e7b63d1283961ede8a0edddc8b10a8bcb1eca2e88541d"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_path_25_candidate.json",
+          "target": "analysis/final_validation/results/v0.8/phase_section_sensitivity.json",
+          "expected": "2067c5a7246d1523abbff66a14c821b62adb1530d6d93a9ae837f62cf51adf6a",
+          "actual": "2067c5a7246d1523abbff66a14c821b62adb1530d6d93a9ae837f62cf51adf6a"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_section_sensitivity.json",
+          "target": "analysis/final_validation/run_phase_section_sensitivity_v08.py",
+          "expected": "3bd62f1a0d84a0081b4e7b63d1283961ede8a0edddc8b10a8bcb1eca2e88541d",
+          "actual": "3bd62f1a0d84a0081b4e7b63d1283961ede8a0edddc8b10a8bcb1eca2e88541d"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_section_sensitivity.json",
+          "target": "analysis/final_validation/results/v0.8/shaft_section.json",
+          "expected": "97a912535f6f3b45633dbfc713203c221e2137f1e957bfdcf7ef4242f620051d",
+          "actual": "97a912535f6f3b45633dbfc713203c221e2137f1e957bfdcf7ef4242f620051d"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_section_sensitivity.json",
+          "target": "cad/parameters/baseline.json",
+          "expected": "f71d689a445a7a292d371e214a76347e57fea98e4f787262883caea8663e1fc4",
+          "actual": "f71d689a445a7a292d371e214a76347e57fea98e4f787262883caea8663e1fc4"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_section_sensitivity.json",
+          "target": "analysis/final_validation/input/geometry_manifest.json",
+          "expected": "ac3ee95d0f5d1affb325901b4c6a440cb9f5894bb6f9f434e1c2b22e3ca14725",
+          "actual": "ac3ee95d0f5d1affb325901b4c6a440cb9f5894bb6f9f434e1c2b22e3ca14725"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_section_sensitivity.json",
+          "target": "analysis/final_validation/run_phase_load_v08.py",
+          "expected": "581302acb8bdf718cbb8f4bc962a846b5e79f76be9a613fa41b67c2b43fbe3b1",
+          "actual": "581302acb8bdf718cbb8f4bc962a846b5e79f76be9a613fa41b67c2b43fbe3b1"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_section_sensitivity.json",
+          "target": "analysis/final_validation/run_calculix_v08.py",
+          "expected": "e3e21cd1f82dbc8737657ef82fd0378c5439afd8372196b3a21ad27e15df8e8c",
+          "actual": "e3e21cd1f82dbc8737657ef82fd0378c5439afd8372196b3a21ad27e15df8e8c"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_path_25_qualification.json",
+          "target": "analysis/final_validation/results/v0.8/torsion_load_path_25_153.json",
+          "expected": "ddce33679f45bcd1476208421fb7282499620ae457d2ef798e9cce51b46b37ad",
+          "actual": "ddce33679f45bcd1476208421fb7282499620ae457d2ef798e9cce51b46b37ad"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/torsion_load_path_25_153.json",
+          "target": "analysis/final_validation/run_keyed_shaft_torsion_candidate.py",
+          "expected": "38f4cf31724d6234c582e3ab6b53c78ebfd6a72910dcd5662296c2770b9a46b5",
+          "actual": "38f4cf31724d6234c582e3ab6b53c78ebfd6a72910dcd5662296c2770b9a46b5"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/torsion_load_path_25_153.json",
+          "target": "analysis/final_validation/results/v0.8/phase_path_25_153.step",
+          "expected": "78dd748b63d10dc8c222df601fddac816d7f218322e5d805ed218d04d1f7dac3",
+          "actual": "78dd748b63d10dc8c222df601fddac816d7f218322e5d805ed218d04d1f7dac3"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/torsion_load_path_25_153.json",
+          "target": "analysis/final_validation/run_calculix_v08.py",
+          "expected": "e3e21cd1f82dbc8737657ef82fd0378c5439afd8372196b3a21ad27e15df8e8c",
+          "actual": "e3e21cd1f82dbc8737657ef82fd0378c5439afd8372196b3a21ad27e15df8e8c"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/torsion_load_path_25_153.json",
+          "target": "analysis/final_validation/run_qualification_v08.py",
+          "expected": "dfb687686a99df8db69311b37d06b1dcfe3bfe4a99352a85a65a1887560e3a1f",
+          "actual": "dfb687686a99df8db69311b37d06b1dcfe3bfe4a99352a85a65a1887560e3a1f"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_path_25_qualification.json",
+          "target": "analysis/final_validation/results/v0.8/torsion_load_path_25_105.json",
+          "expected": "093ce04894f36580173025aa1fd6f131217bb0daff7129c4eb55bd1af882f250",
+          "actual": "093ce04894f36580173025aa1fd6f131217bb0daff7129c4eb55bd1af882f250"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/torsion_load_path_25_105.json",
+          "target": "analysis/final_validation/run_keyed_shaft_torsion_candidate.py",
+          "expected": "38f4cf31724d6234c582e3ab6b53c78ebfd6a72910dcd5662296c2770b9a46b5",
+          "actual": "38f4cf31724d6234c582e3ab6b53c78ebfd6a72910dcd5662296c2770b9a46b5"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/torsion_load_path_25_105.json",
+          "target": "analysis/final_validation/results/v0.8/phase_path_25_105.step",
+          "expected": "0f1d88eae3ada28b813fc3531f757f93449b19627d8965197ca15c02a033e54e",
+          "actual": "0f1d88eae3ada28b813fc3531f757f93449b19627d8965197ca15c02a033e54e"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/torsion_load_path_25_105.json",
+          "target": "analysis/final_validation/run_calculix_v08.py",
+          "expected": "e3e21cd1f82dbc8737657ef82fd0378c5439afd8372196b3a21ad27e15df8e8c",
+          "actual": "e3e21cd1f82dbc8737657ef82fd0378c5439afd8372196b3a21ad27e15df8e8c"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/torsion_load_path_25_105.json",
+          "target": "analysis/final_validation/run_qualification_v08.py",
+          "expected": "dfb687686a99df8db69311b37d06b1dcfe3bfe4a99352a85a65a1887560e3a1f",
+          "actual": "dfb687686a99df8db69311b37d06b1dcfe3bfe4a99352a85a65a1887560e3a1f"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_path_25_qualification.json",
+          "target": "analysis/final_validation/results/v0.8/phase_gear_elastic_candidate.json",
+          "expected": "42812ecae6b0aa141e0d56e25099c16ce004fbdff4e396cd2dcaf775e2da3de2",
+          "actual": "42812ecae6b0aa141e0d56e25099c16ce004fbdff4e396cd2dcaf775e2da3de2"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_gear_elastic_candidate.json",
+          "target": "analysis/final_validation/run_phase_gear_elastic_candidate.py",
+          "expected": "bfb4436ab97e5edf5b2a219a4f4ffeb2074aceba4b6ae64a4f293eac2f920a59",
+          "actual": "bfb4436ab97e5edf5b2a219a4f4ffeb2074aceba4b6ae64a4f293eac2f920a59"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_gear_elastic_candidate.json",
+          "target": "analysis/final_validation/results/v0.8/phase_path_25_solid_gear.step",
+          "expected": "d5fb4588276f44eaed9d589be8aaa4c0caa71ebbedf9091e76e6abcc8016262d",
+          "actual": "d5fb4588276f44eaed9d589be8aaa4c0caa71ebbedf9091e76e6abcc8016262d"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_path_25_qualification.json",
+          "target": "analysis/final_validation/results/v0.8/phase_pair_backlash_candidate.json",
+          "expected": "4e597d88f4b188e608a26c6591b5d8177e8f95af4973459baa3d67233931ce4f",
+          "actual": "4e597d88f4b188e608a26c6591b5d8177e8f95af4973459baa3d67233931ce4f"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_path_25_qualification.json",
+          "target": "analysis/final_validation/results/v0.8/phase_section_sensitivity.json",
+          "expected": "2067c5a7246d1523abbff66a14c821b62adb1530d6d93a9ae837f62cf51adf6a",
+          "actual": "2067c5a7246d1523abbff66a14c821b62adb1530d6d93a9ae837f62cf51adf6a"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/loaded_phase.json",
+          "target": "analysis/final_validation/run_phase_load_v08.py",
+          "expected": "581302acb8bdf718cbb8f4bc962a846b5e79f76be9a613fa41b67c2b43fbe3b1",
+          "actual": "581302acb8bdf718cbb8f4bc962a846b5e79f76be9a613fa41b67c2b43fbe3b1"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/loaded_phase.json",
+          "target": "cad/freecad/compact/geometry.py",
+          "expected": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7",
+          "actual": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7"
+        }
+      ],
+      "issues": [],
+      "scope": "declared transitive dependency integrity, not physical validity"
+    },
+    "analysis/final_validation/results/v0.8/phase_clocking_release.json": {
+      "status": "CURRENT",
+      "report": "analysis/final_validation/results/v0.8/phase_clocking_release.json",
+      "checked_reports": 1,
+      "checked_files": 4,
+      "edges": [
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_clocking_release.json",
+          "target": "validation/check_phase_clocking_release.py",
+          "expected": "eaf774b5466e64892bdb3de09e38557c24e5e801dafb98e32de801fa77546aa5",
+          "actual": "eaf774b5466e64892bdb3de09e38557c24e5e801dafb98e32de801fa77546aa5"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_clocking_release.json",
+          "target": "cad/freecad/compact/geometry.py",
+          "expected": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7",
+          "actual": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_clocking_release.json",
+          "target": "cad/freecad/compact/manufacturing.py",
+          "expected": "436f7d63f997fb06442353065320c89726385ab1057540fadaae092057128ceb",
+          "actual": "436f7d63f997fb06442353065320c89726385ab1057540fadaae092057128ceb"
+        }
+      ],
+      "issues": [],
+      "scope": "declared transitive dependency integrity, not physical validity"
+    },
+    "analysis/final_validation/results/v0.8/phase_path_25_qualification.json": {
+      "status": "CURRENT",
+      "report": "analysis/final_validation/results/v0.8/phase_path_25_qualification.json",
+      "checked_reports": 10,
+      "checked_files": 27,
+      "edges": [
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_path_25_qualification.json",
+          "target": "validation/check_phase_path_25_evidence.py",
+          "expected": "8005b4f4bdfb265b442a61bd7aede955ae99acb63be54bebd7806ffbcc5b5e44",
+          "actual": "8005b4f4bdfb265b442a61bd7aede955ae99acb63be54bebd7806ffbcc5b5e44"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_path_25_qualification.json",
+          "target": "analysis/final_validation/results/v0.8/phase_path_25_candidate.json",
+          "expected": "4b234415e510b9cb7561d850748a4232ae40d7bff13a6168a78c78ba74a92f2d",
+          "actual": "4b234415e510b9cb7561d850748a4232ae40d7bff13a6168a78c78ba74a92f2d"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_path_25_candidate.json",
+          "target": "cad/freecad/final_v08/check_phase_path_25_candidate.py",
+          "expected": "46df68eb60cbc6091511643e856f2f32afc82b942267bedefa5a7f7ae978c76b",
+          "actual": "46df68eb60cbc6091511643e856f2f32afc82b942267bedefa5a7f7ae978c76b"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_path_25_candidate.json",
+          "target": "cad/freecad/compact/geometry.py",
+          "expected": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7",
+          "actual": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_path_25_candidate.json",
+          "target": "cad/freecad/compact/manufacturing.py",
+          "expected": "436f7d63f997fb06442353065320c89726385ab1057540fadaae092057128ceb",
+          "actual": "436f7d63f997fb06442353065320c89726385ab1057540fadaae092057128ceb"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_path_25_candidate.json",
+          "target": "analysis/final_validation/run_phase_section_sensitivity_v08.py",
+          "expected": "3bd62f1a0d84a0081b4e7b63d1283961ede8a0edddc8b10a8bcb1eca2e88541d",
+          "actual": "3bd62f1a0d84a0081b4e7b63d1283961ede8a0edddc8b10a8bcb1eca2e88541d"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_path_25_candidate.json",
+          "target": "analysis/final_validation/results/v0.8/phase_section_sensitivity.json",
+          "expected": "2067c5a7246d1523abbff66a14c821b62adb1530d6d93a9ae837f62cf51adf6a",
+          "actual": "2067c5a7246d1523abbff66a14c821b62adb1530d6d93a9ae837f62cf51adf6a"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_section_sensitivity.json",
+          "target": "analysis/final_validation/run_phase_section_sensitivity_v08.py",
+          "expected": "3bd62f1a0d84a0081b4e7b63d1283961ede8a0edddc8b10a8bcb1eca2e88541d",
+          "actual": "3bd62f1a0d84a0081b4e7b63d1283961ede8a0edddc8b10a8bcb1eca2e88541d"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_section_sensitivity.json",
+          "target": "analysis/final_validation/results/v0.8/shaft_section.json",
+          "expected": "97a912535f6f3b45633dbfc713203c221e2137f1e957bfdcf7ef4242f620051d",
+          "actual": "97a912535f6f3b45633dbfc713203c221e2137f1e957bfdcf7ef4242f620051d"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/shaft_section.json",
+          "target": "cad/freecad/compact/check_shaft_section_v08.py",
+          "expected": "888d22e20fb0e2fa9e571020ecfaa0d15df32b9809cfe2097e88e5daafc44e15",
+          "actual": "888d22e20fb0e2fa9e571020ecfaa0d15df32b9809cfe2097e88e5daafc44e15"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/shaft_section.json",
+          "target": "cad/freecad/compact/geometry.py",
+          "expected": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7",
+          "actual": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_section_sensitivity.json",
+          "target": "cad/parameters/baseline.json",
+          "expected": "f71d689a445a7a292d371e214a76347e57fea98e4f787262883caea8663e1fc4",
+          "actual": "f71d689a445a7a292d371e214a76347e57fea98e4f787262883caea8663e1fc4"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_section_sensitivity.json",
+          "target": "analysis/final_validation/input/geometry_manifest.json",
+          "expected": "ac3ee95d0f5d1affb325901b4c6a440cb9f5894bb6f9f434e1c2b22e3ca14725",
+          "actual": "ac3ee95d0f5d1affb325901b4c6a440cb9f5894bb6f9f434e1c2b22e3ca14725"
+        },
+        {
+          "report": "analysis/final_validation/input/geometry_manifest.json",
+          "target": "cad/freecad/compact/geometry.py",
+          "expected": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7",
+          "actual": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7"
+        },
+        {
+          "report": "analysis/final_validation/input/geometry_manifest.json",
+          "target": "analysis/final_validation/input/bearing_plate.step",
+          "expected": "d625b0e138c28c11b19d31e9402fd3fd12af2871ea3f81fb4d4ea5981ce09af6",
+          "actual": "d625b0e138c28c11b19d31e9402fd3fd12af2871ea3f81fb4d4ea5981ce09af6"
+        },
+        {
+          "report": "analysis/final_validation/input/geometry_manifest.json",
+          "target": "analysis/final_validation/input/extruder_barrel.step",
+          "expected": "dc21e0c4f542c98bcceb3118b9215ada6cb07c14b0757ce0fc646db69fba7d26",
+          "actual": "dc21e0c4f542c98bcceb3118b9215ada6cb07c14b0757ce0fc646db69fba7d26"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_section_sensitivity.json",
+          "target": "analysis/final_validation/run_phase_load_v08.py",
+          "expected": "581302acb8bdf718cbb8f4bc962a846b5e79f76be9a613fa41b67c2b43fbe3b1",
+          "actual": "581302acb8bdf718cbb8f4bc962a846b5e79f76be9a613fa41b67c2b43fbe3b1"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_section_sensitivity.json",
+          "target": "analysis/final_validation/run_calculix_v08.py",
+          "expected": "e3e21cd1f82dbc8737657ef82fd0378c5439afd8372196b3a21ad27e15df8e8c",
+          "actual": "e3e21cd1f82dbc8737657ef82fd0378c5439afd8372196b3a21ad27e15df8e8c"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_path_25_qualification.json",
+          "target": "analysis/final_validation/results/v0.8/torsion_load_path_25_153.json",
+          "expected": "ddce33679f45bcd1476208421fb7282499620ae457d2ef798e9cce51b46b37ad",
+          "actual": "ddce33679f45bcd1476208421fb7282499620ae457d2ef798e9cce51b46b37ad"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/torsion_load_path_25_153.json",
+          "target": "analysis/final_validation/run_keyed_shaft_torsion_candidate.py",
+          "expected": "38f4cf31724d6234c582e3ab6b53c78ebfd6a72910dcd5662296c2770b9a46b5",
+          "actual": "38f4cf31724d6234c582e3ab6b53c78ebfd6a72910dcd5662296c2770b9a46b5"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/torsion_load_path_25_153.json",
+          "target": "analysis/final_validation/results/v0.8/phase_path_25_153.step",
+          "expected": "78dd748b63d10dc8c222df601fddac816d7f218322e5d805ed218d04d1f7dac3",
+          "actual": "78dd748b63d10dc8c222df601fddac816d7f218322e5d805ed218d04d1f7dac3"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/torsion_load_path_25_153.json",
+          "target": "analysis/final_validation/run_calculix_v08.py",
+          "expected": "e3e21cd1f82dbc8737657ef82fd0378c5439afd8372196b3a21ad27e15df8e8c",
+          "actual": "e3e21cd1f82dbc8737657ef82fd0378c5439afd8372196b3a21ad27e15df8e8c"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/torsion_load_path_25_153.json",
+          "target": "analysis/final_validation/run_qualification_v08.py",
+          "expected": "dfb687686a99df8db69311b37d06b1dcfe3bfe4a99352a85a65a1887560e3a1f",
+          "actual": "dfb687686a99df8db69311b37d06b1dcfe3bfe4a99352a85a65a1887560e3a1f"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_path_25_qualification.json",
+          "target": "analysis/final_validation/results/v0.8/torsion_load_path_25_105.json",
+          "expected": "093ce04894f36580173025aa1fd6f131217bb0daff7129c4eb55bd1af882f250",
+          "actual": "093ce04894f36580173025aa1fd6f131217bb0daff7129c4eb55bd1af882f250"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/torsion_load_path_25_105.json",
+          "target": "analysis/final_validation/run_keyed_shaft_torsion_candidate.py",
+          "expected": "38f4cf31724d6234c582e3ab6b53c78ebfd6a72910dcd5662296c2770b9a46b5",
+          "actual": "38f4cf31724d6234c582e3ab6b53c78ebfd6a72910dcd5662296c2770b9a46b5"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/torsion_load_path_25_105.json",
+          "target": "analysis/final_validation/results/v0.8/phase_path_25_105.step",
+          "expected": "0f1d88eae3ada28b813fc3531f757f93449b19627d8965197ca15c02a033e54e",
+          "actual": "0f1d88eae3ada28b813fc3531f757f93449b19627d8965197ca15c02a033e54e"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/torsion_load_path_25_105.json",
+          "target": "analysis/final_validation/run_calculix_v08.py",
+          "expected": "e3e21cd1f82dbc8737657ef82fd0378c5439afd8372196b3a21ad27e15df8e8c",
+          "actual": "e3e21cd1f82dbc8737657ef82fd0378c5439afd8372196b3a21ad27e15df8e8c"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/torsion_load_path_25_105.json",
+          "target": "analysis/final_validation/run_qualification_v08.py",
+          "expected": "dfb687686a99df8db69311b37d06b1dcfe3bfe4a99352a85a65a1887560e3a1f",
+          "actual": "dfb687686a99df8db69311b37d06b1dcfe3bfe4a99352a85a65a1887560e3a1f"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_path_25_qualification.json",
+          "target": "analysis/final_validation/results/v0.8/phase_gear_elastic_candidate.json",
+          "expected": "42812ecae6b0aa141e0d56e25099c16ce004fbdff4e396cd2dcaf775e2da3de2",
+          "actual": "42812ecae6b0aa141e0d56e25099c16ce004fbdff4e396cd2dcaf775e2da3de2"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_gear_elastic_candidate.json",
+          "target": "analysis/final_validation/run_phase_gear_elastic_candidate.py",
+          "expected": "bfb4436ab97e5edf5b2a219a4f4ffeb2074aceba4b6ae64a4f293eac2f920a59",
+          "actual": "bfb4436ab97e5edf5b2a219a4f4ffeb2074aceba4b6ae64a4f293eac2f920a59"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_gear_elastic_candidate.json",
+          "target": "analysis/final_validation/results/v0.8/phase_path_25_solid_gear.step",
+          "expected": "d5fb4588276f44eaed9d589be8aaa4c0caa71ebbedf9091e76e6abcc8016262d",
+          "actual": "d5fb4588276f44eaed9d589be8aaa4c0caa71ebbedf9091e76e6abcc8016262d"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_path_25_qualification.json",
+          "target": "analysis/final_validation/results/v0.8/phase_pair_backlash_candidate.json",
+          "expected": "4e597d88f4b188e608a26c6591b5d8177e8f95af4973459baa3d67233931ce4f",
+          "actual": "4e597d88f4b188e608a26c6591b5d8177e8f95af4973459baa3d67233931ce4f"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_pair_backlash_candidate.json",
+          "target": "cad/freecad/final_v08/check_phase_pair_backlash_candidate.py",
+          "expected": "2be07a7291166ebe235fb96e0fb6ef28a4cfd824d4c4e3aedf1a10536f6b9480",
+          "actual": "2be07a7291166ebe235fb96e0fb6ef28a4cfd824d4c4e3aedf1a10536f6b9480"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_pair_backlash_candidate.json",
+          "target": "analysis/final_validation/results/v0.8/phase_path_25_solid_gear.step",
+          "expected": "d5fb4588276f44eaed9d589be8aaa4c0caa71ebbedf9091e76e6abcc8016262d",
+          "actual": "d5fb4588276f44eaed9d589be8aaa4c0caa71ebbedf9091e76e6abcc8016262d"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/phase_path_25_qualification.json",
+          "target": "analysis/final_validation/results/v0.8/phase_section_sensitivity.json",
+          "expected": "2067c5a7246d1523abbff66a14c821b62adb1530d6d93a9ae837f62cf51adf6a",
+          "actual": "2067c5a7246d1523abbff66a14c821b62adb1530d6d93a9ae837f62cf51adf6a"
+        }
+      ],
+      "issues": [],
+      "scope": "declared transitive dependency integrity, not physical validity"
+    },
+    "analysis/final_validation/results/v0.8/qualification_summary.json": {
+      "status": "CURRENT",
+      "report": "analysis/final_validation/results/v0.8/qualification_summary.json",
+      "checked_reports": 2,
+      "checked_files": 12,
+      "edges": [
+        {
+          "report": "analysis/final_validation/results/v0.8/qualification_summary.json",
+          "target": "analysis/final_validation/run_qualification_v08.py",
+          "expected": "dfb687686a99df8db69311b37d06b1dcfe3bfe4a99352a85a65a1887560e3a1f",
+          "actual": "dfb687686a99df8db69311b37d06b1dcfe3bfe4a99352a85a65a1887560e3a1f"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/qualification_summary.json",
+          "target": "analysis/load_cases/openmodelica_dynamic_envelope.json",
+          "expected": "22e1ec87e052ce5629c82e601c68d18e1c5474821f3859396fae4b924c213073",
+          "actual": "22e1ec87e052ce5629c82e601c68d18e1c5474821f3859396fae4b924c213073"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/qualification_summary.json",
+          "target": "analysis/final_validation/results/v0.8/qualification_raw/run-geeg0kjz/modal/ccx.log",
+          "expected": "eb371e5e83dc7c42b538463233bf674a26e218b1dda976e6da7a50da304bbb1d",
+          "actual": "eb371e5e83dc7c42b538463233bf674a26e218b1dda976e6da7a50da304bbb1d"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/qualification_summary.json",
+          "target": "analysis/final_validation/results/v0.8/qualification_raw/run-geeg0kjz/modal/model.dat",
+          "expected": "aa2af1656ccc56baa87f6e4513255372989fbc54a94f819b5ac97a82c5a7ae1e",
+          "actual": "aa2af1656ccc56baa87f6e4513255372989fbc54a94f819b5ac97a82c5a7ae1e"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/qualification_summary.json",
+          "target": "analysis/final_validation/results/v0.8/qualification_raw/run-geeg0kjz/modal/model.inp",
+          "expected": "864453fafd4bbd8b1a124fad607008831b392aec715823bbc6fc49d53d388424",
+          "actual": "864453fafd4bbd8b1a124fad607008831b392aec715823bbc6fc49d53d388424"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/qualification_summary.json",
+          "target": "analysis/final_validation/results/v0.8/qualification_raw/run-geeg0kjz/thermal/ccx.log",
+          "expected": "e3ec85ea5cb5283d990515eb1bcfeafd83b91ead3c11afe7b8121f62dc59aba6",
+          "actual": "e3ec85ea5cb5283d990515eb1bcfeafd83b91ead3c11afe7b8121f62dc59aba6"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/qualification_summary.json",
+          "target": "analysis/final_validation/results/v0.8/qualification_raw/run-geeg0kjz/thermal/model.dat",
+          "expected": "34c5c7b2667f2ebfc946c4936f9c8b6bb30a1881bf4c43ef81d306908b73b6da",
+          "actual": "34c5c7b2667f2ebfc946c4936f9c8b6bb30a1881bf4c43ef81d306908b73b6da"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/qualification_summary.json",
+          "target": "analysis/final_validation/results/v0.8/qualification_raw/run-geeg0kjz/thermal/model.inp",
+          "expected": "648d1cb00458eb1cdae2c794de87c968ba371f2b8cbd9d071dd2a8dd740a7c3e",
+          "actual": "648d1cb00458eb1cdae2c794de87c968ba371f2b8cbd9d071dd2a8dd740a7c3e"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/qualification_summary.json",
+          "target": "analysis/final_validation/results/v0.8/qualification_raw/run-geeg0kjz/torsion/ccx.log",
+          "expected": "3781d62226f2852c41a8f8029fc3dde21b05ba934f76829dac392a31f32ed54a",
+          "actual": "3781d62226f2852c41a8f8029fc3dde21b05ba934f76829dac392a31f32ed54a"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/qualification_summary.json",
+          "target": "analysis/final_validation/results/v0.8/qualification_raw/run-geeg0kjz/torsion/model.dat",
+          "expected": "ce2c79694a4a434dcfa9256e0b087d2992961392a78a1867eb3e026fed576e29",
+          "actual": "ce2c79694a4a434dcfa9256e0b087d2992961392a78a1867eb3e026fed576e29"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/qualification_summary.json",
+          "target": "analysis/final_validation/results/v0.8/qualification_raw/run-geeg0kjz/torsion/model.inp",
+          "expected": "1f98b6ffe46b767b3e2915bd8e588f67c6043948a3611691506f87015686d3e4",
+          "actual": "1f98b6ffe46b767b3e2915bd8e588f67c6043948a3611691506f87015686d3e4"
+        }
+      ],
+      "issues": [],
+      "scope": "declared transitive dependency integrity, not physical validity"
+    },
+    "validation/results/final_v08_cad.json": {
+      "status": "CURRENT",
+      "report": "validation/results/final_v08_cad.json",
+      "checked_reports": 6,
+      "checked_files": 17,
+      "edges": [
+        {
+          "report": "validation/results/final_v08_cad.json",
+          "target": "validation/final_v08_cad.py",
+          "expected": "0e4f557758afc982d6ce2caef3543ecdb6ff60c4a9c9ff1321367edcd3ee956e",
+          "actual": "0e4f557758afc982d6ce2caef3543ecdb6ff60c4a9c9ff1321367edcd3ee956e"
+        },
+        {
+          "report": "validation/results/final_v08_cad.json",
+          "target": "cad/freecad/final_v08/generate.py",
+          "expected": "5e3788761eac33931118c9406edaff4041b8c740a7df364f44c0f8be7737335f",
+          "actual": "5e3788761eac33931118c9406edaff4041b8c740a7df364f44c0f8be7737335f"
+        },
+        {
+          "report": "validation/results/final_v08_cad.json",
+          "target": "cad/freecad/compact/geometry.py",
+          "expected": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7",
+          "actual": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7"
+        },
+        {
+          "report": "validation/results/final_v08_cad.json",
+          "target": "cad/freecad/compact/manufacturing.py",
+          "expected": "436f7d63f997fb06442353065320c89726385ab1057540fadaae092057128ceb",
+          "actual": "436f7d63f997fb06442353065320c89726385ab1057540fadaae092057128ceb"
+        },
+        {
+          "report": "validation/results/final_v08_cad.json",
+          "target": "cad/parameters/final_v08.json",
+          "expected": "7e3cbd02c2210634e8bd3ee7c62924d528865fba6bee8f1cc8aeca7bfeb85a3b",
+          "actual": "7e3cbd02c2210634e8bd3ee7c62924d528865fba6bee8f1cc8aeca7bfeb85a3b"
+        },
+        {
+          "report": "validation/results/final_v08_cad.json",
+          "target": "analysis/final_validation/results/v0.8/axial_retainer_qualification.json",
+          "expected": "054a9e5ff0ab644c8a3d8477755ddba00124c41df8b9c33a0085dfe6d05ed059",
+          "actual": "054a9e5ff0ab644c8a3d8477755ddba00124c41df8b9c33a0085dfe6d05ed059"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/axial_retainer_qualification.json",
+          "target": "validation/check_axial_retainer_candidate.py",
+          "expected": "db0beae19edd43d35448f71b5a05310d9307d1f437c7bb055062b07a4e5ff051",
+          "actual": "db0beae19edd43d35448f71b5a05310d9307d1f437c7bb055062b07a4e5ff051"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/axial_retainer_qualification.json",
+          "target": "analysis/final_validation/results/v0.8/axial_shoulder_candidate.json",
+          "expected": "eb2d600a0d39b830c8704213a0a8369a3cdde2947e2f797c2668e88a7c82f0f8",
+          "actual": "eb2d600a0d39b830c8704213a0a8369a3cdde2947e2f797c2668e88a7c82f0f8"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/axial_shoulder_candidate.json",
+          "target": "cad/freecad/final_v08/check_axial_shoulder_candidate.py",
+          "expected": "7071e224e06937efb48c040ba9332f3246acb5e109aecbdab1b0e8e34ae07a51",
+          "actual": "7071e224e06937efb48c040ba9332f3246acb5e109aecbdab1b0e8e34ae07a51"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/axial_shoulder_candidate.json",
+          "target": "cad/freecad/final_v08/generate.py",
+          "expected": "5e3788761eac33931118c9406edaff4041b8c740a7df364f44c0f8be7737335f",
+          "actual": "5e3788761eac33931118c9406edaff4041b8c740a7df364f44c0f8be7737335f"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/axial_shoulder_candidate.json",
+          "target": "cad/freecad/compact/geometry.py",
+          "expected": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7",
+          "actual": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/axial_shoulder_candidate.json",
+          "target": "cad/freecad/compact/manufacturing.py",
+          "expected": "436f7d63f997fb06442353065320c89726385ab1057540fadaae092057128ceb",
+          "actual": "436f7d63f997fb06442353065320c89726385ab1057540fadaae092057128ceb"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/axial_shoulder_candidate.json",
+          "target": "cad/parameters/final_v08.json",
+          "expected": "7e3cbd02c2210634e8bd3ee7c62924d528865fba6bee8f1cc8aeca7bfeb85a3b",
+          "actual": "7e3cbd02c2210634e8bd3ee7c62924d528865fba6bee8f1cc8aeca7bfeb85a3b"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/axial_retainer_qualification.json",
+          "target": "analysis/final_validation/results/v0.8/retainer_candidate_fea.json",
+          "expected": "6f40646cf42e1bdaed14fa1e8f212d800f559ab9500964c693b549ec1c3b4e09",
+          "actual": "6f40646cf42e1bdaed14fa1e8f212d800f559ab9500964c693b549ec1c3b4e09"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/retainer_candidate_fea.json",
+          "target": "analysis/final_validation/run_retainer_candidate.py",
+          "expected": "879f7f52e4a4475fd82d68544ca858cd96e12d72aced2202bb3758729e49b7c2",
+          "actual": "879f7f52e4a4475fd82d68544ca858cd96e12d72aced2202bb3758729e49b7c2"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/retainer_candidate_fea.json",
+          "target": "analysis/final_validation/results/v0.8/axial_shoulder_candidate.json",
+          "expected": "eb2d600a0d39b830c8704213a0a8369a3cdde2947e2f797c2668e88a7c82f0f8",
+          "actual": "eb2d600a0d39b830c8704213a0a8369a3cdde2947e2f797c2668e88a7c82f0f8"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/retainer_candidate_fea.json",
+          "target": "analysis/final_validation/input/retainer_candidate.step",
+          "expected": "c7ac49329f1c78b00c0ca0fb562d200e4a57e140424914c704b34ee14c024334",
+          "actual": "c7ac49329f1c78b00c0ca0fb562d200e4a57e140424914c704b34ee14c024334"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/retainer_candidate_fea.json",
+          "target": "analysis/final_validation/run_calculix_v08.py",
+          "expected": "e3e21cd1f82dbc8737657ef82fd0378c5439afd8372196b3a21ad27e15df8e8c",
+          "actual": "e3e21cd1f82dbc8737657ef82fd0378c5439afd8372196b3a21ad27e15df8e8c"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/retainer_candidate_fea.json",
+          "target": "analysis/structural/run_load_checks.py",
+          "expected": "5fd498c9a55ab327f410d95eabf44244cb9c0b44611e8693051d79b34e7f39ba",
+          "actual": "5fd498c9a55ab327f410d95eabf44244cb9c0b44611e8693051d79b34e7f39ba"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/axial_retainer_qualification.json",
+          "target": "analysis/final_validation/results/v0.8/retainer_tool_access.json",
+          "expected": "6abefa674a2e37e82abb20184e95b6fc51538530a17b5b8fa981dcfa7e9e5b51",
+          "actual": "6abefa674a2e37e82abb20184e95b6fc51538530a17b5b8fa981dcfa7e9e5b51"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/retainer_tool_access.json",
+          "target": "cad/freecad/final_v08/check_retainer_tool_access.py",
+          "expected": "88c0831f1ba7b435ba798c5354f6f7785bfc021a7b3c42ea0f1fc2b74e9ffb59",
+          "actual": "88c0831f1ba7b435ba798c5354f6f7785bfc021a7b3c42ea0f1fc2b74e9ffb59"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/retainer_tool_access.json",
+          "target": "analysis/final_validation/results/v0.8/axial_shoulder_candidate.json",
+          "expected": "eb2d600a0d39b830c8704213a0a8369a3cdde2947e2f797c2668e88a7c82f0f8",
+          "actual": "eb2d600a0d39b830c8704213a0a8369a3cdde2947e2f797c2668e88a7c82f0f8"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/retainer_tool_access.json",
+          "target": "cad/freecad/final_v08/generate.py",
+          "expected": "5e3788761eac33931118c9406edaff4041b8c740a7df364f44c0f8be7737335f",
+          "actual": "5e3788761eac33931118c9406edaff4041b8c740a7df364f44c0f8be7737335f"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/retainer_tool_access.json",
+          "target": "cad/freecad/compact/geometry.py",
+          "expected": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7",
+          "actual": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7"
+        }
+      ],
+      "issues": [],
+      "scope": "declared transitive dependency integrity, not physical validity"
+    },
+    "analysis/final_validation/results/v0.8/axial_retainer_qualification.json": {
+      "status": "CURRENT",
+      "report": "analysis/final_validation/results/v0.8/axial_retainer_qualification.json",
+      "checked_reports": 5,
+      "checked_files": 15,
+      "edges": [
+        {
+          "report": "analysis/final_validation/results/v0.8/axial_retainer_qualification.json",
+          "target": "validation/check_axial_retainer_candidate.py",
+          "expected": "db0beae19edd43d35448f71b5a05310d9307d1f437c7bb055062b07a4e5ff051",
+          "actual": "db0beae19edd43d35448f71b5a05310d9307d1f437c7bb055062b07a4e5ff051"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/axial_retainer_qualification.json",
+          "target": "analysis/final_validation/results/v0.8/axial_shoulder_candidate.json",
+          "expected": "eb2d600a0d39b830c8704213a0a8369a3cdde2947e2f797c2668e88a7c82f0f8",
+          "actual": "eb2d600a0d39b830c8704213a0a8369a3cdde2947e2f797c2668e88a7c82f0f8"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/axial_shoulder_candidate.json",
+          "target": "cad/freecad/final_v08/check_axial_shoulder_candidate.py",
+          "expected": "7071e224e06937efb48c040ba9332f3246acb5e109aecbdab1b0e8e34ae07a51",
+          "actual": "7071e224e06937efb48c040ba9332f3246acb5e109aecbdab1b0e8e34ae07a51"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/axial_shoulder_candidate.json",
+          "target": "cad/freecad/final_v08/generate.py",
+          "expected": "5e3788761eac33931118c9406edaff4041b8c740a7df364f44c0f8be7737335f",
+          "actual": "5e3788761eac33931118c9406edaff4041b8c740a7df364f44c0f8be7737335f"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/axial_shoulder_candidate.json",
+          "target": "cad/freecad/compact/geometry.py",
+          "expected": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7",
+          "actual": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/axial_shoulder_candidate.json",
+          "target": "cad/freecad/compact/manufacturing.py",
+          "expected": "436f7d63f997fb06442353065320c89726385ab1057540fadaae092057128ceb",
+          "actual": "436f7d63f997fb06442353065320c89726385ab1057540fadaae092057128ceb"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/axial_shoulder_candidate.json",
+          "target": "cad/parameters/final_v08.json",
+          "expected": "7e3cbd02c2210634e8bd3ee7c62924d528865fba6bee8f1cc8aeca7bfeb85a3b",
+          "actual": "7e3cbd02c2210634e8bd3ee7c62924d528865fba6bee8f1cc8aeca7bfeb85a3b"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/axial_retainer_qualification.json",
+          "target": "analysis/final_validation/results/v0.8/retainer_candidate_fea.json",
+          "expected": "6f40646cf42e1bdaed14fa1e8f212d800f559ab9500964c693b549ec1c3b4e09",
+          "actual": "6f40646cf42e1bdaed14fa1e8f212d800f559ab9500964c693b549ec1c3b4e09"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/retainer_candidate_fea.json",
+          "target": "analysis/final_validation/run_retainer_candidate.py",
+          "expected": "879f7f52e4a4475fd82d68544ca858cd96e12d72aced2202bb3758729e49b7c2",
+          "actual": "879f7f52e4a4475fd82d68544ca858cd96e12d72aced2202bb3758729e49b7c2"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/retainer_candidate_fea.json",
+          "target": "analysis/final_validation/results/v0.8/axial_shoulder_candidate.json",
+          "expected": "eb2d600a0d39b830c8704213a0a8369a3cdde2947e2f797c2668e88a7c82f0f8",
+          "actual": "eb2d600a0d39b830c8704213a0a8369a3cdde2947e2f797c2668e88a7c82f0f8"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/retainer_candidate_fea.json",
+          "target": "analysis/final_validation/input/retainer_candidate.step",
+          "expected": "c7ac49329f1c78b00c0ca0fb562d200e4a57e140424914c704b34ee14c024334",
+          "actual": "c7ac49329f1c78b00c0ca0fb562d200e4a57e140424914c704b34ee14c024334"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/retainer_candidate_fea.json",
+          "target": "analysis/final_validation/run_calculix_v08.py",
+          "expected": "e3e21cd1f82dbc8737657ef82fd0378c5439afd8372196b3a21ad27e15df8e8c",
+          "actual": "e3e21cd1f82dbc8737657ef82fd0378c5439afd8372196b3a21ad27e15df8e8c"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/retainer_candidate_fea.json",
+          "target": "analysis/structural/run_load_checks.py",
+          "expected": "5fd498c9a55ab327f410d95eabf44244cb9c0b44611e8693051d79b34e7f39ba",
+          "actual": "5fd498c9a55ab327f410d95eabf44244cb9c0b44611e8693051d79b34e7f39ba"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/axial_retainer_qualification.json",
+          "target": "analysis/final_validation/results/v0.8/retainer_tool_access.json",
+          "expected": "6abefa674a2e37e82abb20184e95b6fc51538530a17b5b8fa981dcfa7e9e5b51",
+          "actual": "6abefa674a2e37e82abb20184e95b6fc51538530a17b5b8fa981dcfa7e9e5b51"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/retainer_tool_access.json",
+          "target": "cad/freecad/final_v08/check_retainer_tool_access.py",
+          "expected": "88c0831f1ba7b435ba798c5354f6f7785bfc021a7b3c42ea0f1fc2b74e9ffb59",
+          "actual": "88c0831f1ba7b435ba798c5354f6f7785bfc021a7b3c42ea0f1fc2b74e9ffb59"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/retainer_tool_access.json",
+          "target": "analysis/final_validation/results/v0.8/axial_shoulder_candidate.json",
+          "expected": "eb2d600a0d39b830c8704213a0a8369a3cdde2947e2f797c2668e88a7c82f0f8",
+          "actual": "eb2d600a0d39b830c8704213a0a8369a3cdde2947e2f797c2668e88a7c82f0f8"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/retainer_tool_access.json",
+          "target": "cad/freecad/final_v08/generate.py",
+          "expected": "5e3788761eac33931118c9406edaff4041b8c740a7df364f44c0f8be7737335f",
+          "actual": "5e3788761eac33931118c9406edaff4041b8c740a7df364f44c0f8be7737335f"
+        },
+        {
+          "report": "analysis/final_validation/results/v0.8/retainer_tool_access.json",
+          "target": "cad/freecad/compact/geometry.py",
+          "expected": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7",
+          "actual": "ca7867a5a50cb0fdb74387e8e8fe7b5b619102e2fed90c52fba5cb227de6fde7"
+        }
+      ],
+      "issues": [],
+      "scope": "declared transitive dependency integrity, not physical validity"
+    }
+  },
+  "revision": "final-design-fabrication-closure-v0.8",
+  "status": "FAIL",
+  "passed": 24,
+  "total": 25,
+  "checks": {
+    "00_authoritative_baseline": {
+      "status": "PASS",
+      "evidence": "verified main/tag/handoff hashes"
+    },
+    "02_v07_archive": {
+      "status": "PASS",
+      "evidence": "archive index + classified manifest"
+    },
+    "03_calculix_core": {
+      "status": "PASS",
+      "evidence": "LC02/04/05 + hot mount; source_current=True"
+    },
+    "03_lc04_resolution": {
+      "status": "PASS",
+      "evidence": "DIFFERENT_METRIC_OR_MODEL"
+    },
+    "03_hot_zone_mount": {
+      "status": "PASS",
+      "evidence": "A–G=7 qualified={'scm440_temperature_dependent_material_qualified': True, 'sensor_bore_local_stress_qualified': True, 'die_joint_qualified': True, 'local_temperature_gradient_qualified': True} selected_SF=2.089 sensor_local_current=True sensor_thermal_pressure_screen=PASS/0.01634593636574816"
+    },
+    "05_v08_motion_dynamics": {
+      "status": "PASS",
+      "evidence": "v0.8 parameter-bound mechanical/control surrogate; source_current=True; not firmware/physical validation"
+    },
+    "05_loaded_phase_centre": {
+      "status": "PASS",
+      "evidence": "source_current=True loaded=PASS key_source_current=True released_key_clocking=PASS candidate25_current=True candidate25=PASS/0.9036394083963866deg checks={'mesh_convergence': True, 'positive_loaded_backlash': True, 'backlash_below_one_degree': True, 'frame_and_bearing_compliance_qualified': True, 'torsional_phase_compliance_qualified': True}"
+    },
+    "03_solver_qualification": {
+      "status": "PASS",
+      "evidence": "torsion/thermal/modal + component screens; source_current=True; not complete assembly qualification"
+    },
+    "06_interface_catalog": {
+      "status": "PASS",
+      "evidence": "single controlling rows=48; exhaustive_coverage=PASS"
+    },
+    "06_tolerance_stacks": {
+      "status": "PASS",
+      "evidence": "calculations/tolerance_stack_final.json"
+    },
+    "07_freecad_source": {
+      "status": "PASS",
+      "evidence": "Integrated GGM frame={'status': 'FRAME_CUTLIST_BINDING_PASS', 'members': 40, 'totals': {'2020': {'count': 36, 'length_mm': 15078.0}, '2040': {'count': 4, 'length_mm': 2180.0}}, 'cut_authorization': False, 'stock_nesting_status': 'ACTUAL_STOCK_REQUIRED', 'frame_release_sha256': 'c411d44e1cb7cb934e6e40d8a37c22f7a4cf08e5ba0c062ca2101945f6b40747', 'cutlist_sha256': 'c1c1c2ac5372c2e059fb70991abbed6c07fc7c615a8dddcd96f73c2f21abece8'}; FreeCAD mount solids/collision/contact gate; source_current=True; axial_contact=PASS; candidate_current=True candidate=PASS/PASS"
+    },
+    "08_step_package": {
+      "status": "PASS",
+      "evidence": "rows=80 dirs=True files_current=True; file integrity only, not fabrication qualification"
+    },
+    "09_print_package": {
+      "status": "PASS",
+      "evidence": "rows=12 files_current=True; physical fit NOT_RUN"
+    },
+    "10_manufacturing_package": {
+      "status": "PASS",
+      "evidence": "cutter:PASS, shafts:PASS, phase_gears:PASS, screw_barrel:PASS, die:PASS, bearing_plates:PASS, feeder:PASS, hot_zone:PASS, guards_panels:PASS, drive_ggm:PASS, RFQ:PASS"
+    },
+    "11_dimensioned_drawings": {
+      "status": "PASS",
+      "evidence": "rows=20 PDFs=20"
+    },
+    "12_electrical_package": {
+      "status": "PASS",
+      "evidence": "vector_diagrams=True wires=101"
+    },
+    "13_firmware_release": {
+      "status": "PASS",
+      "evidence": "source/binary/build/library/docs/reproducible build"
+    },
+    "14_authoritative_bom": {
+      "status": "PASS",
+      "evidence": "rows=162 digital=PASS procurement=HOLD"
+    },
+    "15_assembly_manual": {
+      "status": "PASS",
+      "evidence": "structured_steps=25 artifact_fields_and_pdfs=True execution_HOLD_steps=['2', '7', '10', '12', '13']; completeness is separate from physical approval"
+    },
+    "16_commissioning_handoff": {
+      "status": "PASS",
+      "evidence": "transition_gates=6 physical=NOT_RUN"
+    },
+    "17_multimodal_review": {
+      "status": "PASS",
+      "evidence": "views=12 closeups=48 modules=6"
+    },
+    "18_electrical_firmware_tests": {
+      "status": "PASS",
+      "evidence": "state-machine + hardware-adapter"
+    },
+    "19_independent_reviews": {
+      "status": "PASS",
+      "evidence": "12 required reviewer roles"
+    },
+    "20_release_package": {
+      "status": "FAIL",
+      "evidence": "deterministic ZIP schema/hash/clean-extraction verification"
+    },
+    "21_release_policy": {
+      "status": "PASS",
+      "evidence": "origin HEAD + open main-target PR verified; user-authorized prerelease only; physical approvals remain blocked"
+    }
+  },
+  "section_coverage": {
+    "00": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "00_authoritative_baseline"
+      ]
+    },
+    "01": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "$scope_decision"
+      ]
+    },
+    "02": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "02_v07_archive"
+      ]
+    },
+    "03": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "03_calculix_core",
+        "03_lc04_resolution",
+        "03_hot_zone_mount",
+        "03_solver_qualification"
+      ]
+    },
+    "04": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "$architecture_freeze"
+      ]
+    },
+    "05": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "05_v08_motion_dynamics",
+        "05_loaded_phase_centre",
+        "07_freecad_source",
+        "10_manufacturing_package"
+      ]
+    },
+    "06": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "06_interface_catalog",
+        "06_tolerance_stacks"
+      ]
+    },
+    "07": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "07_freecad_source"
+      ]
+    },
+    "08": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "08_step_package"
+      ]
+    },
+    "09": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "09_print_package"
+      ]
+    },
+    "10": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "10_manufacturing_package"
+      ]
+    },
+    "11": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "11_dimensioned_drawings"
+      ]
+    },
+    "12": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "12_electrical_package"
+      ]
+    },
+    "13": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "13_firmware_release"
+      ]
+    },
+    "14": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "14_authoritative_bom"
+      ]
+    },
+    "15": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "15_assembly_manual"
+      ]
+    },
+    "16": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "16_commissioning_handoff"
+      ]
+    },
+    "17": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "17_multimodal_review"
+      ]
+    },
+    "18": {
+      "covered": true,
+      "status": "FAIL",
+      "requirements": [
+        "03_calculix_core",
+        "03_solver_qualification",
+        "05_v08_motion_dynamics",
+        "05_loaded_phase_centre",
+        "06_tolerance_stacks",
+        "07_freecad_source",
+        "08_step_package",
+        "09_print_package",
+        "12_electrical_package",
+        "13_firmware_release",
+        "15_assembly_manual",
+        "20_release_package"
+      ]
+    },
+    "19": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "19_independent_reviews"
+      ]
+    },
+    "20": {
+      "covered": true,
+      "status": "FAIL",
+      "requirements": [
+        "20_release_package"
+      ]
+    },
+    "21": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "21_release_policy"
+      ]
+    },
+    "22": {
+      "covered": true,
+      "status": "FAIL",
+      "requirements": [
+        "00_authoritative_baseline",
+        "02_v07_archive",
+        "03_calculix_core",
+        "03_lc04_resolution",
+        "03_hot_zone_mount",
+        "05_v08_motion_dynamics",
+        "05_loaded_phase_centre",
+        "03_solver_qualification",
+        "06_interface_catalog",
+        "06_tolerance_stacks",
+        "07_freecad_source",
+        "08_step_package",
+        "09_print_package",
+        "10_manufacturing_package",
+        "11_dimensioned_drawings",
+        "12_electrical_package",
+        "13_firmware_release",
+        "14_authoritative_bom",
+        "15_assembly_manual",
+        "16_commissioning_handoff",
+        "17_multimodal_review",
+        "18_electrical_firmware_tests",
+        "19_independent_reviews",
+        "20_release_package",
+        "21_release_policy"
+      ]
+    },
+    "23": {
+      "covered": true,
+      "status": "FAIL",
+      "requirements": [
+        "00_authoritative_baseline",
+        "02_v07_archive",
+        "03_calculix_core",
+        "03_lc04_resolution",
+        "03_hot_zone_mount",
+        "05_v08_motion_dynamics",
+        "05_loaded_phase_centre",
+        "03_solver_qualification",
+        "06_interface_catalog",
+        "06_tolerance_stacks",
+        "07_freecad_source",
+        "08_step_package",
+        "09_print_package",
+        "10_manufacturing_package",
+        "11_dimensioned_drawings",
+        "12_electrical_package",
+        "13_firmware_release",
+        "14_authoritative_bom",
+        "15_assembly_manual",
+        "16_commissioning_handoff",
+        "17_multimodal_review",
+        "18_electrical_firmware_tests",
+        "19_independent_reviews",
+        "20_release_package",
+        "21_release_policy",
+        "$final_states"
+      ]
+    },
+    "24": {
+      "covered": true,
+      "status": "FAIL",
+      "requirements": [
+        "00_authoritative_baseline",
+        "02_v07_archive",
+        "03_calculix_core",
+        "03_lc04_resolution",
+        "03_hot_zone_mount",
+        "05_v08_motion_dynamics",
+        "05_loaded_phase_centre",
+        "03_solver_qualification",
+        "06_interface_catalog",
+        "06_tolerance_stacks",
+        "07_freecad_source",
+        "08_step_package",
+        "09_print_package",
+        "10_manufacturing_package",
+        "11_dimensioned_drawings",
+        "12_electrical_package",
+        "13_firmware_release",
+        "14_authoritative_bom",
+        "15_assembly_manual",
+        "16_commissioning_handoff",
+        "17_multimodal_review",
+        "18_electrical_firmware_tests",
+        "19_independent_reviews",
+        "20_release_package",
+        "21_release_policy",
+        "$execution_complete"
+      ]
+    },
+    "25": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "$final_report"
+      ]
+    }
+  },
+  "passed_sections": 21,
+  "total_sections": 26,
+  "technical_state": "IN_PROGRESS",
+  "physical_validation_state": "NOT_RUN",
+  "safety_certification": "NOT_CERTIFIED",
+  "fabrication_release_approval": "USER_APPROVAL_REQUIRED"
+}

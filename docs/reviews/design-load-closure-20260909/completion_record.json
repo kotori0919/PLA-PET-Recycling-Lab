@@ -1,0 +1,69 @@
+{
+  "completed_utc": "2026-09-09T01:28:36.272880+00:00",
+  "additional_files": [
+    {
+      "path": "release/export_engineering_closure_review.py",
+      "sha256": "f2aa42769e7d59ec71f849baadc4d2ff40f8ac6d1d8b0aa58ab532ec81118f1f"
+    },
+    {
+      "path": "release/finalize_engineering_closure_review.py",
+      "sha256": "aaa8c49cbaa72fb69eeafce9680d5303340c9e6fdb83645a98c08fd155be3079"
+    },
+    {
+      "path": "docs/final/release_notes_v1.0.0-rc1_ko.md",
+      "sha256": "b2063e6e19b93ca00ab3455f0c069e1d2618e0516e2d158836435c8ab9dff496"
+    }
+  ],
+  "release_notes_before_sha256": "df49de522810aa010bd723b1762b2625f46def5168decfd60aae295dd60c8b82",
+  "aggregate_before_sha256": {
+    "validation/results/v08_full_compliance.json": "b795e089457a1ad87447141543cbe705ef6b2c793f85cdadf66a595f9a21c1c6",
+    "docs/final/v08_full_compliance_ko.md": "038b91340c78061b7608547e206014c69e6670859369c13e3e0b675f64b02b17",
+    "docs/final/v08_closure_report_ko.md": "6e72b2e09a8b27881dfd12a77b3229eec56d1fc98f54a05a0099112cbeed4d4c"
+  },
+  "aggregate_after_sha256": {
+    "validation/results/v08_full_compliance.json": "c858603952fbb536e8a70c505ee1bfa6742a45de9c6865e143f13feb4aebdf0b",
+    "docs/final/v08_full_compliance_ko.md": "fde440cf50527695a0169f0bd391925c1b4f93bb2866aabc9c146c545a5cc110",
+    "docs/final/v08_closure_report_ko.md": "72cad4bb528cfdb31eeb2620ed22aef09c107f525dab4c4b50afa118e1bec0ad"
+  },
+  "unit_test_count": 42,
+  "new_unit_test_count": 15,
+  "existing_regression_count": 27,
+  "additional_script_check": "SHAFT_REACTION_PROVENANCE_PASS",
+  "pdf": {
+    "file": "exports/review/engineering-closure-20260909/03_DOCUMENTS/closure_review_ko_20260909.pdf",
+    "sha256": "d2bdfb44f7681ba4141fcaa89df7c9ad384cd8bc8cec8399bcc672e326b0a6f6",
+    "pages": 3,
+    "rendered_pages_visually_reviewed": [
+      1,
+      2,
+      3
+    ],
+    "remote_pdf_tool": "FAILED_CHROMIUM_SANDBOX_NO_SECURITY_CHANGES",
+    "fallback": "existing Typst0.15.1 and Poppler"
+  },
+  "package": {
+    "status": "REVIEW_PACKAGE_INTEGRITY_PASS",
+    "machine_release_state": "HOLD",
+    "zip": "dist/PPR-v08-engineering-review-20260909.zip",
+    "zip_sha256": "6823034a88bdc207738b0f1da39c612b0a294e92d8e809bebdec8481a0eedbd6",
+    "zip_bytes": 10530486,
+    "payload_files": 65,
+    "source_files": 40,
+    "solid_solver_jobs": 18,
+    "raw_files_hashed": 198,
+    "thermal_pair_checks": 48,
+    "thermal_interference_states": 14,
+    "same_snapshot_two_zip_builds_identical": true,
+    "full_pipeline_twice_regenerated": false,
+    "clean_extraction_verified": true,
+    "source_freshness": [
+      "CURRENT",
+      "CURRENT",
+      "CURRENT"
+    ]
+  },
+  "git_head": "e03e843fe3f8ce98edf7dcd26292200c3547a9d8",
+  "commit_push_merge_publish": false,
+  "procurement_and_hardware_operation": false,
+  "own_background_jobs_remaining": []
+}

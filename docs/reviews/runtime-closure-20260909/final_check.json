@@ -1,0 +1,14 @@
+{
+  "verified_utc": "2026-09-08T23:42:40.265754+00:00",
+  "source_files_verified": 7,
+  "unit_tests": 27,
+  "calculix_finished_jobs": 50,
+  "raw_files_hashed": 209,
+  "own_jobs_running": 0,
+  "head": "e03e843fe3f8ce98edf7dcd26292200c3547a9d8",
+  "aggregate_status": "FAIL",
+  "aggregate_passed": 18,
+  "aggregate_total": 25,
+  "release_approval": "HOLD",
+  "canonical_result_overwrite": false
+}

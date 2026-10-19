@@ -1,0 +1,14 @@
+{
+  "base": "643d362c053eadbb1068ef912ad88cbfbe3b6dc2",
+  "sources": {
+    "cad/freecad/compact/geometry.py": "70ffde0909648ee73a4d61944e0d2d90def8fa6d2c5c2d90aa0f7b98194e7c57",
+    "cad/freecad/compact/manufacturing.py": "436f7d63f997fb06442353065320c89726385ab1057540fadaae092057128ceb",
+    "cad/freecad/final_v08/generate.py": "ac680b87e7af834b2c5ce7b92708511d79a9adadf144a3c016ecd1356557da0e",
+    "cad/parameters/baseline.json": "eecde1249c65d84c499f7ab949a05ebbcb7fbd8dfa49d762d15d1eba24db304a",
+    "cad/parameters/final_v08.json": "b793e1cf1123c82aab037b592b4256efb8374bd79ad0e1bb22c658aa66c78e81",
+    "control/process_contract.json": "b0cda8ee3ed63098fad9d447a24b084d4c6e4ccccdea165bab2ca4afc6e8126d",
+    "firmware/arduino_mega/arduino_mega.ino": "cdf0af117f6a2494664051aeb5efb5929d3e53748d98ec0c8270964db13c8fb9"
+  },
+  "staged": "",
+  "scope": "GGM integration; preserve other writers"
+}

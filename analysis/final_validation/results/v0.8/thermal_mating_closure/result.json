@@ -1,0 +1,521 @@
+{
+  "status": "HOLD_THERMAL_MOUNT_PAIR_QUALIFICATION",
+  "physical_validation_state": "NOT_RUN",
+  "method": "uniform free isotropic BRep expansion about rear shoulder X367, axis Y347 Z382; not coupled temperature/contact solution",
+  "source_temperature_limits": "design upper300 from baseline; support20/100/200 are sensitivity states, not measured temperatures",
+  "baseline": [
+    {
+      "part": "ExtruderRearFixedDatum",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.12499999999994629
+    },
+    {
+      "part": "ExtruderFixedCollar",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0
+    },
+    {
+      "part": "ExtruderFrontSlidingGuide",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.29999999999990834
+    },
+    {
+      "part": "ExtruderRearRetainer",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.19999999999998863
+    }
+  ],
+  "cases": [
+    {
+      "part": "ExtruderRearFixedDatum",
+      "barrel_temp_c": 270,
+      "support_temp_c": 20,
+      "barrel_alpha_per_k": 1.23e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.07272499999996329,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderFixedCollar",
+      "barrel_temp_c": 270,
+      "support_temp_c": 20,
+      "barrel_alpha_per_k": 1.23e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderFrontSlidingGuide",
+      "barrel_temp_c": 270,
+      "support_temp_c": 20,
+      "barrel_alpha_per_k": 1.23e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.24772499999993858,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderRearRetainer",
+      "barrel_temp_c": 270,
+      "support_temp_c": 20,
+      "barrel_alpha_per_k": 1.23e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.1753999999999678,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderRearFixedDatum",
+      "barrel_temp_c": 270,
+      "support_temp_c": 100,
+      "barrel_alpha_per_k": 1.23e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.08916499999997506,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderFixedCollar",
+      "barrel_temp_c": 270,
+      "support_temp_c": 100,
+      "barrel_alpha_per_k": 1.23e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderFrontSlidingGuide",
+      "barrel_temp_c": 270,
+      "support_temp_c": 100,
+      "barrel_alpha_per_k": 1.23e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.2643329999999216,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderRearRetainer",
+      "barrel_temp_c": 270,
+      "support_temp_c": 100,
+      "barrel_alpha_per_k": 1.23e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.1832719999999881,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderRearFixedDatum",
+      "barrel_temp_c": 270,
+      "support_temp_c": 200,
+      "barrel_alpha_per_k": 1.23e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.10971499999997947,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderFixedCollar",
+      "barrel_temp_c": 270,
+      "support_temp_c": 200,
+      "barrel_alpha_per_k": 1.23e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderFrontSlidingGuide",
+      "barrel_temp_c": 270,
+      "support_temp_c": 200,
+      "barrel_alpha_per_k": 1.23e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.2850929999999374,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderRearRetainer",
+      "barrel_temp_c": 270,
+      "support_temp_c": 200,
+      "barrel_alpha_per_k": 1.23e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.19311199999998507,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderRearFixedDatum",
+      "barrel_temp_c": 300,
+      "support_temp_c": 20,
+      "barrel_alpha_per_k": 1.23e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.06645199999997835,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderFixedCollar",
+      "barrel_temp_c": 300,
+      "support_temp_c": 20,
+      "barrel_alpha_per_k": 1.23e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderFrontSlidingGuide",
+      "barrel_temp_c": 300,
+      "support_temp_c": 20,
+      "barrel_alpha_per_k": 1.23e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.2414519999999191,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderRearRetainer",
+      "barrel_temp_c": 300,
+      "support_temp_c": 20,
+      "barrel_alpha_per_k": 1.23e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.1724479999999744,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderRearFixedDatum",
+      "barrel_temp_c": 300,
+      "support_temp_c": 100,
+      "barrel_alpha_per_k": 1.23e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0828919999999607,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderFixedCollar",
+      "barrel_temp_c": 300,
+      "support_temp_c": 100,
+      "barrel_alpha_per_k": 1.23e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderFrontSlidingGuide",
+      "barrel_temp_c": 300,
+      "support_temp_c": 100,
+      "barrel_alpha_per_k": 1.23e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.25805999999992374,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderRearRetainer",
+      "barrel_temp_c": 300,
+      "support_temp_c": 100,
+      "barrel_alpha_per_k": 1.23e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.1803199999999947,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderRearFixedDatum",
+      "barrel_temp_c": 300,
+      "support_temp_c": 200,
+      "barrel_alpha_per_k": 1.23e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.10344199999994508,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderFixedCollar",
+      "barrel_temp_c": 300,
+      "support_temp_c": 200,
+      "barrel_alpha_per_k": 1.23e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderFrontSlidingGuide",
+      "barrel_temp_c": 300,
+      "support_temp_c": 200,
+      "barrel_alpha_per_k": 1.23e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.27881999999991797,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderRearRetainer",
+      "barrel_temp_c": 300,
+      "support_temp_c": 200,
+      "barrel_alpha_per_k": 1.23e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.19015999999999167,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderRearFixedDatum",
+      "barrel_temp_c": 270,
+      "support_temp_c": 20,
+      "barrel_alpha_per_k": 1.7e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.05274999999994652,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderFixedCollar",
+      "barrel_temp_c": 270,
+      "support_temp_c": 20,
+      "barrel_alpha_per_k": 1.7e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderFrontSlidingGuide",
+      "barrel_temp_c": 270,
+      "support_temp_c": 20,
+      "barrel_alpha_per_k": 1.7e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.22774999999991716,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderRearRetainer",
+      "barrel_temp_c": 270,
+      "support_temp_c": 20,
+      "barrel_alpha_per_k": 1.7e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.16599999999999682,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderRearFixedDatum",
+      "barrel_temp_c": 270,
+      "support_temp_c": 100,
+      "barrel_alpha_per_k": 1.7e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.06918999999994824,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderFixedCollar",
+      "barrel_temp_c": 270,
+      "support_temp_c": 100,
+      "barrel_alpha_per_k": 1.7e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderFrontSlidingGuide",
+      "barrel_temp_c": 270,
+      "support_temp_c": 100,
+      "barrel_alpha_per_k": 1.7e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.24435799999990016,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderRearRetainer",
+      "barrel_temp_c": 270,
+      "support_temp_c": 100,
+      "barrel_alpha_per_k": 1.7e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.17387200000001712,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderRearFixedDatum",
+      "barrel_temp_c": 270,
+      "support_temp_c": 200,
+      "barrel_alpha_per_k": 1.7e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.08973999999995243,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderFixedCollar",
+      "barrel_temp_c": 270,
+      "support_temp_c": 200,
+      "barrel_alpha_per_k": 1.7e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderFrontSlidingGuide",
+      "barrel_temp_c": 270,
+      "support_temp_c": 200,
+      "barrel_alpha_per_k": 1.7e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.26511799999991603,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderRearRetainer",
+      "barrel_temp_c": 270,
+      "support_temp_c": 200,
+      "barrel_alpha_per_k": 1.7e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.1837120000000141,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderRearFixedDatum",
+      "barrel_temp_c": 300,
+      "support_temp_c": 20,
+      "barrel_alpha_per_k": 1.7e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.044079999999964974,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderFixedCollar",
+      "barrel_temp_c": 300,
+      "support_temp_c": 20,
+      "barrel_alpha_per_k": 1.7e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderFrontSlidingGuide",
+      "barrel_temp_c": 300,
+      "support_temp_c": 20,
+      "barrel_alpha_per_k": 1.7e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.21907999999996175,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderRearRetainer",
+      "barrel_temp_c": 300,
+      "support_temp_c": 20,
+      "barrel_alpha_per_k": 1.7e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.16192000000000917,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderRearFixedDatum",
+      "barrel_temp_c": 300,
+      "support_temp_c": 100,
+      "barrel_alpha_per_k": 1.7e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.060519999999965955,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderFixedCollar",
+      "barrel_temp_c": 300,
+      "support_temp_c": 100,
+      "barrel_alpha_per_k": 1.7e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderFrontSlidingGuide",
+      "barrel_temp_c": 300,
+      "support_temp_c": 100,
+      "barrel_alpha_per_k": 1.7e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.23568799999994475,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderRearRetainer",
+      "barrel_temp_c": 300,
+      "support_temp_c": 100,
+      "barrel_alpha_per_k": 1.7e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.16979200000002947,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderRearFixedDatum",
+      "barrel_temp_c": 300,
+      "support_temp_c": 200,
+      "barrel_alpha_per_k": 1.7e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.08106999999997598,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderFixedCollar",
+      "barrel_temp_c": 300,
+      "support_temp_c": 200,
+      "barrel_alpha_per_k": 1.7e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderFrontSlidingGuide",
+      "barrel_temp_c": 300,
+      "support_temp_c": 200,
+      "barrel_alpha_per_k": 1.7e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.256447999999951,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    },
+    {
+      "part": "ExtruderRearRetainer",
+      "barrel_temp_c": 300,
+      "support_temp_c": 200,
+      "barrel_alpha_per_k": 1.7e-05,
+      "support_alpha_per_k": 1.2e-05,
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.17963200000002644,
+      "status": "NO_INTERFERENCE_IN_THIS_BOUND"
+    }
+  ],
+  "nominal_geometry_equivalence": [],
+  "source_sha256": {
+    "analysis/final_validation/contracts/thermomechanical_closure_v08.json": "8e5f17a957f9e40f49f3021d7a994302a52165fc1eb99dd38cfe69548d4c04a6",
+    "cad/freecad/final_v08/audit_thermal_mating_closure.py": "22cfa0c819b618501a65aed252bd711f6ef3b8cb285a491faa134a98864ad14c",
+    "cad/freecad/final_v08/generate.py": "5e3788761eac33931118c9406edaff4041b8c740a7df364f44c0f8be7737335f",
+    "cad/freecad/compact/geometry.py": "70ffde0909648ee73a4d61944e0d2d90def8fa6d2c5c2d90aa0f7b98194e7c57",
+    "cad/freecad/compact/manufacturing.py": "436f7d63f997fb06442353065320c89726385ab1057540fadaae092057128ceb",
+    "cad/parameters/final_v08.json": "c14f7e3a26bb6a37a59106ff0e43fe8b9ec1ccee4a3728c9c3db43eab2b93517",
+    "cad/parameters/baseline.json": "eecde1249c65d84c499f7ab949a05ebbcb7fbd8dfa49d762d15d1eba24db304a"
+  },
+  "interference_count": 0
+}

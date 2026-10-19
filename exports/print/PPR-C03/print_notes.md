@@ -21,8 +21,8 @@
 - tightening torque: 0.5 N.m
 - fastener edge distance: 12 mm hole centre
 - physical interfaces: 2x Ø3.4 through on orthogonal legs
-- tolerance: 0.30 mm sheet slot
-- mating part: 1 mm sheet bin and screen rails
+- tolerance: sheet slot 1.40 ±0.30 mm
+- mating part: 1.00 ±0.05 mm sheet bin and screen rails
 - assembly order: 7
 - bounding box: 25.0 x 25.0 x 100.0 mm
 - FreeCAD Python source: `PPR-C03.py` -> `cad/freecad/compact/geometry.py`

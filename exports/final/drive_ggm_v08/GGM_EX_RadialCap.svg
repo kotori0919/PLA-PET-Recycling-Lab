@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600"><rect width="800" height="600" fill="white"/><g font-family="sans-serif" fill="#172533"><text x="25" y="35" font-size="21">GGM_EX_RadialCap</text><text x="25" y="62" font-size="12">steel t2; ID27.4 outer-ring-only retainer; M3 screws</text><polyline points="246.50,106.00 342.70,129.71 416.86,195.41 452.00,288.06 440.05,386.41 383.77,467.96 296.04,514.00 196.96,514.00 109.23,467.96 52.94,386.41 41.00,288.06 76.13,195.41 150.30,129.71 246.50,106.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="246.50,106.00 246.50,106.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="246.50,106.00 342.70,129.71 416.86,195.41 452.00,288.06 440.05,386.41 383.77,467.96 296.04,514.00 196.96,514.00 109.23,467.96 52.94,386.41 41.00,288.06 76.13,195.41 150.30,129.71 246.50,106.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="66.49,297.71 81.79,313.01 66.49,328.31 51.19,313.01 66.49,297.71" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="246.50,189.70 318.97,213.25 363.77,274.90 363.77,351.11 318.97,412.76 246.50,436.31 174.02,412.76 129.23,351.11 129.23,274.90 174.02,213.25 246.50,189.70" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="426.50,297.71 441.81,313.01 426.50,328.31 411.20,313.01 426.50,297.71" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="66.49,297.71 81.79,313.01 66.49,328.31 51.19,313.01 66.49,297.71" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="246.50,189.70 318.97,213.25 363.77,274.90 363.77,351.11 318.97,412.76 246.50,436.31 174.02,412.76 129.23,351.11 129.23,274.90 174.02,213.25 246.50,189.70" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="426.50,297.71 441.81,313.01 426.50,328.31 411.20,313.01 426.50,297.71" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="66.49,297.71 66.49,297.71" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="246.50,189.70 246.50,189.70" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="426.50,297.71 426.50,297.71" fill="none" stroke="#263238" stroke-width="0.8"/><text x="25" y="552" font-size="14">Envelope 46.000 x 2.000 x 46.000 mm</text><text x="25" y="580" font-size="12">STEP and DRIVE_DRAWING_SCHEDULE.csv control. Physical commissioning not performed.</text></g></svg>

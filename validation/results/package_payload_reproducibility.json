@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "fabrication_readiness": "HOLD",
+  "physical_validation_state": "NOT_RUN",
+  "final_release_reproducibility": "NOT_PROVEN",
+  "scope": "Current collect() payload only; no generated release metadata or fabrication ZIP written",
+  "file_count": 986,
+  "serialized_bytes": 67782450,
+  "payload_zip_sha256": "0e08e8fcbe2d792f980e34f2d322ee59c5fa10ea48fd506bbb0c5b1ca03e9df1",
+  "python_versions": [
+    "3.14.7 (main, Aug  5 2026, 10:29:49) [GCC 13.3.0]",
+    "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]"
+  ],
+  "checker_sha256": "859e275ef201fd66980e177e2ff2a75092c9eb09c0a3b944304ec3d007671a0a"
+}

@@ -12,7 +12,7 @@
     },
     {
       "file": "exports/print/PPR-C02/PPR-C02.stl",
-      "triangles": 5512,
+      "triangles": 5528,
       "zero_area_triangles": 0,
       "nonmanifold_edges": 0,
       "connected_components": 1,

@@ -1,0 +1,59 @@
+{
+  "status": "HOLD",
+  "physical_validation_state": "NOT_RUN",
+  "model": "Single isothermal junction; constant positive conductances to wall and ambient; steady state, no radiation or transient model.",
+  "wall_c": 270.0,
+  "ambient_c": 25.0,
+  "scenarios": [
+    {
+      "illustrative_bias_budget_c": 1.0,
+      "minimum_contact_to_stem_conductance_ratio": 244.0
+    },
+    {
+      "illustrative_bias_budget_c": 2.0,
+      "minimum_contact_to_stem_conductance_ratio": 121.5
+    },
+    {
+      "illustrative_bias_budget_c": 5.0,
+      "minimum_contact_to_stem_conductance_ratio": 48.0
+    },
+    {
+      "illustrative_bias_budget_c": 10.0,
+      "minimum_contact_to_stem_conductance_ratio": 23.5
+    }
+  ],
+  "scope": "Illustrative budgets, not allocated system requirements. Gc, Gs, junction position and heat capacity are unknown; no product accuracy or response-time PASS.",
+  "source_sha256": "41fec639554d7c46a2ca6932733dec896b20f3afa87b9824cca1ab4773625739",
+  "openmodelica_comparison": {
+    "status": "PASS",
+    "cases": [
+      {
+        "contact_w_k": 0.1,
+        "stem_w_k": 0.01,
+        "heat_capacity_j_k": 1,
+        "analytic_max_error_c": 7.454078456703428e-07,
+        "equilibrium_c": 247.72727272727272,
+        "csv_sha256": "b64b1fc00b5c9f9fbc1d0fbd4957d400a3d456640878f4a7fed1194a6b1eb227"
+      },
+      {
+        "contact_w_k": 1.215,
+        "stem_w_k": 0.01,
+        "heat_capacity_j_k": 1,
+        "analytic_max_error_c": 8.206635584429023e-07,
+        "equilibrium_c": 268.0,
+        "csv_sha256": "334c4d5faf745c5b4cd8ac188cf7f1d5bd9d07941df2dd86e77fd6453c40c455"
+      },
+      {
+        "contact_w_k": 2.44,
+        "stem_w_k": 0.01,
+        "heat_capacity_j_k": 1,
+        "analytic_max_error_c": 8.160561151271395e-07,
+        "equilibrium_c": 269.0,
+        "csv_sha256": "38ebfcc965695ed6d1e6cafe4c01131c3bd0bfc4197592b8a2f8843e5962637d"
+      }
+    ],
+    "solver_version": "OpenModelica 1.27.0~5-ga0783c0",
+    "raw_directory": "analysis/final_validation/results/v0.8/probe-thermal-8c648f98",
+    "model_sha256": "d0a09f58c99b6fb5dfbd102fcd1311e6c6dbc57c004b72b92c5337fe33d81ff6"
+  }
+}

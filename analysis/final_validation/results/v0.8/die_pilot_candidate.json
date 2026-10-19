@@ -1,0 +1,58 @@
+{
+  "status": "HOLD",
+  "physical_validation_state": "NOT_RUN",
+  "nominal_mm": {
+    "pilot_od": 19,
+    "pilot_length": 1.2,
+    "die_recess_od": 19.05,
+    "die_recess_depth": 0.9,
+    "gasket_id": 19.2,
+    "gasket_thickness": 0.5,
+    "radial_play": 0.025,
+    "axial_bottom_gap": 0.2,
+    "pilot_to_breaker_gap": 0.3
+  },
+  "overlap_mm3": {
+    "barrel/die": 0.0,
+    "barrel/gasket": 0.0,
+    "barrel/breaker": 0.0,
+    "die/gasket": 0.0,
+    "die/breaker": 0.0,
+    "gasket/breaker": 0.0
+  },
+  "offset_0_1_mm_pilot_overlap_mm3": 0.8506055567386746,
+  "gasket_compression_sensitivity": [
+    {
+      "compressed_gasket_thickness_mm": 0.5,
+      "nominal_pilot_bottom_gap_mm": 0.19999999999999996,
+      "barrel_die_overlap_mm3": 0.0
+    },
+    {
+      "compressed_gasket_thickness_mm": 0.4,
+      "nominal_pilot_bottom_gap_mm": 0.10000000000000009,
+      "barrel_die_overlap_mm3": 0.0
+    },
+    {
+      "compressed_gasket_thickness_mm": 0.3,
+      "nominal_pilot_bottom_gap_mm": 0.0,
+      "barrel_die_overlap_mm3": 0.0
+    },
+    {
+      "compressed_gasket_thickness_mm": 0.25,
+      "nominal_pilot_bottom_gap_mm": -0.050000000000000044,
+      "barrel_die_overlap_mm3": 3.8704421492214314
+    }
+  ],
+  "step_sha256": {
+    "analysis/final_validation/results/v0.8/die_pilot_candidate_barrel.step": "f5a5e883bc70f472e41ef038d08f9f74faecd6be15fcbf756a4966cf13deac41",
+    "analysis/final_validation/results/v0.8/die_pilot_candidate_die.step": "548216e8c46c49caa0472d87e0e5b14fe75c460da30f1882c60555f2f3b6a621",
+    "analysis/final_validation/results/v0.8/die_pilot_candidate_gasket.step": "72577dcc94b770c94175194190656fcf359b8a1b604ea030e7cc84c8989756e6",
+    "analysis/final_validation/results/v0.8/die_pilot_candidate_breaker.step": "05a8d186749abfbc251b2082e7e497394e2d1243b6d11efb103ee39a3d50c8c3"
+  },
+  "limitations": "Unadopted nominal geometry. Machining fit/runout, compressed gasket thickness, thermal differential, sealing land and pressure stress unqualified. No full-assembly or physical approval.",
+  "source_sha256": {
+    "cad/freecad/final_v08/check_die_pilot_candidate.py": "74014570ebe88e81bbd4959a9cd772ffdbb9e254dd0579a1a4b93721580aa4a9",
+    "cad/freecad/compact/geometry.py": "ce8ca7c3b70dc422d442149a92580e328b1ac62286629d4f2ff75d209ddd0028",
+    "cad/freecad/compact/manufacturing.py": "a858920678aad011b6267182929b6301a7b6d5483230f8b67835b5197ceb247c"
+  }
+}

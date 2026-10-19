@@ -1,0 +1,390 @@
+{
+  "revision": "final-design-fabrication-closure-v0.8",
+  "status": "FAIL",
+  "passed": 20,
+  "total": 25,
+  "checks": {
+    "00_authoritative_baseline": {
+      "status": "PASS",
+      "evidence": "verified main/tag/handoff hashes"
+    },
+    "02_v07_archive": {
+      "status": "PASS",
+      "evidence": "archive index + classified manifest"
+    },
+    "03_calculix_core": {
+      "status": "FAIL",
+      "evidence": "LC02/04/05 + hot mount; source_current=True"
+    },
+    "03_lc04_resolution": {
+      "status": "PASS",
+      "evidence": "DIFFERENT_METRIC_OR_MODEL"
+    },
+    "03_hot_zone_mount": {
+      "status": "FAIL",
+      "evidence": "A–G=7 qualified={'scm440_temperature_dependent_material_qualified': False, 'sensor_bore_local_stress_qualified': True, 'die_joint_qualified': False, 'local_temperature_gradient_qualified': False} selected_SF=2.09 sensor_local_current=True sensor_thermal_pressure_screen=PASS/0.01634593636574816"
+    },
+    "05_v08_motion_dynamics": {
+      "status": "PASS",
+      "evidence": "v0.8 parameter-bound mechanical/control surrogate; source_current=True; not firmware/physical validation"
+    },
+    "05_loaded_phase_centre": {
+      "status": "PASS",
+      "evidence": "source_current=True loaded=PASS key_source_current=True released_key_clocking=PASS candidate25_current=True candidate25=PASS/0.9036394083963866deg checks={'mesh_convergence': True, 'positive_loaded_backlash': True, 'backlash_below_one_degree': True, 'frame_and_bearing_compliance_qualified': True, 'torsional_phase_compliance_qualified': True}"
+    },
+    "03_solver_qualification": {
+      "status": "PASS",
+      "evidence": "torsion/thermal/modal + component screens; source_current=True; not complete assembly qualification"
+    },
+    "06_interface_catalog": {
+      "status": "FAIL",
+      "evidence": "single controlling rows=48; exhaustive_coverage=HOLD"
+    },
+    "06_tolerance_stacks": {
+      "status": "FAIL",
+      "evidence": "calculations/tolerance_stack_final.json"
+    },
+    "07_freecad_source": {
+      "status": "PASS",
+      "evidence": "FreeCAD mount solids/collision/contact gate; source_current=True; axial_contact=PASS; candidate_current=True candidate=PASS/PASS"
+    },
+    "08_step_package": {
+      "status": "PASS",
+      "evidence": "rows=79 dirs=True files_current=True; file integrity only, not fabrication qualification"
+    },
+    "09_print_package": {
+      "status": "PASS",
+      "evidence": "rows=12 files_current=True; physical fit NOT_RUN"
+    },
+    "10_manufacturing_package": {
+      "status": "PASS",
+      "evidence": "cutter:PASS, shafts:PASS, phase_gears:PASS, screw_barrel:PASS, die:PASS, bearing_plates:PASS, feeder:PASS, hot_zone:PASS, guards_panels:PASS, RFQ:PASS"
+    },
+    "11_dimensioned_drawings": {
+      "status": "PASS",
+      "evidence": "rows=20 PDFs=20"
+    },
+    "12_electrical_package": {
+      "status": "PASS",
+      "evidence": "vector_diagrams=True wires=102"
+    },
+    "13_firmware_release": {
+      "status": "PASS",
+      "evidence": "source/binary/build/library/docs/reproducible build"
+    },
+    "14_authoritative_bom": {
+      "status": "PASS",
+      "evidence": "rows=119 digital=PASS procurement=HOLD"
+    },
+    "15_assembly_manual": {
+      "status": "PASS",
+      "evidence": "structured_steps=25 artifact_fields_and_pdfs=True execution_HOLD_steps=['7', '10', '12', '13']; completeness is separate from physical approval"
+    },
+    "16_commissioning_handoff": {
+      "status": "PASS",
+      "evidence": "transition_gates=6 physical=NOT_RUN"
+    },
+    "17_multimodal_review": {
+      "status": "PASS",
+      "evidence": "views=12 closeups=48 modules=6"
+    },
+    "18_electrical_firmware_tests": {
+      "status": "PASS",
+      "evidence": "state-machine + hardware-adapter"
+    },
+    "19_independent_reviews": {
+      "status": "PASS",
+      "evidence": "12 required reviewer roles"
+    },
+    "20_release_package": {
+      "status": "FAIL",
+      "evidence": "deterministic ZIP schema/hash/clean-extraction verification"
+    },
+    "21_release_policy": {
+      "status": "PASS",
+      "evidence": "origin HEAD + open main-target PR verified; GitHub Release publish remains blocked"
+    }
+  },
+  "section_coverage": {
+    "00": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "00_authoritative_baseline"
+      ]
+    },
+    "01": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "$scope_decision"
+      ]
+    },
+    "02": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "02_v07_archive"
+      ]
+    },
+    "03": {
+      "covered": true,
+      "status": "FAIL",
+      "requirements": [
+        "03_calculix_core",
+        "03_lc04_resolution",
+        "03_hot_zone_mount",
+        "03_solver_qualification"
+      ]
+    },
+    "04": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "$architecture_freeze"
+      ]
+    },
+    "05": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "05_v08_motion_dynamics",
+        "05_loaded_phase_centre",
+        "07_freecad_source",
+        "10_manufacturing_package"
+      ]
+    },
+    "06": {
+      "covered": true,
+      "status": "FAIL",
+      "requirements": [
+        "06_interface_catalog",
+        "06_tolerance_stacks"
+      ]
+    },
+    "07": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "07_freecad_source"
+      ]
+    },
+    "08": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "08_step_package"
+      ]
+    },
+    "09": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "09_print_package"
+      ]
+    },
+    "10": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "10_manufacturing_package"
+      ]
+    },
+    "11": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "11_dimensioned_drawings"
+      ]
+    },
+    "12": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "12_electrical_package"
+      ]
+    },
+    "13": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "13_firmware_release"
+      ]
+    },
+    "14": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "14_authoritative_bom"
+      ]
+    },
+    "15": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "15_assembly_manual"
+      ]
+    },
+    "16": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "16_commissioning_handoff"
+      ]
+    },
+    "17": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "17_multimodal_review"
+      ]
+    },
+    "18": {
+      "covered": true,
+      "status": "FAIL",
+      "requirements": [
+        "03_calculix_core",
+        "03_solver_qualification",
+        "05_v08_motion_dynamics",
+        "05_loaded_phase_centre",
+        "06_tolerance_stacks",
+        "07_freecad_source",
+        "08_step_package",
+        "09_print_package",
+        "12_electrical_package",
+        "13_firmware_release",
+        "15_assembly_manual",
+        "20_release_package"
+      ]
+    },
+    "19": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "19_independent_reviews"
+      ]
+    },
+    "20": {
+      "covered": true,
+      "status": "FAIL",
+      "requirements": [
+        "20_release_package"
+      ]
+    },
+    "21": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "21_release_policy"
+      ]
+    },
+    "22": {
+      "covered": true,
+      "status": "FAIL",
+      "requirements": [
+        "00_authoritative_baseline",
+        "02_v07_archive",
+        "03_calculix_core",
+        "03_lc04_resolution",
+        "03_hot_zone_mount",
+        "05_v08_motion_dynamics",
+        "05_loaded_phase_centre",
+        "03_solver_qualification",
+        "06_interface_catalog",
+        "06_tolerance_stacks",
+        "07_freecad_source",
+        "08_step_package",
+        "09_print_package",
+        "10_manufacturing_package",
+        "11_dimensioned_drawings",
+        "12_electrical_package",
+        "13_firmware_release",
+        "14_authoritative_bom",
+        "15_assembly_manual",
+        "16_commissioning_handoff",
+        "17_multimodal_review",
+        "18_electrical_firmware_tests",
+        "19_independent_reviews",
+        "20_release_package",
+        "21_release_policy"
+      ]
+    },
+    "23": {
+      "covered": true,
+      "status": "FAIL",
+      "requirements": [
+        "00_authoritative_baseline",
+        "02_v07_archive",
+        "03_calculix_core",
+        "03_lc04_resolution",
+        "03_hot_zone_mount",
+        "05_v08_motion_dynamics",
+        "05_loaded_phase_centre",
+        "03_solver_qualification",
+        "06_interface_catalog",
+        "06_tolerance_stacks",
+        "07_freecad_source",
+        "08_step_package",
+        "09_print_package",
+        "10_manufacturing_package",
+        "11_dimensioned_drawings",
+        "12_electrical_package",
+        "13_firmware_release",
+        "14_authoritative_bom",
+        "15_assembly_manual",
+        "16_commissioning_handoff",
+        "17_multimodal_review",
+        "18_electrical_firmware_tests",
+        "19_independent_reviews",
+        "20_release_package",
+        "21_release_policy",
+        "$final_states"
+      ]
+    },
+    "24": {
+      "covered": true,
+      "status": "FAIL",
+      "requirements": [
+        "00_authoritative_baseline",
+        "02_v07_archive",
+        "03_calculix_core",
+        "03_lc04_resolution",
+        "03_hot_zone_mount",
+        "05_v08_motion_dynamics",
+        "05_loaded_phase_centre",
+        "03_solver_qualification",
+        "06_interface_catalog",
+        "06_tolerance_stacks",
+        "07_freecad_source",
+        "08_step_package",
+        "09_print_package",
+        "10_manufacturing_package",
+        "11_dimensioned_drawings",
+        "12_electrical_package",
+        "13_firmware_release",
+        "14_authoritative_bom",
+        "15_assembly_manual",
+        "16_commissioning_handoff",
+        "17_multimodal_review",
+        "18_electrical_firmware_tests",
+        "19_independent_reviews",
+        "20_release_package",
+        "21_release_policy",
+        "$execution_complete"
+      ]
+    },
+    "25": {
+      "covered": true,
+      "status": "PASS",
+      "requirements": [
+        "$final_report"
+      ]
+    }
+  },
+  "passed_sections": 19,
+  "total_sections": 26,
+  "technical_state": "IN_PROGRESS",
+  "physical_validation_state": "NOT_RUN",
+  "safety_certification": "NOT_CERTIFIED",
+  "fabrication_release_approval": "USER_APPROVAL_REQUIRED"
+}

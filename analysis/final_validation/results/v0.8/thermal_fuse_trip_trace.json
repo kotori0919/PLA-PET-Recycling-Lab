@@ -1,0 +1,16 @@
+{
+  "status": "HOLD",
+  "trace_checks": "PASS",
+  "physical_validation_state": "NOT_RUN",
+  "assumed_ambient_c": 200,
+  "trip_time_s": 511.1683627140788,
+  "final_max_temperature_c": 200.0094267866542,
+  "scope": "Ideal 300C threshold and instantaneous fuse isolation only; no real fuse location, delay, tolerance, interrupt rating or thermal contact qualification",
+  "sha256": {
+    "validation/check_thermal_fuse_trip_trace.py": "d713080cf6f7177ecaea79936724bc8ff95f19338906cb9acc1aedbda827676a",
+    "simulation/openmodelica/postprocess/summarize_results.py": "b90b654c326099c5ac1659784c65794f89705eda388680a16a7f7aae749b9ae7",
+    "analysis/final_validation/results/v0.8/ThermalFuseTripProbe_res.csv": "7a4dcfc99a3d07befbf4067938d3c119cd9cba5631e53848b8e4fb5f3044ed84",
+    "simulation/openmodelica/scripts/check_thermal_fuse_trip.mos": "8e9a1dfceaa0048a9173d52f6d8f4b36e5dc3c6fd7ea84a54ff67e030178d20b",
+    "simulation/openmodelica/PLA_PET_Recycler/Systems/ThermalExtruderSystem.mo": "39fe3c0e074d48a2995cd4a84aab74a3371e0b38d761dfec83c97ada8f00338a"
+  }
+}

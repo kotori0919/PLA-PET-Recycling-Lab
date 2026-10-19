@@ -1,0 +1,136 @@
+{
+  "status": "ENGINEERING_REVIEW_ONLY",
+  "machine_release_state": "HOLD",
+  "physical_validation_state": "NOT_RUN",
+  "rows": [
+    {
+      "part_id": "CUT-05",
+      "file": "CUT-05.step",
+      "solid_count": 1,
+      "bbox_mm": [
+        25.0,
+        240.0,
+        25.0
+      ],
+      "volume_mm3": 113609.43892798504,
+      "roundtrip_relative_volume_error": 3.4583544718934688e-15,
+      "sha256": "6ff76cd2ac8e208196655ab83d41f30e6f4fc38f57e8a77a62309dba868ab997",
+      "artifact_status": "VALID_GEOMETRY_REVIEW_ONLY",
+      "fabrication_state": "HOLD",
+      "manufacturing_notes": {
+        "id": "CUT-05",
+        "name": "25 mm keyed cutter shaft left",
+        "qty": 1,
+        "material": "S45C QT steel",
+        "process": "turn + indexed keyway; black oxide with bearing seats masked",
+        "critical": "continuous Ø25 h6 =24.987-25.000 across 61905 journals, cutter land and gear/hub land; overall240.0 +/-0.10; TIR<=0.05; 6.005-6.010 keyways at y=0-35 and55-160 with selected key5.995-6.000; 8.005-8.010 keyway at195-240 with selected key7.995-8.000; datum clock0 deg; install slave shaft at Y278"
+      }
+    },
+    {
+      "part_id": "CUT-05R",
+      "file": "CUT-05R.step",
+      "solid_count": 1,
+      "bbox_mm": [
+        25.0,
+        240.0,
+        25.0
+      ],
+      "volume_mm3": 114630.80397789468,
+      "roundtrip_relative_volume_error": 2.4373620587928724e-14,
+      "sha256": "f811a568d0a2e4a5b9a2d87235a6693b48fb124f4af752174d52d7000185478e",
+      "artifact_status": "VALID_GEOMETRY_REVIEW_ONLY",
+      "fabrication_state": "HOLD",
+      "manufacturing_notes": {
+        "id": "CUT-05R",
+        "name": "25 mm keyed cutter shaft right",
+        "qty": 1,
+        "material": "S45C QT steel",
+        "process": "turn + indexed keyway; black oxide with bearing seats masked",
+        "critical": "continuous Ø25 h6 =24.987-25.000 across 61905 journals, cutter land and gear/hub land; overall240.0 +/-0.10; TIR<=0.05; all keyway centreplanes clocked25.714 +/-0.02 deg; 6.005-6.010 keyways at y=0-35 and85-165 with selected key5.995-6.000; 8.005-8.010 keyway at212-240 with selected key7.995-8.000; install driven shaft at Y258"
+      }
+    },
+    {
+      "part_id": "PPR-ASSEMBLY-REVIEW",
+      "file": "PPR-ASSEMBLY-REVIEW.step",
+      "solid_count": 204,
+      "bbox_mm": [
+        470.0,
+        700.0,
+        930.0
+      ],
+      "volume_mm3": 17358616.75693253,
+      "roundtrip_relative_volume_error": 4.619749315712241e-09,
+      "sha256": "5048f03bac5cc87ced355bc9eee0fef6b4f0411bf533db2cce6ab11887bf8203",
+      "artifact_status": "VALID_GEOMETRY_REVIEW_ONLY",
+      "fabrication_state": "HOLD"
+    },
+    {
+      "part_id": "ExtruderFixedCollar",
+      "file": "ExtruderFixedCollar.step",
+      "solid_count": 1,
+      "bbox_mm": [
+        12.0,
+        50.0,
+        41.0
+      ],
+      "volume_mm3": 5756.382201901582,
+      "roundtrip_relative_volume_error": 1.0364644032252561e-13,
+      "sha256": "1f017b147aee3951a42730af45f84a0d613befeb0dd880854f0c74dcd876b73a",
+      "artifact_status": "VALID_GEOMETRY_REVIEW_ONLY",
+      "fabrication_state": "HOLD"
+    },
+    {
+      "part_id": "ExtruderRearFixedDatum",
+      "file": "ExtruderRearFixedDatum.step",
+      "solid_count": 1,
+      "bbox_mm": [
+        8.0,
+        150.0,
+        58.0
+      ],
+      "volume_mm3": 29501.320711206736,
+      "roundtrip_relative_volume_error": 3.206210661221461e-15,
+      "sha256": "663ac23c46fde51e2bb616414ad731bf0096d17c70b67c5f8863a9346927b1eb",
+      "artifact_status": "VALID_GEOMETRY_REVIEW_ONLY",
+      "fabrication_state": "HOLD"
+    },
+    {
+      "part_id": "ExtruderFrontSlidingGuide",
+      "file": "ExtruderFrontSlidingGuide.step",
+      "solid_count": 1,
+      "bbox_mm": [
+        8.0,
+        150.0,
+        76.0
+      ],
+      "volume_mm3": 28694.575127000582,
+      "roundtrip_relative_volume_error": 1.394610887280695e-15,
+      "sha256": "a411b6841ec4d1511516a2ac6d384ea579ed46e96f2808ff0ae3e4ffb999ea67",
+      "artifact_status": "VALID_GEOMETRY_REVIEW_ONLY",
+      "fabrication_state": "HOLD"
+    },
+    {
+      "part_id": "ExtruderRearRetainer",
+      "file": "ExtruderRearRetainer.step",
+      "solid_count": 1,
+      "bbox_mm": [
+        12.0,
+        70.0,
+        50.0
+      ],
+      "volume_mm3": 18174.850596734166,
+      "roundtrip_relative_volume_error": 4.0033108252844954e-15,
+      "sha256": "cf2e7023a047606cf45abb2bfd69adeae877a92577fa6b8594398ea64dba9fc8",
+      "artifact_status": "VALID_GEOMETRY_REVIEW_ONLY",
+      "fabrication_state": "HOLD"
+    }
+  ],
+  "source_sha256": {
+    "release/export_engineering_closure_review.py": "69fa74a3a630f8af669ff74bb7deb7b222958623e23baf869334583e3ddec234",
+    "cad/freecad/compact/geometry.py": "70ffde0909648ee73a4d61944e0d2d90def8fa6d2c5c2d90aa0f7b98194e7c57",
+    "cad/freecad/compact/manufacturing.py": "436f7d63f997fb06442353065320c89726385ab1057540fadaae092057128ceb",
+    "cad/freecad/final_v08/generate.py": "5e3788761eac33931118c9406edaff4041b8c740a7df364f44c0f8be7737335f",
+    "cad/parameters/baseline.json": "eecde1249c65d84c499f7ab949a05ebbcb7fbd8dfa49d762d15d1eba24db304a",
+    "cad/parameters/final_v08.json": "c14f7e3a26bb6a37a59106ff0e43fe8b9ec1ccee4a3728c9c3db43eab2b93517"
+  }
+}

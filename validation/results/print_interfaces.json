@@ -9,21 +9,21 @@
       "sampled_wall_mm": 1.975,
       "perimeters": 4,
       "nozzle_mm": 0.4,
-      "fastener": "1x M4x10 latch flag screw",
-      "insert_or_nut": "1x M4 heat-set insert OD4.6 x L5",
+      "fastener": "1x M4x16 90° flat-head latch flag screw + washer + nyloc",
+      "insert_or_nut": "none",
       "interfaces": [
         {
           "axis": "z",
           "start_mm": [
             180,
             12,
-            3
+            0
           ],
-          "diameter_mm": 4.6,
-          "length_mm": 5,
+          "diameter_mm": 4.5,
+          "length_mm": 8,
           "bbox_edge_distance_mm": 12.0,
           "void_overlap_mm3": 0.0,
-          "surrounding_probe_mm3": 131.306
+          "surrounding_probe_mm3": 185.766
         }
       ],
       "status": "PASS"
@@ -34,7 +34,7 @@
       "sampled_wall_mm": 1.975,
       "perimeters": 5,
       "nozzle_mm": 0.4,
-      "fastener": "4x M4x12 + washer; 2x chamber M6 tie bolts through clearance holes",
+      "fastener": "4x M4x12 + washer; 2x chamber M6 tie bolts inside steel sleeves",
       "insert_or_nut": "4x M4 nyloc nuts on metal side",
       "interfaces": [
         {
@@ -96,11 +96,11 @@
             0,
             25
           ],
-          "diameter_mm": 6.6,
+          "diameter_mm": 10.5,
           "length_mm": 120,
           "bbox_edge_distance_mm": 25.0,
           "void_overlap_mm3": 0.0,
-          "surrounding_probe_mm3": 136.183
+          "surrounding_probe_mm3": 944.977
         },
         {
           "axis": "y",
@@ -109,11 +109,11 @@
             0,
             25
           ],
-          "diameter_mm": 6.6,
+          "diameter_mm": 10.5,
           "length_mm": 120,
           "bbox_edge_distance_mm": 25.0,
           "void_overlap_mm3": 0.0,
-          "surrounding_probe_mm3": 136.183
+          "surrounding_probe_mm3": 944.977
         }
       ],
       "status": "PASS"
@@ -316,60 +316,60 @@
       "sampled_wall_mm": 1.975,
       "perimeters": 4,
       "nozzle_mm": 0.4,
-      "fastener": "4x M3x12",
-      "insert_or_nut": "4x M3 heat-set insert OD4.6 x L5",
+      "fastener": "4x M3x12 + washers + all-metal nuts",
+      "insert_or_nut": "none",
       "interfaces": [
         {
           "axis": "z",
           "start_mm": [
             7,
             7,
-            3
+            0
           ],
-          "diameter_mm": 4.6,
-          "length_mm": 5,
+          "diameter_mm": 3.4,
+          "length_mm": 8,
           "bbox_edge_distance_mm": 7.0,
           "void_overlap_mm3": 0.0,
-          "surrounding_probe_mm3": 131.306
+          "surrounding_probe_mm3": 173.675
         },
         {
           "axis": "z",
           "start_mm": [
             88,
             7,
-            3
+            0
           ],
-          "diameter_mm": 4.6,
-          "length_mm": 5,
+          "diameter_mm": 3.4,
+          "length_mm": 8,
           "bbox_edge_distance_mm": 7.0,
           "void_overlap_mm3": 0.0,
-          "surrounding_probe_mm3": 131.306
+          "surrounding_probe_mm3": 173.675
         },
         {
           "axis": "z",
           "start_mm": [
             7,
             63,
-            3
+            0
           ],
-          "diameter_mm": 4.6,
-          "length_mm": 5,
+          "diameter_mm": 3.4,
+          "length_mm": 8,
           "bbox_edge_distance_mm": 7.0,
           "void_overlap_mm3": 0.0,
-          "surrounding_probe_mm3": 131.306
+          "surrounding_probe_mm3": 173.675
         },
         {
           "axis": "z",
           "start_mm": [
             88,
             63,
-            3
+            0
           ],
-          "diameter_mm": 4.6,
-          "length_mm": 5,
+          "diameter_mm": 3.4,
+          "length_mm": 8,
           "bbox_edge_distance_mm": 7.0,
           "void_overlap_mm3": 0.0,
-          "surrounding_probe_mm3": 131.306
+          "surrounding_probe_mm3": 173.675
         }
       ],
       "status": "PASS"
@@ -507,8 +507,8 @@
       "sampled_wall_mm": 7.975,
       "perimeters": 5,
       "nozzle_mm": 0.4,
-      "fastener": "2x M4x16 belt-clamp screws",
-      "insert_or_nut": "2x M4 heat-set insert OD5.6 x L6 or through nyloc",
+      "fastener": "2x M4x25 belt-clamp screws + washers + nyloc",
+      "insert_or_nut": "none",
       "interfaces": [
         {
           "axis": "z",
@@ -545,60 +545,60 @@
       "sampled_wall_mm": 4.975,
       "perimeters": 4,
       "nozzle_mm": 0.4,
-      "fastener": "4x M3x10",
-      "insert_or_nut": "4x M3 heat-set insert OD4.2 x L5",
+      "fastener": "4x M3x16 + washers + all-metal nuts",
+      "insert_or_nut": "none",
       "interfaces": [
         {
           "axis": "z",
           "start_mm": [
             8,
             8,
-            3
+            0
           ],
-          "diameter_mm": 4.2,
-          "length_mm": 5,
+          "diameter_mm": 3.4,
+          "length_mm": 8,
           "bbox_edge_distance_mm": 8.0,
           "void_overlap_mm3": 0.0,
-          "surrounding_probe_mm3": 123.163
+          "surrounding_probe_mm3": 173.675
         },
         {
           "axis": "z",
           "start_mm": [
             172,
             8,
-            3
+            0
           ],
-          "diameter_mm": 4.2,
-          "length_mm": 5,
+          "diameter_mm": 3.4,
+          "length_mm": 8,
           "bbox_edge_distance_mm": 8.0,
           "void_overlap_mm3": 0.0,
-          "surrounding_probe_mm3": 123.163
+          "surrounding_probe_mm3": 173.675
         },
         {
           "axis": "z",
           "start_mm": [
             8,
             112,
-            3
+            0
           ],
-          "diameter_mm": 4.2,
-          "length_mm": 5,
+          "diameter_mm": 3.4,
+          "length_mm": 8,
           "bbox_edge_distance_mm": 8.0,
           "void_overlap_mm3": 0.0,
-          "surrounding_probe_mm3": 123.163
+          "surrounding_probe_mm3": 173.675
         },
         {
           "axis": "z",
           "start_mm": [
             172,
             112,
-            3
+            0
           ],
-          "diameter_mm": 4.2,
-          "length_mm": 5,
+          "diameter_mm": 3.4,
+          "length_mm": 8,
           "bbox_edge_distance_mm": 8.0,
           "void_overlap_mm3": 0.0,
-          "surrounding_probe_mm3": 123.163
+          "surrounding_probe_mm3": 173.675
         }
       ],
       "status": "PASS"

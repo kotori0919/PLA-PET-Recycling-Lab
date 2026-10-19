@@ -83,7 +83,7 @@
 <polyline points="776.00,344.00 916.14,344.00" fill="none" stroke="#263238" stroke-width="0.8"/><text x="34" y="430" font-size="18">Revision: safety-orchestration-closure-v0.6.1</text>
 <text x="34" y="466" font-size="18">Part: PPR-C08 — Solid-strand guide axle bracket  Qty 2  Material PLA</text>
 <text x="34" y="502" font-size="18">Overall: X 60.00  Y 45.00  Z 70.00 mm; unless noted printed tolerance ±0.30 mm</text>
-<text x="34" y="538" font-size="18">Interface: 2x Ø5.5 base holes; Ø5.2 fixed-axle bore</text>
+<text x="34" y="538" font-size="18">Interface: 2x Ø5.5 base holes; Ø5.20–5.40 fixed-axle bore; complete-pair hand-pass alignment</text>
 <text x="34" y="574" font-size="18">Fastener: 2x M5x16 + washer + T-nut; insert/nut: none; tightening: 2.0 N.m</text>
 <text x="34" y="610" font-size="18">Edge distance: 15 mm hole centre; mating: FM-GA-01 fixed Ø5 axle and profile; 625 bearings are seated in FM-GR-01</text>
 <text x="34" y="646" font-size="18">Print: L side; 0.20 mm; 5 perimeters; support: yes under axle bore</text>

@@ -1,0 +1,49 @@
+{
+  "observed_utc": "2026-09-09T05:15:17.047771+00:00",
+  "base_head": "9d55ddae1502a6c3151564489d29f963118c37fc",
+  "final_head": "a4da992820c2b6793fbd20e252e6afb51d943157",
+  "commits": [
+    "9468ab1fd68c0df0d5c4aa58c29f7837e60292df",
+    "a4da992820c2b6793fbd20e252e6afb51d943157"
+  ],
+  "branch": "final-design-fabrication-closure-v0.8",
+  "experiment_clean": true,
+  "outside_index_preserved": true,
+  "committed_package_payloads_verified": 107,
+  "new_calculix_jobs": 2,
+  "packaged_selected_solver_jobs": 20,
+  "synthetic_tests": 91,
+  "new_synthetic_tests": 40,
+  "package_mutations": 2,
+  "cli_negative_smokes": 3,
+  "source_fetch_successes": 8,
+  "source_web_review_only": 1,
+  "physical_test_count": 0,
+  "physical_validation": "NOT_RUN",
+  "machine_release": "HOLD",
+  "push_performed": false,
+  "merge_performed": false,
+  "old_r1_preserved": true,
+  "package": {
+    "status": "PROTOTYPE_PACKAGE_INTEGRITY_PASS",
+    "machine_release": "HOLD",
+    "physical_validation": "NOT_RUN",
+    "archive": "dist/PPR-HS-R1-S2-TEST-FOUNDATION-20260909-r2.zip",
+    "sha256": "b98f767b26a84f5fe4d87485643ad53ad9dd0a5fe5e2aaca2da8c75f59094293",
+    "bytes": 5240579,
+    "payload_files": 107,
+    "selected_solver_jobs": 20,
+    "raw_files_hashed": 80,
+    "unit_tests": 91,
+    "same_snapshot_two_zip_builds_identical": true,
+    "clean_extraction_verified": true,
+    "complete_pipeline_twice_regenerated": false
+  },
+  "holds": {
+    "material": "MISSING_MATCHING_LOT_HOT_STRENGTH",
+    "friction": "MISSING_ASSEMBLED_MEASUREMENTS",
+    "hot_qualification": "MISSING_TEMPERATURE_RELAXATION_AND_CONTACT_EVIDENCE",
+    "machine_thrust": "MISSING_PRELOAD_LOAD_PATH_TEMPERATURE_QUALIFICATION"
+  },
+  "own_jobs_running": []
+}

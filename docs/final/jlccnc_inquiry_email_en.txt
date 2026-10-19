@@ -1,0 +1,46 @@
+To: support@jlcpcb.com (verify against the signed-in JLCCNC Contact page before sending)
+From: [Name] <[Email]>
+Subject: Capability inquiry — SCM440 screw and barrel with Q&T, gas nitriding, and post-treatment finishing
+Attachment: PPR-v0.8-JLCCNC-CAPABILITY-INQUIRY-DRAFT.zip
+
+Hello JLCCNC Engineering Team,
+
+I am evaluating JLCCNC as a manufacturing supplier for one small laboratory polymer-processing screw and barrel. This message is a capability and documentation inquiry only; it is not a purchase order or approval to start production.
+
+The proposed parts are:
+
+- EX-BAR-01, quantity 1: SCM440 barrel, 280 mm long, finished bore Ø16.20 +0.02/0 mm, finished OD Ø34.00 -0.03/0 mm, integral rear shoulder, three blind thermocouple bores, Q&T 28–32 HRC, gas-nitrided case 0.30–0.50 mm, surface hardness at least 900 HV, final bore Ra 0.4–0.8 µm.
+- EX-SCR-01, quantity 1: SCM440 screw, 316 mm overall/256 mm active length, Ø15.92 -0.02/0 mm flight OD, 16 mm pitch, Q&T 28–32 HRC, gas-nitrided case 0.30–0.50 mm, surface hardness 900–1100 HV, flight OD TIR ≤0.05 mm over 256 mm, OD Ra ≤0.8 µm.
+- EX-CPN-BAR and EX-CPN-SCR, quantity 1 each: short process coupons made from the same certified heats and by the same Q&T/nitriding/finishing routes as the production parts.
+
+Before we upload the final RFQ package, please answer each item below with Yes, No, or Proposed Alternative:
+
+1. Can you procure traceable SCM440 conforming to JIS G 4105 (or an explicitly identified equivalent) and provide the original mill certificate with heat/lot number? Please do not substitute 45# steel or another grade without written review.
+2. Can you perform, or manage through a traceable subcontractor, Q&T to 28–32 HRC followed by gas nitriding? Please identify who performs each process and who retains final inspection responsibility.
+3. Can you certify effective nitrided case depth 0.30–0.50 mm, surface hardness, core hardness, compound-layer condition, and the test methods/locations used?
+4. Can you finish-hone/grind the critical bore, journals, and flight OD after heat treatment as required by the drawings, and provide a dimensional inspection report tied to the drawing datums?
+5. Can you manufacture a blind Ø3.20 +0.05/0 mm thermocouple bore with a controlled bottom geometry and depth definition? Please state the available tool-tip angle or flat-bottom method, achievable depth tolerance, bottom corner radius, and how depth is inspected. Do not select a sensor-hole geometry until we approve it.
+6. Can you provide temperature-dependent properties applicable to the actual final Q&T/nitrided condition over 245–270 °C: 0.2% proof/yield-strength lower bound, elastic modulus, Poisson ratio, coefficient of thermal expansion, thermal conductivity, and specific heat? The current screen requires a 0.2% yield lower bound of at least 180 MPa at 270 °C, but the complete property set will be used for re-analysis. If any item is unavailable, please mark it unavailable rather than substituting room-temperature data.
+7. Can you quote the two coupons separately before the production screw and barrel? Production parts must remain on hold until coupon inspection and our written approval.
+8. Please identify any drawing feature or tolerance that you cannot guarantee after the complete heat-treatment and finishing sequence.
+
+If the capability is available, please also provide the proposed manufacturing sequence, inspection plan, certificate/sample-report list, lead time, and separate budgetary prices for (a) the two coupons and (b) the production screw and barrel. Any alternative material, treatment, geometry, tolerance, or inspection method requires our written engineering approval before quotation acceptance.
+
+Files available for technical review after your initial capability response:
+
+- EX-BAR-01.step / .dxf / .pdf
+- EX-SCR-01.step / .dxf / .pdf
+- EX-CPN-BAR.step / .dxf / .pdf
+- EX-CPN-SCR.step / .dxf / .pdf
+- hot-zone supplier requirement and response form
+
+Please return the response form with supporting datasheets or sample certificates where available.
+
+For the first capability review, the attached ZIP contains this email copy, the response form,
+and PDF drawings for the two process coupons only. It contains no production authorization.
+
+Regards,
+[Name]
+[Company / project, if applicable]
+[Country]
+[Email]

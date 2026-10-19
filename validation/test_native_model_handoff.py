@@ -72,7 +72,7 @@ print('GGM_EXPORTED_SOLIDS_EQUIVALENT', len(step.Solids),
       'reference_overlaps', len(native_review['reference_overlaps']))
 
 App.closeDocument(doc.Name)
-print('GGM_NATIVE_STEP_HANDOFF_PASS envelope=470x729x930 hard_envelope=500x750x1000 physical=NOT_RUN')
+print('GGM_NATIVE_STEP_HANDOFF_PASS envelope='+'x'.join(str(round(v,3)) for v in row['bbox_mm'])+' hard_envelope=500x750x1000 physical=NOT_RUN')
 
 # Equal scalar measurements must not hide differently located internal features.
 stock = Part.makeBox(20, 20, 20)

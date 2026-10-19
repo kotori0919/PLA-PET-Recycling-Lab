@@ -4,9 +4,15 @@
   "machine_release": "HOLD",
   "authenticity": "NOT_ESTABLISHED_BY_PARSER",
   "simulation_gate": {
-    "status": "FAIL",
-    "pass": false,
-    "sha256": "c858603952fbb536e8a70c505ee1bfa6742a45de9c6865e143f13feb4aebdf0b"
+    "status": "PASS",
+    "pass": true,
+    "sha256": "b97d00a018520012242b22aa2f133bf26db5f07905f0adbd1552b111f18a10d6",
+    "required_technical_gate_count": 23,
+    "failed_technical_gates": [],
+    "excluded_release_only_gates": {
+      "20_release_package": "FAIL",
+      "21_release_policy": "FAIL"
+    }
   },
   "domains": {
     "receipt": {

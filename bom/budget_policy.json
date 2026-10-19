@@ -3,7 +3,7 @@
   "price_release_blocking": false,
   "procurement_approval_gate": "USER_APPROVAL_REQUIRED",
   "former_target_krw": 200000,
-  "absolute_total_krw": 198729,
-  "delta_to_former_target_krw": -1271,
+  "absolute_total_krw": 196076,
+  "delta_to_former_target_krw": -3924,
   "technical_release_blocked": false
 }

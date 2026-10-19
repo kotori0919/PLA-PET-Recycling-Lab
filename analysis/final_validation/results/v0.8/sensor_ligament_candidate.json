@@ -1,0 +1,201 @@
+{
+  "status": "HOLD",
+  "physical_validation_state": "NOT_RUN",
+  "cases": [
+    {
+      "nominal_depth_mm": 5.5,
+      "depth_tolerance_mm": 0.05,
+      "brep_min_ligament_mm": 3.246376555781346,
+      "conservative_bound_mm": 3.2454594277902866,
+      "required_minimum_mm": 3.32,
+      "flat_tip_geometry_check": "FAIL"
+    },
+    {
+      "nominal_depth_mm": 5.4,
+      "depth_tolerance_mm": 0.05,
+      "brep_min_ligament_mm": 3.3463600309526775,
+      "conservative_bound_mm": 3.345459427790288,
+      "required_minimum_mm": 3.32,
+      "flat_tip_geometry_check": "PASS"
+    },
+    {
+      "nominal_depth_mm": 5.3,
+      "depth_tolerance_mm": 0.05,
+      "brep_min_ligament_mm": 3.446343506124011,
+      "conservative_bound_mm": 3.4454594277902877,
+      "required_minimum_mm": 3.32,
+      "flat_tip_geometry_check": "PASS"
+    }
+  ],
+  "short_conical_insertion_candidate": [
+    {
+      "drill_angle_deg": 118,
+      "minimum_deepest_tip_depth_mm": 5.35,
+      "insertion_candidate_mm": [
+        4.15,
+        4.25
+      ],
+      "radial_margin_bound_mm": 0.01791222413191096,
+      "cone_axial_margin_bound_mm": 0.13607779300094336,
+      "corner_collision_volumes_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "geometry_check": "PASS",
+      "status": "HOLD"
+    },
+    {
+      "drill_angle_deg": 135,
+      "minimum_deepest_tip_depth_mm": 5.35,
+      "insertion_candidate_mm": [
+        4.15,
+        4.25
+      ],
+      "radial_margin_bound_mm": 0.01791222413191096,
+      "cone_axial_margin_bound_mm": 0.43136981973573185,
+      "corner_collision_volumes_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "geometry_check": "PASS",
+      "status": "HOLD"
+    }
+  ],
+  "guide_error_allocation_candidate": {
+    "maximum_radial_axis_offset_mm": 0.02,
+    "maximum_relative_axis_angle_deg": 0.5,
+    "radial_margin_lower_bound_mm": 0.009185688633537081,
+    "bottom_margin_lower_bound_mm": 0.08669203336497944,
+    "brep_corner_checks": [
+      {
+        "offset_mm": -0.02,
+        "relative_angle_deg": -0.5,
+        "outside_hole_volume_mm3": 0.0
+      },
+      {
+        "offset_mm": -0.02,
+        "relative_angle_deg": 0.5,
+        "outside_hole_volume_mm3": 0.0
+      },
+      {
+        "offset_mm": 0.02,
+        "relative_angle_deg": -0.5,
+        "outside_hole_volume_mm3": 0.0
+      },
+      {
+        "offset_mm": 0.02,
+        "relative_angle_deg": 0.5,
+        "outside_hole_volume_mm3": 0.0
+      }
+    ],
+    "status": "HOLD",
+    "scope": "Cold geometric envelope only; measured relative to actual bore axis, not barrel datum. No guide geometry, stiffness, thermal expansion or retention qualification."
+  },
+  "drill_tip_scenarios": [
+    {
+      "included_angle_deg": 118,
+      "depth_definition": "full_diameter_depth",
+      "specified_max_depth_mm": 5.45,
+      "tip_length_mm": 0.9763985059197855,
+      "full_diameter_depth_mm": 5.45,
+      "minimum_ligament_mm": 2.3986014940802143,
+      "flat_probe_insertion_mm": 5.25,
+      "flat_probe_outside_hole_volume_mm3": 0.0,
+      "flat_probe_fit_check": "PASS",
+      "geometry_check": "FAIL"
+    },
+    {
+      "included_angle_deg": 118,
+      "depth_definition": "deepest_tip_depth",
+      "specified_max_depth_mm": 5.45,
+      "tip_length_mm": 0.9763985059197855,
+      "full_diameter_depth_mm": 4.4736014940802145,
+      "minimum_ligament_mm": 3.375,
+      "flat_probe_insertion_mm": 5.25,
+      "flat_probe_outside_hole_volume_mm3": 3.025125294756836,
+      "flat_probe_fit_check": "FAIL",
+      "geometry_check": "PASS"
+    },
+    {
+      "included_angle_deg": 135,
+      "depth_definition": "full_diameter_depth",
+      "specified_max_depth_mm": 5.45,
+      "tip_length_mm": 0.6730970388562795,
+      "full_diameter_depth_mm": 5.45,
+      "minimum_ligament_mm": 2.7019029611437198,
+      "flat_probe_insertion_mm": 5.25,
+      "flat_probe_outside_hole_volume_mm3": 0.0,
+      "flat_probe_fit_check": "PASS",
+      "geometry_check": "FAIL"
+    },
+    {
+      "included_angle_deg": 135,
+      "depth_definition": "deepest_tip_depth",
+      "specified_max_depth_mm": 5.45,
+      "tip_length_mm": 0.6730970388562795,
+      "full_diameter_depth_mm": 4.776902961143721,
+      "minimum_ligament_mm": 3.3749999999999982,
+      "flat_probe_insertion_mm": 5.25,
+      "flat_probe_outside_hole_volume_mm3": 1.6643466055818474,
+      "flat_probe_fit_check": "FAIL",
+      "geometry_check": "PASS"
+    }
+  ],
+  "probe_insertion_candidate": {
+    "insertion_mm": [
+      5.15,
+      5.25
+    ],
+    "sheath_max_diameter_mm": 3.05,
+    "bore_depth_mm": [
+      5.35,
+      5.45
+    ],
+    "coaxial_bottom_gap_mm": [
+      0.1,
+      0.3
+    ],
+    "relative_axis_sweep": [
+      {
+        "relative_axis_angle_deg": 0.0,
+        "outside_hole_volume_mm3": 0.0,
+        "geometry_check": "PASS"
+      },
+      {
+        "relative_axis_angle_deg": 1.0416266760099742,
+        "outside_hole_volume_mm3": 0.01268056713237594,
+        "geometry_check": "FAIL"
+      },
+      {
+        "relative_axis_angle_deg": 2.0832533520199483,
+        "outside_hole_volume_mm3": 0.38057826681887463,
+        "geometry_check": "FAIL"
+      }
+    ],
+    "status": "HOLD",
+    "basis": "Proposed5.20\u00b10.05 insertion and3.05 maximum sheath, not received donor data. Metal retention/axis guidance and hot response unqualified."
+  },
+  "freecad_version": "1.1.3",
+  "assumptions": {
+    "full_axis_offset_mm": 0.05,
+    "tilt_rad": 0.01817981507297828,
+    "sensor_tip": "flat plane normal to sensor axis, per current CAD cylinder; no drill cone"
+  },
+  "limitations": [
+    "Current perpendicularity/concentricity notation needs unambiguous datum interpretation.",
+    "Depth5.40 is a design candidate only; probe insertion/retention/thermal response must be checked.",
+    "Drill deepest-tip depth preserves ligament but conflicts with the proposed flat-ended probe insertion; flat-bottom fit evidence cannot qualify a conical bore.",
+    "Current assembly probe insertion5.50 exceeds candidate minimum depth5.35 by0.15 mm; do not adopt the bore alone.",
+    "Tip radius, local stress and elevated-temperature material remain unqualified."
+  ],
+  "source_sha256": {
+    "cad/freecad/final_v08/check_sensor_ligament_candidate.py": "8de6fd315b9f1b34f6857945f08e8842feb92d8a96e2f90087c2372ae196a8f6",
+    "cad/freecad/compact/manufacturing.py": "c97c790f325830276b832e83b2478fcfe22d35276a017414df05d5c25281bb4a",
+    "cad/freecad/compact/geometry.py": "8354458dd23bf9c315c137f9ccddfa80650ce996e38fe2dc6e464d682dfa7425",
+    "cad/generation/generate_manufacturing.py": "e023098592fcd18e96aaff6764ed84cb26693cec01eaea3d425aff668fa6f541"
+  }
+}

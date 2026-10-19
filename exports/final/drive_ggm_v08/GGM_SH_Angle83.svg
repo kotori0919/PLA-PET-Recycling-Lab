@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600"><rect width="800" height="600" fill="white"/><g font-family="sans-serif" fill="#172533"><text x="25" y="35" font-size="21">GGM_SH_Angle83</text><text x="25" y="62" font-size="12">S275 stock angle; continuous3mm fillet both legs; jig before welding</text><polyline points="41.00,514.00 125.68,514.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="125.68,514.00 125.68,490.91" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="41.00,490.91 125.68,490.91" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="41.00,514.00 41.00,490.91" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="41.00,490.91 41.00,490.91" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="41.00,490.91 125.68,490.91" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="125.68,490.91 125.68,490.91" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="41.00,514.00 41.00,514.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="41.00,514.00 125.68,514.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="125.68,514.00 125.68,514.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="125.68,490.91 125.68,106.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="41.00,106.00 125.68,106.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="41.00,490.91 41.00,106.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="41.00,106.00 41.00,106.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="41.00,106.00 125.68,106.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="125.68,106.00 125.68,106.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="41.00,514.00 41.00,106.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="125.68,514.00 125.68,106.00" fill="none" stroke="#263238" stroke-width="0.8"/><text x="25" y="552" font-size="14">Envelope 22.000 x 36.000 x 106.000 mm</text><text x="25" y="580" font-size="12">STEP and DRIVE_DRAWING_SCHEDULE.csv control. Physical commissioning not performed.</text></g></svg>

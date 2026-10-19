@@ -3,20 +3,20 @@
   "status": "PASS",
   "classification": "VIRTUAL_SURROGATE_ONLY_PHYSICAL_TEST_REQUIRED",
   "material_form_count": 8,
-  "sweep_case_count": 392,
+  "sweep_case_count": 376,
   "nominal_dynamic_case_count": 40,
   "nominal_all_pass": true,
   "delivered_feed_range_g_h": [
-    95.85737257960155,
-    106.38052454883531
+    95.8578552540989,
+    101.31022245238744
   ],
   "worst_starvation_s": 1.0,
   "worst_bridge_clear_cycles": 2,
-  "worst_torque_nm": 1.4132270676691736,
-  "worst_current_a": 2.768105142857144,
+  "worst_torque_nm": 1.37627650447693,
+  "worst_current_a": 2.711940286804934,
   "inventory_range_g": [
-    19.784849246356057,
-    20.14622418810806
+    19.933497521620133,
+    20.149454874320437
   ],
   "uncontrolled_overfeed_samples": 0,
   "degraded_cases": [

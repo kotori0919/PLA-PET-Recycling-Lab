@@ -1,0 +1,111 @@
+{
+  "status": "COMPACT_SHELF_STRIP_SCREEN_PASS",
+  "method": "independent 20 mm wide cantilever strip per post; ignores beneficial two-way plate action",
+  "comparison_load_per_post_n": 100.0,
+  "checks": {
+    "four_post_cases": true,
+    "comparison_load_yield_sf_ge_2": true,
+    "comparison_deflection_le_0p5mm": true,
+    "geometry_is_current": true
+  },
+  "cases": [
+    {
+      "length_mm": 55.97320787662612,
+      "moment_nmm": 5597.320787662612,
+      "stress_mpa": 46.64433989718844,
+      "deflection_mm": 0.08118706494327298,
+      "yield_sf": 5.89567781656132,
+      "per_post_load_limit_n_at_sf2": 294.78389082806603,
+      "load_object": "GGM_SH_Post_45_253",
+      "load_xy_mm": [
+        37.0,
+        262.0
+      ],
+      "support_xy_mm": [
+        90.0,
+        280.0
+      ]
+    },
+    {
+      "length_mm": 67.62396025078685,
+      "moment_nmm": 6762.396025078685,
+      "stress_mpa": 56.35330020898904,
+      "deflection_mm": 0.14316868991983717,
+      "yield_sf": 4.879927155643923,
+      "per_post_load_limit_n_at_sf2": 243.99635778219618,
+      "load_object": "GGM_SH_Post_45_313",
+      "load_xy_mm": [
+        37.0,
+        322.0
+      ],
+      "support_xy_mm": [
+        90.0,
+        280.0
+      ]
+    },
+    {
+      "length_mm": 20.591260281974,
+      "moment_nmm": 2059.1260281974,
+      "stress_mpa": 17.159383568311668,
+      "deflection_mm": 0.0040419881294245265,
+      "yield_sf": 16.02621672889486,
+      "per_post_load_limit_n_at_sf2": 801.3108364447429,
+      "load_object": "GGM_SH_Post_238_253",
+      "load_xy_mm": [
+        230.0,
+        262.0
+      ],
+      "support_xy_mm": [
+        220.0,
+        280.0
+      ]
+    },
+    {
+      "length_mm": 43.174066289845804,
+      "moment_nmm": 4317.4066289845805,
+      "stress_mpa": 35.97838857487151,
+      "deflection_mm": 0.03725762016864471,
+      "yield_sf": 7.64347740109931,
+      "per_post_load_limit_n_at_sf2": 382.17387005496556,
+      "load_object": "GGM_SH_Post_238_313",
+      "load_xy_mm": [
+        230.0,
+        322.0
+      ],
+      "support_xy_mm": [
+        220.0,
+        280.0
+      ]
+    }
+  ],
+  "worst_case": {
+    "length_mm": 67.62396025078685,
+    "moment_nmm": 6762.396025078685,
+    "stress_mpa": 56.35330020898904,
+    "deflection_mm": 0.14316868991983717,
+    "yield_sf": 4.879927155643923,
+    "per_post_load_limit_n_at_sf2": 243.99635778219618,
+    "load_object": "GGM_SH_Post_45_313",
+    "load_xy_mm": [
+      37.0,
+      322.0
+    ],
+    "support_xy_mm": [
+      90.0,
+      280.0
+    ]
+  },
+  "physical_validation_state": "NOT_RUN",
+  "fabrication_authorized": false,
+  "strength_qualified": false,
+  "source_sha256": {
+    "analysis/compact_layout_v08/shelf_strip_screen.py": "f2f96bdcc0c05c62b42e2210798d544f8ab0bf2e52da732f7d59fdf8379e056e",
+    "analysis/compact_layout_v08/results/fixed_foot_geometry.json": "274524b37d9a8587ee35ada381de528a0dddb9e77778599d6575c34da190072f"
+  },
+  "limitations": [
+    "100 N per post is a digital comparison load, not a measured operating load.",
+    "Strip model ignores beneficial two-way plate action and load sharing.",
+    "Bolt preload, slip, vibration, fatigue and received material remain physical gates.",
+    "The nonconverged C3D10 shelf study remains diagnostic and is not relabeled PASS."
+  ]
+}

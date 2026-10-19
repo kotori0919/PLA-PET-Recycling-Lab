@@ -1,7 +1,7 @@
 {
   "revision": "final-design-fabrication-closure-v0.8",
   "contract": "active part contains exactly one closed positive-volume B-Rep solid",
-  "active_count": 232,
+  "active_count": 250,
   "review_keepout_count": 4,
   "failed": [],
   "parts": [
@@ -12,7 +12,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 83130.533,
+      "volume_mm3": 83050.862,
       "bbox_mm": [
         195.0,
         195.0,
@@ -29,7 +29,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 199557.612,
+      "volume_mm3": 199061.375,
       "bbox_mm": [
         190.0,
         120.0,
@@ -97,7 +97,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 31889.881,
+      "volume_mm3": 31931.727,
       "bbox_mm": [
         95.0,
         70.0,
@@ -182,7 +182,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 49630.08,
+      "volume_mm3": 49616.634,
       "bbox_mm": [
         180.0,
         120.0,
@@ -233,7 +233,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 8715.737,
+      "volume_mm3": 7710.541,
       "bbox_mm": [
         57.62,
         6.0,
@@ -250,10 +250,10 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 2066.948,
+      "volume_mm3": 2891.781,
       "bbox_mm": [
-        28.0,
-        28.0,
+        34.0,
+        34.0,
         7.0
       ],
       "geometry_check_findings": -1,
@@ -301,11 +301,28 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 71682.047,
+      "volume_mm3": 113609.439,
       "bbox_mm": [
-        20.0,
+        25.0,
         240.0,
-        20.0
+        25.0
+      ],
+      "geometry_check_findings": -1,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "id": "CUT-05R",
+      "category": "MACHINED",
+      "container_type": "Compound",
+      "expected_solids": 1,
+      "solid_count": 1,
+      "shell_count": 1,
+      "volume_mm3": 113609.439,
+      "bbox_mm": [
+        25.0,
+        240.0,
+        25.0
       ],
       "geometry_check_findings": -1,
       "status": "PASS",
@@ -318,10 +335,10 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 1545.538,
+      "volume_mm3": 1652.446,
       "bbox_mm": [
-        30.0,
-        30.0,
+        34.0,
+        34.0,
         4.0
       ],
       "geometry_check_findings": -1,
@@ -357,6 +374,40 @@
         108.0,
         60.0,
         2.0
+      ],
+      "geometry_check_findings": -1,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "id": "CUT-09",
+      "category": "MACHINED",
+      "container_type": "Compound",
+      "expected_solids": 1,
+      "solid_count": 1,
+      "shell_count": 1,
+      "volume_mm3": 5673.968,
+      "bbox_mm": [
+        10.0,
+        10.0,
+        128.0
+      ],
+      "geometry_check_findings": -1,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "id": "CUT-10",
+      "category": "MACHINED",
+      "container_type": "Compound",
+      "expected_solids": 1,
+      "solid_count": 1,
+      "shell_count": 1,
+      "volume_mm3": 2624.212,
+      "bbox_mm": [
+        42.0,
+        42.0,
+        3.0
       ],
       "geometry_check_findings": -1,
       "status": "PASS",
@@ -624,10 +675,10 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 39596.777,
+      "volume_mm3": 41745.626,
       "bbox_mm": [
-        15.871,
-        15.871,
+        23.0,
+        23.0,
         316.0
       ],
       "geometry_check_findings": -1,
@@ -641,10 +692,10 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 193132.558,
+      "volume_mm3": 196898.993,
       "bbox_mm": [
-        34.0,
-        34.0,
+        39.0,
+        44.0,
         280.0
       ],
       "geometry_check_findings": -1,
@@ -692,7 +743,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 68561.246,
+      "volume_mm3": 68180.327,
       "bbox_mm": [
         40.0,
         40.0,
@@ -760,7 +811,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 319.092,
+      "volume_mm3": 311.049,
       "bbox_mm": [
         0.5,
         34.0,
@@ -1253,7 +1304,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 83130.533,
+      "volume_mm3": 83050.862,
       "bbox_mm": [
         195.0,
         195.0,
@@ -1270,7 +1321,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 199557.612,
+      "volume_mm3": 199061.375,
       "bbox_mm": [
         190.0,
         120.0,
@@ -1321,11 +1372,11 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 71682.047,
+      "volume_mm3": 113609.439,
       "bbox_mm": [
-        20.0,
+        25.0,
         240.0,
-        20.0
+        25.0
       ],
       "geometry_check_findings": -1,
       "status": "PASS",
@@ -1338,7 +1389,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 8684.368,
+      "volume_mm3": 7679.172,
       "bbox_mm": [
         57.56,
         6.0,
@@ -1355,7 +1406,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 8684.368,
+      "volume_mm3": 7679.172,
       "bbox_mm": [
         57.56,
         6.0,
@@ -1372,7 +1423,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 8684.368,
+      "volume_mm3": 7679.172,
       "bbox_mm": [
         57.56,
         6.0,
@@ -1389,7 +1440,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 8684.368,
+      "volume_mm3": 7679.172,
       "bbox_mm": [
         57.56,
         6.0,
@@ -1406,7 +1457,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 8684.368,
+      "volume_mm3": 7679.172,
       "bbox_mm": [
         57.56,
         6.0,
@@ -1423,7 +1474,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 8684.368,
+      "volume_mm3": 7679.172,
       "bbox_mm": [
         57.56,
         6.0,
@@ -1440,7 +1491,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 12779.622,
+      "volume_mm3": 10734.822,
       "bbox_mm": [
         42.0,
         12.0,
@@ -1457,7 +1508,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 12779.622,
+      "volume_mm3": 10734.822,
       "bbox_mm": [
         42.0,
         12.0,
@@ -1474,11 +1525,11 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 71682.047,
+      "volume_mm3": 113609.439,
       "bbox_mm": [
-        20.0,
+        25.0,
         240.0,
-        20.0
+        25.0
       ],
       "geometry_check_findings": -1,
       "status": "PASS",
@@ -1491,7 +1542,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 8684.368,
+      "volume_mm3": 7679.172,
       "bbox_mm": [
         57.56,
         6.0,
@@ -1508,7 +1559,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 8684.368,
+      "volume_mm3": 7679.172,
       "bbox_mm": [
         57.56,
         6.0,
@@ -1525,7 +1576,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 8684.368,
+      "volume_mm3": 7679.172,
       "bbox_mm": [
         57.56,
         6.0,
@@ -1542,7 +1593,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 8684.368,
+      "volume_mm3": 7679.172,
       "bbox_mm": [
         57.56,
         6.0,
@@ -1559,7 +1610,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 8684.368,
+      "volume_mm3": 7679.172,
       "bbox_mm": [
         57.56,
         6.0,
@@ -1576,7 +1627,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 8684.368,
+      "volume_mm3": 7679.172,
       "bbox_mm": [
         57.56,
         6.0,
@@ -1593,7 +1644,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 12779.622,
+      "volume_mm3": 10734.822,
       "bbox_mm": [
         42.0,
         12.0,
@@ -1610,11 +1661,28 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 12779.622,
+      "volume_mm3": 10734.822,
       "bbox_mm": [
         42.0,
         12.0,
         42.0
+      ],
+      "geometry_check_findings": -1,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "id": "CUT09Sleeve70_550",
+      "category": "ASSEMBLY_MANUFACTURED_OR_STOCK",
+      "container_type": "Compound",
+      "expected_solids": 1,
+      "solid_count": 1,
+      "shell_count": 1,
+      "volume_mm3": 5673.968,
+      "bbox_mm": [
+        10.0,
+        128.0,
+        10.0
       ],
       "geometry_check_findings": -1,
       "status": "PASS",
@@ -1627,11 +1695,28 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 4636.991,
+      "volume_mm3": 4806.637,
       "bbox_mm": [
         6.0,
-        164.0,
+        170.0,
         6.0
+      ],
+      "geometry_check_findings": -1,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "id": "CUT09Sleeve70_645",
+      "category": "ASSEMBLY_MANUFACTURED_OR_STOCK",
+      "container_type": "Compound",
+      "expected_solids": 1,
+      "solid_count": 1,
+      "shell_count": 1,
+      "volume_mm3": 5673.968,
+      "bbox_mm": [
+        10.0,
+        128.0,
+        10.0
       ],
       "geometry_check_findings": -1,
       "status": "PASS",
@@ -1644,11 +1729,28 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 4636.991,
+      "volume_mm3": 4806.637,
       "bbox_mm": [
         6.0,
-        164.0,
+        170.0,
         6.0
+      ],
+      "geometry_check_findings": -1,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "id": "CUT09Sleeve190_550",
+      "category": "ASSEMBLY_MANUFACTURED_OR_STOCK",
+      "container_type": "Compound",
+      "expected_solids": 1,
+      "solid_count": 1,
+      "shell_count": 1,
+      "volume_mm3": 5673.968,
+      "bbox_mm": [
+        10.0,
+        128.0,
+        10.0
       ],
       "geometry_check_findings": -1,
       "status": "PASS",
@@ -1661,11 +1763,28 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 4636.991,
+      "volume_mm3": 4806.637,
       "bbox_mm": [
         6.0,
-        164.0,
+        170.0,
         6.0
+      ],
+      "geometry_check_findings": -1,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "id": "CUT09Sleeve190_645",
+      "category": "ASSEMBLY_MANUFACTURED_OR_STOCK",
+      "container_type": "Compound",
+      "expected_solids": 1,
+      "solid_count": 1,
+      "shell_count": 1,
+      "volume_mm3": 5673.968,
+      "bbox_mm": [
+        10.0,
+        128.0,
+        10.0
       ],
       "geometry_check_findings": -1,
       "status": "PASS",
@@ -1678,10 +1797,10 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 4636.991,
+      "volume_mm3": 4806.637,
       "bbox_mm": [
         6.0,
-        164.0,
+        170.0,
         6.0
       ],
       "geometry_check_findings": -1,
@@ -1729,7 +1848,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 25732.059,
+      "volume_mm3": 22538.028,
       "bbox_mm": [
         53.996,
         18.0,
@@ -1746,11 +1865,11 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 25732.059,
+      "volume_mm3": 22538.028,
       "bbox_mm": [
-        53.316,
+        53.305,
         18.0,
-        53.316
+        53.305
       ],
       "geometry_check_findings": -1,
       "status": "PASS",
@@ -1763,7 +1882,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 72478.689,
+      "volume_mm3": 70429.176,
       "bbox_mm": [
         96.839,
         12.0,
@@ -1831,7 +1950,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 61102.142,
+      "volume_mm3": 60555.505,
       "bbox_mm": [
         165.0,
         48.0,
@@ -1865,7 +1984,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 31518.208,
+      "volume_mm3": 31556.069,
       "bbox_mm": [
         80.0,
         6.0,
@@ -2052,7 +2171,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 170870.854,
+      "volume_mm3": 173637.008,
       "bbox_mm": [
         156.0,
         156.001,
@@ -2063,102 +2182,17 @@
       "errors": []
     },
     {
-      "id": "HopperPTCSpreader",
+      "id": "FeedHopperGasket",
       "category": "ASSEMBLY_MANUFACTURED_OR_STOCK",
       "container_type": "Solid",
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 19609.148,
+      "volume_mm3": 392.196,
       "bbox_mm": [
-        120.0,
-        3.0,
-        55.0
-      ],
-      "geometry_check_findings": -1,
-      "status": "PASS",
-      "errors": []
-    },
-    {
-      "id": "HopperPTC1",
-      "category": "ASSEMBLY_PURCHASED_REFERENCE_ENVELOPE",
-      "container_type": "Solid",
-      "expected_solids": 1,
-      "solid_count": 1,
-      "shell_count": 1,
-      "volume_mm3": 3675.0,
-      "bbox_mm": [
-        35.0,
-        5.0,
-        21.0
-      ],
-      "geometry_check_findings": -1,
-      "status": "PASS",
-      "errors": []
-    },
-    {
-      "id": "HopperPTC2",
-      "category": "ASSEMBLY_PURCHASED_REFERENCE_ENVELOPE",
-      "container_type": "Solid",
-      "expected_solids": 1,
-      "solid_count": 1,
-      "shell_count": 1,
-      "volume_mm3": 3675.0,
-      "bbox_mm": [
-        35.0,
-        5.0,
-        21.0
-      ],
-      "geometry_check_findings": -1,
-      "status": "PASS",
-      "errors": []
-    },
-    {
-      "id": "HopperPTC3",
-      "category": "ASSEMBLY_PURCHASED_REFERENCE_ENVELOPE",
-      "container_type": "Solid",
-      "expected_solids": 1,
-      "solid_count": 1,
-      "shell_count": 1,
-      "volume_mm3": 3675.0,
-      "bbox_mm": [
-        35.0,
-        5.0,
-        21.0
-      ],
-      "geometry_check_findings": -1,
-      "status": "PASS",
-      "errors": []
-    },
-    {
-      "id": "HopperPTC4",
-      "category": "ASSEMBLY_PURCHASED_REFERENCE_ENVELOPE",
-      "container_type": "Solid",
-      "expected_solids": 1,
-      "solid_count": 1,
-      "shell_count": 1,
-      "volume_mm3": 3675.0,
-      "bbox_mm": [
-        35.0,
-        5.0,
-        21.0
-      ],
-      "geometry_check_findings": -1,
-      "status": "PASS",
-      "errors": []
-    },
-    {
-      "id": "HopperPTCClamp",
-      "category": "ASSEMBLY_MANUFACTURED_OR_STOCK",
-      "container_type": "Solid",
-      "expected_solids": 1,
-      "solid_count": 1,
-      "shell_count": 1,
-      "volume_mm3": 13072.765,
-      "bbox_mm": [
-        120.0,
-        2.0,
-        55.0
+        44.0,
+        44.0,
+        0.5
       ],
       "geometry_check_findings": -1,
       "status": "PASS",
@@ -2171,28 +2205,11 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 169.646,
+      "volume_mm3": 337.878,
       "bbox_mm": [
-        3.0,
-        49.0,
-        3.0
-      ],
-      "geometry_check_findings": -1,
-      "status": "PASS",
-      "errors": []
-    },
-    {
-      "id": "HopperThermalFuse",
-      "category": "ASSEMBLY_MANUFACTURED_OR_STOCK",
-      "container_type": "Solid",
-      "expected_solids": 1,
-      "solid_count": 1,
-      "shell_count": 1,
-      "volume_mm3": 960.0,
-      "bbox_mm": [
-        20.0,
         6.0,
-        8.0
+        70.4,
+        6.0
       ],
       "geometry_check_findings": -1,
       "status": "PASS",
@@ -2205,11 +2222,11 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 22591.193,
+      "volume_mm3": 22783.873,
       "bbox_mm": [
         44.0,
         44.0,
-        105.0
+        106.2
       ],
       "geometry_check_findings": -1,
       "status": "PASS",
@@ -2222,10 +2239,10 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 8226.812,
+      "volume_mm3": 8319.556,
       "bbox_mm": [
-        24.642,
-        24.642,
+        24.414,
+        24.414,
         105.0
       ],
       "geometry_check_findings": -1,
@@ -2239,11 +2256,28 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 18180.718,
+      "volume_mm3": 18125.184,
       "bbox_mm": [
         120.0,
         100.0,
         300.0
+      ],
+      "geometry_check_findings": -1,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "id": "FeederAugerSpringPin",
+      "category": "ASSEMBLY_MANUFACTURED_OR_STOCK",
+      "container_type": "Solid",
+      "expected_solids": 1,
+      "solid_count": 1,
+      "shell_count": 1,
+      "volume_mm3": 84.823,
+      "bbox_mm": [
+        12.0,
+        3.0,
+        3.0
       ],
       "geometry_check_findings": -1,
       "status": "PASS",
@@ -2290,11 +2324,28 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 112849.789,
+      "volume_mm3": 111640.112,
       "bbox_mm": [
         12.0,
         95.0,
         105.0
+      ],
+      "geometry_check_findings": -1,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "id": "ScrewThrustBearing",
+      "category": "ASSEMBLY_PURCHASED_REFERENCE_ENVELOPE",
+      "container_type": "Solid",
+      "expected_solids": 1,
+      "solid_count": 1,
+      "shell_count": 1,
+      "volume_mm3": 3951.338,
+      "bbox_mm": [
+        9.0,
+        28.0,
+        28.0
       ],
       "geometry_check_findings": -1,
       "status": "PASS",
@@ -2307,11 +2358,11 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 39596.777,
+      "volume_mm3": 41745.626,
       "bbox_mm": [
         316.0,
-        15.871,
-        15.871
+        23.0,
+        23.0
       ],
       "geometry_check_findings": -1,
       "status": "PASS",
@@ -2324,11 +2375,11 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 193132.558,
+      "volume_mm3": 196898.993,
       "bbox_mm": [
         280.0,
-        34.0,
-        34.0
+        44.0,
+        39.0
       ],
       "geometry_check_findings": -1,
       "status": "PASS",
@@ -2341,11 +2392,11 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 9818.013,
+      "volume_mm3": 9860.431,
       "bbox_mm": [
         45.0,
-        38.0,
-        37.894
+        38.15,
+        38.045
       ],
       "geometry_check_findings": -1,
       "status": "PASS",
@@ -2358,11 +2409,28 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 180.249,
+      "volume_mm3": 337.878,
       "bbox_mm": [
-        3.0,
-        50.5,
-        3.0
+        6.0,
+        70.4,
+        6.0
+      ],
+      "geometry_check_findings": -1,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "id": "TemperatureProbeRetainerT1",
+      "category": "ASSEMBLY_MANUFACTURED_OR_STOCK",
+      "container_type": "Solid",
+      "expected_solids": 1,
+      "solid_count": 1,
+      "shell_count": 1,
+      "volume_mm3": 247.144,
+      "bbox_mm": [
+        12.0,
+        16.0,
+        1.5
       ],
       "geometry_check_findings": -1,
       "status": "PASS",
@@ -2375,11 +2443,11 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 9818.013,
+      "volume_mm3": 9860.431,
       "bbox_mm": [
         45.0,
-        38.0,
-        37.894
+        38.15,
+        38.045
       ],
       "geometry_check_findings": -1,
       "status": "PASS",
@@ -2392,11 +2460,28 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 180.249,
+      "volume_mm3": 337.878,
       "bbox_mm": [
-        3.0,
-        50.5,
-        3.0
+        6.0,
+        70.4,
+        6.0
+      ],
+      "geometry_check_findings": -1,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "id": "TemperatureProbeRetainerT2",
+      "category": "ASSEMBLY_MANUFACTURED_OR_STOCK",
+      "container_type": "Solid",
+      "expected_solids": 1,
+      "solid_count": 1,
+      "shell_count": 1,
+      "volume_mm3": 247.144,
+      "bbox_mm": [
+        12.0,
+        16.0,
+        1.5
       ],
       "geometry_check_findings": -1,
       "status": "PASS",
@@ -2409,11 +2494,11 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 9818.013,
+      "volume_mm3": 9860.431,
       "bbox_mm": [
         45.0,
-        38.0,
-        37.894
+        38.15,
+        38.045
       ],
       "geometry_check_findings": -1,
       "status": "PASS",
@@ -2426,11 +2511,28 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 180.249,
+      "volume_mm3": 337.878,
       "bbox_mm": [
-        3.0,
-        50.5,
-        3.0
+        6.0,
+        70.4,
+        6.0
+      ],
+      "geometry_check_findings": -1,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "id": "TemperatureProbeRetainerT3",
+      "category": "ASSEMBLY_MANUFACTURED_OR_STOCK",
+      "container_type": "Solid",
+      "expected_solids": 1,
+      "solid_count": 1,
+      "shell_count": 1,
+      "volume_mm3": 247.144,
+      "bbox_mm": [
+        12.0,
+        16.0,
+        1.5
       ],
       "geometry_check_findings": -1,
       "status": "PASS",
@@ -2494,7 +2596,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 68561.246,
+      "volume_mm3": 68180.327,
       "bbox_mm": [
         40.0,
         40.0,
@@ -2562,7 +2664,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 319.092,
+      "volume_mm3": 311.049,
       "bbox_mm": [
         0.5,
         34.0,
@@ -2579,11 +2681,11 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 1074.425,
+      "volume_mm3": 1626.902,
       "bbox_mm": [
-        6.0,
-        38.0,
-        6.0
+        20.0,
+        40.5,
+        12.0
       ],
       "geometry_check_findings": -1,
       "status": "PASS",
@@ -2596,11 +2698,28 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 212.058,
+      "volume_mm3": 337.878,
       "bbox_mm": [
-        3.0,
-        55.0,
-        3.0
+        6.0,
+        70.4,
+        6.0
+      ],
+      "geometry_check_findings": -1,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "id": "TemperatureProbeRetainerT4",
+      "category": "ASSEMBLY_MANUFACTURED_OR_STOCK",
+      "container_type": "Solid",
+      "expected_solids": 1,
+      "solid_count": 1,
+      "shell_count": 1,
+      "volume_mm3": 247.144,
+      "bbox_mm": [
+        12.0,
+        16.0,
+        1.5
       ],
       "geometry_check_findings": -1,
       "status": "PASS",
@@ -2766,7 +2885,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 31889.881,
+      "volume_mm3": 31931.727,
       "bbox_mm": [
         95.0,
         70.0,
@@ -2783,7 +2902,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 31889.881,
+      "volume_mm3": 31931.727,
       "bbox_mm": [
         70.0,
         95.0,
@@ -2800,7 +2919,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 38307.624,
+      "volume_mm3": 36750.397,
       "bbox_mm": [
         100.0,
         10.0,
@@ -2817,7 +2936,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 38307.624,
+      "volume_mm3": 36750.397,
       "bbox_mm": [
         100.0,
         10.0,
@@ -2828,7 +2947,7 @@
       "errors": []
     },
     {
-      "id": "PullerRoll54.5",
+      "id": "PullerRoll53.6",
       "category": "ASSEMBLY_MANUFACTURED_OR_STOCK",
       "container_type": "Solid",
       "expected_solids": 1,
@@ -2845,7 +2964,7 @@
       "errors": []
     },
     {
-      "id": "PullerSpindle54.5",
+      "id": "PullerSpindle53.6",
       "category": "ASSEMBLY_MANUFACTURED_OR_STOCK",
       "container_type": "Solid",
       "expected_solids": 1,
@@ -2862,7 +2981,7 @@
       "errors": []
     },
     {
-      "id": "PullerRoll94.5",
+      "id": "PullerRoll95.4",
       "category": "ASSEMBLY_MANUFACTURED_OR_STOCK",
       "container_type": "Solid",
       "expected_solids": 1,
@@ -2879,7 +2998,7 @@
       "errors": []
     },
     {
-      "id": "PullerSpindle94.5",
+      "id": "PullerSpindle95.4",
       "category": "ASSEMBLY_MANUFACTURED_OR_STOCK",
       "container_type": "Solid",
       "expected_solids": 1,
@@ -2890,6 +3009,40 @@
         8.0,
         80.0,
         8.0
+      ],
+      "geometry_check_findings": -1,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "id": "PullerEccentricBushFront",
+      "category": "ASSEMBLY_MANUFACTURED_OR_STOCK",
+      "container_type": "Solid",
+      "expected_solids": 1,
+      "solid_count": 1,
+      "shell_count": 1,
+      "volume_mm3": 2492.14,
+      "bbox_mm": [
+        24.0,
+        13.0,
+        24.0
+      ],
+      "geometry_check_findings": -1,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "id": "PullerEccentricBushRear",
+      "category": "ASSEMBLY_MANUFACTURED_OR_STOCK",
+      "container_type": "Solid",
+      "expected_solids": 1,
+      "solid_count": 1,
+      "shell_count": 1,
+      "volume_mm3": 2492.14,
+      "bbox_mm": [
+        24.0,
+        13.0,
+        24.0
       ],
       "geometry_check_findings": -1,
       "status": "PASS",
@@ -2936,7 +3089,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 17198.335,
+      "volume_mm3": 15259.366,
       "bbox_mm": [
         36.0,
         20.0,
@@ -2992,6 +3145,40 @@
         16.0,
         5.0,
         16.0
+      ],
+      "geometry_check_findings": -1,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "id": "GuideBearingRetainerFront",
+      "category": "ASSEMBLY_MANUFACTURED_OR_STOCK",
+      "container_type": "Solid",
+      "expected_solids": 1,
+      "solid_count": 1,
+      "shell_count": 1,
+      "volume_mm3": 600.296,
+      "bbox_mm": [
+        32.0,
+        1.0,
+        32.0
+      ],
+      "geometry_check_findings": -1,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "id": "GuideBearingRetainerRear",
+      "category": "ASSEMBLY_MANUFACTURED_OR_STOCK",
+      "container_type": "Solid",
+      "expected_solids": 1,
+      "solid_count": 1,
+      "shell_count": 1,
+      "volume_mm3": 600.296,
+      "bbox_mm": [
+        32.0,
+        1.0,
+        32.0
       ],
       "geometry_check_findings": -1,
       "status": "PASS",
@@ -3191,10 +3378,10 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 27664.351,
+      "volume_mm3": 55578.844,
       "bbox_mm": [
         105.0,
-        5.0,
+        10.0,
         60.0
       ],
       "geometry_check_findings": -1,
@@ -3208,11 +3395,45 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 27664.351,
+      "volume_mm3": 55578.844,
       "bbox_mm": [
         105.0,
-        5.0,
+        10.0,
         60.0
+      ],
+      "geometry_check_findings": -1,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "id": "SpoolBearingRetainerFront",
+      "category": "ASSEMBLY_MANUFACTURED_OR_STOCK",
+      "container_type": "Solid",
+      "expected_solids": 1,
+      "solid_count": 1,
+      "shell_count": 1,
+      "volume_mm3": 4580.075,
+      "bbox_mm": [
+        54.0,
+        2.0,
+        54.0
+      ],
+      "geometry_check_findings": -1,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "id": "SpoolBearingRetainerRear",
+      "category": "ASSEMBLY_MANUFACTURED_OR_STOCK",
+      "container_type": "Solid",
+      "expected_solids": 1,
+      "solid_count": 1,
+      "shell_count": 1,
+      "volume_mm3": 4580.075,
+      "bbox_mm": [
+        54.0,
+        2.0,
+        54.0
       ],
       "geometry_check_findings": -1,
       "status": "PASS",
@@ -3514,7 +3735,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 49630.08,
+      "volume_mm3": 49616.634,
       "bbox_mm": [
         180.0,
         8.0,
@@ -3837,7 +4058,7 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 23412.853,
+      "volume_mm3": 29558.384,
       "bbox_mm": [
         8.0,
         150.0,
@@ -3871,11 +4092,96 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 9818.276,
+      "volume_mm3": 5848.021,
       "bbox_mm": [
         12.0,
         50.0,
         41.0
+      ],
+      "geometry_check_findings": -1,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "id": "ExtruderRearRetainer",
+      "category": "ASSEMBLY_MANUFACTURED_OR_STOCK",
+      "container_type": "Solid",
+      "expected_solids": 1,
+      "solid_count": 1,
+      "shell_count": 1,
+      "volume_mm3": 18174.851,
+      "bbox_mm": [
+        12.0,
+        70.0,
+        50.0
+      ],
+      "geometry_check_findings": -1,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "id": "ExtruderRearRetainerSpacer318",
+      "category": "ASSEMBLY_MANUFACTURED_OR_STOCK",
+      "container_type": "Solid",
+      "expected_solids": 1,
+      "solid_count": 1,
+      "shell_count": 1,
+      "volume_mm3": 144.317,
+      "bbox_mm": [
+        4.2,
+        8.0,
+        8.0
+      ],
+      "geometry_check_findings": -1,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "id": "ExtruderRearRetainerSpacer376",
+      "category": "ASSEMBLY_MANUFACTURED_OR_STOCK",
+      "container_type": "Solid",
+      "expected_solids": 1,
+      "solid_count": 1,
+      "shell_count": 1,
+      "volume_mm3": 144.317,
+      "bbox_mm": [
+        4.2,
+        8.0,
+        8.0
+      ],
+      "geometry_check_findings": -1,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "id": "RearRetainerM4_318",
+      "category": "ASSEMBLY_PURCHASED_FASTENER",
+      "container_type": "Solid",
+      "expected_solids": 1,
+      "solid_count": 1,
+      "shell_count": 1,
+      "volume_mm3": 468.097,
+      "bbox_mm": [
+        29.0,
+        7.0,
+        7.0
+      ],
+      "geometry_check_findings": -1,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "id": "RearRetainerM4_376",
+      "category": "ASSEMBLY_PURCHASED_FASTENER",
+      "container_type": "Solid",
+      "expected_solids": 1,
+      "solid_count": 1,
+      "shell_count": 1,
+      "volume_mm3": 468.097,
+      "bbox_mm": [
+        29.0,
+        7.0,
+        7.0
       ],
       "geometry_check_findings": -1,
       "status": "PASS",
@@ -3888,11 +4194,11 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 863.938,
+      "volume_mm3": 942.478,
       "bbox_mm": [
         10.0,
         10.0,
-        32.0
+        36.0
       ],
       "geometry_check_findings": -1,
       "status": "PASS",
@@ -3905,11 +4211,11 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 863.938,
+      "volume_mm3": 942.478,
       "bbox_mm": [
         10.0,
         10.0,
-        32.0
+        36.0
       ],
       "geometry_check_findings": -1,
       "status": "PASS",
@@ -3922,11 +4228,11 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 863.938,
+      "volume_mm3": 942.478,
       "bbox_mm": [
         10.0,
         10.0,
-        32.0
+        36.0
       ],
       "geometry_check_findings": -1,
       "status": "PASS",
@@ -3939,11 +4245,11 @@
       "expected_solids": 1,
       "solid_count": 1,
       "shell_count": 1,
-      "volume_mm3": 863.938,
+      "volume_mm3": 942.478,
       "bbox_mm": [
         10.0,
         10.0,
-        32.0
+        36.0
       ],
       "geometry_check_findings": -1,
       "status": "PASS",

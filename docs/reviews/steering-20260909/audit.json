@@ -1,0 +1,316 @@
+{
+  "observed_utc": "2026-09-08T16:37:54.766757+00:00",
+  "device": "mathcat",
+  "root": "/home/monad/develop/PPR",
+  "head": "e03e843fe3f8ce98edf7dcd26292200c3547a9d8",
+  "branch": "final-design-fabrication-closure-v0.8",
+  "scope": "point-in-time code and hash inspection; no solver rerun",
+  "initial_files": {
+    "AGENTS.md": {
+      "path": "AGENTS.md",
+      "bytes": 6651,
+      "mtime_utc": "2026-09-07T03:47:11.766209+00:00",
+      "sha256": "fb6e99bc4d5d075bd0a8ced4869902e40f56f090c091dafc7b524d1a5467705f"
+    },
+    "docs/final/release_notes_v1.0.0-rc1_ko.md": {
+      "path": "docs/final/release_notes_v1.0.0-rc1_ko.md",
+      "bytes": 10644,
+      "mtime_utc": "2026-09-08T15:41:25.050991+00:00",
+      "sha256": "02e63b84e4286b5f6f1ca307564c0a43e04e75b621e1ce3bd379a4e63516d6f1"
+    },
+    "docs/final/v08_closure_report_ko.md": {
+      "path": "docs/final/v08_closure_report_ko.md",
+      "bytes": 6080,
+      "mtime_utc": "2026-09-08T15:54:24.972195+00:00",
+      "sha256": "81d9e16274a9c25f6d8ff084864b24bcc02bc127f232e2612ae637976fe4255c"
+    },
+    "docs/final/v08_full_compliance_ko.md": {
+      "path": "docs/final/v08_full_compliance_ko.md",
+      "bytes": 3111,
+      "mtime_utc": "2026-09-08T15:54:24.972595+00:00",
+      "sha256": "267ccd29679d9c90406dd188e378fdf8314a6e97cb36472635cce6d2883d5ea3"
+    },
+    "validation/v08_full_compliance.py": {
+      "path": "validation/v08_full_compliance.py",
+      "bytes": 38671,
+      "mtime_utc": "2026-09-08T15:36:49.903416+00:00",
+      "sha256": "6ea20622dae6635403264e06b99a3114ed9a2bab948491b291f798b9ae78a1c3"
+    },
+    "validation/results/v08_full_compliance.json": {
+      "path": "validation/results/v08_full_compliance.json",
+      "bytes": 10705,
+      "mtime_utc": "2026-09-08T15:54:24.972486+00:00",
+      "sha256": "4b05d0510d32b3b1cddc47197cb63fc4a42434cdcef1b18fa6de63313c515892"
+    },
+    "cad/freecad/compact/geometry.py": {
+      "path": "cad/freecad/compact/geometry.py",
+      "bytes": 93897,
+      "mtime_utc": "2026-09-08T16:15:32.941422+00:00",
+      "sha256": "d1ccaed0d8323a31a121ffe8da9d6f9d465d52880f1eef63e7d343e9efcd928e"
+    },
+    "analysis/final_validation/results/v0.8/summary.json": {
+      "path": "analysis/final_validation/results/v0.8/summary.json",
+      "bytes": 63630,
+      "mtime_utc": "2026-09-08T15:35:25.163091+00:00",
+      "sha256": "d4136fb8d5323c2f03e8ca173c7eedf37f7a942433ba4f3681e4d1ba40070412"
+    },
+    "calculations/tolerance_stack_final.json": {
+      "path": "calculations/tolerance_stack_final.json",
+      "bytes": 155113,
+      "mtime_utc": "2026-09-08T15:41:38.022081+00:00",
+      "sha256": "01247c4b48df232bbce6f4992b67be997d5b6fce73f13bd8b3576dd047e9a668"
+    },
+    "exports/final/firmware/build_manifest.json": {
+      "path": "exports/final/firmware/build_manifest.json",
+      "bytes": 7561,
+      "mtime_utc": "2026-09-08T15:38:12.979848+00:00",
+      "sha256": "9cba8668cdbde6da9afbe86113f0a67e873ae25c2cc3cc0587060947683e8376"
+    }
+  },
+  "direct_source_audit": [
+    {
+      "report": "analysis/final_validation/results/v0.8/summary.json",
+      "stored_status": "FAIL",
+      "checked_sources": 3,
+      "mismatches": [],
+      "info": {
+        "path": "analysis/final_validation/results/v0.8/summary.json",
+        "bytes": 63630,
+        "mtime_utc": "2026-09-08T15:35:25.163091+00:00",
+        "sha256": "d4136fb8d5323c2f03e8ca173c7eedf37f7a942433ba4f3681e4d1ba40070412"
+      }
+    },
+    {
+      "report": "analysis/final_validation/results/v0.8/loaded_phase.json",
+      "stored_status": "PASS",
+      "checked_sources": 9,
+      "mismatches": [
+        {
+          "path": "cad/freecad/compact/geometry.py",
+          "expected": "8354458dd23bf9c315c137f9ccddfa80650ce996e38fe2dc6e464d682dfa7425",
+          "actual": "d1ccaed0d8323a31a121ffe8da9d6f9d465d52880f1eef63e7d343e9efcd928e"
+        }
+      ],
+      "info": {
+        "path": "analysis/final_validation/results/v0.8/loaded_phase.json",
+        "bytes": 24675,
+        "mtime_utc": "2026-09-08T15:31:46.651000+00:00",
+        "sha256": "e66b3adfbc2735555c6788d8e9bdb3bebb9398f38839693309693d12300f4fe9"
+      }
+    },
+    {
+      "report": "analysis/final_validation/results/v0.8/phase_path_25_qualification.json",
+      "stored_status": "PASS",
+      "checked_sources": 6,
+      "mismatches": [],
+      "info": {
+        "path": "analysis/final_validation/results/v0.8/phase_path_25_qualification.json",
+        "bytes": 2201,
+        "mtime_utc": "2026-09-08T15:31:40.077049+00:00",
+        "sha256": "30e42a4362cd9bebb8a38b7139b6fbec3892d9f94c36affb6c0601c7475d26a0"
+      }
+    },
+    {
+      "report": "analysis/final_validation/results/v0.8/axial_retainer_qualification.json",
+      "stored_status": "PASS",
+      "checked_sources": 4,
+      "mismatches": [],
+      "info": {
+        "path": "analysis/final_validation/results/v0.8/axial_retainer_qualification.json",
+        "bytes": 2863,
+        "mtime_utc": "2026-09-07T20:42:01.814064+00:00",
+        "sha256": "7e8055ded46b9653a0c40772ac52ea74cb681a02bb4c492d41171f5d7a9a841e"
+      }
+    },
+    {
+      "report": "analysis/final_validation/results/v0.8/sensor_bore_local_candidate.json",
+      "stored_status": "PASS",
+      "checked_sources": 5,
+      "mismatches": [],
+      "info": {
+        "path": "analysis/final_validation/results/v0.8/sensor_bore_local_candidate.json",
+        "bytes": 5953,
+        "mtime_utc": "2026-09-08T15:34:17.840973+00:00",
+        "sha256": "6ec24a3bdb60d379663b066e150da17321d56cc6e1fb43153acf5289bcb11582"
+      }
+    },
+    {
+      "report": "analysis/final_validation/results/v0.8/qualification_summary.json",
+      "stored_status": "PASS",
+      "checked_sources": 2,
+      "mismatches": [],
+      "info": {
+        "path": "analysis/final_validation/results/v0.8/qualification_summary.json",
+        "bytes": 4591,
+        "mtime_utc": "2026-09-08T10:43:01.468994+00:00",
+        "sha256": "4793abb4491aadcfa543d9ed1ed28ed13adde41065691a54f5e4ad46018ad538"
+      }
+    },
+    {
+      "report": "validation/results/final_v08_cad.json",
+      "stored_status": "PASS",
+      "checked_sources": 6,
+      "mismatches": [
+        {
+          "path": "cad/freecad/compact/geometry.py",
+          "expected": "8354458dd23bf9c315c137f9ccddfa80650ce996e38fe2dc6e464d682dfa7425",
+          "actual": "d1ccaed0d8323a31a121ffe8da9d6f9d465d52880f1eef63e7d343e9efcd928e"
+        }
+      ],
+      "info": {
+        "path": "validation/results/final_v08_cad.json",
+        "bytes": 2650,
+        "mtime_utc": "2026-09-08T15:17:38.969722+00:00",
+        "sha256": "754843752847ab13600a9206e379afaae7ff4718835c9986a13309450d6e85e1"
+      }
+    },
+    {
+      "report": "simulation/openmodelica/results_v0.8/summary.json",
+      "stored_status": "PASS",
+      "checked_sources": 13,
+      "mismatches": [
+        {
+          "path": "firmware/arduino_mega/src/machine_supervisor.cpp",
+          "expected": "34bdaf4437fa19497fcd1864f2006323b54d3a03db4aa5843ad21766ef3a4f58",
+          "actual": "de9073ea4fad90bfa18553d287abbaf3ae05b0403fb0d4e009ad8390f04240da"
+        }
+      ],
+      "info": {
+        "path": "simulation/openmodelica/results_v0.8/summary.json",
+        "bytes": 19565,
+        "mtime_utc": "2026-09-08T15:38:22.022183+00:00",
+        "sha256": "748efd70efc55dc3e255947630eceb78b4638aa0e893b683a8ec730160352839"
+      }
+    }
+  ],
+  "transitive_json_count": 14,
+  "transitive_mismatches": [
+    {
+      "report": "analysis/final_validation/results/v0.8/phase_path_25_candidate.json",
+      "source": "cad/freecad/compact/geometry.py",
+      "expected": "8354458dd23bf9c315c137f9ccddfa80650ce996e38fe2dc6e464d682dfa7425",
+      "actual": "d1ccaed0d8323a31a121ffe8da9d6f9d465d52880f1eef63e7d343e9efcd928e"
+    },
+    {
+      "report": "analysis/final_validation/results/v0.8/shaft_section.json",
+      "source": "cad/freecad/compact/geometry.py",
+      "expected": "8354458dd23bf9c315c137f9ccddfa80650ce996e38fe2dc6e464d682dfa7425",
+      "actual": "d1ccaed0d8323a31a121ffe8da9d6f9d465d52880f1eef63e7d343e9efcd928e"
+    },
+    {
+      "report": "analysis/final_validation/results/v0.8/phase_section_sensitivity.json",
+      "source": "cad/parameters/baseline.json",
+      "expected": "e6739d76691737c8526d8f2bde5b5c457dcad23a959ec86bc5d5c54fb9f93082",
+      "actual": "eecde1249c65d84c499f7ab949a05ebbcb7fbd8dfa49d762d15d1eba24db304a"
+    },
+    {
+      "report": "analysis/final_validation/results/v0.8/axial_shoulder_candidate.json",
+      "source": "cad/freecad/compact/geometry.py",
+      "expected": "9181a0f3f2de617b6c0015db6452216ae90ee2b5045cc0f4d72e7df99af3da6e",
+      "actual": "d1ccaed0d8323a31a121ffe8da9d6f9d465d52880f1eef63e7d343e9efcd928e"
+    },
+    {
+      "report": "analysis/final_validation/results/v0.8/axial_shoulder_candidate.json",
+      "source": "cad/freecad/compact/manufacturing.py",
+      "expected": "be186b3bc0c2046e6b6b3388ce8bd7af521f4620dd87d04d7b5f1b4dd9c00763",
+      "actual": "c97c790f325830276b832e83b2478fcfe22d35276a017414df05d5c25281bb4a"
+    },
+    {
+      "report": "analysis/final_validation/results/v0.8/axial_shoulder_candidate.json",
+      "source": "cad/parameters/final_v08.json",
+      "expected": "6f51dc677d5b048122c8565407cc6d13472dd2d5c0650b83d7f6af9c7e6d14fb",
+      "actual": "b793e1cf1123c82aab037b592b4256efb8374bd79ad0e1bb22c658aa66c78e81"
+    },
+    {
+      "report": "analysis/final_validation/results/v0.8/retainer_candidate_fea.json",
+      "source": "analysis/final_validation/run_calculix_v08.py",
+      "expected": "eaef0af9921a2951f39250b984adce15c7e9d838eb7e7ede29a073b3f37f7e07",
+      "actual": "4a4dda360e94596fc5d3ad579ccb26fe9063167e0c246d2d545a4e692ed7df53"
+    },
+    {
+      "report": "analysis/final_validation/results/v0.8/retainer_tool_access.json",
+      "source": "cad/freecad/compact/geometry.py",
+      "expected": "9181a0f3f2de617b6c0015db6452216ae90ee2b5045cc0f4d72e7df99af3da6e",
+      "actual": "d1ccaed0d8323a31a121ffe8da9d6f9d465d52880f1eef63e7d343e9efcd928e"
+    }
+  ],
+  "passed_interfaces_with_unspecified_surface_finish": [
+    {
+      "id": "IF-001",
+      "surface_finish": "NOT_SPECIFIED — resolve source finish requirement"
+    },
+    {
+      "id": "IF-002",
+      "surface_finish": "NOT_SPECIFIED — resolve source finish requirement"
+    },
+    {
+      "id": "IF-004",
+      "surface_finish": "NOT_SPECIFIED — resolve source finish requirement"
+    },
+    {
+      "id": "IF-005",
+      "surface_finish": "NOT_SPECIFIED — resolve source finish requirement"
+    },
+    {
+      "id": "IF-006",
+      "surface_finish": "NOT_SPECIFIED — resolve source finish requirement"
+    },
+    {
+      "id": "IF-007",
+      "surface_finish": "NOT_SPECIFIED — resolve source finish requirement"
+    },
+    {
+      "id": "IF-009",
+      "surface_finish": "NOT_SPECIFIED — resolve source finish requirement"
+    },
+    {
+      "id": "IF-010",
+      "surface_finish": "NOT_SPECIFIED — resolve source finish requirement"
+    },
+    {
+      "id": "IF-012",
+      "surface_finish": "NOT_SPECIFIED — resolve source finish requirement"
+    },
+    {
+      "id": "IF-014",
+      "surface_finish": "NOT_SPECIFIED — resolve source finish requirement"
+    },
+    {
+      "id": "IF-015",
+      "surface_finish": "NOT_SPECIFIED — resolve source finish requirement"
+    },
+    {
+      "id": "IF-016",
+      "surface_finish": "NOT_SPECIFIED — resolve source finish requirement"
+    },
+    {
+      "id": "IF-018",
+      "surface_finish": "NOT_SPECIFIED — resolve source finish requirement"
+    },
+    {
+      "id": "IF-030",
+      "surface_finish": "NOT_SPECIFIED — resolve source finish requirement"
+    }
+  ],
+  "firmware_source_hash_mismatches": [],
+  "firmware_binary_sha256": "38d7e42a9d6b13c222447b24eb486f8d62feea2f731c5bf242540ed0dc68b121",
+  "firmware_binary_matches_manifest": true,
+  "concurrent_document_correction": {
+    "observed": true,
+    "current": {
+      "path": "validation/v08_full_compliance.py",
+      "bytes": 38893,
+      "mtime_utc": "2026-09-08T16:35:48.923978+00:00",
+      "sha256": "48c119563f85ab692cb755921436d24d3c30314ab5ec9990b1dda614271d131b"
+    },
+    "description": "Existing writer corrected both unconditional CAD-not-adopted phrases; reviewer did not overwrite it."
+  },
+  "reviewer_existing_file_modifications": [],
+  "limitations": [
+    "Active writer observed; not an atomic full-working-tree snapshot.",
+    "No clean rebuild, full numerical validation, all-CAD audit or complete release tests executed.",
+    "Direct source matches do not establish transitive freshness.",
+    "Recorded PASS counts are snapshots, not completion percentages.",
+    "No Git commit, push, merge, publication, procurement or hardware operations."
+  ]
+}

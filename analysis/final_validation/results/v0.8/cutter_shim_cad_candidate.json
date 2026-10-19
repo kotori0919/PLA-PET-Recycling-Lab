@@ -1,0 +1,259 @@
+{
+  "status": "HOLD",
+  "nominal_geometry_check": "PASS",
+  "physical_validation_state": "NOT_RUN",
+  "driven_gear_clocking_candidate": {
+    "tooth_phase_deg": 11.25,
+    "shaft_key_phase_deg": 25.714,
+    "local_keyway_offset_deg": 14.463999999999999,
+    "existing_key_overlap_per_lamination_mm3": 41.76057805914222,
+    "candidate_key_overlap_per_lamination_mm3": 0.0,
+    "nominal_ligaments": [
+      {
+        "hole_angle_deg": 0,
+        "hole_diameter_mm": 4.5,
+        "bore_to_hole_mm": 2.6500000000000004,
+        "keyway_to_hole_mm": 9.628788246209814
+      },
+      {
+        "hole_angle_deg": 120,
+        "hole_diameter_mm": 4.5,
+        "bore_to_hole_mm": 2.6499999999999977,
+        "keyway_to_hole_mm": 5.156914662517288
+      },
+      {
+        "hole_angle_deg": 240,
+        "hole_diameter_mm": 3.0,
+        "bore_to_hole_mm": 3.4,
+        "keyway_to_hole_mm": 19.97155377409107
+      }
+    ],
+    "candidate_parts": [
+      {
+        "part_id": "DRV-03-L-CANDIDATE",
+        "quantity": 3,
+        "local_keyway_offset_deg": 0,
+        "nominal_keyway_width_mm": 6.2,
+        "file": "analysis/final_validation/results/v0.8/phase_gear_candidates/DRV-03-L-CANDIDATE.step",
+        "sha256": "edbbc3f103c7afc740212012727ba1ad3e4fa3d3b7e5ab960ff3df50b6a2069b",
+        "status": "HOLD",
+        "step_reimport": "PASS"
+      },
+      {
+        "part_id": "DRV-03-R-CANDIDATE",
+        "quantity": 3,
+        "local_keyway_offset_deg": 14.463999999999999,
+        "nominal_keyway_width_mm": 6.2,
+        "file": "analysis/final_validation/results/v0.8/phase_gear_candidates/DRV-03-R-CANDIDATE.step",
+        "sha256": "80ba87ec1c2351670e7a918443d42d9800fa6a28354050d6a24d0bf1f0ff7d81",
+        "status": "HOLD",
+        "step_reimport": "PASS"
+      },
+      {
+        "part_id": "DRV-03-L-MATCHED-CANDIDATE",
+        "quantity": 3,
+        "local_keyway_offset_deg": 0,
+        "nominal_keyway_width_mm": 6.0075,
+        "file": "analysis/final_validation/results/v0.8/phase_gear_candidates/DRV-03-L-MATCHED-CANDIDATE.step",
+        "sha256": "ace405ce141a0cadecadb1ea295b3592b261936e6a33cd699124a1acf4b82dbf",
+        "status": "HOLD",
+        "step_reimport": "PASS"
+      },
+      {
+        "part_id": "DRV-03-R-MATCHED-CANDIDATE",
+        "quantity": 3,
+        "local_keyway_offset_deg": 14.463999999999999,
+        "nominal_keyway_width_mm": 6.0075,
+        "file": "analysis/final_validation/results/v0.8/phase_gear_candidates/DRV-03-R-MATCHED-CANDIDATE.step",
+        "sha256": "e26076138a8c58da8ced6617a091ad603446bdda1e7f092cc227a95a5986607b",
+        "status": "HOLD",
+        "step_reimport": "PASS"
+      }
+    ],
+    "matched_fit_proposal": {
+      "status": "HOLD",
+      "corners": [
+        {
+          "key_width_mm": 5.995,
+          "slot_width_mm": 6.005,
+          "total_side_clearance_mm": 0.009999999999999787,
+          "two_hubs_reversal_deg": 0.09167764673679117
+        },
+        {
+          "key_width_mm": 5.995,
+          "slot_width_mm": 6.01,
+          "total_side_clearance_mm": 0.01499999999999968,
+          "two_hubs_reversal_deg": 0.1375197729683561
+        },
+        {
+          "key_width_mm": 6.0,
+          "slot_width_mm": 6.005,
+          "total_side_clearance_mm": 0.004999999999999893,
+          "two_hubs_reversal_deg": 0.045837724047852496
+        },
+        {
+          "key_width_mm": 6.0,
+          "slot_width_mm": 6.01,
+          "total_side_clearance_mm": 0.009999999999999787,
+          "two_hubs_reversal_deg": 0.09167765040442871
+        }
+      ],
+      "tightest_key_half_angle_deg": 0.011459431011963124,
+      "lamination_alignment_scenarios": [
+        {
+          "lamination_offsets_deg": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "common_key_angle_interval_deg": [
+            -0.011459431011963124,
+            0.011459431011963124
+          ],
+          "geometrically_assemblable": true
+        },
+        {
+          "lamination_offsets_deg": [
+            -0.01,
+            0.0,
+            0.01
+          ],
+          "common_key_angle_interval_deg": [
+            -0.0014594310119631238,
+            0.0014594310119631238
+          ],
+          "geometrically_assemblable": true
+        },
+        {
+          "lamination_offsets_deg": [
+            -0.02,
+            0.0,
+            0.02
+          ],
+          "common_key_angle_interval_deg": null,
+          "geometrically_assemblable": false
+        }
+      ],
+      "scope": "Custom key5.995..6.000/slot6.005..6.010 mm; top radius12.5 assumed unchanged. Proposal budget0.15deg for two hub-key joints only, not an allocated system requirement. MATCHED-CANDIDATE STEP uses slot6.0075 midpoint; not release geometry. Excludes shaft-key fit, form/alignment/thermal errors, wear and elastic contact."
+    },
+    "key_hub_rigid_reversal": {
+      "contact_angles_from_centred_deg": [
+        0.45904970169067383,
+        0.45904970169067383
+      ],
+      "single_hub_peak_to_peak_deg": 0.9180994033813477,
+      "two_identical_hubs_serial_peak_to_peak_deg": 1.8361988067626953,
+      "scope": "Nominal rigid key/hub contact onset, overlap threshold1e-6 mm3. Two-hub value assumes independent identical clearances in series; excludes shaft-key clearance, tooth backlash and elasticity. Not the loaded phase metric."
+    },
+    "scope": "Separate driven-gear keyway variant; tooth envelope unchanged. Nominal void distances only; manufacturing tolerance, minimum strength criterion, tooth strength, loaded mesh and full drive datum not qualified."
+  },
+  "shaft_key_checks": [
+    {
+      "shaft_x_mm": 105,
+      "stack_y_mm": [
+        339.0,
+        408.75
+      ],
+      "keyseat_y_mm": [
+        333,
+        438
+      ],
+      "shaft_disc_overlap_mm3": 0.0,
+      "current_clocking_key_disc_overlap_mm3": 0.0,
+      "aligned_clocking_key_disc_overlap_mm3": 0.0
+    },
+    {
+      "shaft_x_mm": 153,
+      "stack_y_mm": [
+        345.375,
+        415.125
+      ],
+      "keyseat_y_mm": [
+        313,
+        418
+      ],
+      "shaft_disc_overlap_mm3": 0.0,
+      "current_clocking_key_disc_overlap_mm3": 449.97941475480735,
+      "aligned_clocking_key_disc_overlap_mm3": 0.0
+    }
+  ],
+  "current_key_clocking_check": "FAIL",
+  "discs": 12,
+  "spacers_and_shims": 20,
+  "gaps": [
+    {
+      "a": "Hook105_0",
+      "b": "Hook153_0",
+      "axial_gap_mm": 0.375,
+      "brep_distance_mm": 0.375
+    },
+    {
+      "a": "Hook153_0",
+      "b": "Hook105_1",
+      "axial_gap_mm": 0.375,
+      "brep_distance_mm": 0.375
+    },
+    {
+      "a": "Hook105_1",
+      "b": "Hook153_1",
+      "axial_gap_mm": 0.375,
+      "brep_distance_mm": 0.375
+    },
+    {
+      "a": "Hook153_1",
+      "b": "Hook105_2",
+      "axial_gap_mm": 0.375,
+      "brep_distance_mm": 0.375
+    },
+    {
+      "a": "Hook105_2",
+      "b": "Hook153_2",
+      "axial_gap_mm": 0.375,
+      "brep_distance_mm": 0.375
+    },
+    {
+      "a": "Hook153_2",
+      "b": "Hook105_3",
+      "axial_gap_mm": 0.375,
+      "brep_distance_mm": 0.375
+    },
+    {
+      "a": "Hook105_3",
+      "b": "Hook153_3",
+      "axial_gap_mm": 0.375,
+      "brep_distance_mm": 0.375
+    },
+    {
+      "a": "Hook153_3",
+      "b": "Hook105_4",
+      "axial_gap_mm": 0.375,
+      "brep_distance_mm": 0.375
+    },
+    {
+      "a": "Hook105_4",
+      "b": "Hook153_4",
+      "axial_gap_mm": 0.375,
+      "brep_distance_mm": 0.375
+    },
+    {
+      "a": "Hook153_4",
+      "b": "Hook105_5",
+      "axial_gap_mm": 0.375,
+      "brep_distance_mm": 0.375
+    },
+    {
+      "a": "Hook105_5",
+      "b": "Hook153_5",
+      "axial_gap_mm": 0.375,
+      "brep_distance_mm": 0.375
+    }
+  ],
+  "collisions": [],
+  "freecad_version": "0.21.2",
+  "scope": "Nominal12.75 pitch/6.375 stagger; actual hook profiles, spacer/shim and shaft/key geometry. Existing153 shaft keyseat clocking conflicts with rotated discs; rotating shaft+key25.714deg is a candidate only and requires phase-gear/drive datum review. Excludes collars/bearings/frame, loaded rotation and tolerance envelopes. Not adopted.",
+  "source_sha256": {
+    "cad/freecad/final_v08/check_cutter_shim_candidate.py": "f0314650ea3398af44ca3ac59f0820f4806084214b120eb4511b02e4a52f6366",
+    "cad/freecad/compact/geometry.py": "ce8ca7c3b70dc422d442149a92580e328b1ac62286629d4f2ff75d209ddd0028",
+    "cad/freecad/compact/manufacturing.py": "a858920678aad011b6267182929b6301a7b6d5483230f8b67835b5197ceb247c"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "status": "COMPACT_CANONICAL_DIGITAL_PROMOTION_PASS",
+  "purpose": "single-frame bench PLA/PET recycler; same MVP and final machine",
+  "canonical_envelope_mm": [
+    470.0,
+    700.0,
+    930.0
+  ],
+  "volume_reduction_from_470x729x930_fraction": 0.03978052126200271,
+  "checks": {
+    "canonical_contract": true,
+    "preferred_envelope": true,
+    "review_geometry": true,
+    "fixed_supports_and_shelf": true,
+    "support_datum": true,
+    "frame_response": true,
+    "conservative_shelf_strip": true,
+    "nonconverged_tetra_not_promoted": true,
+    "no_size_driven_power_or_profile_addition": true
+  },
+  "physical_validation_state": "NOT_RUN",
+  "fabrication_authorized": false,
+  "energization_authorized": false,
+  "strength_scope": "relative frame response plus conservative 100 N/post strip screen; not measured operating loads",
+  "diagnostic_not_accepted": {
+    "file": "analysis/compact_layout_v08/results/shelf_fea.json",
+    "status": "FAIL",
+    "reason": "C3D10/C3D4 local shelf displacement did not meet mesh-convergence criterion; retained as diagnostic, never relabeled PASS"
+  },
+  "physical_inputs_still_required": [
+    "received GGM mass/mount dimensions and actual fastener engagement",
+    "P2 frame stock/kerf and assembled squareness",
+    "P3 operating/jam load observations and vibration",
+    "physical service-access and guard checks"
+  ],
+  "source_sha256": {
+    "analysis/compact_layout_v08/promote_canonical.py": "0fe72dcdf2313ac74306e8aecc615ff7d5efef01f4b80abdcf69566423920f71",
+    "cad/parameters/compact_layout_v08.json": "4ae43e93c3123855a4faeb641a3e4eefbc421cbfc73a55734dc78ba9ec74386b",
+    "cad/freecad/drive_v08/compact_layout.py": "9965c1d26c8134232a06a83cdbddab9fa3bb77f0ee47ff6fd3aee6930c636c9e",
+    "cad/freecad/drive_v08/assembly.py": "a7e8f7e3c3bdf3154e405957afbf8d877b9208efbf1c0efcf39ef821d4522038",
+    "analysis/compact_layout_v08/results/review.json": "530eb8dc900d8c07e4cca0ce3cf560beb98603f8476339708f3fd6f873c50a04",
+    "analysis/compact_layout_v08/results/fixed_foot_geometry.json": "274524b37d9a8587ee35ada381de528a0dddb9e77778599d6575c34da190072f",
+    "analysis/compact_layout_v08/results/support_datum.json": "cf361b12088676598d7464d43c7db852614cb42025542c47c7a06928fd2d0c16",
+    "analysis/compact_layout_v08/results/frame_response.json": "6038562e3992210b29e1c416675014813f27e14714f7a134b3eb6ca43d735586",
+    "analysis/compact_layout_v08/results/shelf_strip_screen.json": "1b01b6a93c81e4d6aa6f937460d433d822f1025919001d0b0834ee84fbcc33bd",
+    "analysis/compact_layout_v08/results/shelf_fea.json": "cf6c296d5c562ee2a2c36b17417226ee32a80376c8d9a901e688147932cc8f0b"
+  }
+}

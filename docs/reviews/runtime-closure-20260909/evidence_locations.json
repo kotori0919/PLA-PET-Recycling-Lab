@@ -1,0 +1,15 @@
+{
+  "core_raw": "analysis/final_validation/results/v0.8/raw/run-nvzmu4tl",
+  "runtime_raw": "analysis/final_validation/results/v0.8/raw/assistant-runtime-20260909",
+  "core_canonical_summary_overwritten": false,
+  "actual_input_hashes": {
+    "analysis/final_validation/input/bearing_plate.step": "d625b0e138c28c11b19d31e9402fd3fd12af2871ea3f81fb4d4ea5981ce09af6",
+    "analysis/final_validation/input/extruder_barrel.step": "dc21e0c4f542c98bcceb3118b9215ada6cb07c14b0757ce0fc646db69fba7d26",
+    "analysis/final_validation/input/geometry_manifest.json": "e5612d78d085c90d3954bc4cd26cc5e10d49350696d3e15d624396d3c619a5f7"
+  },
+  "isolated_input_matches_live": {
+    "analysis/final_validation/input/bearing_plate.step": true,
+    "analysis/final_validation/input/extruder_barrel.step": true,
+    "analysis/final_validation/input/geometry_manifest.json": true
+  }
+}

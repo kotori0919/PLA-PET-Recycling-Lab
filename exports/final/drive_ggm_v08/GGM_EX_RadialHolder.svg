@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600"><rect width="800" height="600" fill="white"/><g font-family="sans-serif" fill="#172533"><text x="25" y="35" font-size="21">GGM_EX_RadialHolder</text><text x="25" y="62" font-size="12">S275 t10; bore32.03; 4x4.5; matching M4 in thrust plate</text><polyline points="41.00,514.00 41.00,106.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="41.00,106.00 41.00,106.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="41.00,514.00 41.00,106.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="41.00,514.00 41.00,514.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="41.00,514.00 449.00,514.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="449.00,514.00 449.00,106.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="41.00,106.00 449.00,106.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="83.50,452.38 102.62,471.50 83.50,490.62 64.38,471.50 83.50,452.38" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="75.00,299.38 84.20,315.31 65.80,315.31 75.00,299.38" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="83.50,129.38 102.62,148.50 83.50,167.62 64.38,148.50 83.50,129.38" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="406.50,452.38 425.62,471.50 406.50,490.62 387.38,471.50 406.50,452.38" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="245.00,173.87 318.60,195.48 368.83,253.45 379.74,329.37 347.88,399.14 283.35,440.61 206.65,440.61 142.12,399.14 110.26,329.37 121.17,253.45 171.40,195.48 245.00,173.87" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="415.00,299.38 424.20,315.31 405.80,315.31 415.00,299.38" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="406.50,129.38 425.62,148.50 406.50,167.62 387.38,148.50 406.50,129.38" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="41.00,106.00 449.00,106.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="449.00,106.00 449.00,106.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="41.00,514.00 449.00,514.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="449.00,514.00 449.00,106.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="83.50,452.38 102.62,471.50 83.50,490.62 64.38,471.50 83.50,452.38" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="75.00,299.38 84.20,315.31 65.80,315.31 75.00,299.38" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="83.50,129.38 102.62,148.50 83.50,167.62 64.38,148.50 83.50,129.38" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="406.50,452.38 425.62,471.50 406.50,490.62 387.38,471.50 406.50,452.38" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="245.00,173.87 318.60,195.48 368.83,253.45 379.74,329.37 347.88,399.14 283.35,440.61 206.65,440.61 142.12,399.14 110.26,329.37 121.17,253.45 171.40,195.48 245.00,173.87" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="415.00,299.38 424.20,315.31 405.80,315.31 415.00,299.38" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="406.50,129.38 425.62,148.50 406.50,167.62 387.38,148.50 406.50,129.38" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="449.00,514.00 449.00,514.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="83.50,452.38 83.50,452.38" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="75.00,299.38 75.00,299.38" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="83.50,129.38 83.50,129.38" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="406.50,452.38 406.50,452.38" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="245.00,173.87 245.00,173.87" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="415.00,299.38 415.00,299.38" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="406.50,129.38 406.50,129.38" fill="none" stroke="#263238" stroke-width="0.8"/><text x="25" y="552" font-size="14">Envelope 48.000 x 10.000 x 48.000 mm</text><text x="25" y="580" font-size="12">STEP and DRIVE_DRAWING_SCHEDULE.csv control. Physical commissioning not performed.</text></g></svg>

@@ -157,7 +157,7 @@
 <text x="34" y="502" font-size="18">Overall: X 25.00  Y 25.00  Z 100.00 mm; unless noted printed tolerance ±0.30 mm</text>
 <text x="34" y="538" font-size="18">Interface: 2x Ø3.4 through on orthogonal legs</text>
 <text x="34" y="574" font-size="18">Fastener: 2x M3x8 + washer + nyloc; insert/nut: none; tightening: 0.5 N.m</text>
-<text x="34" y="610" font-size="18">Edge distance: 12 mm hole centre; mating: 1 mm sheet bin and screen rails</text>
+<text x="34" y="610" font-size="18">Edge distance: 12 mm hole centre; mating: 1.00 ±0.05 mm sheet bin and screen rails</text>
 <text x="34" y="646" font-size="18">Print: end down; 0.28 mm; 4 perimeters; support: no</text>
 <text x="34" y="682" font-size="18">Dimensions govern over SVG scale. Ream/fit only after printing the PPR-TC01 tolerance coupon.</text></g>
 </svg>

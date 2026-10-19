@@ -1,0 +1,146 @@
+{
+  "status": "HOLD",
+  "element_benchmark": "PASS",
+  "cases": [
+    {
+      "stiffness_n_mm": 10000.0,
+      "load_n": 620.0,
+      "displacement_mm": 0.062,
+      "anchor_reaction_n": -620.0,
+      "deck_sha256": "081a20da126962fc09c3983087e841063932df654980a728937ff8a730a851e5"
+    },
+    {
+      "stiffness_n_mm": 100000.0,
+      "load_n": 620.0,
+      "displacement_mm": 0.0062,
+      "anchor_reaction_n": -620.0,
+      "deck_sha256": "b981725c962958b32ef896e66d2ffb4a44429eae630ab420dc394ff8d34c4b64"
+    },
+    {
+      "stiffness_n_mm": 1000000.0,
+      "load_n": 620.0,
+      "displacement_mm": 0.00062,
+      "anchor_reaction_n": -620.0,
+      "deck_sha256": "4cfbfc018aad7cfa43b2fd66720344c0ad32765c827dd05f42cab45fb852e69b"
+    }
+  ],
+  "mesh_mm": 0.7,
+  "retainer_fixed_mesh_sensitivity": [
+    {
+      "per_bore_stiffness_n_mm": 10000.0,
+      "result": {
+        "max_displacement_mm": 0.0858143078961937,
+        "max_von_mises_mpa": 81.76844071270712,
+        "max_von_mises_node_id": 16255,
+        "status": "PASS",
+        "omp_num_threads": 1,
+        "negative_jacobian": false,
+        "reaction": {
+          "node_count": 1152,
+          "force_n": [
+            -1239.774889999745,
+            0.0004007999999738332,
+            -0.0001150600000035043
+          ],
+          "moment_about_origin_nm": [
+            -0.00018465772052422835,
+            -468.1893056798495,
+            430.22291014386417
+          ]
+        }
+      },
+      "force_delta_from_fixed_reference_n": [
+        0.0002281862550717051,
+        -0.00044944000002525297,
+        2.1439999993457665e-05
+      ],
+      "moment_delta_from_fixed_reference_nm": [
+        0.00020116116649848692,
+        7.922618578959373e-05,
+        -0.00024933087769341
+      ],
+      "deck_sha256": "c569795fa74de5218b794b8960ca1fde07e4c7f90f6612f258f5eb0b55a30451"
+    },
+    {
+      "per_bore_stiffness_n_mm": 100000.0,
+      "result": {
+        "max_displacement_mm": 0.03001414078739907,
+        "max_von_mises_mpa": 81.6838246149787,
+        "max_von_mises_node_id": 16255,
+        "status": "PASS",
+        "omp_num_threads": 1,
+        "negative_jacobian": false,
+        "reaction": {
+          "node_count": 1152,
+          "force_n": [
+            -1239.7748099999644,
+            2.2999999759222567e-06,
+            0.00016016889999694877
+          ],
+          "moment_about_origin_nm": [
+            5.2698229660030904e-05,
+            -468.18938070977197,
+            430.22273254909123
+          ]
+        }
+      },
+      "force_delta_from_fixed_reference_n": [
+        0.0003081860356815014,
+        -0.0008479400000231639,
+        0.0002966688999939107
+      ],
+      "moment_delta_from_fixed_reference_nm": [
+        0.0004385171166827462,
+        4.1962633190451015e-06,
+        -0.00042692565062907306
+      ],
+      "deck_sha256": "766b09af4e74bba3ad7a3e617ee14663312a0c6265ae7611e10f2d93236ac5b5"
+    },
+    {
+      "per_bore_stiffness_n_mm": 1000000.0,
+      "result": {
+        "max_displacement_mm": 0.02428994853378389,
+        "max_von_mises_mpa": 80.7050606366348,
+        "max_von_mises_node_id": 16255,
+        "status": "PASS",
+        "omp_num_threads": 1,
+        "negative_jacobian": false,
+        "reaction": {
+          "node_count": 1152,
+          "force_n": [
+            -1239.7749159999953,
+            -0.0005680500000052949,
+            0.00018479999998801885
+          ],
+          "moment_about_origin_nm": [
+            0.000291646869603035,
+            -468.1894287307438,
+            430.2225589132586
+          ]
+        }
+      },
+      "force_delta_from_fixed_reference_n": [
+        0.00020218600479893212,
+        -0.001418290000004381,
+        0.0003212999999849808
+      ],
+      "moment_delta_from_fixed_reference_nm": [
+        0.0006774657566257503,
+        -4.382470854125131e-05,
+        -0.0006005614832815809
+      ],
+      "deck_sha256": "c9b3bbf1c70baecc2fc228eb69d9a1167552e2bf7bfef4d3707c646e61dad07a"
+    }
+  ],
+  "reference_deck_sha256": "4f6f1547476d69cf825bf22e60fb971ffee7304af45244bd03d0e247f19175c8",
+  "raw_directory": "analysis/final_validation/results/v0.8/support-spring-frrxeg86",
+  "source_sha256": {
+    "analysis/final_validation/retainer_support_sensitivity.py": "236be304c141f2849d9b3533c4974347a7e9b13d7036709f9548662083a5d180",
+    "analysis/final_validation/run_qualification_v08.py": "dfb687686a99df8db69311b37d06b1dcfe3bfe4a99352a85a65a1887560e3a1f",
+    "analysis/final_validation/run_calculix_v08.py": "eaef0af9921a2951f39250b984adce15c7e9d838eb7e7ede29a073b3f37f7e07",
+    "analysis/structural/run_load_checks.py": "21de630790025288cfc57b84890b68192006725d6a5cb72b66c1baf7752b07ad",
+    "analysis/final_validation/results/v0.8/retainer_candidate_fea.json": "fb39fdb57e06b4a8886c2b512aa2ba5b969e79f5e3775af98ad5f450dc9ab012",
+    "analysis/final_validation/results/v0.8/retainer-fq8gxwfc/mesh_0.7/model.inp": "4f6f1547476d69cf825bf22e60fb971ffee7304af45244bd03d0e247f19175c8"
+  },
+  "scope": "Frozen reference retainer mesh, equal nodal axial springs normalized per bore; transverse DOFs fixed. Distribution is mesh-dependent, not a contact/bolt model. Illustrative stiffnesses, not measured joint data. Physical validation NOT_RUN."
+}

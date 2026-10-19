@@ -1,0 +1,17 @@
+[
+  {
+    "required": "700",
+    "observed": "TEST_REVIEW_REQUIRED",
+    "exit": 1
+  },
+  {
+    "required": "1100",
+    "observed": "NOT_RUN",
+    "exit": 1
+  },
+  {
+    "required": "nan",
+    "observed": "TEST_REVIEW_REQUIRED",
+    "exit": 1
+  }
+]

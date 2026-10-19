@@ -11,7 +11,7 @@
 - infill: 35%
 - support: no
 - support-contact region: none
-- support removal: ream Ø12.2 spindle bore
+- support removal: ream spindle bore to Ø12.20–12.40
 - brim: none
 - designed minimum wall: 2.0 mm
 - estimated mass: 30.2 g/ea, 60.3 g total
@@ -20,9 +20,9 @@
 - insert or captured nut: none; metal shaft collar carries axial load
 - tightening torque: 2.5 N.m
 - fastener edge distance: radial cross-hole at z=10
-- physical interfaces: Ø12.2 axial bore; Ø6.6 radial through hole
-- tolerance: 0.30 mm spool core
-- mating part: 12 mm metal spindle and metal collar
+- physical interfaces: Ø12.20–12.40 axial bore; Ø6.6 radial through clamp; metal collar carries axial load
+- tolerance: finished spindle bore Ø12.20–12.40; diametral clearance0.20–0.411 to Ø12 h6; cone-to-received-spool contact is separately selected
+- mating part: 12 mm metal spindle, metal collar, and received spool
 - assembly order: 18
 - bounding box: 70.0 x 70.0 x 35.0 mm
 - FreeCAD Python source: `PPR-C09.py` -> `cad/freecad/compact/geometry.py`

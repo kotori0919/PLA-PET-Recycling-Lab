@@ -1,0 +1,56 @@
+{
+  "observed_utc": "2026-09-08T23:37:22.649875+00:00",
+  "base_git_sha": "e03e843fe3f8ce98edf7dcd26292200c3547a9d8",
+  "workspace": "/home/monad/develop/PPR-assistant-work-20260909T2328",
+  "changed_files": [
+    {
+      "path": "validation/evidence_freshness.py",
+      "before_sha256": null,
+      "after_sha256": "b4ae8c588f282a7d1edad5f25daf3aefbcccc45436903d6773576df146c2085f"
+    },
+    {
+      "path": "validation/test_evidence_freshness.py",
+      "before_sha256": null,
+      "after_sha256": "4f4ebdc10137757659f5a8c0641983a6223e2f1a475f946fcf5065366c01944a"
+    },
+    {
+      "path": "validation/test_beam_torque_recovery.py",
+      "before_sha256": null,
+      "after_sha256": "ba93743094f650f2e7269727c05473bd45f0a31f3bb88ca9dcba8c95a0ea904b"
+    },
+    {
+      "path": "validation/v08_full_compliance.py",
+      "before_sha256": "48c119563f85ab692cb755921436d24d3c30314ab5ec9990b1dda614271d131b",
+      "after_sha256": "6384c3abee39e2e63d2be9b9fee7a08353c53ed9a183d58971b64d974d7a202d"
+    },
+    {
+      "path": "analysis/final_validation/beam_torque_recovery.py",
+      "before_sha256": null,
+      "after_sha256": "c3034a20180367b0196360a40872f05ca458170a93691b6c9c13e591e9108838"
+    },
+    {
+      "path": "analysis/final_validation/run_runtime_mechanics_audit.py",
+      "before_sha256": null,
+      "after_sha256": "30a7e146ce6aaede8a45b5a15c33da5e14d4e1140575395c4c11af33847213dc"
+    },
+    {
+      "path": "analysis/final_validation/run_calculix_v08.py",
+      "before_sha256": "4a4dda360e94596fc5d3ad579ccb26fe9063167e0c246d2d545a4e692ed7df53",
+      "after_sha256": "7ba609d35acd8ea5a26fa0802f5c3f2b096dc44de051c331913d9d74c51f3e03"
+    }
+  ],
+  "scope": "freshness validation and measured B31 torque extraction; no CAD/material/safety-threshold changes",
+  "solver_runs": {
+    "additional_runtime_audit": 28,
+    "clean_core": 22,
+    "all_jobs_finished": true,
+    "overall_release_verdict": "HOLD"
+  },
+  "side_effects": {
+    "installed_packages": false,
+    "changed_running_agents": false,
+    "changed_git_index": false,
+    "commit_push_merge_release": false,
+    "hardware_io": false
+  }
+}

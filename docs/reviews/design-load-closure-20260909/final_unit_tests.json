@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "tests": [
+    {
+      "command": [
+        "/home/linuxbrew/.linuxbrew/opt/python@3.14/bin/python3.14",
+        "validation/test_load_path_closure.py"
+      ],
+      "exit_code": 0,
+      "test_count": 15,
+      "log": "docs/reviews/design-load-closure-20260909/test_load_path_closure_final.log",
+      "log_sha256": "a1428846fe6fa6293661d7088395c4d9e5952c512f8f2e3d6fd6ca1716c52a47"
+    },
+    {
+      "command": [
+        "/home/linuxbrew/.linuxbrew/opt/python@3.14/bin/python3.14",
+        "validation/test_evidence_freshness.py"
+      ],
+      "exit_code": 0,
+      "test_count": 19,
+      "log": "docs/reviews/design-load-closure-20260909/test_evidence_freshness_final.log",
+      "log_sha256": "c2c4398b165751d3a9f8ea830ed3c1616fa4f8d9e556552f2c49f70f11c693e5"
+    },
+    {
+      "command": [
+        "/home/linuxbrew/.linuxbrew/opt/python@3.14/bin/python3.14",
+        "validation/test_beam_torque_recovery.py"
+      ],
+      "exit_code": 0,
+      "test_count": 8,
+      "log": "docs/reviews/design-load-closure-20260909/test_beam_torque_recovery_final.log",
+      "log_sha256": "fd1a1528ceb76491ff6913caa870173f1c6f0d74e6e55d4bd8effa19e18e750b"
+    },
+    {
+      "command": [
+        "/home/linuxbrew/.linuxbrew/opt/python@3.14/bin/python3.14",
+        "validation/test_shaft_reaction_provenance.py"
+      ],
+      "exit_code": 0,
+      "test_count": null,
+      "log": "docs/reviews/design-load-closure-20260909/test_shaft_reaction_provenance_final.log",
+      "log_sha256": "1979d064adff1f88a0d37c44d0c79c2a31ee54a8ef0eb226a5bca8cfc681fddc"
+    }
+  ],
+  "counted_unit_tests": 42
+}

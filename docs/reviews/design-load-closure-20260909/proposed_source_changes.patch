@@ -1,0 +1,113 @@
+--- a/cad/freecad/compact/geometry.py
++++ b/cad/freecad/compact/geometry.py
+@@ -602,12 +602,19 @@
+     return plate.cut(Part.makeCompound(holes))
+ 
+ 
+-def cutter_shaft(length=240.0, key_phase_deg=0.0):
++def cutter_shaft(length=240.0, key_phase_deg=0.0, shaft_id="105"):
++    """Separate keyseat stations preserve the complete bearing-seat envelopes."""
++    if str(shaft_id) not in {"105", "153"}:
++        raise ValueError("shaft_id must identify the released left/right shaft")
++    if length < 240.0:
++        raise ValueError("released keyseat schedule requires at least 240 mm")
+     shaft = Part.makeCylinder(12.5, length, App.Vector(0, 0, 0), App.Vector(0, 1, 0))
+-    # One common shaft drawing serves both rotors.  The slave shaft is shifted
+-    # 20 mm rearward in assembly so the Ø~100 driven sprocket cannot intersect
+-    # it; the long common cutter and rear keyseats tolerate either position.
+-    for y, key_length, width, depth in ((0.0, 35.0, 6.0, 3.5), (55.0, 105.0, 6.0, 3.5), (195.0, 45.0, 8.0, 4.0)):
++    seats = ((0.0, 35.0, 6.0, 3.5), (55.0, 105.0, 6.0, 3.5), (195.0, 45.0, 8.0, 4.0))
++    if str(shaft_id) == "153":
++        # Driven shaft starts at machine Y258 instead of Y278. Its bearing
++        # envelopes are local Y57..69 and197..209; no slot may cross them.
++        seats = ((0.0, 35.0, 6.0, 3.5), (85.0, 80.0, 6.0, 3.5), (212.0, 28.0, 8.0, 4.0))
++    for y, key_length, width, depth in seats:
+         keyway = Part.makeBox(width, key_length, depth, App.Vector(-width / 2, y, 12.5 - depth))
+         keyway.rotate(App.Vector(), App.Vector(0, 1, 0), key_phase_deg)
+         shaft = shaft.cut(keyway)
+@@ -662,7 +669,7 @@
+     """Orderable metal part geometry exported by generate.py."""
+     plate = bearing_side_plate()
+     shaft = cutter_shaft()
+-    shaft_right = cutter_shaft(key_phase_deg=25.714)
++    shaft_right = cutter_shaft(key_phase_deg=25.714, shaft_id="153")
+     motor_mount = motor_mount_plate()
+     bearing_retainer = bearing_retainer_plate()
+     chamber_sleeve = Part.makeCylinder(5, 128).cut(Part.makeCylinder(3.3, 128))
+@@ -672,7 +679,7 @@
+         dict(id="CUT-03", name="Bearing side plate", shape=plate, qty=2, material="12 mm S275JR steel", process="laser + bearing-seat finish", critical="two SKF 61905-2RS1 seats diameter 42 H7; center distance 48.00 +/-0.03; match-machine both plates; seat-axis parallelism 0.05/140; four frame holes diameter 6.6; identify front fixed and rear floating sides; after CUT-10 retention and metal shimming, each complete shaft axial float shall be0.05-0.20 over one full hand rotation"),
+         dict(id="CUT-04", name="5 mm aperture screen", shape=screen_plate(), qty=2, material="3 mm 304 stainless", process="laser cut + deburr", critical="135 x 120 x 3; apertures diameter 5.0 on 9.0 pitch; all strand-side edges R0.3; verify minimum 1.9 mm rotating clearance with shims before powered test"),
+         dict(id="CUT-05", name="25 mm keyed cutter shaft left", shape=shaft, qty=1, material="S45C QT steel", process="turn + indexed keyway; black oxide with bearing seats masked", critical="continuous Ø25 h6 =24.987-25.000 across 61905 journals, cutter land and gear/hub land; overall240.0 +/-0.10; TIR<=0.05; 6.005-6.010 keyways at y=0-35 and55-160 with selected key5.995-6.000; 8.005-8.010 keyway at195-240 with selected key7.995-8.000; datum clock0 deg; install slave shaft at Y278"),
+-        dict(id="CUT-05R", name="25 mm keyed cutter shaft right", shape=shaft_right, qty=1, material="S45C QT steel", process="turn + indexed keyway; black oxide with bearing seats masked", critical="continuous Ø25 h6 =24.987-25.000 across 61905 journals, cutter land and gear/hub land; overall240.0 +/-0.10; TIR<=0.05; all keyway centreplanes clocked25.714 +/-0.02 deg; 6.005-6.010 keyways at y=0-35 and55-160 with selected key5.995-6.000; 8.005-8.010 keyway at195-240 with selected key7.995-8.000; install driven shaft at Y258"),
++        dict(id="CUT-05R", name="25 mm keyed cutter shaft right", shape=shaft_right, qty=1, material="S45C QT steel", process="turn + indexed keyway; black oxide with bearing seats masked", critical="continuous Ø25 h6 =24.987-25.000 across 61905 journals, cutter land and gear/hub land; overall240.0 +/-0.10; TIR<=0.05; all keyway centreplanes clocked25.714 +/-0.02 deg; 6.005-6.010 keyways at y=0-35 and85-165 with selected key5.995-6.000; 8.005-8.010 keyway at212-240 with selected key7.995-8.000; install driven shaft at Y258"),
+         dict(id="CUT-06", name="Phase gear axial spacer", shape=Part.makeCylinder(17, 4).cut(Part.makeCylinder(12.55, 4)), qty=2, material="S45C normalized steel", process="simple turning", critical="OD 34.0; bore 25.10 +0.05/0; length 4.00 +/-0.03; faces parallel within 0.03"),
+         dict(id="CUT-07", name="DRV-01 universal donor motor plate", shape=motor_mount, qty=1, material="6 mm steel", process="laser cut + deburr; standard metal angles", critical="180 x 140 x 6; three 9 x 70 motor-angle slots and two 55 x 9 tension slots; donor-specific angle/hub drilling is HOLD until exact model, shaft height and rotation envelope are measured"),
+         dict(id="CUT-08", name="Dual 61905 bearing retainer", shape=bearing_retainer, qty=2, material="2 mm steel", process="laser cut + deburr", critical="figure-eight OD lobes 60; two relief bores diameter 34; center distance 48.00 +/-0.05; six M4 clearance holes diameter 4.5 at drawing coordinates; CUT-03 matching holes are included and may be match-reamed after bearing-seat finish"),
+@@ -991,7 +998,7 @@
+     add("CutterPlateRear", placed_cutter_plate(467), steel, "shredder", "CUT-03 steel")
+     for cx in (105, 153):
+         shaft_y = 278 if cx == 105 else 258
+-        shaft = cutter_shaft(key_phase_deg=25.714 if cx == 153 else 0); shaft.translate(App.Vector(cx, shaft_y, 590))
++        shaft = cutter_shaft(key_phase_deg=25.714 if cx == 153 else 0, shaft_id=str(cx)); shaft.translate(App.Vector(cx, shaft_y, 590))
+         add(f"Shaft{cx}", shaft, steel, "shredder", "S45C QT, indexed 6/8 mm keyway zones")
+         for i in range(6):
+             # Assembly LOD preserves the cycloidal equation and envelope while
+--- a/cad/freecad/compact/manufacturing.py
++++ b/cad/freecad/compact/manufacturing.py
+@@ -263,7 +263,7 @@
+         p=bearing_side_plate(); p.rotate(App.Vector(),App.Vector(1,0,0),90); p.translate(App.Vector(85,y_max,18))
+         add(f"CUT03{label}",p,steel,"rotor","final CUT-03")
+     for cx in (135,183):
+-        shaft=cutter_shaft(key_phase_deg=180/7 if cx == 183 else 0); shaft.translate(App.Vector(cx,20,73)); add(f"CUT05Shaft{cx}",shaft,steel,"rotor","final CUT-05/CUT-05R")
++        shaft=cutter_shaft(key_phase_deg=180/7 if cx == 183 else 0, shaft_id="153" if cx == 183 else "105"); shaft.translate(App.Vector(cx,20,73)); add(f"CUT05Shaft{cx}",shaft,steel,"rotor","final CUT-05/CUT-05R")
+         for y in (58,198):
+             b=Part.makeCylinder(21,12,App.Vector(cx,y,73),App.Vector(0,1,0)).cut(Part.makeCylinder(12.5,12,App.Vector(cx,y,73),App.Vector(0,1,0)))
+             add(f"Bearing{cx}_{y}",b,purple,"rotor","61905-2RS1 + CUT-10")
+--- a/cad/freecad/final_v08/generate.py
++++ b/cad/freecad/final_v08/generate.py
+@@ -56,13 +56,17 @@
+ 
+ 
+ def fixed_collar() -> Part.Shape:
+-    collar = Part.makeCylinder(25, 12, App.Vector(363, 347, 382), App.Vector(1, 0, 0))
+-    collar = collar.cut(Part.makeCylinder(17.05, 12, App.Vector(363, 347, 382), App.Vector(1, 0, 0)))
+-    collar = collar.cut(Part.makeBox(12, 50, 16, App.Vector(363, 322, 398)))
++    mount = PARAMS["hot_zone_mount"]
++    length = mount["fixed_collar_length_mm"]
++    x = mount["rear_fixed_plate_x_mm"] + mount["plate_thickness_mm"]
++    collar = Part.makeCylinder(25, length, App.Vector(x, 347, 382), App.Vector(1, 0, 0))
++    collar = collar.cut(Part.makeCylinder(mount["fixed_collar_bore_mm"] / 2, length,
++                                         App.Vector(x, 347, 382), App.Vector(1, 0, 0)))
++    collar = collar.cut(Part.makeBox(length, 50, 16, App.Vector(x, 322, 398)))
+     shoulder = PARAMS["rear_axial_retainer"]
+     collar = collar.cut(Part.makeCylinder(shoulder["collar_counterbore_mm"] / 2,
+                                           shoulder["barrel_shoulder_length_mm"],
+-                                          App.Vector(367, 347, 382), App.Vector(1, 0, 0)))
++                                          App.Vector(x + length - shoulder["barrel_shoulder_length_mm"], 347, 382), App.Vector(1, 0, 0)))
+     return one_solid(collar)
+ 
+ 
+@@ -99,7 +103,7 @@
+                     item["shape"] = one_solid(item["shape"].cut(Part.makeBox(10, 4, 10, App.Vector(x - 1, y, 339))))
+     retainer, spacers, retainer_bolts = rear_retainer_shapes()
+     additions = [
+-        ("ExtruderSupportRailRear", Part.makeBox(mount["support_rail_length_mm"], 20, 20, App.Vector(20, 400, mount["support_rail_z_mm"])), "frame", "2020 aluminum profile L430"),
++        ("ExtruderSupportRailRear", Part.makeBox(mount["support_rail_length_mm"], 20, 20, App.Vector(20, 400, mount["support_rail_z_mm"])), "frame", f"2020 aluminum profile L{mount['support_rail_length_mm']:g}"),
+         ("ExtruderRearFixedDatum", mount_plate(mount["rear_fixed_plate_x_mm"], False), "extruder", "EX-MT-01 8 mm S275 fixed datum plate"),
+         ("ExtruderFrontSlidingGuide", mount_plate(mount["front_sliding_plate_x_mm"], True), "extruder", "EX-MT-02 8 mm S275 radial sliding guide"),
+         ("ExtruderFixedCollar", fixed_collar(), "extruder", "EX-MT-03 S45C split collar"),
+--- a/validation/check_phase_clocking_release.py
++++ b/validation/check_phase_clocking_release.py
+@@ -28,9 +28,9 @@
+ def main():
+     rows = []
+     for side, shaft_phase, tooth_phase in (("L", 0.0, 0.0), ("R", 180 / 7, 180 / 16)):
+-        shaft = cutter_shaft(key_phase_deg=shaft_phase)
+-        cutter_key = rotated(Part.makeBox(6, 6, 3.4, App.Vector(-3, 70, 9.1)), shaft_phase)
+-        gear_key = rotated(Part.makeBox(8, 6, 3.9, App.Vector(-4, 205, 8.6)), shaft_phase)
++        shaft = cutter_shaft(key_phase_deg=shaft_phase, shaft_id="153" if side=="R" else "105")
++        cutter_key = rotated(Part.makeBox(6, 6, 3.4, App.Vector(-3, 100 if side=="R" else 70, 9.1)), shaft_phase)
++        gear_key = rotated(Part.makeBox(8, 6, 3.9, App.Vector(-4, 220 if side=="R" else 205, 8.6)), shaft_phase)
+         disc = rotated(hook_disc(), shaft_phase)
+         disc_key = rotated(Part.makeBox(6, 6, 5.8, App.Vector(-3, 0, 9.1)), shaft_phase)
+         local_key_angle = shaft_phase - tooth_phase

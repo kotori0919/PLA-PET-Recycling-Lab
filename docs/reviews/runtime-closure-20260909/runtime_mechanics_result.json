@@ -1,0 +1,641 @@
+{
+  "status": "SCOPED_NUMERIC_REGRESSIONS_PASS",
+  "release_state": "HOLD_UNCHANGED",
+  "solver_binary": "/nix/store/fi6dwih1zs339k119m89z35hdzizg95a-calculix-ccx-2.23/bin/ccx",
+  "solver_binary_sha256": "ed44d38aa3a66a9ec5c1db5589d0bc62787645e5dfd48fb2be939dbc43eadd1e",
+  "source_sha256": {
+    "analysis/final_validation/run_runtime_mechanics_audit.py": "30a7e146ce6aaede8a45b5a15c33da5e14d4e1140575395c4c11af33847213dc",
+    "analysis/final_validation/beam_torque_recovery.py": "c3034a20180367b0196360a40872f05ca458170a93691b6c9c13e591e9108838",
+    "analysis/final_validation/run_calculix_v08.py": "7ba609d35acd8ea5a26fa0802f5c3f2b096dc44de051c331913d9d74c51f3e03",
+    "analysis/structural/run_load_checks.py": "5fd498c9a55ab327f410d95eabf44244cb9c0b44611e8693051d79b34e7f39ba",
+    "analysis/final_validation/input/geometry_manifest.json": "e5612d78d085c90d3954bc4cd26cc5e10d49350696d3e15d624396d3c619a5f7",
+    "cad/parameters/baseline.json": "eecde1249c65d84c499f7ab949a05ebbcb7fbd8dfa49d762d15d1eba24db304a",
+    "cad/parameters/final_v08.json": "b793e1cf1123c82aab037b592b4256efb8374bd79ad0e1bb22c658aa66c78e81"
+  },
+  "shaft_runs": [
+    {
+      "case_id": "LC02",
+      "shaft": "105",
+      "mesh": "coarse",
+      "torque": {
+        "measured_torque_nm": -22.00001792,
+        "applied_torque_nm": 22.0,
+        "residual_nm": -1.7920000001225844e-05,
+        "tolerance_nm": 0.00022,
+        "root_nodes": [
+          18,
+          19,
+          20,
+          21
+        ],
+        "status": "PASS",
+        "scope": "measured RF moment at expanded X-axis RECT B31 drive root"
+      },
+      "equilibrium": {
+        "force_residual_n": [
+          5.930642e-11,
+          -7.35234237e-11,
+          -7.555672459602647e-05
+        ],
+        "moment_residual_nm": [
+          -1.7920000001225844e-05,
+          2.6412269562570145e-06,
+          -9.73086355e-12
+        ]
+      },
+      "displacement_mm": 0.08369249307303493
+    },
+    {
+      "case_id": "LC02",
+      "shaft": "105",
+      "mesh": "medium",
+      "torque": {
+        "measured_torque_nm": -22.00001792,
+        "applied_torque_nm": 22.0,
+        "residual_nm": -1.7920000001225844e-05,
+        "tolerance_nm": 0.00022,
+        "root_nodes": [
+          38,
+          39,
+          40,
+          41
+        ],
+        "status": "PASS",
+        "scope": "measured RF moment at expanded X-axis RECT B31 drive root"
+      },
+      "equilibrium": {
+        "force_residual_n": [
+          8.804214000000001e-11,
+          -5.636385999999999e-12,
+          -7.555681213489152e-05
+        ],
+        "moment_residual_nm": [
+          -1.7920000001225844e-05,
+          2.6412269562570145e-06,
+          -7.519840678e-12
+        ]
+      },
+      "displacement_mm": 0.08337919182062153
+    },
+    {
+      "case_id": "LC02",
+      "shaft": "105",
+      "mesh": "fine",
+      "torque": {
+        "measured_torque_nm": -22.00001792,
+        "applied_torque_nm": 22.0,
+        "residual_nm": -1.7920000001225844e-05,
+        "tolerance_nm": 0.00022,
+        "root_nodes": [
+          78,
+          79,
+          80,
+          81
+        ],
+        "status": "PASS",
+        "scope": "measured RF moment at expanded X-axis RECT B31 drive root"
+      },
+      "equilibrium": {
+        "force_residual_n": [
+          5.9617679e-10,
+          -1.9683470000000003e-11,
+          -7.555679258075543e-05
+        ],
+        "moment_residual_nm": [
+          -1.7920000001225844e-05,
+          2.6412269562570145e-06,
+          1.0092406290000001e-11
+        ]
+      },
+      "displacement_mm": 0.08331849339858469
+    },
+    {
+      "case_id": "LC02",
+      "shaft": "153",
+      "mesh": "coarse",
+      "torque": {
+        "measured_torque_nm": -22.00001792,
+        "applied_torque_nm": 22.0,
+        "residual_nm": -1.7920000001225844e-05,
+        "tolerance_nm": 0.00022,
+        "root_nodes": [
+          18,
+          19,
+          20,
+          21
+        ],
+        "status": "PASS",
+        "scope": "measured RF moment at expanded X-axis RECT B31 drive root"
+      },
+      "equilibrium": {
+        "force_residual_n": [
+          -2.0119267e-11,
+          7.732487e-11,
+          -0.000375556509652597
+        ],
+        "moment_residual_nm": [
+          -1.7920000001225844e-05,
+          2.21934809871982e-05,
+          1.5556530500000003e-11
+        ]
+      },
+      "displacement_mm": 0.08786982029570797
+    },
+    {
+      "case_id": "LC02",
+      "shaft": "153",
+      "mesh": "medium",
+      "torque": {
+        "measured_torque_nm": -22.00001792,
+        "applied_torque_nm": 22.0,
+        "residual_nm": -1.7920000001225844e-05,
+        "tolerance_nm": 0.00022,
+        "root_nodes": [
+          38,
+          39,
+          40,
+          41
+        ],
+        "status": "PASS",
+        "scope": "measured RF moment at expanded X-axis RECT B31 drive root"
+      },
+      "equilibrium": {
+        "force_residual_n": [
+          3.93271884e-10,
+          1.9424337e-10,
+          -0.00037555679728029645
+        ],
+        "moment_residual_nm": [
+          -1.7920000001225844e-05,
+          2.21934809871982e-05,
+          2.275697494e-11
+        ]
+      },
+      "displacement_mm": 0.08809913740128221
+    },
+    {
+      "case_id": "LC02",
+      "shaft": "153",
+      "mesh": "fine",
+      "torque": {
+        "measured_torque_nm": -22.00001792,
+        "applied_torque_nm": 22.0,
+        "residual_nm": -1.7920000001225844e-05,
+        "tolerance_nm": 0.00022,
+        "root_nodes": [
+          78,
+          79,
+          80,
+          81
+        ],
+        "status": "PASS",
+        "scope": "measured RF moment at expanded X-axis RECT B31 drive root"
+      },
+      "equilibrium": {
+        "force_residual_n": [
+          -6.8382751e-10,
+          7.0878886e-10,
+          -0.00037555691960733384
+        ],
+        "moment_residual_nm": [
+          -1.7920000001225844e-05,
+          2.21934809871982e-05,
+          1.4353811444000002e-10
+        ]
+      },
+      "displacement_mm": 0.08814314811560794
+    },
+    {
+      "case_id": "LC05",
+      "shaft": "153",
+      "mesh": "coarse",
+      "torque": {
+        "measured_torque_nm": -3.4859881754e-12,
+        "applied_torque_nm": 0.0,
+        "residual_nm": -3.4859881754e-12,
+        "tolerance_nm": 0.0001,
+        "root_nodes": [
+          18,
+          19,
+          20,
+          21
+        ],
+        "status": "PASS",
+        "scope": "measured RF moment at expanded X-axis RECT B31 drive root"
+      },
+      "equilibrium": {
+        "force_residual_n": [
+          2.36341931e-10,
+          4.9846879999999984e-11,
+          -2.5770955971893272e-05
+        ],
+        "moment_residual_nm": [
+          -3.4859881754e-12,
+          2.9546286786086284e-06,
+          -4.824118600000005e-13
+        ]
+      },
+      "displacement_mm": 0.08714325277095972
+    },
+    {
+      "case_id": "LC05",
+      "shaft": "153",
+      "mesh": "medium",
+      "torque": {
+        "measured_torque_nm": 3.1702976040000004e-12,
+        "applied_torque_nm": 0.0,
+        "residual_nm": 3.1702976040000004e-12,
+        "tolerance_nm": 0.0001,
+        "root_nodes": [
+          38,
+          39,
+          40,
+          41
+        ],
+        "status": "PASS",
+        "scope": "measured RF moment at expanded X-axis RECT B31 drive root"
+      },
+      "equilibrium": {
+        "force_residual_n": [
+          -5.953472e-11,
+          1.207608e-10,
+          -2.5771994614842697e-05
+        ],
+        "moment_residual_nm": [
+          3.1702976040000004e-12,
+          2.9546286786086284e-06,
+          1.3700904000000013e-12
+        ]
+      },
+      "displacement_mm": 0.08829347388009141
+    },
+    {
+      "case_id": "LC05",
+      "shaft": "153",
+      "mesh": "fine",
+      "torque": {
+        "measured_torque_nm": -5.2256725658000004e-11,
+        "applied_torque_nm": 0.0,
+        "residual_nm": -5.2256725658000004e-11,
+        "tolerance_nm": 0.0001,
+        "root_nodes": [
+          78,
+          79,
+          80,
+          81
+        ],
+        "status": "PASS",
+        "scope": "measured RF moment at expanded X-axis RECT B31 drive root"
+      },
+      "equilibrium": {
+        "force_residual_n": [
+          5.4623330550000006e-09,
+          1.703426e-10,
+          -2.5770141064640484e-05
+        ],
+        "moment_residual_nm": [
+          -5.2256725658000004e-11,
+          2.9546286786086284e-06,
+          -1.3040860000000045e-13
+        ]
+      },
+      "displacement_mm": 0.08851564006180641
+    }
+  ],
+  "torque_sign_and_scaling": [
+    {
+      "measured_torque_nm": 22.00001792,
+      "applied_torque_nm": -22.0,
+      "residual_nm": 1.7920000001225844e-05,
+      "tolerance_nm": 0.00022,
+      "root_nodes": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "status": "PASS",
+      "scope": "measured RF moment at expanded X-axis RECT B31 drive root"
+    },
+    {
+      "measured_torque_nm": -44.00003584,
+      "applied_torque_nm": 44.0,
+      "residual_nm": -3.584000000245169e-05,
+      "tolerance_nm": 0.00044,
+      "root_nodes": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "status": "PASS",
+      "scope": "measured RF moment at expanded X-axis RECT B31 drive root"
+    },
+    {
+      "measured_torque_nm": -4.361867486e-12,
+      "applied_torque_nm": 0.0,
+      "residual_nm": -4.361867486e-12,
+      "tolerance_nm": 0.0001,
+      "root_nodes": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "status": "PASS",
+      "scope": "measured RF moment at expanded X-axis RECT B31 drive root"
+    }
+  ],
+  "negative_controls_rejected": 3,
+  "thermal": {
+    "status": "CONDITIONAL_SCREEN_ONLY",
+    "cases": [
+      {
+        "case_id": "a12_T270_P0_K0",
+        "alpha_per_k": 1.2e-05,
+        "temperature_c": 270.0,
+        "pressure_mpa": 0.0,
+        "spring_n_m": 0.0,
+        "analytic_axial_growth_mm": 0.8232,
+        "solver_front_axial_growth_mm": 0.8231999999999999,
+        "relative_error": 1.3486674254435817e-16,
+        "full_length_travel_arithmetic_mm": 0.4768000000000001,
+        "numeric_regression": "PASS",
+        "physical_status": "NOT_RUN",
+        "deck_sha256": "6af4bcf7b3a3d0117a6cc0a4715dbf21e7f46376975e1c551a7639f94016f37b",
+        "frd_sha256": "19e2046607b7422ee883b87db0428a1a255219d521dfd6a6e46f882cf946fe67",
+        "dat_sha256": "ec7168b0656f2ebb72570a65c6e7cd2172721336b583f91f8346ece1f853a976",
+        "log_sha256": "5f7509127712180e713e78ed11e145dfb1c817cf07a89ca651dea59f47d09566"
+      },
+      {
+        "case_id": "a12_T270_P0_K1e+06",
+        "alpha_per_k": 1.2e-05,
+        "temperature_c": 270.0,
+        "pressure_mpa": 0.0,
+        "spring_n_m": 1000000.0,
+        "analytic_axial_growth_mm": 0.8214761176448591,
+        "solver_front_axial_growth_mm": 0.8214760999999999,
+        "relative_error": 2.147945478920219e-08,
+        "full_length_travel_arithmetic_mm": 0.4785239000000001,
+        "numeric_regression": "PASS",
+        "physical_status": "NOT_RUN",
+        "deck_sha256": "156b846fa1709910aefbc7ba529c39118bcb52577b14f5651c741902e168d8b0",
+        "frd_sha256": "bc88d9d1013287712e7ccddd4a9b8a69fe9082a9726ae501b8e2f5072da28b87",
+        "dat_sha256": "6ed37c8595d72f1dabe2b10821e0046b49e518472be362fa25ea57ebeb730146",
+        "log_sha256": "30e17269bb1fa25d7c33203ad59d03691e10deb8f34fe7d158958799d760cc8d"
+      },
+      {
+        "case_id": "a12_T270_P6_K0",
+        "alpha_per_k": 1.2e-05,
+        "temperature_c": 270.0,
+        "pressure_mpa": 6.0,
+        "spring_n_m": 0.0,
+        "analytic_axial_growth_mm": 0.8258016897983368,
+        "solver_front_axial_growth_mm": 0.8258017000000001,
+        "relative_error": 1.2353647876889346e-08,
+        "full_length_travel_arithmetic_mm": 0.47419829999999996,
+        "numeric_regression": "PASS",
+        "physical_status": "NOT_RUN",
+        "deck_sha256": "f0c03c0fceba6711e136483875978c0c801087620a460a7dfb44baab02f45bba",
+        "frd_sha256": "f31410f59934d4435171ddbabf926ae36938c9b46e708bb142b5ad196cc5d3a1",
+        "dat_sha256": "95e609f0c63fd50a57e7b93b3342192626e3934ec5c817ee0dffe9d92e502c04",
+        "log_sha256": "5729f160e16c0c331e2b6fb4094883d7cfd299a24e8da9725b0fd20a4d8e53ae"
+      },
+      {
+        "case_id": "a12_T270_P6_K1e+06",
+        "alpha_per_k": 1.2e-05,
+        "temperature_c": 270.0,
+        "pressure_mpa": 6.0,
+        "spring_n_m": 1000000.0,
+        "analytic_axial_growth_mm": 0.8240723591837972,
+        "solver_front_axial_growth_mm": 0.8240724,
+        "relative_error": 4.952987733071216e-08,
+        "full_length_travel_arithmetic_mm": 0.4759276,
+        "numeric_regression": "PASS",
+        "physical_status": "NOT_RUN",
+        "deck_sha256": "b3ea48dfb8b1c6f1421735225f9ac44577f94841246fe18213d6d546606d390f",
+        "frd_sha256": "1ecbaada5459900e4255cb72daa6164eb3465b721518668df66986f9eeb5e706",
+        "dat_sha256": "1650d4723c7594a7c725544b194c68d5246709ebfa62cca5ead12bff12dc3102",
+        "log_sha256": "0183afa4a3968e05409aa99c828228bdc4b0f37583a5966834eaba33dcf06974"
+      },
+      {
+        "case_id": "a12_T300_P0_K0",
+        "alpha_per_k": 1.2e-05,
+        "temperature_c": 300.0,
+        "pressure_mpa": 0.0,
+        "spring_n_m": 0.0,
+        "analytic_axial_growth_mm": 0.9240000000000002,
+        "solver_front_axial_growth_mm": 0.924,
+        "relative_error": 1.2015400699406453e-16,
+        "full_length_travel_arithmetic_mm": 0.376,
+        "numeric_regression": "PASS",
+        "physical_status": "NOT_RUN",
+        "deck_sha256": "01de972dc31c1b1983ce7e225ffdfa4ba8e67c4b4e698082bc53bba28e525d26",
+        "frd_sha256": "43daca401752b1eecc2a26ed4f7bc574ff88331dcfbf0db332923d2247ef204c",
+        "dat_sha256": "f3be051f7c52b73f67571ddd7ce9aff93d624250d37967bf10ea43ea5c2e0575",
+        "log_sha256": "fe831c1ce342515475d3ac5c06d39b14669f7a055d4475a34d4ef7a306770999"
+      },
+      {
+        "case_id": "a12_T300_P0_K1e+06",
+        "alpha_per_k": 1.2e-05,
+        "temperature_c": 300.0,
+        "pressure_mpa": 0.0,
+        "spring_n_m": 1000000.0,
+        "analytic_axial_growth_mm": 0.9220650300095358,
+        "solver_front_axial_growth_mm": 0.922065,
+        "relative_error": 3.2546007893791e-08,
+        "full_length_travel_arithmetic_mm": 0.377935,
+        "numeric_regression": "PASS",
+        "physical_status": "NOT_RUN",
+        "deck_sha256": "5bb8cdfa97d4efa13d8332b4ce2e7a302ee7b29b9a3154ce7a361ab8a1593424",
+        "frd_sha256": "fa50e204739bed6f9c6bbcbf1f9d1f8fddf9709fc076d85840017677b2920955",
+        "dat_sha256": "270bfc72231f62dbd92652f275f4b58c426c317b60ca3b659ff3f411a3a84a99",
+        "log_sha256": "413a6fecb4cc8efdaa31a3d63574b7b7f14128107a22c4c8ab8ab01c4f9ef8d4"
+      },
+      {
+        "case_id": "a12_T300_P6_K0",
+        "alpha_per_k": 1.2e-05,
+        "temperature_c": 300.0,
+        "pressure_mpa": 6.0,
+        "spring_n_m": 0.0,
+        "analytic_axial_growth_mm": 0.9266016897983368,
+        "solver_front_axial_growth_mm": 0.9266017,
+        "relative_error": 1.10097610367048e-08,
+        "full_length_travel_arithmetic_mm": 0.37339830000000007,
+        "numeric_regression": "PASS",
+        "physical_status": "NOT_RUN",
+        "deck_sha256": "04f250f2aa3fd1eaec4677c88b761429464de41b149d8ff07a7c73b808638d5b",
+        "frd_sha256": "b3935427932118f9443e8c0f0c2996d56521da58138c98af9900f27744188ee8",
+        "dat_sha256": "a68bb1d401b1c58ca81a97366037ae60a3d606601583636105b28f745efc3f66",
+        "log_sha256": "a710d2294d99ea2e6ec849dac66d92d87725ac0b9176d13930b45e8b2a31edbd"
+      },
+      {
+        "case_id": "a12_T300_P6_K1e+06",
+        "alpha_per_k": 1.2e-05,
+        "temperature_c": 300.0,
+        "pressure_mpa": 6.0,
+        "spring_n_m": 1000000.0,
+        "analytic_axial_growth_mm": 0.9246612715484739,
+        "solver_front_axial_growth_mm": 0.9246613,
+        "relative_error": 3.07696742693882e-08,
+        "full_length_travel_arithmetic_mm": 0.3753387,
+        "numeric_regression": "PASS",
+        "physical_status": "NOT_RUN",
+        "deck_sha256": "4987af05d04a425244ad93f980507ef77caa5288ce44339c6941a0c7bb0db657",
+        "frd_sha256": "6b4f7500bde852c3fb6d7cd6cd972e371aeff28958dd46f7ede05fc583f669ff",
+        "dat_sha256": "5f19e1ba8b169a220c67bf9164a7f6ea58f6eb27d8f46322d144291ca2604293",
+        "log_sha256": "8ffce9bc8dc85c64d805e10bdb2abe5685e9c639ff3b5e3d7169059ef6455247"
+      },
+      {
+        "case_id": "a17_T270_P0_K0",
+        "alpha_per_k": 1.7e-05,
+        "temperature_c": 270.0,
+        "pressure_mpa": 0.0,
+        "spring_n_m": 0.0,
+        "analytic_axial_growth_mm": 1.1662000000000003,
+        "solver_front_axial_growth_mm": 1.1662000000000001,
+        "relative_error": 1.9040010712144678e-16,
+        "full_length_travel_arithmetic_mm": 0.13379999999999992,
+        "numeric_regression": "PASS",
+        "physical_status": "NOT_RUN",
+        "deck_sha256": "6f54411a3feec1a8feb5513cfe7e131d34c71637362fd09a7efeeeca128fec39",
+        "frd_sha256": "523ca94f4a6741501772a88835bd8f159133c2173d03a418cb0ba5cd67bfe8f5",
+        "dat_sha256": "9b0b9ae7c7536a03f8a19346642135fa728a27039d6ed64a6ff85eccd62c357f",
+        "log_sha256": "68bb0677ae36b2e46a5d9fc3499a5f631b12475e12a6e6b1d46a5a913a40a61d"
+      },
+      {
+        "case_id": "a17_T270_P0_K1e+06",
+        "alpha_per_k": 1.7e-05,
+        "temperature_c": 270.0,
+        "pressure_mpa": 0.0,
+        "spring_n_m": 1000000.0,
+        "analytic_axial_growth_mm": 1.1637578333302172,
+        "solver_front_axial_growth_mm": 1.163758,
+        "relative_error": 1.4321689452092033e-07,
+        "full_length_travel_arithmetic_mm": 0.13624199999999997,
+        "numeric_regression": "PASS",
+        "physical_status": "NOT_RUN",
+        "deck_sha256": "1f5361f0480145fe18612bce05a787631cd20725faac81ac9c89e301bf4e3d06",
+        "frd_sha256": "1ff47878a65f6abacb8fdb94217217a83df331f2944da6348de7cafab67d67fc",
+        "dat_sha256": "41e904855fb912635330b0a916c65d9018c48dc2a2b75c75e1f3cb61fc6b2fa3",
+        "log_sha256": "0357f96e3ca34ab726470d3b6da9c164c528f7873b423e889e22588c501d9f76"
+      },
+      {
+        "case_id": "a17_T270_P6_K0",
+        "alpha_per_k": 1.7e-05,
+        "temperature_c": 270.0,
+        "pressure_mpa": 6.0,
+        "spring_n_m": 0.0,
+        "analytic_axial_growth_mm": 1.168801689798337,
+        "solver_front_axial_growth_mm": 1.1688020000000001,
+        "relative_error": 2.654014498186612e-07,
+        "full_length_travel_arithmetic_mm": 0.13119799999999993,
+        "numeric_regression": "PASS",
+        "physical_status": "NOT_RUN",
+        "deck_sha256": "13de25b6e138730a3cb47982b3dd6db99242367142aa9070f87c6521cbe95e07",
+        "frd_sha256": "f71d676125b9648513a15fea356db288251e2f7b008b80b6241ecb333a70f32e",
+        "dat_sha256": "75ad569f6d7c902c5059767b7681169e8e8e9dd54b886d76b6044dcaf1d07b32",
+        "log_sha256": "a3d2f850179089bae304e0db896efd79433713900fec6b9772eb29e9541d732d"
+      },
+      {
+        "case_id": "a17_T270_P6_K1e+06",
+        "alpha_per_k": 1.7e-05,
+        "temperature_c": 270.0,
+        "pressure_mpa": 6.0,
+        "spring_n_m": 1000000.0,
+        "analytic_axial_growth_mm": 1.1663540748691554,
+        "solver_front_axial_growth_mm": 1.1663540000000001,
+        "relative_error": 6.41907607072445e-08,
+        "full_length_travel_arithmetic_mm": 0.13364599999999993,
+        "numeric_regression": "PASS",
+        "physical_status": "NOT_RUN",
+        "deck_sha256": "b2762b59b8c3f147ece6970210fe7617d514cc585f7aea58f7c36c9b655eae18",
+        "frd_sha256": "0538b7420ffccea61814eb4aa26de80285fab05c4f91ea54ddd050dae045223d",
+        "dat_sha256": "722d80b4e5bb135687ef25fb59ef4530ef337796ac42388d69dbec434a5c7a93",
+        "log_sha256": "ca7598732bf106bbe69ba3fb94720c443236e33ded3d15cdfb8b8c60360cf169"
+      },
+      {
+        "case_id": "a17_T300_P0_K0",
+        "alpha_per_k": 1.7e-05,
+        "temperature_c": 300.0,
+        "pressure_mpa": 0.0,
+        "spring_n_m": 0.0,
+        "analytic_axial_growth_mm": 1.3090000000000002,
+        "solver_front_axial_growth_mm": 1.309,
+        "relative_error": 1.696291863445617e-16,
+        "full_length_travel_arithmetic_mm": -0.008999999999999897,
+        "numeric_regression": "PASS",
+        "physical_status": "NOT_RUN",
+        "deck_sha256": "fa1d27d97130a0d5d729bb342428c7bdb5c667e3c62d77877943f7cd3411e582",
+        "frd_sha256": "a01d9c0d30be9d26135b3e723c12009dca640293383025b50769570bb481c665",
+        "dat_sha256": "3e814d929d905d4f58035b94077aa110a707a8058435453f56741c52a40de54f",
+        "log_sha256": "f2c611d1fa4bc4bb339d6855ac4a5f84ed51f704f6de5959780f299850ac61bb"
+      },
+      {
+        "case_id": "a17_T300_P0_K1e+06",
+        "alpha_per_k": 1.7e-05,
+        "temperature_c": 300.0,
+        "pressure_mpa": 0.0,
+        "spring_n_m": 1000000.0,
+        "analytic_axial_growth_mm": 1.306258792513509,
+        "solver_front_axial_growth_mm": 1.3062589999999998,
+        "relative_error": 1.5884026355771533e-07,
+        "full_length_travel_arithmetic_mm": -0.0062589999999997925,
+        "numeric_regression": "PASS",
+        "physical_status": "NOT_RUN",
+        "deck_sha256": "9b5b8809bdd7abcd7565c60fc5a023345eb42be413ff65c8b9bd125305d889d4",
+        "frd_sha256": "2530037d86a611555ffcf5c8adfc6440cf4e9a22fb2f6b772a1730629e872707",
+        "dat_sha256": "b0cf4d920005a66eda712b790c937e12c04b17498956d16aa278cb892fae97c4",
+        "log_sha256": "5abf1300c6650e6c6aab00d7d5d921b02de7dff086c56a6dc2f8f49e53a7b890"
+      },
+      {
+        "case_id": "a17_T300_P6_K0",
+        "alpha_per_k": 1.7e-05,
+        "temperature_c": 300.0,
+        "pressure_mpa": 6.0,
+        "spring_n_m": 0.0,
+        "analytic_axial_growth_mm": 1.3116016897983371,
+        "solver_front_axial_growth_mm": 1.311602,
+        "relative_error": 2.3650599508500912e-07,
+        "full_length_travel_arithmetic_mm": -0.01160199999999989,
+        "numeric_regression": "PASS",
+        "physical_status": "NOT_RUN",
+        "deck_sha256": "b03f83b143726da56e256b9e73d3739f6a9c25045b72423d559b4b550be1c79f",
+        "frd_sha256": "4bf57e64d844717d0b89693799fddf30404ab08c858d1c3b68d02a3f3dac351a",
+        "dat_sha256": "a41e8ad67b3f3a9fe2fdf059445d493bc1cfb946bb2518318c8ad52fad4902f5",
+        "log_sha256": "a1ed48486e031622295b65fa53a91067cb6f40e30f11b6df389590b45f5060a5"
+      },
+      {
+        "case_id": "a17_T300_P6_K1e+06",
+        "alpha_per_k": 1.7e-05,
+        "temperature_c": 300.0,
+        "pressure_mpa": 6.0,
+        "spring_n_m": 1000000.0,
+        "analytic_axial_growth_mm": 1.3088550340524474,
+        "solver_front_axial_growth_mm": 1.308855,
+        "relative_error": 2.601697393555712e-08,
+        "full_length_travel_arithmetic_mm": -0.008855000000000057,
+        "numeric_regression": "PASS",
+        "physical_status": "NOT_RUN",
+        "deck_sha256": "ab280907354a783546d9f7077694c90d2371b033e38a6255f72bf183ad484a17",
+        "frd_sha256": "a18a3f66171ef9c548a8986cfe60f3a54f410052b6f042e86748f66cf0ba79a8",
+        "dat_sha256": "e02c24e07dbfd8d4a791ffac0757f6431627d864f717c3d5b118a0f6b0b5d674",
+        "log_sha256": "f832a1a6a57911fa75ad16d40caf2903bd7cffd14777b2049bf8688e45d1fc0e"
+      }
+    ],
+    "normal_temperature_c": 270.0,
+    "design_temperature_c": 300.0,
+    "cold_axial_travel_requirement_mm": 1.3,
+    "max_numeric_relative_error": 2.654014498186612e-07,
+    "minimum_full_length_travel_arithmetic_mm": -0.01160199999999989,
+    "limitations": [
+      "12e-6/K and 17e-6/K are existing assumptions, not certified bounds.",
+      "Uniform prescribed temperatures are not a solved heater/contact thermal field.",
+      "Full barrel axial growth must not be confused with clearance at an arbitrary local guide.",
+      "A negative arithmetic reserve requires geometric/temperature review, not an automatic global machine-failure claim.",
+      "No physical operation and no material/fastener approval."
+    ]
+  },
+  "physical_validation_state": "NOT_RUN",
+  "raw_directory": "analysis/final_validation/results/v0.8/raw/assistant-runtime-20260909"
+}

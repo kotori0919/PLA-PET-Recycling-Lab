@@ -1,0 +1,18 @@
+{
+  "validation/test_evidence_freshness.py": {
+    "exit_code": 0,
+    "output": "test_absolute_path (__main__.EvidenceTests.test_absolute_path) ... ok\ntest_bad_json (__main__.EvidenceTests.test_bad_json) ... ok\ntest_cycle (__main__.EvidenceTests.test_cycle) ... ok\ntest_empty_manifest (__main__.EvidenceTests.test_empty_manifest) ... ok\ntest_freshness_does_not_promote_hold (__main__.EvidenceTests.test_freshness_does_not_promote_hold) ... ok\ntest_geometry_artifact_mismatch (__main__.EvidenceTests.test_geometry_artifact_mismatch) ... ok\ntest_geometry_artifact_missing (__main__.EvidenceTests.test_geometry_artifact_missing) ... ok\ntest_geometry_artifacts_match (__main__.EvidenceTests.test_geometry_artifacts_match) ... ok\ntest_missing_leaf (__main__.EvidenceTests.test_missing_leaf) ... ok\ntest_missing_required_source (__main__.EvidenceTests.test_missing_required_source) ... ok\ntest_missing_scalar_binding (__main__.EvidenceTests.test_missing_scalar_binding) ... ok\ntest_parent_escape (__main__.EvidenceTests.test_parent_escape) ... ok\ntest_raw_artifacts_checked (__main__.EvidenceTests.test_raw_artifacts_checked) ... ok\ntest_registered_scalar (__main__.EvidenceTests.test_registered_scalar) ... ok\ntest_symlink_escape (__main__.EvidenceTests.test_symlink_escape) ... ok\ntest_transitive_same_size_change (__main__.EvidenceTests.test_transitive_same_size_change) ... ok\ntest_unbound_scalar (__main__.EvidenceTests.test_unbound_scalar) ... ok\ntest_valid_chain (__main__.EvidenceTests.test_valid_chain) ... ok\ntest_wrong_hash_type (__main__.EvidenceTests.test_wrong_hash_type) ... ok\n\n----------------------------------------------------------------------\nRan 19 tests in 0.007s\n\nOK\n"
+  },
+  "validation/test_beam_torque_recovery.py": {
+    "exit_code": 0,
+    "output": "test_measured_torque (__main__.TorqueTests.test_measured_torque) ... ok\ntest_missing_forces (__main__.TorqueTests.test_missing_forces) ... ok\ntest_missing_root_node (__main__.TorqueTests.test_missing_root_node) ... ok\ntest_nan_input (__main__.TorqueTests.test_nan_input) ... ok\ntest_no_double_count (__main__.TorqueTests.test_no_double_count) ... ok\ntest_opposite_sign (__main__.TorqueTests.test_opposite_sign) ... ok\ntest_preserve_non_torsional_moments (__main__.TorqueTests.test_preserve_non_torsional_moments) ... ok\ntest_wrong_input_torque (__main__.TorqueTests.test_wrong_input_torque) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.001s\n\nOK\n"
+  },
+  "validation/test_shaft_reaction_provenance.py": {
+    "exit_code": 0,
+    "output": "SHAFT_REACTION_PROVENANCE_PASS\n"
+  },
+  "validation/v08_full_compliance.py": {
+    "exit_code": 0,
+    "output": "V08_SECTION_COVERAGE_SELF_TEST_PASS sections=26\n"
+  }
+}

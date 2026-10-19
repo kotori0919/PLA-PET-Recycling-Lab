@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600"><rect width="800" height="600" fill="white"/><g font-family="sans-serif" fill="#172533"><text x="25" y="35" font-size="21">GGM_SH_FusePinBlank</text><text x="25" y="62" font-size="12">S45C hubs / brass uncalibrated pin blank; release target8.8-9.3Nm</text><polyline points="92.00,310.00 92.00,310.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="92.00,310.00 245.00,157.00 398.00,310.00 245.00,463.00 92.00,310.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="92.00,310.00 245.00,157.00 398.00,310.00 245.00,463.00 92.00,310.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="245.00,157.00 221.63,158.79 202.32,163.07 202.32,163.07 228.10,157.94 267.11,158.61 287.68,163.07 268.37,158.79 245.00,157.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="245.00,463.00 221.63,461.21 202.32,456.93 202.32,456.93 228.10,462.06 267.11,461.39 287.68,456.93 268.37,461.21 245.00,463.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="41.00,310.00 245.00,106.00 449.00,310.00 245.00,514.00 41.00,310.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="245.00,463.00 245.00,157.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="41.00,310.00 41.00,310.00" fill="none" stroke="#263238" stroke-width="0.8"/>
+<polyline points="41.00,310.00 245.00,106.00 449.00,310.00 245.00,514.00 41.00,310.00" fill="none" stroke="#263238" stroke-width="0.8"/><text x="25" y="552" font-size="14">Envelope 4.000 x 12.700 x 4.000 mm</text><text x="25" y="580" font-size="12">STEP and DRIVE_DRAWING_SCHEDULE.csv control. Physical commissioning not performed.</text></g></svg>
